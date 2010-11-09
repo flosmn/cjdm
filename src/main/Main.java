@@ -1,16 +1,7 @@
 package main;
 
-import grammar.JavaLexer;
-import grammar.JavaParser;
-import grammar.JavaParser.compilationUnit_return;
-
+import java.util.Collection;
 import java.util.HashMap;
-
-import org.antlr.runtime.ANTLRStringStream;
-import org.antlr.runtime.CharStream;
-import org.antlr.runtime.CommonTokenStream;
-import org.antlr.runtime.RecognitionException;
-import org.antlr.runtime.tree.CommonTree;
 
 /**
  * Parse a java file or directory of java files using the generated parser
@@ -18,29 +9,28 @@ import org.antlr.runtime.tree.CommonTree;
  */
 class Main {
 
-	public static void main(String[] args) throws RecognitionException {
-		CharStream charStream = new ANTLRStringStream("public class Hallo{"
-				+ "	private synchronized int doNothing() {" + "	}"
-				+ "	public static void main(String[] args) {"
-				+ "		System.out.println(\"HalloWelt\");" + "	}" + "}");
+	private static String[] modifiers = { "public", "private", "synchronized" };
+	private static Database database = new Database();
 
-		JavaLexer lexer = new JavaLexer(charStream);
-		CommonTokenStream tokens = new CommonTokenStream(lexer);
-		JavaParser parser = new JavaParser(tokens);
-		compilationUnit_return compilationUnit = parser.compilationUnit();
-		CommonTree tree = (CommonTree) (compilationUnit.getTree());
+	public static void main(String[] args) {
+		Collection<CommonTreePackage> treePackages = (new GenerateTreePackages()).generate();
 
-		Database database = new Database();
-
-		String[] modifiers = { "public", "private", "synchronized" };
-		for (String modifier : modifiers) {
-			TreeVisitor visitor = new MethodModifierCounter(modifier);
-			int numberOfModifiers = visitor.visit(tree);
-			HashMap<String, Integer> map = new HashMap<String, Integer>();
-			map.put("method_modifier_" + modifier, numberOfModifiers);
-			database.add(map);
-		}
+		for(CommonTreePackage treePackage : treePackages){
+			analyseTree(treePackage);
+		}		
 
 		System.out.println(database);
+	}
+
+	private static void analyseTree(CommonTreePackage treePackage) {
+		for (String modifier : modifiers) {
+			TreeVisitor visitor = new MethodModifierCounter(modifier);
+			int numberOfModifiers = visitor.visit(treePackage.getTree());
+			HashMap<String, Integer> map = new HashMap<String, Integer>();
+			map.put(	treePackage.getProjectName() + "." + 
+						treePackage.getFileName() +  "_method_modifier_" + modifier,
+						numberOfModifiers);
+			database.add(map);
+		}		
 	}
 }
