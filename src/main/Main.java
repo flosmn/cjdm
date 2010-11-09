@@ -17,21 +17,24 @@ import org.antlr.runtime.tree.CommonTree;
  * ANTclassOrInterfaceDeclarationLR builds from java.g
  */
 class Main {
-
+	
 	public static void main(String[] args) throws RecognitionException {
-		CharStream charStream = new ANTLRStringStream("public class Hallo{"
-				+ "	private synchronized int doNothing() {" + "	}"
-				+ "	public static void main(String[] args) {"
-				+ "		System.out.println(\"HalloWelt\");" + "	}" + "}");
-
+		CharStream charStream = new ANTLRStringStream(
+				"public class Hallo{" +
+				"	private synchronized int doNothing() {" +
+				"	}" + "	public static void main(String[] args) {" +
+				"		System.out.println(\"HalloWelt\");" +
+				"	}" +
+				"}");
+		
 		JavaLexer lexer = new JavaLexer(charStream);
 		CommonTokenStream tokens = new CommonTokenStream(lexer);
 		JavaParser parser = new JavaParser(tokens);
 		compilationUnit_return compilationUnit = parser.compilationUnit();
 		CommonTree tree = (CommonTree) (compilationUnit.getTree());
-
+		
 		Database database = new Database();
-
+		
 		String[] modifiers = { "public", "private", "synchronized" };
 		for (String modifier : modifiers) {
 			TreeVisitor visitor = new MethodModifierCounter(modifier);
@@ -40,7 +43,7 @@ class Main {
 			map.put("method_modifier_" + modifier, numberOfModifiers);
 			database.add(map);
 		}
-
+		
 		System.out.println(database);
 	}
 }
