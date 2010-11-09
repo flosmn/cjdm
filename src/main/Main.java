@@ -34,15 +34,20 @@ class Main {
 		CommonTree tree = (CommonTree) (compilationUnit.getTree());
 		
 		Database database = new Database();
+		database.addAttribute("method_modifier_public");
+		database.addAttribute("method_modifier_private");
+		database.addAttribute("method_modifier_synchronized");
+		
+		Record record = database.newRecord();
 		
 		String[] modifiers = { "public", "private", "synchronized" };
 		for (String modifier : modifiers) {
 			TreeVisitor visitor = new MethodModifierCounter(modifier);
 			int numberOfModifiers = visitor.visit(tree);
-			HashMap<String, Integer> map = new HashMap<String, Integer>();
-			map.put("method_modifier_" + modifier, numberOfModifiers);
-			database.add(map);
+			record.setValueForAttribute(numberOfModifiers, "method_modifier_" + modifier);
 		}
+		
+		database.add(record);
 		
 		System.out.println(database);
 	}
