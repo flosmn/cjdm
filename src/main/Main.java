@@ -32,5 +32,6 @@ class Main {
 						numberOfModifiers);
 			database.add(map);
 		}		
+		System.out.println(database);
 	}
 }
