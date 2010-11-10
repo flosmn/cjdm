@@ -34,4 +34,8 @@ public class Record {
 		}
 		return values;
 	}
+	
+	public String toString() {
+		return map.toString();
+	}
 }

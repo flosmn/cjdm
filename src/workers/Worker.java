@@ -7,8 +7,9 @@ import org.antlr.runtime.tree.CommonTree;
 
 import utils.DirtyLittleHelper;
 
-public abstract class AbstractWorker {
+public abstract class Worker {
 	public abstract int doWork(CommonTreePackage treePackage);
+	public abstract String getAttributeName();
 	
 	// util method for tree visitors
 	public CommonTree firstChildWithType(CommonTree parent, String type) {

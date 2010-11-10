@@ -14,6 +14,7 @@ public class Database {
 	public void addAttribute(String attribute) {
 		if (attributesFinished) {
 			System.out.println("should not add attributes anymore");
+			return;
 		}
 
 		attributes.add(attribute);

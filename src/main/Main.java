@@ -2,10 +2,6 @@ package main;
 
 import java.util.Collection;
 
-import database.Database;
-import database.Record;
-
-import workers.AbstractWorker;
 import workers.CommonTreePackage;
 import workers.MethodModifierCounter;
 
@@ -14,33 +10,21 @@ import workers.MethodModifierCounter;
  * ANTclassOrInterfaceDeclarationLR builds from java.g
  */
 class Main {
-
-	private static String[] methodModifiers = { "public", "private", "synchronized" };
-	private static Database database = new Database();
-
 	public static void main(String[] args) {
-		for (String modifier : methodModifiers) {
-			database.addAttribute("method_modifier_" + modifier);
+		WorkerQueue workerQueue = new WorkerQueue();
+		
+		String[] modifierNames = { "public", "private", "synchronized" };
+		for (String modifierName : modifierNames) {
+			workerQueue.addWorker(new MethodModifierCounter(modifierName));
+			// TODO: add more workers here
 		}
 		
 		Collection<CommonTreePackage> treePackages = (new GenerateTreePackages()).generate();
 
 		for(CommonTreePackage treePackage : treePackages){
-			analyseTree(treePackage);
+			workerQueue.doWork(treePackage);
 		}		
 
-		database.export();
-	}
-
-	private static void analyseTree(CommonTreePackage treePackage) {
-		Record record = database.newRecord();
-
-		for (String modifier : methodModifiers) {
-			AbstractWorker worker = new MethodModifierCounter(modifier);
-			int numberOfModifiers = worker.doWork(treePackage);
-			record.setValueForAttribute(numberOfModifiers, "method_modifier_" + modifier);
-		}
-
-		database.add(record);
+		workerQueue.exportResults();
 	}
 }

@@ -6,13 +6,13 @@ import org.antlr.runtime.tree.CommonTree;
 
 import utils.DirtyLittleHelper;
 
-public class MethodModifierCounter extends AbstractWorker {
+public class MethodModifierCounter extends Worker {
 	
 	private int modifierCounter;
-	private String modifier;
+	private String modifierName;
 	
-	public MethodModifierCounter(String modifier) {
-		this.modifier = modifier;
+	public MethodModifierCounter(String modifierName) {
+		this.modifierName = modifierName;
 	}
 	
 	public void traverse(CommonTree tree){
@@ -37,7 +37,7 @@ public class MethodModifierCounter extends AbstractWorker {
 
 	private void processMethod(CommonTree tree) {
 		CommonTree modifierList = firstChildWithType(tree, "MODIFIER_LIST");
-		CommonTree modifierNode = firstChildWithType(modifierList, modifier);
+		CommonTree modifierNode = firstChildWithType(modifierList, modifierName);
 		
 		if (modifierNode != null) {
 			++modifierCounter;
@@ -46,9 +46,16 @@ public class MethodModifierCounter extends AbstractWorker {
 
 	@Override
 	public int doWork(CommonTreePackage treePackage) {
+		modifierCounter = 0;
+		
 		traverse(treePackage.getTree());
 
 		return modifierCounter;
+	}
+
+	@Override
+	public String getAttributeName() {
+		return "method_modifier_" + modifierName;
 	}
 	
 }
