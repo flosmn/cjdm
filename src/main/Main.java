@@ -5,9 +5,9 @@ import java.util.Collection;
 import database.Database;
 import database.Record;
 
-import walkers.CommonTreePackage;
-import walkers.MethodModifierCounter;
-import walkers.TreeVisitor;
+import workers.AbstractWorker;
+import workers.CommonTreePackage;
+import workers.MethodModifierCounter;
 
 /**
  * Parse a java file or directory of java files using the generated parser
@@ -36,8 +36,8 @@ class Main {
 		Record record = database.newRecord();
 
 		for (String modifier : methodModifiers) {
-			TreeVisitor visitor = new MethodModifierCounter(modifier);
-			int numberOfModifiers = visitor.visit(treePackage.getTree());
+			AbstractWorker worker = new MethodModifierCounter(modifier);
+			int numberOfModifiers = worker.doWork(treePackage);
 			record.setValueForAttribute(numberOfModifiers, "method_modifier_" + modifier);
 		}
 

@@ -1,4 +1,4 @@
-package walkers;
+package workers;
 
 import java.util.List;
 
@@ -6,7 +6,7 @@ import org.antlr.runtime.tree.CommonTree;
 
 import utils.DirtyLittleHelper;
 
-public class MethodModifierCounter extends TreeVisitor {
+public class MethodModifierCounter extends AbstractWorker {
 	
 	private int modifierCounter;
 	private String modifier;
@@ -45,8 +45,8 @@ public class MethodModifierCounter extends TreeVisitor {
 	}
 
 	@Override
-	public int visit(CommonTree tree) {
-		traverse(tree);
+	public int doWork(CommonTreePackage treePackage) {
+		traverse(treePackage.getTree());
 
 		return modifierCounter;
 	}

@@ -1,4 +1,4 @@
-package walkers;
+package workers;
 
 import java.io.File;
 
