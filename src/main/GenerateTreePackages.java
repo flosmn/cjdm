@@ -54,15 +54,19 @@ public class GenerateTreePackages {
 		return trees;
 	}
 
-	private String getProjectName(File parent) {
-		String path = parent.getAbsolutePath();
-		StringTokenizer tokenizer = new StringTokenizer(path, "\\");
-		while(tokenizer.hasMoreTokens()){
-			if(tokenizer.nextToken().equals(PATH)){
-				break;
-			}
-		}
-		return tokenizer.nextToken();
-	}
+	private String getProjectName(File parent) { 
+        String path = parent.getAbsolutePath(); 
+        String name = ""; 
+        StringTokenizer tokenizer = new StringTokenizer(path, "\\"); 
+        while(tokenizer.hasMoreTokens()){ 
+             if(tokenizer.nextToken().equals(PATH)){ 
+                  break; 
+             } 
+        } 
+        if(tokenizer.hasMoreElements()){ 
+             name = tokenizer.nextToken(); 
+        } 
+        return name; 
+   }
 	
 }
