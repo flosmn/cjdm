@@ -12,7 +12,7 @@ public abstract class TreeVisitor {
 			return null;
 		}
 		
-		List<CommonTree> children = parent.getChildren();
+		List<CommonTree> children = DirtyLittleHelper.castList(CommonTree.class, parent.getChildren());
 		
 		for (CommonTree child : children) {
 			if (child.getText().equals(type)) {

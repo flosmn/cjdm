@@ -1,7 +1,6 @@
 package main;
 
 import java.util.Collection;
-import java.util.HashMap;
 
 /**
  * Parse a java file or directory of java files using the generated parser

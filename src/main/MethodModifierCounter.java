@@ -18,14 +18,12 @@ public class MethodModifierCounter extends TreeVisitor {
 			System.out.println("tree == null");
 			return;
 		}
-		
-		//System.out.println("visiting " + tree.getText());
-		
+	
 		if (tree.getText() != null && tree.getText().endsWith("METHOD_DECL")) {
 			processMethod(tree);
 		}
 		
-		List<CommonTree> children = tree.getChildren();
+		List<CommonTree> children = DirtyLittleHelper.castList(CommonTree.class, tree.getChildren());
 		if (children == null) {
 			return;
 		}
