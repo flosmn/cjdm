@@ -31,6 +31,6 @@ public class Database {
 	}
 
 	public String toString() {
-		return list.toString();
+		return attributes.toString() + "\n" + list.toString();
 	}
 }

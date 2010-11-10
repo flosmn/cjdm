@@ -36,6 +36,5 @@ class Main {
 		}
 
 		database.add(record);
-		System.out.println(database);
 	}
 }
