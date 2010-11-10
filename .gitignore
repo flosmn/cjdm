@@ -1,0 +1,4 @@
+bin/*
+scr/grammar/*.java
+scr/grammar/*.tokens
+*.DS_Store
