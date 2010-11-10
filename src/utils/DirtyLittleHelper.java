@@ -9,10 +9,14 @@ import java.util.List;
  */
 public class DirtyLittleHelper {
 
-	public static <T> List<T> castList(Class<? extends T> clazz, Collection<?> c) {
-	    List<T> r = new LinkedList<T>();
-	    for(Object o: c)
-	      r.add(clazz.cast(o));
-	    return r;
-	}
+	public static <T> List<T> castList(Class<? extends T> clazz, Collection<?> c) { 
+        List<T> r = new LinkedList<T>(); 
+         
+        if(c == null) { return r; } 
+         
+        for(Object o: c) 
+            r.add(clazz.cast(o)); 
+
+        return r; 
+   }
 }

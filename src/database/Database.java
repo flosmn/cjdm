@@ -59,6 +59,6 @@ public class Database {
 			}
 		}
 		
-		logger.writeToFile("javaprojectsources\\", "export.arff");
+		logger.writeToFile("javaprojectsources/", "export.arff");
 	}
 }

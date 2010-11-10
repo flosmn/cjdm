@@ -6,7 +6,6 @@ import grammar.JavaParser;
 import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.StringTokenizer;
@@ -67,7 +66,7 @@ public class GenerateTreePackages {
 	private String getProjectName(File parent) { 
         String path = parent.getAbsolutePath(); 
         String name = ""; 
-        StringTokenizer tokenizer = new StringTokenizer(path, "\\"); 
+        StringTokenizer tokenizer = new StringTokenizer(path, "/"); 
         
         while(tokenizer.hasMoreTokens()){ 
              if(tokenizer.nextToken().equals(PATH)){ 
