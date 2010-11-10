@@ -1,7 +1,10 @@
-package main;
+package database;
 
 import java.util.Iterator;
 import java.util.LinkedList;
+
+import utils.Logger;
+
 
 public class Database {
 	private boolean attributesFinished;

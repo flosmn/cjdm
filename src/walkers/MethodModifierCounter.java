@@ -1,8 +1,10 @@
-package main;
+package walkers;
 
 import java.util.List;
 
 import org.antlr.runtime.tree.CommonTree;
+
+import utils.DirtyLittleHelper;
 
 public class MethodModifierCounter extends TreeVisitor {
 	

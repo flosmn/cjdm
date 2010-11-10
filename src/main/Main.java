@@ -2,6 +2,13 @@ package main;
 
 import java.util.Collection;
 
+import database.Database;
+import database.Record;
+
+import walkers.CommonTreePackage;
+import walkers.MethodModifierCounter;
+import walkers.TreeVisitor;
+
 /**
  * Parse a java file or directory of java files using the generated parser
  * ANTclassOrInterfaceDeclarationLR builds from java.g
