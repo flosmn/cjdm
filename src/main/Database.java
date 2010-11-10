@@ -1,6 +1,7 @@
 package main;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.LinkedList;
 
 public class Database {
@@ -32,5 +33,29 @@ public class Database {
 
 	public String toString() {
 		return attributes.toString() + "\n" + list.toString();
+	}
+	
+	public void export() {
+		// TODO: write to file
+		
+		System.out.println("@relation cjdm");
+		
+		for (String attribute : attributes) {
+			System.out.println("@attribute " + attribute + " integer");
+		}
+		
+		System.out.println("@data");
+		
+		for (LinkedList<Integer> record : list) {
+			Iterator iter = record.iterator();
+			while (iter.hasNext()) {
+				Integer value = (Integer)iter.next();
+				if (iter.hasNext()) {
+					System.out.print(value + ", ");
+				} else {
+					System.out.println(value);
+				}
+			}
+		}
 	}
 }

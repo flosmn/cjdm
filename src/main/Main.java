@@ -23,7 +23,7 @@ class Main {
 			analyseTree(treePackage);
 		}		
 
-		System.out.println(database);
+		database.export();
 	}
 
 	private static void analyseTree(CommonTreePackage treePackage) {
