@@ -36,26 +36,27 @@ public class Database {
 	}
 	
 	public void export() {
-		// TODO: write to file
-		
-		System.out.println("@relation cjdm");
+		Logger logger = new Logger();
+		logger.logAndStartNewLine("@relation cjdm");
 		
 		for (String attribute : attributes) {
-			System.out.println("@attribute " + attribute + " integer");
+			logger.logAndStartNewLine("@attribute " + attribute + " integer");
 		}
 		
-		System.out.println("@data");
+		logger.logAndStartNewLine("@data");
 		
 		for (LinkedList<Integer> record : list) {
 			Iterator<Integer> iter = record.iterator();
 			while (iter.hasNext()) {
 				Integer value = iter.next();
 				if (iter.hasNext()) {
-					System.out.print(value + ", ");
+					logger.log(value + ", ");
 				} else {
-					System.out.println(value);
+					logger.logAndStartNewLine(value + "");
 				}
 			}
 		}
+		
+		logger.writeToFile("javaprojectsources\\", "export.arff");
 	}
 }
