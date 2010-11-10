@@ -47,9 +47,9 @@ public class Database {
 		System.out.println("@data");
 		
 		for (LinkedList<Integer> record : list) {
-			Iterator iter = record.iterator();
+			Iterator<Integer> iter = record.iterator();
 			while (iter.hasNext()) {
-				Integer value = (Integer)iter.next();
+				Integer value = iter.next();
 				if (iter.hasNext()) {
 					System.out.print(value + ", ");
 				} else {
