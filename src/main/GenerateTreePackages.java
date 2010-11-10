@@ -6,6 +6,7 @@ import grammar.JavaParser;
 import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.StringTokenizer;
@@ -30,44 +31,54 @@ public class GenerateTreePackages {
 	
 	public Collection<CommonTreePackage> generate(){
 		File parent = new File(PATH);
+		
 		return searchInFolder(parent);
 	}
 	
 	private Collection<CommonTreePackage> searchInFolder(File parent){
 		Collection<CommonTreePackage> trees = new HashSet<CommonTreePackage>();
 		File[] files = parent.listFiles();
+		
 		if(files == null){
 			try {
 				if(!parent.getName().endsWith(".java")){
 					return trees;
-				}							
-				this.inputStream = new BufferedInputStream(new FileInputStream(parent));
-				this.lexer = new JavaLexer(new ANTLRInputStream(this.inputStream ));
-				this.parser = new JavaParser(new CommonTokenStream(this.lexer));
-				CommonTree tree = (CommonTree) (this.parser.compilationUnit().getTree());
-				trees.add(new CommonTreePackage(tree, getProjectName(parent), parent));
-			} catch (Exception e) { e.printStackTrace(); }
-		}
-		else{
+				}
+				
+				trees.add(generateTreeFromFile(parent));
+			} catch (Exception e) { System.err.println("Error: " + e.getMessage());}
+		} else{
 			for(File file : files){
 				trees.addAll(searchInFolder(file));
 			}
 		}
+		
 		return trees;
+	}
+
+	private CommonTreePackage generateTreeFromFile(File parent) throws Exception {
+		this.inputStream = new BufferedInputStream(new FileInputStream(parent));
+		this.lexer = new JavaLexer(new ANTLRInputStream(this.inputStream ));
+		this.parser = new JavaParser(new CommonTokenStream(this.lexer));
+		CommonTree tree = (CommonTree) (this.parser.compilationUnit().getTree());
+		return new CommonTreePackage(tree, getProjectName(parent), parent);
 	}
 
 	private String getProjectName(File parent) { 
         String path = parent.getAbsolutePath(); 
         String name = ""; 
         StringTokenizer tokenizer = new StringTokenizer(path, "\\"); 
+        
         while(tokenizer.hasMoreTokens()){ 
              if(tokenizer.nextToken().equals(PATH)){ 
                   break; 
              } 
         } 
+        
         if(tokenizer.hasMoreElements()){ 
              name = tokenizer.nextToken(); 
         } 
+        
         return name; 
    }
 	
