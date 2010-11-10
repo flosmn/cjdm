@@ -1,4 +1,5 @@
+.gitignore
 bin/*
-scr/grammar/*.java
-scr/grammar/*.tokens
+src/grammar/*.java
+src/grammar/*.tokens
 *.DS_Store
