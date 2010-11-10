@@ -307,7 +307,6 @@ tokens {
     }
 }
 
-
 @lexer::members {
 /** 
  *  Determines if whitespaces and comments should be preserved or thrown away.
