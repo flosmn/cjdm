@@ -16,8 +16,8 @@ class Main {
 		String[] modifierNames = { "public", "private", "synchronized" };
 		for (String modifierName : modifierNames) {
 			workerQueue.addWorker(new MethodModifierCounter(modifierName));
-			// TODO: add more workers here
 		}
+		// TODO: add more workers here
 		
 		Collection<CommonTreePackage> treePackages = (new GenerateTreePackages()).generate();
 

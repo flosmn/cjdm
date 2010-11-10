@@ -9,12 +9,12 @@ import workers.CommonTreePackage;
 import workers.Worker;
 
 public class WorkerQueue {
-	private boolean workersFinished;
+	private boolean workerInitializationFinished;
 	private LinkedList<Worker> workers = new LinkedList<Worker>();
 	private Database database = new Database();
 	
 	public void addWorker(Worker worker) {
-		if (workersFinished) {
+		if (workerInitializationFinished) {
 			System.out.println("should not add workers anymore");
 			return;
 		}
@@ -24,7 +24,7 @@ public class WorkerQueue {
 	}
 	
 	public void doWork(CommonTreePackage treePackage) {
-		workersFinished = true;
+		workerInitializationFinished = true;
 		
 		Record record = database.newRecord();
 		
