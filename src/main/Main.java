@@ -2,6 +2,7 @@ package main;
 
 import java.util.Collection;
 
+import workers.AttributeModifierCounter;
 import workers.CommonTreePackage;
 import workers.MethodModifierCounter;
 
@@ -13,9 +14,14 @@ class Main {
 	public static void main(String[] args) {
 		WorkerQueue workerQueue = new WorkerQueue();
 		
-		String[] modifierNames = { "public", "private", "synchronized" };
-		for (String modifierName : modifierNames) {
+		String[] methodModifierNames = { "public", "private", "synchronized" };
+		for (String modifierName : methodModifierNames) {
 			workerQueue.addWorker(new MethodModifierCounter(modifierName));
+		}
+
+		String[] attributeModifierNames = { "public", "private", "volatile" };
+		for (String modifierName : attributeModifierNames) {
+			workerQueue.addWorker(new AttributeModifierCounter(modifierName));
 		}
 		// TODO: add more workers here
 		
