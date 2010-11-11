@@ -14,10 +14,12 @@ import org.antlr.runtime.ANTLRInputStream;
 import org.antlr.runtime.CommonTokenStream;
 import org.antlr.runtime.tree.CommonTree;
 
+import utils.PathAndFileNames;
 import workers.CommonTreePackage;
 
 /**
- * This class reads all java source files in the folder "javaprojectsources"
+ * This class reads all java source files in the folder 
+ * PathAndFileNames.PROJECT_SOURCES_PATH
  * and generates a collection of CommonTreePackages 
  */
 public class GenerateTreePackages {
@@ -26,10 +28,8 @@ public class GenerateTreePackages {
 	private JavaLexer lexer;
 	private JavaParser parser;
 	
-	private static final String PATH = "javaprojectsources";
-	
 	public Collection<CommonTreePackage> generate() {
-		File parent = new File(PATH);
+		File parent = new File(PathAndFileNames.PROJECT_SOURCES_PATH);
 		
 		return searchInFolder(parent);
 	}
@@ -69,7 +69,7 @@ public class GenerateTreePackages {
         StringTokenizer tokenizer = new StringTokenizer(path, "/"); 
         
         while(tokenizer.hasMoreTokens()) { 
-             if(tokenizer.nextToken().equals(PATH)) { 
+             if(tokenizer.nextToken().equals(PathAndFileNames.PROJECT_SOURCES_PATH)) { 
                   break; 
              } 
         } 

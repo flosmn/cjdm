@@ -4,6 +4,7 @@ import java.util.Iterator;
 import java.util.LinkedList;
 
 import utils.Logger;
+import utils.PathAndFileNames;
 
 
 public class Database {
@@ -40,7 +41,7 @@ public class Database {
 	
 	public void export() {
 		Logger logger = new Logger();
-		logger.logAndStartNewLine("@relation cjdm");
+		logger.logAndStartNewLine("@relation "+PathAndFileNames.EXPORT_FILE_NAME);
 		
 		for (String attribute : attributes) {
 			logger.logAndStartNewLine("@attribute " + attribute + " integer");
@@ -60,6 +61,8 @@ public class Database {
 			}
 		}
 		
-		logger.writeToFile("javaprojectsources/", "export.arff");
+		logger.writeToFile(
+					PathAndFileNames.PROJECT_SOURCES_PATH,
+					PathAndFileNames.EXPORT_FILE_NAME + ".arff");
 	}
 }
