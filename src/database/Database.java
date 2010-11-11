@@ -41,7 +41,7 @@ public class Database {
 	
 	public void export() {
 		Logger logger = new Logger();
-		logger.logAndStartNewLine("@relation "+PathAndFileNames.EXPORT_FILE_NAME);
+		logger.logAndStartNewLine("@relation "+PathAndFileNames.RELATION_NAME);
 		
 		for (String attribute : attributes) {
 			logger.logAndStartNewLine("@attribute " + attribute + " integer");
@@ -63,6 +63,6 @@ public class Database {
 		
 		logger.writeToFile(
 					PathAndFileNames.PROJECT_SOURCES_PATH,
-					PathAndFileNames.EXPORT_FILE_NAME + ".arff");
+					PathAndFileNames.EXPORT_FILE_NAME);
 	}
 }
