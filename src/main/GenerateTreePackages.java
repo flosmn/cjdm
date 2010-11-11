@@ -28,19 +28,19 @@ public class GenerateTreePackages {
 	
 	private static final String PATH = "javaprojectsources";
 	
-	public Collection<CommonTreePackage> generate(){
+	public Collection<CommonTreePackage> generate() {
 		File parent = new File(PATH);
 		
 		return searchInFolder(parent);
 	}
 	
-	private Collection<CommonTreePackage> searchInFolder(File parent){
+	private Collection<CommonTreePackage> searchInFolder(File parent) {
 		Collection<CommonTreePackage> trees = new HashSet<CommonTreePackage>();
 		File[] files = parent.listFiles();
 		
 		if(files == null){
 			try {
-				if(!parent.getName().endsWith(".java")){
+				if(!parent.getName().endsWith(".java")) {
 					return trees;
 				}
 				
@@ -68,13 +68,13 @@ public class GenerateTreePackages {
         String name = ""; 
         StringTokenizer tokenizer = new StringTokenizer(path, "/"); 
         
-        while(tokenizer.hasMoreTokens()){ 
-             if(tokenizer.nextToken().equals(PATH)){ 
+        while(tokenizer.hasMoreTokens()) { 
+             if(tokenizer.nextToken().equals(PATH)) { 
                   break; 
              } 
         } 
         
-        if(tokenizer.hasMoreElements()){ 
+        if(tokenizer.hasMoreElements()) { 
              name = tokenizer.nextToken(); 
         } 
         

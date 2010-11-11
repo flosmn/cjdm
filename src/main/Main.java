@@ -21,7 +21,7 @@ class Main {
 		
 		Collection<CommonTreePackage> treePackages = (new GenerateTreePackages()).generate();
 
-		for(CommonTreePackage treePackage : treePackages){
+		for(CommonTreePackage treePackage : treePackages) {
 			workerQueue.doWork(treePackage);
 		}		
 

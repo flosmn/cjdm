@@ -1,8 +1,11 @@
 package workers;
 
 import java.io.File;
+import java.util.List;
 
 import org.antlr.runtime.tree.CommonTree;
+
+import utils.DirtyLittleHelper;
 
 /**
  * This class implements a data structure to store a CommonTree and more additional 
@@ -47,6 +50,24 @@ public class CommonTreePackage extends CommonTree{
 	 */
 	public String getProjectName(){
 		return this.projectName;
+	}
+	
+	/**
+	 * Prints the tree to System.out
+	 */
+	public void printTree(){
+		printTree(this.tree, "");
+	}
+	
+	private void printTree(CommonTree tree, String s){
+		System.out.println(s + tree.getText());
+		
+		List<CommonTree> children = DirtyLittleHelper.castList(
+				CommonTree.class, tree.getChildren());
+		
+		for(CommonTree child : children){
+			printTree(child, s + "  ");
+		}
 	}
 
 }
