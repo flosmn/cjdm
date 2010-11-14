@@ -37,14 +37,21 @@ public abstract class Worker {
 			return null;
 		}
 		
-		List<CommonTree> children = DirtyLittleHelper.castList(CommonTree.class, parent.getChildren());
-		
-		for (CommonTree child : children) {
-			if (child.getText().equals(type)) {
-				return child;
-			}
+		if(parent.getText().equals(type)){
+			return parent;
 		}
 		
+		List<CommonTree> children = DirtyLittleHelper.castList(CommonTree.class, parent.getChildren());
+		
+		CommonTree result = null;
+		for (CommonTree child : children) {
+			result = firstChildWithType(child, type);
+			
+			if(result != null) {
+				return result;
+			}
+		}
+				
 		return null;
 	}
 }
