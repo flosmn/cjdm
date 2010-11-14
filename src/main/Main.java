@@ -18,16 +18,15 @@ class Main {
 		
 		String[] methodModifierNames = { "public", "private", "synchronized" };
 		for (String modifierName : methodModifierNames) {
-			//workerQueue.addWorker(new MethodModifierCounter(modifierName));
+			workerQueue.addWorker(new MethodModifierCounter(modifierName));
 		}
 
 		String[] attributeModifierNames = { "public", "private", "volatile" };
 		for (String modifierName : attributeModifierNames) {
-			//workerQueue.addWorker(new AttributeModifierCounter(modifierName));
+			workerQueue.addWorker(new AttributeModifierCounter(modifierName));
 		}
 		workerQueue.addWorker(new SynchronizedBlocksCounter());
 		workerQueue.addWorker(new LockBlocksCounter());
-		
 		// TODO: add more workers here
 		
 		Collection<CommonTreePackage> treePackages = (new GenerateTreePackages()).generate();
