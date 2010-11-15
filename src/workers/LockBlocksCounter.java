@@ -20,7 +20,7 @@ public class LockBlocksCounter extends Worker{
 	
 	@Override
 	public String getAttributeName() {
-		return "lockBlocks";
+		return "lock_blocks";
 	}
 	
 	public void traverse(CommonTree tree){
@@ -29,7 +29,7 @@ public class LockBlocksCounter extends Worker{
 			return;
 		}
 	
-		if (tree.getText() != null && tree.getText().equals("BLOCK_SCOPE")) {
+		if (tree.getText() != null && tree.getText().equals(".")) {
 			processMethod(tree);
 		}
 		

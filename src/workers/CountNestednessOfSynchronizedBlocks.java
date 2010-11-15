@@ -2,29 +2,33 @@ package workers;
 
 import java.util.List;
 
-import main.CommonTreePackage;
-
 import org.antlr.runtime.tree.CommonTree;
 
 import utils.DirtyLittleHelper;
+import main.CommonTreePackage;
 
-public class SynchronizedBlocksCounter extends Worker{
+public class CountNestednessOfSynchronizedBlocks extends Worker{
 
-	private int counter;
+	private int maxNestedNess;
 	
 	@Override
 	public String getAttributeName() {
-		return "synchronized_bocks";
+		return "nestedness_synchronized_blocks";
 	}
 	
-	public void traverse(CommonTree tree){
+	public void traverse(CommonTree tree, int nestedness){
 		if(tree == null){
 			System.out.println("tree == null");
 			return;
 		}
 	
 		if (tree.getText() != null && tree.getText().equals("BLOCK_SCOPE")) {
-			processMethod(tree);
+			if(hasSynchronized(tree)){
+				nestedness++;
+				if(nestedness > maxNestedNess){
+					maxNestedNess = nestedness;
+				}
+			}
 		}
 		
 		List<CommonTree> children = DirtyLittleHelper.castList(CommonTree.class, tree.getChildren());
@@ -33,24 +37,22 @@ public class SynchronizedBlocksCounter extends Worker{
 		}
 		
 		for (CommonTree child : children) {
-			traverse(child);
+			traverse(child, nestedness);
 		}
 	}
 
-	private void processMethod(CommonTree tree) {
+	private boolean hasSynchronized(CommonTree tree) {
 		CommonTree modifierNode = firstChildMatchingName(tree, "synchronized");
-		
-		if (modifierNode != null) {
-			++counter;
-		}
+		return (modifierNode != null);
 	}
 
 	@Override
 	public int doWork(CommonTreePackage treePackage) {
-		counter = 0;
+		maxNestedNess = 0;
 		
-		traverse(treePackage.getTree());
-
-		return counter;
+		traverse(treePackage.getTree(), 0);
+		
+		return maxNestedNess;
 	}
+
 }
