@@ -5,7 +5,6 @@ import java.util.LinkedList;
 import database.Database;
 import database.Record;
 
-import workers.CommonTreePackage;
 import workers.Worker;
 
 public class WorkerQueue {

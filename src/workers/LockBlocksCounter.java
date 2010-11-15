@@ -2,6 +2,8 @@ package workers;
 
 import java.util.List;
 
+import main.CommonTreePackage;
+
 import org.antlr.runtime.tree.CommonTree;
 
 import utils.DirtyLittleHelper;

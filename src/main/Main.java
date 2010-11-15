@@ -2,10 +2,8 @@ package main;
 
 import java.util.Collection;
 
-import workers.AttributeModifierCounter;
-import workers.CommonTreePackage;
+import workers.ModifierCounter;
 import workers.LockBlocksCounter;
-import workers.MethodModifierCounter;
 import workers.SynchronizedBlocksCounter;
 
 /**
@@ -16,12 +14,12 @@ class Main {
 	public static void main(String[] args) {
 		WorkerQueue workerQueue = new WorkerQueue();
 		
-		workerQueue.addWorker(new MethodModifierCounter("public"));
-		workerQueue.addWorker(new MethodModifierCounter("private"));
-		workerQueue.addWorker(new MethodModifierCounter("synchronized"));
-		workerQueue.addWorker(new AttributeModifierCounter("public"));
-		workerQueue.addWorker(new AttributeModifierCounter("private"));
-		workerQueue.addWorker(new AttributeModifierCounter("volatile"));
+		workerQueue.addWorker(new ModifierCounter("METHOD_DECL", "public"));
+		workerQueue.addWorker(new ModifierCounter("METHOD_DECL", "private"));
+		workerQueue.addWorker(new ModifierCounter("METHOD_DECL", "synchronized"));
+		workerQueue.addWorker(new ModifierCounter("VAR_DECLARATION", "public"));
+		workerQueue.addWorker(new ModifierCounter("VAR_DECLARATION", "private"));
+		workerQueue.addWorker(new ModifierCounter("VAR_DECLARATION", "volatile"));
 		workerQueue.addWorker(new SynchronizedBlocksCounter());
 		workerQueue.addWorker(new LockBlocksCounter());
 		// TODO: add more workers here
