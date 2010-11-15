@@ -44,7 +44,7 @@ public class Database {
 		logger.logAndStartNewLine("@relation "+PathAndFileNames.RELATION_NAME);
 		
 		for (String attribute : attributes) {
-			logger.logAndStartNewLine("@attribute " + attribute + " integer");
+			logger.logAndStartNewLine("@attribute \"" + attribute + "\" integer");
 		}
 		
 		logger.logAndStartNewLine("@data");
