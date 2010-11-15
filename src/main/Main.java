@@ -16,15 +16,12 @@ class Main {
 	public static void main(String[] args) {
 		WorkerQueue workerQueue = new WorkerQueue();
 		
-		String[] methodModifierNames = { "public", "private", "synchronized" };
-		for (String modifierName : methodModifierNames) {
-			workerQueue.addWorker(new MethodModifierCounter(modifierName));
-		}
-
-		String[] attributeModifierNames = { "public", "private", "volatile" };
-		for (String modifierName : attributeModifierNames) {
-			workerQueue.addWorker(new AttributeModifierCounter(modifierName));
-		}
+		workerQueue.addWorker(new MethodModifierCounter("public"));
+		workerQueue.addWorker(new MethodModifierCounter("private"));
+		workerQueue.addWorker(new MethodModifierCounter("synchronized"));
+		workerQueue.addWorker(new AttributeModifierCounter("public"));
+		workerQueue.addWorker(new AttributeModifierCounter("private"));
+		workerQueue.addWorker(new AttributeModifierCounter("volatile"));
 		workerQueue.addWorker(new SynchronizedBlocksCounter());
 		workerQueue.addWorker(new LockBlocksCounter());
 		// TODO: add more workers here
@@ -36,5 +33,7 @@ class Main {
 		}		
 
 		workerQueue.exportResults();
+		
+		System.out.println("Done!");
 	}
 }
