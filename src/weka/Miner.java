@@ -4,7 +4,9 @@ import java.io.File;
 
 import utils.PathAndFileNames;
 import weka.associations.Apriori;
+import weka.associations.AprioriItemSet;
 import weka.core.Instances;
+import weka.core.Utils;
 import weka.core.converters.ConverterUtils.DataSource;
 import weka.filters.unsupervised.attribute.NumericToNominal;
 
@@ -57,8 +59,8 @@ public class Miner {
 			data = numToNom(data); 		
 			apriori = createAndSetApriori();
 			//mining, returns void, changes apriori
-			apriori.buildAssociations(data); 
-			System.out.println(apriori);
+			apriori.buildAssociations(data);
+			printRules(apriori, false);
 		} catch (Exception e) {
 			System.err.println("Error in doMining()");
 			System.err.println("try again");
@@ -102,5 +104,48 @@ public class Miner {
 		numToNom.setInputFormat(data);
 		data = NumericToNominal.useFilter(data, numToNom);
 		return data;
+	}
+	
+	/**
+	 * print rules, detailed == false
+	 * @param apriori, Apriori
+	 */
+	static void printRules(Apriori apriori) {
+		printRules(apriori, false);
+	}
+
+	/**
+	 * prints the rules
+	 * @param apriori, Apriori
+	 * @param detailed, boolean
+	 */
+	static void printRules(Apriori apriori, boolean detailed) {
+		if(detailed){
+				System.out.println(apriori);
+		}else{
+			StringBuffer text = new StringBuffer();
+			text.append("\nBest rules found:\n\n");
+			for (int i = 0; i < apriori.getAllTheRules()[0].size(); i++) {
+				text.append(Utils
+					.doubleToString((double) i + 1, (int) (Math
+							.log(apriori.getNumRules())
+							/ Math.log(10) + 1), 0)
+							+ ". "
+							+ ((AprioriItemSet) apriori.getAllTheRules()[0]	
+							                                             .elementAt(i)).toString(apriori.getInstancesNoClass())//(apriori.m_instances)
+                            + " ==> "
+                            + ((AprioriItemSet) apriori.getAllTheRules()[1]
+                                                                         .elementAt(i)).toString(apriori.getInstancesNoClass())//(apriori.m_instances)
+                            + "    conf:("
+			                + Utils
+			                .doubleToString(
+			                		((Double) apriori.getAllTheRules()[2]
+			                		                                   .elementAt(i))
+			                		                                   .doubleValue(), 2)
+			                 + ")");
+				text.append('\n');
+			}
+			System.out.println(text);
+		}
 	}
 }
