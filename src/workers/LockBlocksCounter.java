@@ -44,8 +44,8 @@ public class LockBlocksCounter extends Worker{
 	}
 
 	private void processMethod(CommonTree tree) {
-		CommonTree lockNode = firstChildWithType(tree, "lock");
-		CommonTree unlockNode = firstChildWithType(tree, "unlock");
+		CommonTree lockNode = firstChildMatchingName(tree, "lock");
+		CommonTree unlockNode = firstChildMatchingName(tree, "unlock");
 		
 		if (lockNode != null && unlockNode != null) {
 			++counter;

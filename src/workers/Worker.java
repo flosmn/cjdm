@@ -29,28 +29,21 @@ public abstract class Worker {
 	public abstract int doWork(CommonTreePackage treePackage);
 	
 	/**
-	 * helper method to find the first child of a given type
+	 * helper method to find the first child of a given name
 	 * @param parent the tree to scan the children of
-	 * @param type the type of the searched child
+	 * @param name the name of the searched child (regex)
 	 * @return the first child of the given type or null if none is found
 	 */
-	public CommonTree firstChildWithType(CommonTree parent, String type) {
+	public CommonTree firstChildMatchingName(CommonTree parent, String name) {
 		if (parent == null) {
 			return null;
 		}
 		
-		if(parent.getText().equals(type)){
-			return parent;
-		}
-		
 		List<CommonTree> children = DirtyLittleHelper.castList(CommonTree.class, parent.getChildren());
 		
-		CommonTree result = null;
 		for (CommonTree child : children) {
-			result = firstChildWithType(child, type);
-			
-			if(result != null) {
-				return result;
+			if (child.getText().matches(name)) {
+				return child;
 			}
 		}
 				

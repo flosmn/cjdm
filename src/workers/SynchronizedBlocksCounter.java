@@ -38,7 +38,7 @@ public class SynchronizedBlocksCounter extends Worker{
 	}
 
 	private void processMethod(CommonTree tree) {
-		CommonTree modifierNode = firstChildWithType(tree, "synchronized");
+		CommonTree modifierNode = firstChildMatchingName(tree, "synchronized");
 		
 		if (modifierNode != null) {
 			++counter;

@@ -51,23 +51,4 @@ public class CommonTreePackage extends CommonTree{
 	public String getProjectName(){
 		return this.projectName;
 	}
-	
-	/**
-	 * Prints the tree to System.out
-	 */
-	public void printTree(){
-		printTree(this.tree, "");
-	}
-	
-	private void printTree(CommonTree tree, String s){
-		System.out.println(s + tree.getText());
-		
-		List<CommonTree> children = DirtyLittleHelper.castList(
-				CommonTree.class, tree.getChildren());
-		
-		for(CommonTree child : children){
-			printTree(child, s + "  ");
-		}
-	}
-
 }
