@@ -2,7 +2,7 @@ import java.util.concurrent.locks.Lock;
 
 public class DummyLock3 {
 
-	Lock lock = new Lock();
+	Lock myLock = new Lock();
 	private int i = 10;
 	private boolean right = false;
 
@@ -14,20 +14,20 @@ public class DummyLock3 {
 	}
 
 	public void calc() {
-		lock.lock();
+		myLock.lock();
 		i = i * i;
-		lock.unlock();
+		myLock.unlock();
 	}
 
 	public void check() {
-		lock.lock();
+		myLock.lock();
 		right = (i == 100);
-		lock.unlock();
+		myLock.unlock();
 	}
 
 	public void log() {
-		lock.lock();
+		myLock.lock();
 		System.out.println(right);
-		lock.unlock();
+		myLock.unlock();
 	}
 }

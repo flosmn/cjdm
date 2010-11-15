@@ -4,8 +4,6 @@ import java.util.Collection;
 
 import workers.Counter;
 import workers.CountNestednessOfSynchronizedBlocks;
-import workers.LockBlocksCounter;
-import workers.SynchronizedBlocksCounter;
 
 /**
  * Parse a java file or directory of java files using the generated parser
@@ -21,8 +19,10 @@ class Main {
 		workerQueue.addWorker(new Counter("VAR_DECLARATION", "MODIFIER_LIST", "public"));
 		workerQueue.addWorker(new Counter("VAR_DECLARATION", "MODIFIER_LIST", "private"));
 		workerQueue.addWorker(new Counter("VAR_DECLARATION", "MODIFIER_LIST", "volatile"));
-		workerQueue.addWorker(new SynchronizedBlocksCounter());
-		workerQueue.addWorker(new LockBlocksCounter());
+		workerQueue.addWorker(new Counter("BLOCK_SCOPE", "synchronized"));
+		// TODO: create new method counter (don't count matching called objects)
+		workerQueue.addWorker(new Counter("METHOD_CALL", "\\.", "lock"));
+		workerQueue.addWorker(new Counter("METHOD_CALL", "\\.", "unlock"));
 		workerQueue.addWorker(new CountNestednessOfSynchronizedBlocks());
 		// TODO: add more workers here
 		

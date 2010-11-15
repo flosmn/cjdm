@@ -24,7 +24,9 @@ public class Counter extends Worker {
 			return;
 		}
 		
-		processNode(tree);
+		if (matchesPattern(tree)) {
+			++counter;
+		}
 				
 		List<CommonTree> children = DirtyLittleHelper.castList(CommonTree.class, tree.getChildren());
 
@@ -34,24 +36,27 @@ public class Counter extends Worker {
 	}
 
 
-	private void processNode(CommonTree tree) {
-		processTree(tree, 0);
+	private boolean matchesPattern(CommonTree tree) {
+		return matchesPattern(tree, 0);
 	}
 
-	private void processTree(CommonTree tree, int nameIndex) {
+	private boolean matchesPattern(CommonTree tree, int nameIndex) {
 		if (tree.getText() == null || !tree.getText().matches(nodeNames[nameIndex])) {
-			return;
+			return false;
 		}
-		
+
 		if (nameIndex == nodeNames.length - 1) {
-			++counter;
-			return;
+			return true;
 		}
 		
 		List<CommonTree> children = DirtyLittleHelper.castList(CommonTree.class, tree.getChildren());
 		for (CommonTree child : children) {
-			processTree(child, nameIndex + 1);
+			if (matchesPattern(child, nameIndex + 1)) {
+				return true;
+			}
 		}
+		
+		return false;
 	}
 
 	@Override
