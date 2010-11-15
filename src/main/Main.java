@@ -26,12 +26,14 @@ class Main {
 		workerQueue.addWorker(new LockBlocksCounter());
 		// TODO: add more workers here
 		
+		// TODO: generate trees on demand to reduce memory overhead
 		Collection<CommonTreePackage> treePackages = (new GenerateTreePackages()).generate();
 
 		for(CommonTreePackage treePackage : treePackages) {
 			workerQueue.doWork(treePackage);
 		}		
 
+		// TODO: change database to export every record immediately
 		workerQueue.exportResults();
 		
 		System.out.println("Done!");
