@@ -1,7 +1,7 @@
 package weka;
 
+import utils.PathAndFileNames;
 import weka.associations.Apriori;
-import weka.core.FastVector;
 import weka.core.Instances;
 import weka.core.converters.ConverterUtils.DataSource;
 import weka.filters.unsupervised.attribute.NumericToNominal;
@@ -9,7 +9,7 @@ import weka.filters.unsupervised.attribute.NumericToNominal;
 public class wekaTest {
 
 	public static void main(String[] args) throws Exception {
-		final String FILENAME = "bank-data";
+//		final String FILENAME = "bank-data";
 		
 		/** CSV (excel format) import */
 		//still not working -.-
@@ -20,7 +20,9 @@ public class wekaTest {
 		
 		
 		/** Datei laden*/
-		DataSource source = new DataSource("./javaprojectsources/data/" + FILENAME + ".arff");
+//		DataSource source = new DataSource("./javaprojectsources/d ata/" + FILENAME + ".arff");
+		DataSource source = new DataSource(PathAndFileNames.PROJECT_SOURCES_PATH + PathAndFileNames.EXPORT_FILE_NAME);
+		
 		Instances data = source.getDataSet();
 
 		/** numeric Werte zu nominal konvertieren */
