@@ -18,7 +18,7 @@ public class LockBlocksCounter extends Worker{
 	
 	@Override
 	public String getAttributeName() {
-		return "lockBlocks";
+		return "lock_blocks";
 	}
 	
 	public void traverse(CommonTree tree){
