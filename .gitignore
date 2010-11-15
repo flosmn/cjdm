@@ -1,4 +1,3 @@
-.gitignore
 bin/*
 src/grammar/*.java
 src/grammar/*.tokens
