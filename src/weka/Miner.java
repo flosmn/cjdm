@@ -1,5 +1,7 @@
 package weka;
 
+import java.io.File;
+
 import utils.PathAndFileNames;
 import weka.associations.Apriori;
 import weka.core.Instances;
@@ -21,7 +23,15 @@ public class Miner {
 	 */
 	@Deprecated
 	public static void main(String[] args) throws Exception {
-		doMining();
+		File folder = new File(PathAndFileNames.PROJECT_SOURCES_PATH);
+		File[] listOfFiles = folder.listFiles();
+		for (int i = 0; i < listOfFiles.length; i++) {
+			if (listOfFiles[i].isFile() && listOfFiles[i].getName().endsWith(".arff")) {
+				System.out.println("____________________________________________");
+				System.out.println(listOfFiles[i].getName());
+				doMining(PathAndFileNames.PROJECT_SOURCES_PATH + listOfFiles[i].getName());
+			}
+		}
 	}
 	
 	/**
