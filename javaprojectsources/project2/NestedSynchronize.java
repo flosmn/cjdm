@@ -17,10 +17,12 @@ public class NestedSynchronize{
 				eat();
 				synchronized(this){
 					eat();
-					synchronized(this){
-						eat();
-						eat();
-					}	
+					if (bla) {
+						synchronized(this){
+							eat();
+							eat();
+						}	
+					}
 				}	
 			}		
 		}

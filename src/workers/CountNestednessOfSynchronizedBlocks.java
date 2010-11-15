@@ -9,7 +9,7 @@ import main.CommonTreePackage;
 
 public class CountNestednessOfSynchronizedBlocks extends Worker{
 
-	private int maxNestedNess;
+	private int maxNestedness;
 	
 	@Override
 	public String getAttributeName() {
@@ -25,8 +25,8 @@ public class CountNestednessOfSynchronizedBlocks extends Worker{
 		if (tree.getText() != null && tree.getText().equals("BLOCK_SCOPE")) {
 			if(hasSynchronized(tree)){
 				nestedness++;
-				if(nestedness > maxNestedNess){
-					maxNestedNess = nestedness;
+				if(nestedness > maxNestedness){
+					maxNestedness = nestedness;
 				}
 			}
 		}
@@ -48,11 +48,11 @@ public class CountNestednessOfSynchronizedBlocks extends Worker{
 
 	@Override
 	public int doWork(CommonTreePackage treePackage) {
-		maxNestedNess = 0;
+		maxNestedness = 0;
 		
 		traverse(treePackage.getTree(), 0);
 		
-		return maxNestedNess;
+		return maxNestedness;
 	}
 
 }
