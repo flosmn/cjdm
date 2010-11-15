@@ -9,6 +9,7 @@ public class DummySynchronized {
 	}
 	
 	public void calc() {
+		int p = 5;
 		synchronized(this){
 			i = i * i;
 		}

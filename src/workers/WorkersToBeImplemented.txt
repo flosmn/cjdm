@@ -3,8 +3,8 @@ Workers that are not implemented yet
 method scope:
 	- count lines of code
 	- count number of method calls
-	- count number of with "synchronized" synchronized blocks
-	- count number of with locks synchronized blocks
+	- count number of with "synchronized" synchronized blocks (is implemented on class scope)
+	- count number of with locks synchronized blocks (is implemented on class scope)
 	- count number of locks(), unlock() on objects of type Lock
 	
 	- collect maximal nesting of loops

@@ -2,6 +2,7 @@ package main;
 
 import java.util.Collection;
 
+import workers.CountNestednessOfSynchronizedBlocks;
 import workers.ModifierCounter;
 import workers.LockBlocksCounter;
 import workers.SynchronizedBlocksCounter;
@@ -22,6 +23,7 @@ class Main {
 		workerQueue.addWorker(new ModifierCounter("VAR_DECLARATION", "volatile"));
 		workerQueue.addWorker(new SynchronizedBlocksCounter());
 		workerQueue.addWorker(new LockBlocksCounter());
+		workerQueue.addWorker(new CountNestednessOfSynchronizedBlocks());
 		// TODO: add more workers here
 		
 		// TODO: generate trees on demand to reduce memory overhead
