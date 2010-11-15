@@ -23,13 +23,13 @@ public class Miner {
 	 */
 	@Deprecated
 	public static void main(String[] args) throws Exception {
-		File folder = new File(PathAndFileNames.PROJECT_SOURCES_PATH);
+		File folder = new File(PathAndFileNames.WEKA_TEST_DATA_PATH);
 		File[] listOfFiles = folder.listFiles();
 		for (int i = 0; i < listOfFiles.length; i++) {
 			if (listOfFiles[i].isFile() && listOfFiles[i].getName().endsWith(".arff")) {
 				System.out.println("____________________________________________");
 				System.out.println(listOfFiles[i].getName());
-				doMining(PathAndFileNames.PROJECT_SOURCES_PATH + listOfFiles[i].getName());
+				doMining(PathAndFileNames.WEKA_TEST_DATA_PATH + listOfFiles[i].getName());
 			}
 		}
 	}
@@ -38,7 +38,7 @@ public class Miner {
 	 * calls doMining(../../cjdm.arf)
 	 */
 	public static void doMining(){
-		doMining(PathAndFileNames.PROJECT_SOURCES_PATH + PathAndFileNames.EXPORT_FILE_NAME);
+		doMining(PathAndFileNames.WEKA_TEST_DATA_PATH + PathAndFileNames.EXPORT_FILE_NAME);
 	}
 	
 	/**

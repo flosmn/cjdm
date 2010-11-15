@@ -62,7 +62,7 @@ public class Database {
 		}
 		
 		logger.writeToFile(
-					PathAndFileNames.PROJECT_SOURCES_PATH,
+					PathAndFileNames.WEKA_TEST_DATA_PATH,
 					PathAndFileNames.EXPORT_FILE_NAME);
 	}
 }
