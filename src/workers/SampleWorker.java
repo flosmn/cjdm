@@ -1,5 +1,7 @@
 package workers;
 
+import main.CommonTreePackage;
+
 /**
  * This sample worker illustrates how a worker is meant to be implemented.
  * It counts the number of children of the root of the syntax tree.

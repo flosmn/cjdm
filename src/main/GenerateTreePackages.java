@@ -15,7 +15,6 @@ import org.antlr.runtime.CommonTokenStream;
 import org.antlr.runtime.tree.CommonTree;
 
 import utils.PathAndFileNames;
-import workers.CommonTreePackage;
 
 /**
  * This class reads all java source files in the folder 

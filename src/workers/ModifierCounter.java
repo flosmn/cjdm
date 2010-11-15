@@ -2,16 +2,20 @@ package workers;
 
 import java.util.List;
 
+import main.CommonTreePackage;
+
 import org.antlr.runtime.tree.CommonTree;
 
 import utils.DirtyLittleHelper;
 
-public class MethodModifierCounter extends Worker {
+public class ModifierCounter extends Worker {
 	
 	private int modifierCounter;
+	private String context;
 	private String modifierName;
 	
-	public MethodModifierCounter(String modifierName) {
+	public ModifierCounter(String context, String modifierName) {
+		this.context = context;
 		this.modifierName = modifierName;
 	}
 	
@@ -21,7 +25,7 @@ public class MethodModifierCounter extends Worker {
 			return;
 		}
 	
-		if (tree.getText() != null && tree.getText().endsWith("METHOD_DECL")) {
+		if (tree.getText() != null && tree.getText().endsWith(context)) {
 			processMethod(tree);
 		}
 		
@@ -55,7 +59,7 @@ public class MethodModifierCounter extends Worker {
 
 	@Override
 	public String getAttributeName() {
-		return "method_modifier_" + modifierName;
+		return context + "_" + modifierName;
 	}
 	
 }
