@@ -1,6 +1,5 @@
-.gitignore
 bin/*
 src/grammar/*.java
 src/grammar/*.tokens
-javaprojectsources/*.arff
+javaprojectsources/data/*.arff
 *.DS_Store

@@ -14,7 +14,7 @@ public class SynchronizedBlocksCounter extends Worker{
 	
 	@Override
 	public String getAttributeName() {
-		return "synchronizedBlocks";
+		return "synchronized_bocks";
 	}
 	
 	public void traverse(CommonTree tree){
