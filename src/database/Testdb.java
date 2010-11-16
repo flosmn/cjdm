@@ -57,13 +57,11 @@ public class Testdb {
 
         // do something with the result set.
         dump(rs);
-        st.close();    // NOTE!! if you close a statement the associated ResultSet is
-
-        // closed too
-        // so you should copy the contents to some other object.
-        // the result set is invalidated also  if you recycle an Statement
-        // and try to execute some other query before the result set has been
-        // completely examined.
+        st.close();     // NOTE!! if you close a statement the associated ResultSet is
+        				// closed too so you should copy the contents to some other object.
+        				// the result set is invalidated also  if you recycle an Statement
+        				// and try to execute some other query before the result set has been
+        				// completely examined.
     }
 
     // use for SQL commands CREATE, DROP, INSERT and UPDATE
@@ -96,6 +94,7 @@ public class Testdb {
         // assume we are pointing to BEFORE the first row
         // rs.next() points to next row and returns true
         // or false if there is no next row, which breaks the loop
+        
         for (; rs.next(); ) {
             for (i = 0; i < colmax; ++i) {
                 o = rs.getObject(i + 1);    // Is SQL the first column is indexed
@@ -136,7 +135,7 @@ public class Testdb {
             db.update(
                 "INSERT INTO sample_table(str_col,num_col) VALUES('GM', 400)");
 
-            db.query("SELECT * FROM sample_table WHERE num_col < 250");
+            db.query("SELECT * FROM sample_table");
 
             db.shutdown();
         } catch (SQLException ex3) {
