@@ -11,10 +11,12 @@ import utils.DirtyLittleHelper;
 
 public class Counter extends Worker {
 	private int counter;
+	private String attributeName;
 	private String[] nodeNames;
 	private boolean isMethodCallCounter;
 	
-	public Counter(String ... nodeNames) {
+	public Counter(String attributeName, String ... nodeNames) {
+		this.attributeName = attributeName;
 		this.scope = Scope.METHOD;
 		this.nodeNames = nodeNames;
 		this.isMethodCallCounter = nodeNames[0].equals("METHOD_CALL");
@@ -31,11 +33,7 @@ public class Counter extends Worker {
 	
 	@Override
 	public String getAttributeName() {
-		String names = nodeNames[0];
-		for (int i = 1; i < nodeNames.length; ++i) {
-			names += "," + nodeNames[i];
-		}
-		return "Counter(" + names + ")";
+		return attributeName;
 	}
 
 	private boolean matchesPattern(CommonTree tree) {

@@ -6,12 +6,12 @@ import java.util.List;
 
 import org.antlr.runtime.tree.CommonTree;
 
-import database.Relation;
-import database.Record;
-import database.Scope;
-
 import utils.DirtyLittleHelper;
 import workers.Worker;
+import database.Database;
+import database.Record;
+import database.Relation;
+import database.Scope;
 
 // TODO: replace all LinkedLists by "LinkedHashLists"
 
@@ -21,10 +21,10 @@ public class WorkerQueue {
 	private HashMap<Scope, Relation> relations = new HashMap<Scope, Relation>();
 	private CommonTreePackage currentTreePackage;
 	
-	public WorkerQueue() {
+	public WorkerQueue(Database database) {
 		for (Scope scope : Scope.getInstances()) {
 			queues.put(scope, new LinkedList<Worker>());
-			relations.put(scope, new Relation(scope));
+			relations.put(scope, new Relation(database, scope));
 		}
 	}
 	
@@ -67,11 +67,6 @@ public class WorkerQueue {
 
 			traverse(child);
 		}
-	}
-
-	public void exportResults() {
-	//	System.out.println(relations.get(Scope.CLASS));
-	//	relations.export();
 	}
 	
 	private void process(CommonTreePackage treePackage, Scope scope) {

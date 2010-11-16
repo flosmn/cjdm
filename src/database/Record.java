@@ -4,8 +4,11 @@ import java.util.HashMap;
 import java.util.LinkedList;
 
 public class Record {
-	HashMap<String, Integer> map = new HashMap<String, Integer>();
-	LinkedList<String> attributes = new LinkedList<String>();
+	private HashMap<String, Integer> map = new HashMap<String, Integer>();
+	private LinkedList<String> attributes = new LinkedList<String>();
+	private int ID = -1;				// TODO: setter!
+	private int parentID = -1;
+	private String name = "name";
 	
 	public Record(LinkedList<String> attributes) {
 		this.attributes = attributes;
@@ -37,5 +40,16 @@ public class Record {
 	
 	public String toString() {
 		return map.toString();
+	}
+
+	public String insertSuffix() {
+		String suffix = "( " + ID + ", " + parentID + ", '" + name + "'";
+		for (Integer value : getValues()) {
+			suffix += ", " + value;
+		}
+		suffix += " )";
+
+		return suffix;
+		
 	}
 }

@@ -2,6 +2,9 @@ package main;
 
 import java.util.Collection;
 
+import database.Database;
+
+import utils.PathAndFileNames;
 import workers.Counter;
 import workers.CountNestednessOfSynchronizedBlocks;
 
@@ -11,18 +14,19 @@ import workers.CountNestednessOfSynchronizedBlocks;
  */
 class Main {
 	public static void main(String[] args) {
-		WorkerQueue workerQueue = new WorkerQueue();
+		Database database = new Database(PathAndFileNames.DATA_BASE_PATH);
 		
-		workerQueue.addWorker(new Counter(".*METHOD_DECL", "MODIFIER_LIST", "public"));
-		workerQueue.addWorker(new Counter(".*METHOD_DECL", "MODIFIER_LIST", "private"));
-		workerQueue.addWorker(new Counter(".*METHOD_DECL", "MODIFIER_LIST", "synchronized"));
-		workerQueue.addWorker(new Counter("VAR_DECLARATION", "MODIFIER_LIST", "public"));
-		workerQueue.addWorker(new Counter("VAR_DECLARATION", "MODIFIER_LIST", "private"));
-		workerQueue.addWorker(new Counter("VAR_DECLARATION", "MODIFIER_LIST", "volatile"));
-		workerQueue.addWorker(new Counter("BLOCK_SCOPE", "synchronized"));
-		// TODO: create new method counter (don't count matching called objects)
-		workerQueue.addWorker(new Counter("METHOD_CALL", "\\.", "lock"));
-		workerQueue.addWorker(new Counter("METHOD_CALL", "\\.", "unlock"));
+		WorkerQueue workerQueue = new WorkerQueue(database);
+		
+		workerQueue.addWorker(new Counter("public_methods", ".*METHOD_DECL", "MODIFIER_LIST", "public"));
+		workerQueue.addWorker(new Counter("private_methods", ".*METHOD_DECL", "MODIFIER_LIST", "private"));
+		workerQueue.addWorker(new Counter("synchronized_methods", ".*METHOD_DECL", "MODIFIER_LIST", "synchronized"));
+		workerQueue.addWorker(new Counter("public_variables", "VAR_DECLARATION", "MODIFIER_LIST", "public"));
+		workerQueue.addWorker(new Counter("private_variables", "VAR_DECLARATION", "MODIFIER_LIST", "private"));
+		workerQueue.addWorker(new Counter("volatile_variables", "VAR_DECLARATION", "MODIFIER_LIST", "volatile"));
+		workerQueue.addWorker(new Counter("synchronized_blocks", "BLOCK_SCOPE", "synchronized"));
+		workerQueue.addWorker(new Counter("lock_calls", "METHOD_CALL", "\\.", "lock"));
+		workerQueue.addWorker(new Counter("unlock_calls", "METHOD_CALL", "\\.", "unlock"));
 		workerQueue.addWorker(new CountNestednessOfSynchronizedBlocks());
 		// TODO: add more workers here
 		
@@ -32,9 +36,9 @@ class Main {
 		for(CommonTreePackage treePackage : treePackages) {
 			workerQueue.doWork(treePackage);
 		}		
-
-		// TODO: change database to export every record immediately
-		workerQueue.exportResults();
+		
+		database.query("SELECT * FROM method");
+		database.shutdown();
 		
 		System.out.println("Done!");
 	}
