@@ -1,17 +1,16 @@
 package database;
 
-import java.util.Iterator;
 import java.util.LinkedList;
 
-import utils.Logger;
-import utils.PathAndFileNames;
-
-
-public class Database {
+public class Relation {
+	private Scope scope;	
 	private boolean attributesFinished;
 	private LinkedList<String> attributes = new LinkedList<String>();
-	private LinkedList<LinkedList<Integer>> list = new LinkedList<LinkedList<Integer>>();
-
+	
+	public Relation (Scope scope) {
+		this.scope = scope;
+	}
+	
 	public void addAttribute(String attribute) {
 		if (attributesFinished) {
 			System.out.println("should not add attributes anymore");
@@ -32,13 +31,15 @@ public class Database {
 			System.out.println("adding invalid record");
 		}
 
-		list.add(record.getValues());
+		System.out.println(scope + ": " + record.getValues());
+		// TODO: write to db
 	}
 
 	public String toString() {
-		return attributes.toString() + "\n" + list.toString();
+		return attributes.toString();
 	}
 	
+	/*
 	public void export() {
 		Logger logger = new Logger();
 		logger.logAndStartNewLine("@relation "+PathAndFileNames.RELATION_NAME);
@@ -64,5 +65,10 @@ public class Database {
 		logger.writeToFile(
 					PathAndFileNames.WEKA_TEST_DATA_PATH,
 					PathAndFileNames.EXPORT_FILE_NAME);
+	}
+	*/
+	
+	public Scope getScope() {
+		return scope;
 	}
 }

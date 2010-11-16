@@ -1,11 +1,7 @@
 package main;
 
 import java.io.File;
-import java.util.List;
-
 import org.antlr.runtime.tree.CommonTree;
-
-import utils.DirtyLittleHelper;
 
 /**
  * This class implements a data structure to store a CommonTree and more additional 
@@ -22,6 +18,12 @@ public class CommonTreePackage extends CommonTree{
 		this.tree = t;
 		this.projectName = p;
 		this.generatedFromFile = f;
+	}
+	
+	public CommonTreePackage(CommonTree t, CommonTreePackage p) {
+		this.tree = t;
+		this.projectName = p.projectName;
+		this.generatedFromFile = p.generatedFromFile;
 	}
 	
 	/**

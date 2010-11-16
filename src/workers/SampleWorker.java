@@ -1,5 +1,6 @@
 package workers;
 
+import database.Scope;
 import main.CommonTreePackage;
 
 /**
@@ -8,7 +9,12 @@ import main.CommonTreePackage;
  * @author welle
  */
 public class SampleWorker extends Worker {
-
+	protected Scope scope = Scope.METHOD;
+	
+	public SampleWorker() {
+		this.scope = Scope.METHOD;
+	}
+	
 	@Override
 	public String getAttributeName() {
 		return "number_of_childs";
@@ -18,5 +24,5 @@ public class SampleWorker extends Worker {
 	public int doWork(CommonTreePackage treePackage) {
 		return treePackage.getTree().getChildCount();
 	}
-	
+
 }

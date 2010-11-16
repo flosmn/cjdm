@@ -1,16 +1,32 @@
 package main;
 
+import java.util.HashMap;
 import java.util.LinkedList;
+import java.util.List;
 
-import database.Database;
+import org.antlr.runtime.tree.CommonTree;
+
+import database.Relation;
 import database.Record;
+import database.Scope;
 
+import utils.DirtyLittleHelper;
 import workers.Worker;
+
+// TODO: replace all LinkedLists by "LinkedHashLists"
 
 public class WorkerQueue {
 	private boolean workerInitializationFinished;
-	private LinkedList<Worker> workers = new LinkedList<Worker>();
-	private Database database = new Database();
+	private HashMap<Scope, LinkedList<Worker>> queues = new HashMap<Scope, LinkedList<Worker>>();
+	private HashMap<Scope, Relation> relations = new HashMap<Scope, Relation>();
+	private CommonTreePackage currentTreePackage;
+	
+	public WorkerQueue() {
+		for (Scope scope : Scope.getInstances()) {
+			queues.put(scope, new LinkedList<Worker>());
+			relations.put(scope, new Relation(scope));
+		}
+	}
 	
 	public void addWorker(Worker worker) {
 		if (workerInitializationFinished) {
@@ -18,24 +34,50 @@ public class WorkerQueue {
 			return;
 		}
 		
-		workers.add(worker);
-		database.addAttribute(worker.getAttributeName());
+		Scope scope = worker.getScope();
+		LinkedList<Worker> queue = queues.get(scope);
+		queue.add(worker);
+		relations.get(worker.getScope()).addAttribute(worker.getAttributeName());
 	}
 	
 	public void doWork(CommonTreePackage treePackage) {
 		workerInitializationFinished = true;
 		
-		Record record = database.newRecord();
+		currentTreePackage = treePackage;
 		
-		for (Worker worker : workers) {
-			record.setValueForAttribute(worker.doWork(treePackage), worker.getAttributeName());
-		}
+		traverse(treePackage.getTree());
+	}
 
-		database.add(record);
+	private void traverse(CommonTree parent) {
+		List<CommonTree> children = DirtyLittleHelper.castList(CommonTree.class, parent.getChildren());
+		
+		for (CommonTree child : children) {
+			if (child.getText().equals("class")) {
+				process(new CommonTreePackage(child, currentTreePackage), Scope.CLASS);
+			}
+			
+			if (child.getText().matches(".*METHOD_DECL")) {
+				process(new CommonTreePackage(child, currentTreePackage), Scope.METHOD);
+
+				continue;
+			}
+
+			traverse(child);
+		}
 	}
 
 	public void exportResults() {
-		database.export();
+	//	System.out.println(relations.get(Scope.CLASS));
+	//	relations.export();
 	}
 	
+	private void process(CommonTreePackage treePackage, Scope scope) {
+		Record record = relations.get(scope).newRecord();
+		
+		for (Worker worker : queues.get(scope)) {
+			record.setValueForAttribute(worker.doWork(treePackage), worker.getAttributeName());
+		}
+
+		relations.get(scope).add(record);
+	}
 }

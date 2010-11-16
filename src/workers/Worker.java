@@ -7,6 +7,8 @@ import main.CommonTreePackage;
 
 import org.antlr.runtime.tree.CommonTree;
 
+import database.Scope;
+
 import utils.DirtyLittleHelper;
 
 /**
@@ -15,6 +17,8 @@ import utils.DirtyLittleHelper;
  * @author welle
  */
 public abstract class Worker {
+	protected Scope scope;
+	
 	/**
 	 * getter for attribute name
 	 * @return the name of the computed attribute
@@ -27,6 +31,10 @@ public abstract class Worker {
 	 * @return the value of the attribute for the given treePackage.
 	 */
 	public abstract int doWork(CommonTreePackage treePackage);
+	
+	public final Scope getScope() {
+		return scope;
+	}
 	
 	/**
 	 * helper method to find the first child of a given name

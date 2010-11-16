@@ -1,6 +1,7 @@
 package workers;
 
 import java.util.List;
+import database.Scope;
 
 import main.CommonTreePackage;
 
@@ -9,31 +10,32 @@ import org.antlr.runtime.tree.CommonTree;
 import utils.DirtyLittleHelper;
 
 public class Counter extends Worker {
-	
 	private int counter;
 	private String[] nodeNames;
 	private boolean isMethodCallCounter;
 	
 	public Counter(String ... nodeNames) {
+		this.scope = Scope.METHOD;
 		this.nodeNames = nodeNames;
 		this.isMethodCallCounter = nodeNames[0].equals("METHOD_CALL");
 	}
 	
-	public void traverse(CommonTree tree){
-		if(tree == null){
-			System.out.println("tree == null");
-			return;
-		}
+	@Override
+	public int doWork(CommonTreePackage treePackage) {
+		counter = 0;
 		
-		if (matchesPattern(tree)) {
-			++counter;
-		}
-		
-		List<CommonTree> children = DirtyLittleHelper.castList(CommonTree.class, tree.getChildren());
+		traverse(treePackage.getTree());
 
-		for (CommonTree child : children) {
-			traverse(child);
+		return counter;
+	}
+	
+	@Override
+	public String getAttributeName() {
+		String names = nodeNames[0];
+		for (int i = 1; i < nodeNames.length; ++i) {
+			names += "," + nodeNames[i];
 		}
+		return "Counter(" + names + ")";
 	}
 
 	private boolean matchesPattern(CommonTree tree) {
@@ -69,22 +71,21 @@ public class Counter extends Worker {
 		return false;
 	}
 
-	@Override
-	public int doWork(CommonTreePackage treePackage) {
-		counter = 0;
-		
-		traverse(treePackage.getTree());
-
-		return counter;
-	}
-
-	@Override
-	public String getAttributeName() {
-		String names = nodeNames[0];
-		for (int i = 1; i < nodeNames.length; ++i) {
-			names += "," + nodeNames[i];
+	public void traverse(CommonTree tree){
+		if(tree == null){
+			System.out.println("tree == null");
+			return;
 		}
-		return "Counter(" + names + ")";
+		
+		if (matchesPattern(tree)) {
+			++counter;
+		}
+		
+		List<CommonTree> children = DirtyLittleHelper.castList(CommonTree.class, tree.getChildren());
+
+		for (CommonTree child : children) {
+			traverse(child);
+		}
 	}
 	
 }

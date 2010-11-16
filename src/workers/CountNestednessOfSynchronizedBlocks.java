@@ -4,12 +4,17 @@ import java.util.List;
 
 import org.antlr.runtime.tree.CommonTree;
 
+import database.Scope;
+
 import utils.DirtyLittleHelper;
 import main.CommonTreePackage;
 
 public class CountNestednessOfSynchronizedBlocks extends Worker{
-
 	private int maxNestedness;
+
+	public CountNestednessOfSynchronizedBlocks() {
+		this.scope = Scope.METHOD;
+	}
 	
 	@Override
 	public String getAttributeName() {
