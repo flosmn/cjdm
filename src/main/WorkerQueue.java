@@ -45,6 +45,9 @@ public class WorkerQueue {
 		
 		currentTreePackage = treePackage;
 		
+		// process(new CommonTreePackage(null, path, null), Scope.PROJECT);
+		
+		// for (classIterator)
 		traverse(treePackage.getTree());
 	}
 
