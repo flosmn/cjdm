@@ -110,7 +110,7 @@ public class Testdb {
         Testdb db = null;
 
         try {
-            db = new Testdb(PathAndFileNames.WEKA_TEST_DATA_PATH);
+            db = new Testdb(PathAndFileNames.DATA_BASE_PATH + "test.odb");
         } catch (Exception ex1) {
             ex1.printStackTrace();
             return;
