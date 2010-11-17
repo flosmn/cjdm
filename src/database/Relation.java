@@ -43,9 +43,14 @@ public class Relation {
 		String query = "CREATE TABLE " + scope + " ( ID INTEGER, parentID INTEGER, name VARCHAR(256)" + attributeDefs + " )";
 		insertPrefix = "INSERT INTO " + scope + " ( ID, parentID, name" + attributeNames + " ) VALUES ";
 		
+		// TODO: don't drop tables anymore when IDs are set correctly
 		try {
-			// TODO: don't drop tables anymore when IDs are set correctly
 			database.update("DROP TABLE " + scope);
+		} catch (Exception exception) {
+			// table didn't exist
+		}
+		
+		try {
 			database.update(query);
 		} catch (Exception exception) {
 			// table already created
