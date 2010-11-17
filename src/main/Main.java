@@ -3,6 +3,7 @@ package main;
 import java.io.File;
 
 import database.Database;
+import database.Scope;
 
 import utils.PathAndFileNames;
 import workers.Counter;
@@ -30,13 +31,18 @@ class Main {
 		workerQueue.addWorker(new CountNestednessOfSynchronizedBlocks());
 		// TODO: add more workers here
 		
-		File[] projects = (new File(PathAndFileNames.PROJECT_SOURCES_PATH)).listFiles();
+		workerQueue.createTables();
 		
+		File[] projects = (new File(PathAndFileNames.PROJECT_SOURCES_PATH)).listFiles();
 		for(File project : projects) {
 			workerQueue.doWork(project);
 		}		
 		
-		database.query("SELECT * FROM method");
+		for (Scope scope : Scope.getInstances()) {
+			System.out.println("scope: " + scope);
+			database.query("SELECT * FROM " + scope);
+		}
+
 		database.shutdown();
 		
 		System.out.println("Done!");
