@@ -1,5 +1,7 @@
 package main;
 
+import java.io.File;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
@@ -19,7 +21,6 @@ public class WorkerQueue {
 	private boolean workerInitializationFinished;
 	private HashMap<Scope, LinkedList<Worker>> queues = new HashMap<Scope, LinkedList<Worker>>();
 	private HashMap<Scope, Relation> relations = new HashMap<Scope, Relation>();
-	private CommonTreePackage currentTreePackage;
 	
 	public WorkerQueue(Database database) {
 		for (Scope scope : Scope.getInstances()) {
@@ -40,36 +41,39 @@ public class WorkerQueue {
 		relations.get(worker.getScope()).addAttribute(worker.getAttributeName());
 	}
 	
-	public void doWork(CommonTreePackage treePackage) {
+	public void doWork(File project) {
 		workerInitializationFinished = true;
 		
-		currentTreePackage = treePackage;
-		
+		// TODO: process project scope
 		// process(new CommonTreePackage(null, path, null), Scope.PROJECT);
 		
-		// for (classIterator)
-		traverse(treePackage.getTree());
+		Collection<TreePackage> treePackagesOfProject = 
+			(new TreePackageGenerator()).generateTreePackagesForProject(project);
+		
+		for (TreePackage treePackage : treePackagesOfProject){
+			traverse(treePackage);
+		}
 	}
 
-	private void traverse(CommonTree parent) {
-		List<CommonTree> children = DirtyLittleHelper.castList(CommonTree.class, parent.getChildren());
+	private void traverse(TreePackage treePackage) {
+		List<CommonTree> children = DirtyLittleHelper.castList(CommonTree.class, treePackage.getTree().getChildren());
 		
 		for (CommonTree child : children) {
 			if (child.getText().equals("class")) {
-				process(new CommonTreePackage(child, currentTreePackage), Scope.CLASS);
+				process(new TreePackage(child, treePackage), Scope.CLASS);
 			}
 			
 			if (child.getText().matches(".*METHOD_DECL")) {
-				process(new CommonTreePackage(child, currentTreePackage), Scope.METHOD);
+				process(new TreePackage(child, treePackage), Scope.METHOD);
 
 				continue;
 			}
 
-			traverse(child);
+			traverse(new TreePackage(child, treePackage));
 		}
 	}
 	
-	private void process(CommonTreePackage treePackage, Scope scope) {
+	private void process(TreePackage treePackage, Scope scope) {
 		Record record = relations.get(scope).newRecord();
 		
 		for (Worker worker : queues.get(scope)) {

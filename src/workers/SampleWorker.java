@@ -1,7 +1,7 @@
 package workers;
 
 import database.Scope;
-import main.CommonTreePackage;
+import main.TreePackage;
 
 /**
  * This sample worker illustrates how a worker is meant to be implemented.
@@ -21,7 +21,7 @@ public class SampleWorker extends Worker {
 	}
 
 	@Override
-	public int doWork(CommonTreePackage treePackage) {
+	public int doWork(TreePackage treePackage) {
 		return treePackage.getTree().getChildCount();
 	}
 

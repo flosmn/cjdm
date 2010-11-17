@@ -20,4 +20,20 @@ public class DummySynchronized {
 			System.out.println("value: "+i);
 		}
 	}
+	
+	class InnerClass {
+		public void innerlock() {
+			synchronized(this) {
+				System.out.println("value: "+i);
+			}
+		}
+	}
+}
+
+class OuterClass {
+	public void outerLock() {
+		synchronized(this) {
+			System.out.println("value: "+i);
+		}
+	}
 }

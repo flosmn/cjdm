@@ -1,6 +1,6 @@
 package main;
 
-import java.util.Collection;
+import java.io.File;
 
 import database.Database;
 
@@ -30,11 +30,10 @@ class Main {
 		workerQueue.addWorker(new CountNestednessOfSynchronizedBlocks());
 		// TODO: add more workers here
 		
-		// TODO: generate trees on demand to reduce memory overhead
-		Collection<CommonTreePackage> treePackages = (new GenerateTreePackages()).generate();
-
-		for(CommonTreePackage treePackage : treePackages) {
-			workerQueue.doWork(treePackage);
+		File[] projects = (new File(PathAndFileNames.PROJECT_SOURCES_PATH)).listFiles();
+		
+		for(File project : projects) {
+			workerQueue.doWork(project);
 		}		
 		
 		database.query("SELECT * FROM method");

@@ -3,7 +3,7 @@ package workers;
 import java.util.List;
 import database.Scope;
 
-import main.CommonTreePackage;
+import main.TreePackage;
 
 import org.antlr.runtime.tree.CommonTree;
 
@@ -23,7 +23,7 @@ public class Counter extends Worker {
 	}
 	
 	@Override
-	public int doWork(CommonTreePackage treePackage) {
+	public int doWork(TreePackage treePackage) {
 		counter = 0;
 		
 		traverse(treePackage.getTree());

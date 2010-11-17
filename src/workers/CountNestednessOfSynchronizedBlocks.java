@@ -7,7 +7,7 @@ import org.antlr.runtime.tree.CommonTree;
 import database.Scope;
 
 import utils.DirtyLittleHelper;
-import main.CommonTreePackage;
+import main.TreePackage;
 
 public class CountNestednessOfSynchronizedBlocks extends Worker{
 	private int maxNestedness;
@@ -52,7 +52,7 @@ public class CountNestednessOfSynchronizedBlocks extends Worker{
 	}
 
 	@Override
-	public int doWork(CommonTreePackage treePackage) {
+	public int doWork(TreePackage treePackage) {
 		maxNestedness = 0;
 		
 		traverse(treePackage.getTree(), 0);

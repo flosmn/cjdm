@@ -3,6 +3,7 @@ public class AttributeModifier {
 	private static int number = 0;
 	private volatile boolean bool = true;
 	
+	int foobar() {	}
 	private synchronized int doNothing() { }
 	public static void main(String[] args) {
 		int i = 0;

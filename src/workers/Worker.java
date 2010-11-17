@@ -3,7 +3,7 @@ package workers;
 import java.util.List;
 
 
-import main.CommonTreePackage;
+import main.TreePackage;
 
 import org.antlr.runtime.tree.CommonTree;
 
@@ -30,7 +30,7 @@ public abstract class Worker {
 	 * @param treePackage the CommonTreePackage to compute the value for
 	 * @return the value of the attribute for the given treePackage.
 	 */
-	public abstract int doWork(CommonTreePackage treePackage);
+	public abstract int doWork(TreePackage treePackage);
 	
 	public final Scope getScope() {
 		return scope;

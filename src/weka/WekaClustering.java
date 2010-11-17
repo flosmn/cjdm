@@ -1,15 +1,11 @@
 package weka;
 
-
-
 import utils.PathAndFileNames;
 import weka.clusterers.SimpleKMeans;
 import weka.core.Attribute;
 import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.converters.ConverterUtils.DataSource;
-import weka.filters.Filter;
-import weka.filters.unsupervised.attribute.PrincipalComponents;
 
 
 public class WekaClustering implements Runnable
