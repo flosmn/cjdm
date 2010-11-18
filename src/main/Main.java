@@ -26,6 +26,12 @@ class Main {
 		workerQueue.addWorker(new Counter("synchronized_blocks", "BLOCK_SCOPE", "synchronized"));
 		workerQueue.addWorker(new Counter("lock_calls", "METHOD_CALL", "\\.", "lock"));
 		workerQueue.addWorker(new Counter("unlock_calls", "METHOD_CALL", "\\.", "unlock"));
+		workerQueue.addWorker(new Counter("wait_calls", "METHOD_CALL", "\\.", "wait"));
+		workerQueue.addWorker(new Counter("notify_calls", "METHOD_CALL", "\\.", "notify"));
+		workerQueue.addWorker(new Counter("notifyAll_calls", "METHOD_CALL", "\\.", "notifyAll"));
+		workerQueue.addWorker(new Counter("sleep_calls", "METHOD_CALL", "\\.", "sleep"));
+		workerQueue.addWorker(new Counter("yield_calls", "METHOD_CALL", "\\.", "yield"));
+		workerQueue.addWorker(new Counter("join_calls", "METHOD_CALL", "\\.", "join"));
 		workerQueue.addWorker(new CountNestednessOfSynchronizedBlocks());
 		// TODO: add more workers here
 		

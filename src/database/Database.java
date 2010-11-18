@@ -89,6 +89,8 @@ public class Database {
     public synchronized void update(String expression) throws Exception{
         Statement statement = connection.createStatement();
         
+        //System.out.println(expression);
+        
         if (statement.executeUpdate(expression) == -1) {
             System.out.println("db error : " + expression);
         }
@@ -111,37 +113,5 @@ public class Database {
     	} catch (Exception exception) {
     		exception.printStackTrace();
     	}
-    }
-
-    
-    public static void main(String[] args) {
-
-        Database db = null;
-
-        db = new Database(PathAndFileNames.DATA_BASE_PATH + "test.odb");
-
-        try {
-			db.update(
-			    "CREATE TABLE sample_table ( id INTEGER IDENTITY, str_col VARCHAR(256), num_col INTEGER)");
-		} catch (Exception e) {
-			
-		}
-
-		try {
-	        db.update(
-	            "INSERT INTO sample_table(str_col,num_col) VALUES('Ford', 100)");
-	        db.update(
-	            "INSERT INTO sample_table(str_col,num_col) VALUES('Toyota', 200)");
-	        db.update(
-	            "INSERT INTO sample_table(str_col,num_col) VALUES('Honda', 300)");
-	        db.update(
-	            "INSERT INTO sample_table(str_col,num_col) VALUES('GM', 400)");
-	
-	        db.query("SELECT * FROM sample_table");
-	
-	        db.shutdown();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
     }
 }

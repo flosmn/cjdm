@@ -3,20 +3,12 @@ Workers that are not implemented yet
 method scope:
 	- count lines of code
 	- count number of method calls
-	- count number of with "synchronized" synchronized blocks (is implemented on class scope)
 	- count number of with locks synchronized blocks (is implemented on class scope)
 	- count number of locks(), unlock() on objects of type Lock
 	
 	- collect maximal nesting of loops
 	- collect maximal nesting of conditionals
-	- collect maximal nesting of monitors/locks
-	
-	- count number of wait() calls
-	- count number of notify() calls
-	- count number of notifyAll() calls
-	- count number of sleep() calls
-	- count number of join() calls
-	- count number of yield() calls
+	- collect maximal nesting of locks
 	
 	- count number of objects of type
 		* ConcurrentMap
