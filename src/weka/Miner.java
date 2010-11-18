@@ -26,6 +26,7 @@ public class Miner {
 	@Deprecated
 	public static void main(String[] args) throws Exception {
 		File folder = new File(PathAndFileNames.WEKA_TEST_DATA_PATH);
+		assert (folder.isDirectory()): "given path to *.arff files is not a directory";
 		File[] listOfFiles = folder.listFiles();
 		for (int i = 0; i < listOfFiles.length; i++) {
 			if (listOfFiles[i].isFile() && listOfFiles[i].getName().endsWith(".arff")) {
