@@ -56,4 +56,12 @@ public class Record {
 	public void setName(String name) {
 		this.name = name;
 	}
+
+	public void setID(int ID) {
+		this.ID = ID;
+	}
+
+	public void setParentID(int parentID) {
+		this.parentID = parentID;
+	}
 }

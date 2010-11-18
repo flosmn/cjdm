@@ -45,11 +45,7 @@ class Main {
 		}
 		
 		workerQueue.createViews();
-		
-	/*	for (Scope scope : Scope.getInstances()) {
-			database.exportArff("SELECT * FROM method_view", scope.toString());
-		}
-	*/
+
 		database.exportArff("SELECT * FROM method_view", "methods");
 		database.exportArff("SELECT * FROM class_view", "classes");
 		

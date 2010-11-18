@@ -14,7 +14,7 @@ public class Scope {
 	
 	private Scope(String scope, Scope parent) {
 		this.scope = scope;
-		this.parent = parent;
+		this.parent = parent == null ? this : parent;
 	}
 	
 	public static Collection<Scope> getInstances() {
