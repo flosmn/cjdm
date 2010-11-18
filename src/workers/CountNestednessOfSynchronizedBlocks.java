@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.antlr.runtime.tree.CommonTree;
 
+import database.Aggregator;
 import database.Scope;
 
 import utils.DirtyLittleHelper;
@@ -14,6 +15,7 @@ public class CountNestednessOfSynchronizedBlocks extends Worker{
 
 	public CountNestednessOfSynchronizedBlocks() {
 		this.scope = Scope.METHOD;
+		this.aggregator = Aggregator.MAX;
 	}
 	
 	@Override

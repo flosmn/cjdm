@@ -128,5 +128,7 @@ public class WorkerQueue {
 		} catch (Exception exception) {
 			// view existed already
 		}
+		
+		database.query("SELECT * FROM method_view");
 	}
 }
