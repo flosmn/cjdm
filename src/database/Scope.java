@@ -5,14 +5,16 @@ import java.util.Collection;
 
 public class Scope {
 	private String scope;
+	private Scope parent;
 	private static Collection<Scope> instances;
 
-	public static Scope METHOD = new Scope("method");
-	public static Scope CLASS = new Scope("class");
-	public static Scope PROJECT = new Scope("project");
+	public static Scope PROJECT = new Scope("project", null);
+	public static Scope CLASS = new Scope("class", PROJECT);
+	public static Scope METHOD = new Scope("method", CLASS);
 	
-	private Scope(String scope) {
+	private Scope(String scope, Scope parent) {
 		this.scope = scope;
+		this.parent = parent;
 	}
 	
 	public static Collection<Scope> getInstances() {
@@ -26,7 +28,11 @@ public class Scope {
 		
 		return instances;
 	}
-
+	
+	public Scope getParent() {
+		return parent;
+	}
+	
 	public String toString() {
 		return scope;
 	}
