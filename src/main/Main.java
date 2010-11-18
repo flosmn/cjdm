@@ -36,13 +36,17 @@ class Main {
 		File[] projects = (new File(PathAndFileNames.PROJECT_SOURCES_PATH)).listFiles();
 		for(File project : projects) {
 			workerQueue.doWork(project);
-		}		
-		
-		for (Scope scope : Scope.getInstances()) {
-			System.out.println("scope: " + scope);
-			database.query("SELECT * FROM " + scope);
 		}
-
+		
+		workerQueue.createViews();
+		
+	/*	for (Scope scope : Scope.getInstances()) {
+			database.exportArff("SELECT * FROM method_view", scope.toString());
+		}
+	*/
+		database.exportArff("SELECT * FROM method_view", "methods");
+	
+		
 		database.shutdown();
 		
 		System.out.println("Done!");
