@@ -42,15 +42,16 @@ public class Relation {
 		
 		// TODO: don't drop tables anymore when IDs are set correctly
 		try {
+			database.update("DROP VIEW " + scope + "_view");
 			database.update("DROP TABLE " + scope);
 		} catch (Exception exception) {
-			// table didn't exist
+			System.out.println(exception.getMessage());
 		}
 		
 		try {
 			database.update(query);
 		} catch (Exception exception) {
-			// table already created
+			System.out.println(exception.getMessage());
 		}
 	}
 
