@@ -1,6 +1,8 @@
 package workers;
 
 import java.util.List;
+
+import database.Aggregator;
 import database.Scope;
 
 import main.TreePackage;
@@ -18,6 +20,7 @@ public class Counter extends Worker {
 	public Counter(String attributeName, Scope scope, String ... nodeNames) {
 		this.attributeName = attributeName;
 		this.scope = scope;
+		this.aggregator = Aggregator.SUM;
 		this.nodeNames = nodeNames;
 		this.isMethodCallCounter = nodeNames[0].equals("METHOD_CALL");
 	}

@@ -103,12 +103,17 @@ public class Database {
 	        ResultSetMetaData metaData = resultSet.getMetaData();
 	        int columnCount = metaData.getColumnCount();
 	        
+	        for (int i = 0; i < columnCount; ++i) {
+	        	System.out.print(metaData.getColumnName(i + 1) + " ");
+	        }
+	        System.out.println();
+	        
 	        for (; resultSet.next(); ) {
 	            for (int i = 0; i < columnCount; ++i) {
 	                Object o = resultSet.getObject(i + 1);
 	                System.out.print(o.toString() + " ");
 	            }
-	            System.out.println(" ");
+	            System.out.println();
 	        }
     	} catch (Exception exception) {
     		exception.printStackTrace();

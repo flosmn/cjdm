@@ -1,5 +1,6 @@
 package workers;
 
+import database.Aggregator;
 import database.Scope;
 import main.TreePackage;
 
@@ -9,10 +10,9 @@ import main.TreePackage;
  * @author welle
  */
 public class SampleWorker extends Worker {
-	protected Scope scope = Scope.METHOD;
-	
 	public SampleWorker() {
 		this.scope = Scope.METHOD;
+		this.aggregator = Aggregator.SUM;
 	}
 	
 	@Override
@@ -24,5 +24,4 @@ public class SampleWorker extends Worker {
 	public int doWork(TreePackage treePackage) {
 		return treePackage.getTree().getChildCount();
 	}
-
 }

@@ -7,6 +7,7 @@ import main.TreePackage;
 
 import org.antlr.runtime.tree.CommonTree;
 
+import database.Aggregator;
 import database.Scope;
 
 import utils.DirtyLittleHelper;
@@ -18,6 +19,7 @@ import utils.DirtyLittleHelper;
  */
 public abstract class Worker {
 	protected Scope scope;
+	protected Aggregator aggregator;
 	
 	/**
 	 * getter for attribute name
@@ -34,6 +36,10 @@ public abstract class Worker {
 	
 	public final Scope getScope() {
 		return scope;
+	}
+	
+	public final Aggregator getAggregator() {
+		return aggregator;
 	}
 	
 	/**
