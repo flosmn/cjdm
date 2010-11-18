@@ -1,7 +1,13 @@
 package main;
 
 import java.io.File;
+import java.util.List;
+
 import org.antlr.runtime.tree.CommonTree;
+
+import database.Scope;
+
+import utils.DirtyLittleHelper;
 
 /**
  * This class implements a data structure to store a CommonTree and more additional 
@@ -12,17 +18,24 @@ public class TreePackage extends CommonTree{
 	private File file;
 	private String projectName;
 	private CommonTree tree;
+	private Scope scope;
 			
-	public TreePackage(CommonTree t, String p, File f) {
+	public TreePackage(CommonTree t, String p, File f, Scope scope) {
 		this.tree = t;
 		this.projectName = p;
 		this.file = f;
+		this.scope = scope;
 	}
 	
-	public TreePackage(CommonTree t, TreePackage p) {
+	public TreePackage(CommonTree t, TreePackage p, Scope scope) {
 		this.tree = t;
 		this.projectName = p.projectName;
 		this.file = p.file;
+		this.scope = scope;
+	}
+	
+	public Scope getScope(){
+		return this.scope;
 	}
 	
 	/**
@@ -77,5 +90,22 @@ public class TreePackage extends CommonTree{
 
 	public File getFile() {
 		return file;
+	}
+	
+	public void printTree(){
+		printTree(this.tree, "");
+	}
+
+	private void printTree(CommonTree tree, String string) {
+		if(tree == null){
+			return;
+		}
+		
+		System.out.println(string + tree.getText());
+
+		List<CommonTree> children = DirtyLittleHelper.castList(CommonTree.class, tree.getChildren());
+		for(CommonTree child : children) {
+			printTree(child, string + "  ");
+		}
 	}
 }

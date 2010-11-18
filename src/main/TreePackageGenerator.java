@@ -14,6 +14,8 @@ import org.antlr.runtime.ANTLRInputStream;
 import org.antlr.runtime.CommonTokenStream;
 import org.antlr.runtime.tree.CommonTree;
 
+import database.Scope;
+
 import utils.PathAndFileNames;
 
 /**
@@ -80,7 +82,7 @@ public class TreePackageGenerator {
 		this.lexer = new JavaLexer(new ANTLRInputStream(this.inputStream ));
 		this.parser = new JavaParser(new CommonTokenStream(this.lexer));
 		CommonTree tree = (CommonTree) (this.parser.compilationUnit().getTree());
-		return new TreePackage(tree, getProjectName(file), file);
+		return new TreePackage(tree, getProjectName(file), file, null);
 	}
 
 	private String getProjectName(File parent) { 
@@ -99,6 +101,17 @@ public class TreePackageGenerator {
 		} 
 		
 		return name; 
+	}
+
+	public Collection<TreePackage> generateProjectPackages() {
+		Collection<TreePackage> projectPackages = new HashSet<TreePackage>();
+		File[] projects = (new File(PathAndFileNames.PROJECT_SOURCES_PATH)).listFiles();
+		
+		for(File file : projects){
+			projectPackages.add(new TreePackage(null, file.getName(), file, Scope.PROJECT));
+		}
+		
+		return projectPackages;
 	}
 }
 
