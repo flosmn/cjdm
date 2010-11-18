@@ -24,15 +24,12 @@ public class Relation {
 	}
 
 	public Record newRecord() {
-		if (!tableCreated) {
-			createTable();
-			tableCreated = true;
-		}
+		tableCreated = true;
 
 		return new Record(attributes);
 	}
 
-	private void createTable() {
+	public void createTable() {
 		String attributeDefs = "";
 		String attributeNames = "";
 		for (String attribute : attributes) {

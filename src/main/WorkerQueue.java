@@ -75,11 +75,18 @@ public class WorkerQueue {
 	
 	private void process(TreePackage treePackage, Scope scope) {
 		Record record = relations.get(scope).newRecord();
+		record.setName(treePackage.getName());
 		
 		for (Worker worker : queues.get(scope)) {
 			record.setValueForAttribute(worker.doWork(treePackage), worker.getAttributeName());
 		}
 
 		relations.get(scope).add(record);
+	}
+
+	public void createTables() {
+		for (Relation relation : relations.values()) {
+			relation.createTable();
+		}
 	}
 }

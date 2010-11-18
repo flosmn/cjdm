@@ -8,7 +8,7 @@ public class Record {
 	private LinkedList<String> attributes = new LinkedList<String>();
 	private int ID = -1;				// TODO: setter!
 	private int parentID = -1;
-	private String name = "name";
+	private String name = "unnamed";
 	
 	public Record(LinkedList<String> attributes) {
 		this.attributes = attributes;
@@ -51,5 +51,9 @@ public class Record {
 
 		return suffix;
 		
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 }
