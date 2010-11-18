@@ -21,6 +21,7 @@ public class WorkerQueue {
 	private boolean workerInitializationFinished;
 	private HashMap<Scope, LinkedList<Worker>> queues = new HashMap<Scope, LinkedList<Worker>>();
 	private HashMap<Scope, Relation> relations = new HashMap<Scope, Relation>();
+	private HashMap<Scope, Integer> currentIDs = new HashMap<Scope, Integer>();
 	private Database database;
 	
 	public WorkerQueue(Database database) {
@@ -29,6 +30,7 @@ public class WorkerQueue {
 		for (Scope scope : Scope.getInstances()) {
 			queues.put(scope, new LinkedList<Worker>());
 			relations.put(scope, new Relation(database, scope));
+			currentIDs.put(scope, new Integer(0));
 		}
 	}
 	
@@ -49,6 +51,8 @@ public class WorkerQueue {
 		
 		// TODO: process project scope
 		// process(new CommonTreePackage(null, path, null), Scope.PROJECT);
+		
+		process(null, Scope.PROJECT);
 		
 		Collection<TreePackage> treePackagesOfProject = 
 			(new TreePackageGenerator()).generateTreePackagesForProject(project);
@@ -78,13 +82,26 @@ public class WorkerQueue {
 	
 	private void process(TreePackage treePackage, Scope scope) {
 		Record record = relations.get(scope).newRecord();
-		record.setName(treePackage.getName());
+		record.setID(newID(scope));
+		record.setParentID(currentIDs.get(scope.getParent()));
 		
-		for (Worker worker : queues.get(scope)) {
-			record.setValueForAttribute(worker.doWork(treePackage), worker.getAttributeName());
+		// TODO: remove if when project has own treePackage
+		if (treePackage != null) {
+			record.setName(treePackage.getName());
+			
+			for (Worker worker : queues.get(scope)) {
+				record.setValueForAttribute(worker.doWork(treePackage), worker.getAttributeName());
+			}
 		}
-
+			
 		relations.get(scope).add(record);
+	}
+
+	private int newID(Scope scope) {
+		int currentID = currentIDs.get(scope);
+		++currentID;
+		currentIDs.put(scope, currentID);
+		return currentID;
 	}
 
 	public void createTables() {
@@ -111,6 +128,5 @@ public class WorkerQueue {
 		} catch (Exception exception) {
 			// view existed already
 		}
-
 	}
 }

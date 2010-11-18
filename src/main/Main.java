@@ -3,8 +3,6 @@ package main;
 import java.io.File;
 
 import database.Database;
-import database.Scope;
-
 import utils.PathAndFileNames;
 import workers.Counter;
 import workers.CountNestednessOfSynchronizedBlocks;
@@ -39,14 +37,7 @@ class Main {
 		}
 		
 		workerQueue.createViews();
-		
-	/*	for (Scope scope : Scope.getInstances()) {
-			database.exportArff("SELECT * FROM method_view", scope.toString());
-		}
-	*/
-		database.exportArff("SELECT * FROM method_view", "methods");
-	
-		
+
 		database.shutdown();
 		
 		System.out.println("Done!");
