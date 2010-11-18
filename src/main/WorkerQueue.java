@@ -45,7 +45,7 @@ public class WorkerQueue {
 		workerInitializationFinished = true;
 		
 		// TODO: process project scope
-		// process(new CommonTreePackage(null, path, null), Scope.PROJECT);
+		// TODO: process(new CommonTreePackage(null, path, null), Scope.PROJECT);
 		
 		Collection<TreePackage> treePackagesOfProject = 
 			(new TreePackageGenerator()).generateTreePackagesForProject(project);
