@@ -56,9 +56,6 @@ class Main {
 		
 		workerQueue.createViews();
 
-		database.exportArff("SELECT * FROM method_view", "methods");
-		database.exportArff("SELECT * FROM class_view", "classes");
-		
 		database.shutdown();
 		
 		System.out.println("Done!");
