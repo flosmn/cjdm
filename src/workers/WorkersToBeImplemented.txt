@@ -11,16 +11,7 @@ method scope:
 	- collect maximal nesting of locks
 	
 	- count number of objects of type
-		* ConcurrentMap
-		* AtomicInteger
-		* BlockingQueue
-		* ConcurrentLinkedQueue
-		* CopyOnWriteArrayList/CopyOnWriteArraySet
-		* DeleyQueue
-		* Executor
-		* ExecutorService
 		* Callable
-		* Future
 		* Delayed
 		* ThreadFactory
 		* ThreadPoolExecutor
@@ -28,7 +19,6 @@ method scope:
 		* CyclicBarrier
 		* Exchanger
 		* Semaphore
-		* Lock
 		
 class scope:
 	- count number of methods

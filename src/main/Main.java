@@ -34,6 +34,16 @@ class Main {
 		workerQueue.addWorker(new Counter("volatile_variables", Scope.CLASS, "VAR_DECLARATION", "MODIFIER_LIST", "volatile"));
 		workerQueue.addWorker(new Counter("public_variables", Scope.CLASS, "VAR_DECLARATION", "MODIFIER_LIST", "public"));
 		workerQueue.addWorker(new Counter("private_variables", Scope.CLASS, "VAR_DECLARATION", "MODIFIER_LIST", "private"));
+		workerQueue.addWorker(new Counter("executor_objects", Scope.CLASS, "VAR_DECLARATION", "TYPE", "QUALIFIED_TYPE_IDENT", "Executor"));
+		workerQueue.addWorker(new Counter("concurrentMap_objects", Scope.CLASS, "VAR_DECLARATION", "TYPE", "QUALIFIED_TYPE_IDENT", "ConcurrentMap"));
+		workerQueue.addWorker(new Counter("atomicInteger_objects", Scope.CLASS, "VAR_DECLARATION", "TYPE", "QUALIFIED_TYPE_IDENT", "AtomicInteger"));
+		workerQueue.addWorker(new Counter("blockingQueue_objects", Scope.CLASS, "VAR_DECLARATION", "TYPE", "QUALIFIED_TYPE_IDENT", "BlockingQueue"));
+		workerQueue.addWorker(new Counter("concurrentLinkedQueue_objects", Scope.CLASS, "VAR_DECLARATION", "TYPE", "QUALIFIED_TYPE_IDENT", "ConcurrentLinkedQueue"));
+		workerQueue.addWorker(new Counter("copyOnWriteArrayList_objects", Scope.CLASS, "VAR_DECLARATION", "TYPE", "QUALIFIED_TYPE_IDENT", "CopyOnWriteArrayList"));
+		workerQueue.addWorker(new Counter("deleyQueue_objects", Scope.CLASS, "VAR_DECLARATION", "TYPE", "QUALIFIED_TYPE_IDENT", "DeleyQueue"));
+		workerQueue.addWorker(new Counter("executorService_objects", Scope.CLASS, "VAR_DECLARATION", "TYPE", "QUALIFIED_TYPE_IDENT", "ExecutorService"));
+		workerQueue.addWorker(new Counter("future_objects", Scope.CLASS, "VAR_DECLARATION", "TYPE", "QUALIFIED_TYPE_IDENT", "Future"));
+		workerQueue.addWorker(new Counter("lock_objects", Scope.CLASS, "VAR_DECLARATION", "TYPE", "QUALIFIED_TYPE_IDENT", "Lock"));
 		workerQueue.addWorker(new CountNestednessOfSynchronizedBlocks());
 		// TODO: add more workers here
 		
