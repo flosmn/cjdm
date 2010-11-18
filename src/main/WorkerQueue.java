@@ -1,6 +1,5 @@
 package main;
 
-import java.io.File;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -46,16 +45,13 @@ public class WorkerQueue {
 		relations.get(worker.getScope()).addAttribute(worker.getAttributeName());
 	}
 	
-	public void doWork(File project) {
+	public void doWork(TreePackage projectPackage) {
 		workerInitializationFinished = true;
 		
-		// TODO: process project scope
-		// TODO: process(new CommonTreePackage(null, path, null), Scope.PROJECT);
-		
-		process(null, Scope.PROJECT);
+		process(projectPackage);
 		
 		Collection<TreePackage> treePackagesOfProject = 
-			(new TreePackageGenerator()).generateTreePackagesForProject(project);
+			(new TreePackageGenerator()).generateTreePackagesForProject(projectPackage.getFile());
 		
 		for (TreePackage treePackage : treePackagesOfProject){
 			traverse(treePackage);
@@ -67,20 +63,21 @@ public class WorkerQueue {
 		
 		for (CommonTree child : children) {
 			if (child.getText().equals("class")) {
-				process(new TreePackage(child, treePackage), Scope.CLASS);
+				process(new TreePackage(child, treePackage, Scope.CLASS));
 			}
 			
 			if (child.getText().matches(".*METHOD_DECL")) {
-				process(new TreePackage(child, treePackage), Scope.METHOD);
+				process(new TreePackage(child, treePackage, Scope.METHOD));
 
 				continue;
 			}
 
-			traverse(new TreePackage(child, treePackage));
+			traverse(new TreePackage(child, treePackage, null));
 		}
 	}
 	
-	private void process(TreePackage treePackage, Scope scope) {
+	private void process(TreePackage treePackage) {
+		Scope scope = treePackage.getScope();
 		Record record = relations.get(scope).newRecord();
 		record.setID(newID(scope));
 		record.setParentID(currentIDs.get(scope.getParent()));
@@ -111,6 +108,11 @@ public class WorkerQueue {
 	}
 
 	public void createViews() {
+		createMethodView();
+		createClassView();
+	}
+
+	private void createMethodView() {
 		String attributes = "";
 
 		LinkedList<Worker> workers = queues.get(Scope.METHOD);
@@ -130,5 +132,25 @@ public class WorkerQueue {
 		}
 		
 		database.query("SELECT * FROM method_view");
+	}
+	
+	private void createClassView() {
+		String attributes = "";
+
+		LinkedList<Worker> workers = queues.get(Scope.CLASS);
+		for (int i = 0; i < workers.size(); ++i) {
+			attributes += workers.get(i).getAttributeName();
+			if (i < workers.size() - 1) {
+				attributes += ", ";
+			}
+		}
+		
+		String query = "CREATE VIEW class_view AS SELECT " + attributes + " FROM class";
+		
+		try {
+			database.update(query);
+		} catch (Exception exception) {
+			// view existed already
+		}
 	}
 }

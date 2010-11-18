@@ -17,9 +17,9 @@ public class Counter extends Worker {
 	private String[] nodeNames;
 	private boolean isMethodCallCounter;
 	
-	public Counter(String attributeName, String ... nodeNames) {
+	public Counter(String attributeName, Scope scope, String ... nodeNames) {
 		this.attributeName = attributeName;
-		this.scope = Scope.METHOD;
+		this.scope = scope;
 		this.aggregator = Aggregator.SUM;
 		this.nodeNames = nodeNames;
 		this.isMethodCallCounter = nodeNames[0].equals("METHOD_CALL");
