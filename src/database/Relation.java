@@ -29,6 +29,22 @@ public class Relation {
 		return new Record(attributes);
 	}
 
+	public void dropView() {
+		try {
+			database.update("DROP VIEW " + scope + "_view");
+		} catch (Exception exception) {
+			System.out.println(exception.getMessage());
+		}
+	}
+	
+	public void dropTable() {
+		try {
+			database.update("DROP TABLE " + scope);
+		} catch (Exception exception) {
+			System.out.println(exception.getMessage());
+		}
+	}
+	
 	public void createTable() {
 		String attributeDefs = "";
 		String attributeNames = "";
@@ -37,17 +53,9 @@ public class Relation {
 			attributeNames += ", " + attribute;
 		}
 		
-		String query = "CREATE TABLE " + scope + " ( ID INTEGER, parentID INTEGER, name VARCHAR(256)" + attributeDefs + " )";
+		String query = "CREATE TABLE " + scope + " ( ID INTEGER PRIMARY KEY, parentID INTEGER, name VARCHAR(256)" + attributeDefs + " )";
 		insertPrefix = "INSERT INTO " + scope + " ( ID, parentID, name" + attributeNames + " ) VALUES ";
-		
-		// TODO: don't drop tables anymore when IDs are set correctly
-		try {
-			database.update("DROP VIEW " + scope + "_view");
-			database.update("DROP TABLE " + scope);
-		} catch (Exception exception) {
-			System.out.println(exception.getMessage());
-		}
-		
+				
 		try {
 			database.update(query);
 		} catch (Exception exception) {

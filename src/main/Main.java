@@ -47,8 +47,12 @@ class Main {
 		workerQueue.addWorker(new CountNestednessOfSynchronizedBlocks());
 		// TODO: add more workers here
 		
-		workerQueue.createTables();
+		// TODO: don't drop, but append to existing tables
+		workerQueue.dropViews();
+		workerQueue.dropTables();
 		
+		workerQueue.createTables();
+
 		Collection<TreePackage> projectPackages = (new TreePackageGenerator()).generateProjectPackages();
 		for(TreePackage projectPackage: projectPackages) {
 			workerQueue.doWork(projectPackage);

@@ -101,6 +101,18 @@ public class WorkerQueue {
 		return currentID;
 	}
 
+	public void dropViews() {
+		for (Relation relation : relations.values()) {
+			relation.dropView();
+		}
+	}
+
+	public void dropTables() {
+		for (Relation relation : relations.values()) {
+			relation.dropTable();
+		}
+	}
+
 	public void createTables() {
 		for (Relation relation : relations.values()) {
 			relation.createTable();
@@ -108,49 +120,75 @@ public class WorkerQueue {
 	}
 
 	public void createViews() {
-		createMethodView();
-		createClassView();
-	}
-
-	private void createMethodView() {
-		String attributes = "";
-
-		LinkedList<Worker> workers = queues.get(Scope.METHOD);
-		for (int i = 0; i < workers.size(); ++i) {
-			attributes += workers.get(i).getAttributeName();
-			if (i < workers.size() - 1) {
-				attributes += ", ";
+		HashMap<Scope, String> columns = new HashMap<Scope, String>();
+		HashMap<Scope, String> groupedColumns = new HashMap<Scope, String>();
+		
+		for (Scope scope : Scope.getInstances()) {
+			columns.put(scope, "");
+			groupedColumns.put(scope, "");
+			
+			LinkedList<Worker> methodWorkers = queues.get(scope);
+			for (Worker methodWorker : methodWorkers) {
+				String attributeName = methodWorker.getAttributeName();
+				String aggregator = methodWorker.getAggregator().toString();
+				
+				columns.put(scope, combineColumns(columns.get(scope), attributeName));
+				groupedColumns.put(scope, combineColumns(groupedColumns.get(scope), aggregator + "(" + attributeName + ") AS " + attributeName));
 			}
 		}
 		
-		String query = "CREATE VIEW method_view AS SELECT " + attributes + " FROM method";
+		// FIXME: hard coded scope names
+		
+		String methodViewQuery = ("CREATE VIEW method_view AS" +
+				" SELECT " + columns.get(Scope.METHOD) +
+				" FROM method");
+		
+		String classViewQuery = "CREATE VIEW class_view AS" +
+				" SELECT " + combineColumns(
+						groupedColumns.get(Scope.CLASS),
+						groupedColumns.get(Scope.METHOD)) +
+				" FROM class INNER JOIN method" +
+				" ON class.ID = method.parentID" +
+				" GROUP BY " + combineColumns("class.ID");
+		
+		String projectViewQuery = "CREATE VIEW project_view AS" +
+				" SELECT " + combineColumns(
+						groupedColumns.get(Scope.PROJECT),
+						groupedColumns.get(Scope.CLASS),
+						groupedColumns.get(Scope.METHOD)) +
+				" FROM project INNER JOIN class" +
+				" ON project.ID = class.parentID JOIN method" +
+				" ON class.ID = method.parentID" +
+				" GROUP BY " + combineColumns("project.ID");
 		
 		try {
-			database.update(query);
+			database.update(methodViewQuery);
 		} catch (Exception exception) {
-			// view existed already
+			System.out.println(exception.getMessage());
 		}
-		
-		database.query("SELECT * FROM method_view");
-	}
-	
-	private void createClassView() {
-		String attributes = "";
 
-		LinkedList<Worker> workers = queues.get(Scope.CLASS);
-		for (int i = 0; i < workers.size(); ++i) {
-			attributes += workers.get(i).getAttributeName();
-			if (i < workers.size() - 1) {
-				attributes += ", ";
-			}
-		}
-		
-		String query = "CREATE VIEW class_view AS SELECT " + attributes + " FROM class";
-		
 		try {
-			database.update(query);
+			database.update(classViewQuery);
 		} catch (Exception exception) {
-			// view existed already
+			System.out.println(exception.getMessage());
 		}
+
+		try {
+			database.update(projectViewQuery);
+		} catch (Exception exception) {
+			System.out.println(exception.getMessage());
+		}
+	}
+
+	private String combineColumns(String leftColumns, String ... rightColumns) {
+		for (String columns : rightColumns) {
+			if (!leftColumns.equals("") && !columns.equals("")) {
+				leftColumns += ", ";
+			}
+			
+			leftColumns += columns;
+		}
+		
+		return leftColumns;
 	}
 }

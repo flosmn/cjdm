@@ -39,6 +39,7 @@ public class Database {
 	        export(resultSet, relationName);
 	        statement.close();
     	} catch (Exception exception) {
+    		System.err.println(exception.getMessage());
     		exception.printStackTrace();
     	}
     }
@@ -82,6 +83,7 @@ public class Database {
 	        dump(resultSet);
 	        statement.close();
     	} catch (Exception exception) {
+    		System.err.println(exception.getMessage());
     		exception.printStackTrace();
     	}
     }
