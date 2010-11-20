@@ -54,6 +54,7 @@ public class WorkerQueue {
 			(new TreePackageGenerator()).generateTreePackagesForProject(projectPackage.getFile());
 		
 		for (TreePackage treePackage : treePackagesOfProject){
+			treePackage.printTree();
 			traverse(treePackage);
 		}
 	}
@@ -87,6 +88,7 @@ public class WorkerQueue {
 			record.setName(treePackage.getName());
 			
 			for (Worker worker : queues.get(scope)) {
+				System.out.println("set value: "+ worker.doWork(treePackage) + " for attribute " + worker.getAttributeName());
 				record.setValueForAttribute(worker.doWork(treePackage), worker.getAttributeName());
 			}
 		}
@@ -145,7 +147,7 @@ public class WorkerQueue {
 		
 		String classViewQuery = "CREATE VIEW class_view AS" +
 				" SELECT " + combineColumns(
-						groupedColumns.get(Scope.CLASS),
+						columns.get(Scope.CLASS),
 						groupedColumns.get(Scope.METHOD)) +
 				" FROM class INNER JOIN method" +
 				" ON class.ID = method.parentID" +
