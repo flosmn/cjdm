@@ -124,6 +124,7 @@ public class WorkerQueue {
 	public void createViews() {
 		HashMap<Scope, String> columns = new HashMap<Scope, String>();
 		HashMap<Scope, String> groupedColumns = new HashMap<Scope, String>();
+		HashMap<Scope, String> viewQueries = new HashMap<Scope, String>();
 		
 		for (Scope scope : Scope.getInstances()) {
 			columns.put(scope, "");
@@ -141,44 +142,37 @@ public class WorkerQueue {
 		
 		// FIXME: hard coded scope names
 		
-		String methodViewQuery = ("CREATE VIEW method_view AS" +
+		viewQueries.put(Scope.METHOD,
+				" CREATE VIEW method_view AS" +
 				" SELECT " + columns.get(Scope.METHOD) +
 				" FROM method");
 		
-		String classViewQuery = "CREATE VIEW class_view AS" +
+		viewQueries.put(Scope.CLASS,
+				" CREATE VIEW class_view AS" +
 				" SELECT " + combineColumns(
 						columns.get(Scope.CLASS),
 						groupedColumns.get(Scope.METHOD)) +
 				" FROM class INNER JOIN method" +
 				" ON class.ID = method.parentID" +
-				" GROUP BY " + combineColumns("class.ID");
+				" GROUP BY " + combineColumns("class.ID"));
 		
-		String projectViewQuery = "CREATE VIEW project_view AS" +
+		viewQueries.put(Scope.PROJECT,
+				" CREATE VIEW project_view AS" +
 				" SELECT " + combineColumns(
-						groupedColumns.get(Scope.PROJECT),
+						columns.get(Scope.PROJECT),
 						groupedColumns.get(Scope.CLASS),
 						groupedColumns.get(Scope.METHOD)) +
 				" FROM project INNER JOIN class" +
 				" ON project.ID = class.parentID JOIN method" +
 				" ON class.ID = method.parentID" +
-				" GROUP BY " + combineColumns("project.ID");
+				" GROUP BY " + combineColumns("project.ID"));
 		
-		try {
-			database.update(methodViewQuery);
-		} catch (Exception exception) {
-			System.out.println(exception.getMessage());
-		}
-
-		try {
-			database.update(classViewQuery);
-		} catch (Exception exception) {
-			System.out.println(exception.getMessage());
-		}
-
-		try {
-			database.update(projectViewQuery);
-		} catch (Exception exception) {
-			System.out.println(exception.getMessage());
+		for (Scope scope : Scope.getInstances()) {
+			try {
+				database.update(viewQueries.get(scope));
+			} catch (Exception exception) {
+				System.out.println(exception.getMessage());
+			}
 		}
 	}
 
