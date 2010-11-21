@@ -10,17 +10,21 @@ import database.Scope;
 import utils.DirtyLittleHelper;
 import main.TreePackage;
 
-public class CountNestednessOfConditionals extends Worker{
+public class RecursiveNestednessCounter extends Worker{
 	private int maxNestedness;
+	private String attributeName;
+	private String[] children;
 
-	public CountNestednessOfConditionals() {
+	public RecursiveNestednessCounter(String attributeName, Scope scope, String ... children) {
 		this.scope = Scope.METHOD;
+		this.attributeName = attributeName;
+		this.children = children;
 		this.aggregator = Aggregator.MAX;
 	}
 	
 	@Override
 	public String getAttributeName() {
-		return "nestedness_conditionals";
+		return this.attributeName;
 	}
 	
 	public void traverse(CommonTree tree, int nestedness){
@@ -30,7 +34,7 @@ public class CountNestednessOfConditionals extends Worker{
 		}
 	
 		if (tree.getText() != null && tree.getText().equals("BLOCK_SCOPE")) {
-			if(hasIf(tree)){
+			if(hasChild(tree)){
 				nestedness++;
 				if(nestedness > maxNestedness){
 					maxNestedness = nestedness;
@@ -48,9 +52,13 @@ public class CountNestednessOfConditionals extends Worker{
 		}
 	}
 
-	private boolean hasIf(CommonTree tree) {
-		CommonTree modifierNode = firstChildMatchingName(tree, "if");
-		return (modifierNode != null);
+	private boolean hasChild(CommonTree tree) {
+		for(String str : children){
+			if(firstChildMatchingName(tree, str) != null){
+				return true;
+			}
+		}
+		return false;
 	}
 
 	@Override
