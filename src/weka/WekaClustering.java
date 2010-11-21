@@ -11,7 +11,7 @@ import weka.core.converters.ConverterUtils.DataSource;
 public class WekaClustering implements Runnable
 {
 	
-	SimpleKMeans clusterer = new SimpleKMeans();
+	SimpleKMeans clusterer;
 	Instances data;
 	private boolean finished = false;
 	private int iterations = 100;
@@ -19,11 +19,12 @@ public class WekaClustering implements Runnable
 	/**
 	 * Creates a new Cluster
 	 * 
-	 * @param filename relative or absolute path to the data-file
+	 * @param number of max iterations
 	 * @throws Exception if the file does not exsist oder is corrupt
 	 */
-	public WekaClustering() throws Exception
+	public WekaClustering(int i) throws Exception
 	{
+		this.iterations = i;
 		DataSource source = new DataSource(
 				PathAndFileNames.WEKA_TEST_DATA_PATH + 
 				PathAndFileNames.EXPORT_FILE_NAME);
@@ -40,31 +41,37 @@ public class WekaClustering implements Runnable
 	 */
 	public void run()
 	{
+		SimpleKMeans clusterer1 = null;
+		SimpleKMeans clusterer2 = null;
 		this.finished = false;
 		try {
 			double lastError = 2000000000;
 			double thisError = 1000000000;
-			int clusters = 1;
-			while (Math.abs(lastError / thisError) > 1.5)
+			int clusters = 2;
+			/*
+			 * keep increasing the number of clusters until the number of squared error don't
+			 * not change (much) anymore
+			 */
+			while (Math.abs(lastError / thisError) > 1.5 || clusterer1 == null)
 			{
-				clusterer = new SimpleKMeans();
+				clusterer1 = clusterer2;
+				clusterer2 = new SimpleKMeans();
 				String[] options = new String[4];
 				 options[0] = "-I";                 // max. iterations
 				 options[1] = this.iterations+"";
 				 options[2] = "-N";                 // max. iterations
 				 options[3] = clusters+"";
 				 //System.out.println(this.data);
-				clusterer.setOptions(options);     // set the options
-				this.clusterer.buildClusterer(this.data);
-				this.clusterer.getNumClusters(); // to invoke calculation!
+				clusterer2.setOptions(options);     // set the options
+				clusterer2.buildClusterer(this.data);
+				clusterer2.getNumClusters(); // to invoke calculation!
 				lastError = thisError;
-				thisError = this.clusterer.getSquaredError();
-				System.out.println("Tried "+clusters+" Cluster: "+thisError);
+				thisError = clusterer2.getSquaredError();
+				//System.out.println("Tried "+clusters+" Cluster: "+thisError);
 				clusters++;
 			}
+			this.clusterer = clusterer1; // using the 2nd last clustering, because the error didn't change in the last one
 			this.finished = true;
-			System.out.println(this.clusterer);
-			System.out.println(this.getFlaggedData());
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -169,8 +176,11 @@ public class WekaClustering implements Runnable
 	{
 		WekaClustering c;
 		try {
-			c = new WekaClustering();
+			c = new WekaClustering(100);
 			c.run();
+			
+			System.out.println(c.clusterer);
+			System.out.println(c.getFlaggedData());
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
