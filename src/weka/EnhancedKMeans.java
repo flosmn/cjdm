@@ -60,7 +60,7 @@ public class EnhancedKMeans implements Runnable
 			 * keep increasing the number of clusters until the number of squared error don't
 			 * not change (much) anymore
 			 */
-			while (Math.abs(lastError / thisError) > 1.5 || clusterer1 == null)
+			while (Math.abs(lastError / thisError) > 1.3 || clusterer1 == null)
 			{
 				clusterer1 = clusterer2;
 				clusterer2 = new SimpleKMeans();
