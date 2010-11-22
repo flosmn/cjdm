@@ -63,6 +63,11 @@ class Main {
 		// TODO: add more workers here
 		
 		// TODO: don't drop, but append to existing tables
+		/*
+		 * For that we would need some kind of identification for each project/class/method
+		 * so data already in our database won't be added again.
+		 * Maybe a simple md5-hash?
+		 */
 		workerQueue.dropViews();
 		workerQueue.dropTables();
 		
