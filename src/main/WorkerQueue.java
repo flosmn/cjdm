@@ -108,9 +108,9 @@ public class WorkerQueue {
 	}
 
 	public void dropTables() {
-		for (Relation relation : relations.values()) {
-			relation.dropTable();
-		}
+		relations.get(Scope.METHOD).dropTable();
+		relations.get(Scope.CLASS).dropTable();
+		relations.get(Scope.PROJECT).dropTable();
 	}
 
 	public void createTables() {
