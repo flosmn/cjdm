@@ -29,6 +29,7 @@ public class EnhancedKMeans implements Runnable {
 		AttributeNormalizer an = new AttributeNormalizer(data);
 		an.addAttribute("objects");
 		an.addAttribute("interface");
+		an.addAttribute("extends");
 		an.work();
 		for (int j = 0; j < data.numAttributes(); j++)
 		{
