@@ -53,7 +53,12 @@ public class Database {
 
 	        int columnCount = metaData.getColumnCount();
 			for (int columnIndex = 0; columnIndex < columnCount; ++columnIndex) {
-				logger.logAndStartNewLine("@attribute \"" + metaData.getColumnName(columnIndex + 1) + "\" integer");
+				String attributeName = metaData.getColumnName(columnIndex + 1);
+				if (attributeName.endsWith("_NAME")) {
+					logger.logAndStartNewLine("@attribute \"" + attributeName + "\" string");
+				} else {
+					logger.logAndStartNewLine("@attribute \"" + attributeName + "\" integer");
+				}
 			}
 			
 			logger.logAndStartNewLine("@data");

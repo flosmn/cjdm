@@ -49,7 +49,11 @@ public class Relation {
 		String attributeDefs = "";
 		String attributeNames = "";
 		for (String attribute : attributes) {
-			attributeDefs += ", " + attribute + " INTEGER";
+			if (attribute.endsWith("name")) {
+				attributeDefs += ", " + attribute + " STRING";
+			} else {
+				attributeDefs += ", " + attribute + " INTEGER";
+			}
 			attributeNames += ", " + attribute;
 		}
 		
