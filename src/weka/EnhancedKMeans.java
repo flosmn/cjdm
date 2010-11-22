@@ -10,10 +10,7 @@ import weka.core.Instances;
 import weka.core.converters.ConverterUtils.DataSource;
 import weka.util.AttributeNormalizer;
 
-
-public class EnhancedKMeans implements Runnable
-{
-	
+public class EnhancedKMeans implements Runnable {
 	SimpleKMeans clusterer;
 	Instances data;
 	private boolean finished = false;
@@ -32,6 +29,7 @@ public class EnhancedKMeans implements Runnable
 		AttributeNormalizer an = new AttributeNormalizer(data);
 		an.addAttribute("objects");
 		an.addAttribute("interface");
+		an.addAttribute("extends");
 		an.work();
 		for (int j = 0; j < data.numAttributes(); j++)
 		{
@@ -65,19 +63,18 @@ public class EnhancedKMeans implements Runnable
 				clusterer1 = clusterer2;
 				clusterer2 = new SimpleKMeans();
 				String[] options = new String[4];
-				 options[0] = "-I";                 // max. iterations
-				 options[1] = this.iterations+"";
-				 options[2] = "-N";                 // max. iterations
-				 options[3] = clusters+"";
-				 //System.out.println(this.data);
+				options[0] = "-I";                 // max. iterations
+				options[1] = this.iterations+"";
+				options[2] = "-N";                 // max. iterations
+				options[3] = clusters+"";
 				clusterer2.setOptions(options);     // set the options
 				clusterer2.buildClusterer(this.data);
 				clusterer2.getNumClusters(); // to invoke calculation!
 				lastError = thisError;
 				thisError = clusterer2.getSquaredError();
-				//System.out.println("Tried "+clusters+" Cluster: "+thisError);
 				clusters++;
 			}
+
 			this.clusterer = clusterer1; // using the 2nd last clustering, because the error didn't change in the last one
 			this.finished = true;
 		} catch (Exception e) {
@@ -90,14 +87,10 @@ public class EnhancedKMeans implements Runnable
 	 * 
 	 * @return	the number of clusters
 	 */
-	public int getNumberClusters()
-	{
-		if (finished)
-		{
+	public int getNumberClusters() {
+		if (finished) {
 			return this.clusterer.getNumClusters();
-		}
-		else
-		{
+		} else {
 			return -1;
 		}
 	}
@@ -108,20 +101,17 @@ public class EnhancedKMeans implements Runnable
 	 * 
 	 * @return a cluster-flagged copy of the original data-set
 	 */
-	public Instances getFlaggedData()
-	{
+	public Instances getFlaggedData() {
 		if (!this.finished) return null;
 		Instances data = new Instances(this.data); // copying the dataset
 		Instance instance;
 		Attribute att = new Attribute("Cluster");
 		int[] clusters = new int[data.numInstances()];
-		for (int i = 0; i < data.numInstances(); i++)
-		{
+		for (int i = 0; i < data.numInstances(); i++) {
 			clusters[i] = this.getCluster(data.instance(i));
 		}
 		data.insertAttributeAt(att, data.numAttributes());
-		for (int i = 0; i < this.data.numInstances(); i++)
-		{
+		for (int i = 0; i < this.data.numInstances(); i++) {
 			instance = data.instance(i);
 			instance.setValue(data.numAttributes()-1, clusters[i]); // when i try to give the actual attribute here it will throw an exception
 		}
@@ -134,8 +124,7 @@ public class EnhancedKMeans implements Runnable
 	 * @param i
 	 * @return the clusternumber
 	 */
-	public int getCluster(Instance i)
-	{
+	public int getCluster(Instance i) {
 		if (!this.finished) return -1;
 		try {
 			return this.clusterer.clusterInstance(i);
@@ -151,8 +140,7 @@ public class EnhancedKMeans implements Runnable
 	 * @param i
 	 * @return the center of the i.-cluster
 	 */
-	public Instance getCluster(int i)
-	{
+	public Instance getCluster(int i) {
 		if (i >= 0 && i < this.clusterer.getNumClusters() && this.finished)
 			return this.clusterer.getClusterCentroids().instance(i);
 		else
@@ -164,8 +152,7 @@ public class EnhancedKMeans implements Runnable
 	 * 
 	 * @param i the instance to add
 	 */
-	public void addInstance(Instance i)
-	{
+	public void addInstance(Instance i) {
 		this.data.add(i);
 	}
 	
@@ -174,23 +161,19 @@ public class EnhancedKMeans implements Runnable
 	 * 
 	 * @param i
 	 */
-	public void setIterations(int i)
-	{
-		if (i > 0)
+	public void setIterations(int i) {
+		if (i > 0) {
 			this.iterations = i;
+		}
 	}
 	
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		EnhancedKMeans c;
 		try {
 			File f = new File(PathAndFileNames.WEKA_TEST_DATA_PATH);
 			File[] files = f.listFiles();
-			for (File data : files)
-			{
-				if (data.getName().endsWith(".arff"))
-				{
-					
+			for (File data : files) {
+				if (data.getName().endsWith(".arff")) {
 					c = new EnhancedKMeans(100,data.getAbsolutePath());
 					c.run();
 					System.out.println("--------------------------------------");
@@ -204,5 +187,4 @@ public class EnhancedKMeans implements Runnable
 			e.printStackTrace();
 		}
 	}
-	
 }
