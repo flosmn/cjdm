@@ -6,8 +6,9 @@ import database.Database;
 import database.Scope;
 
 import utils.PathAndFileNames;
+import workers.CountNestednessOfLocks;
 import workers.Counter;
-import workers.CountNestednessOfSynchronizedBlocks;
+import workers.RecursiveNestednessCounter;
 
 /**
  * Parse a java file or directory of java files using the generated parser
@@ -55,7 +56,10 @@ class Main {
 		workerQueue.addWorker(new Counter("delayed_interface", Scope.CLASS, "IMPLEMENTS_CLAUSE", "TYPE", "QUALIFIED_TYPE_IDENT", "Delayed"));
 		workerQueue.addWorker(new Counter("threadFactory_interface", Scope.CLASS, "IMPLEMENTS_CLAUSE", "TYPE", "QUALIFIED_TYPE_IDENT", "ThreadFactory"));
 		
-		workerQueue.addWorker(new CountNestednessOfSynchronizedBlocks());
+		workerQueue.addWorker(new CountNestednessOfLocks());
+		workerQueue.addWorker(new RecursiveNestednessCounter("nestedness_synchronized", Scope.METHOD, "synchronized"));
+		workerQueue.addWorker(new RecursiveNestednessCounter("nestedness_conditionals", Scope.METHOD, "if"));
+		workerQueue.addWorker(new RecursiveNestednessCounter("nestedness_loops", Scope.METHOD, "for", "while", "do"));
 		// TODO: add more workers here
 		
 		// TODO: don't drop, but append to existing tables

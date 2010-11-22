@@ -54,7 +54,6 @@ public class WorkerQueue {
 			(new TreePackageGenerator()).generateTreePackagesForProject(projectPackage.getFile());
 		
 		for (TreePackage treePackage : treePackagesOfProject){
-			treePackage.printTree();
 			traverse(treePackage);
 		}
 	}
@@ -88,7 +87,6 @@ public class WorkerQueue {
 			record.setName(treePackage.getName());
 			
 			for (Worker worker : queues.get(scope)) {
-				System.out.println("set value: "+ worker.doWork(treePackage) + " for attribute " + worker.getAttributeName());
 				record.setValueForAttribute(worker.doWork(treePackage), worker.getAttributeName());
 			}
 		}
