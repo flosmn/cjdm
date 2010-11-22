@@ -8,6 +8,8 @@ import weka.core.Attribute;
 import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.converters.ConverterUtils.DataSource;
+import weka.filters.Filter;
+import weka.filters.unsupervised.attribute.Normalize;
 import weka.util.AttributeNormalizer;
 
 public class EnhancedKMeans implements Runnable {
@@ -27,10 +29,14 @@ public class EnhancedKMeans implements Runnable {
 		this.setIterations(i);
 		data = (new DataSource(file)).getDataSet();
 		AttributeNormalizer an = new AttributeNormalizer(data);
-		an.addAttribute("objects");
-		an.addAttribute("interface");
-		an.addAttribute("extends");
+		an.addAttribute("objects",1);
+		an.addAttribute("interface",1);
+		an.addAttribute("extends",1);
+		an.addAttribute("name", 0);
 		an.work();
+		Normalize norm = new Normalize();
+		norm.setInputFormat(data);
+		//this.data = Filter.useFilter(data, norm);
 		for (int j = 0; j < data.numAttributes(); j++)
 		{
 			System.out.println(data.attribute(j).name() + ": "+data.attribute(j).weight());
@@ -58,7 +64,7 @@ public class EnhancedKMeans implements Runnable {
 			 * keep increasing the number of clusters until the number of squared error don't
 			 * not change (much) anymore
 			 */
-			while (Math.abs(lastError / thisError) > 1.3 || clusterer1 == null)
+			while (Math.abs(lastError / thisError) > 1.1 || clusterer1 == null)
 			{
 				clusterer1 = clusterer2;
 				clusterer2 = new SimpleKMeans();
@@ -179,7 +185,7 @@ public class EnhancedKMeans implements Runnable {
 					System.out.println("--------------------------------------");
 					System.out.println("Clustering for "+data.getName());
 					System.out.println(c.clusterer);
-					System.out.println(c.getFlaggedData());
+					//System.out.println(c.getFlaggedData());
 				}
 			}
 		} catch (Exception e) {
