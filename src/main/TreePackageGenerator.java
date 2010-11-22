@@ -108,7 +108,9 @@ public class TreePackageGenerator {
 		File[] projects = (new File(PathAndFileNames.PROJECT_SOURCES_PATH)).listFiles();
 		
 		for(File file : projects){
-			projectPackages.add(new TreePackage(null, file.getName(), file, Scope.PROJECT));
+			if(!(file.getName().equals("data"))){
+				projectPackages.add(new TreePackage(null, file.getName(), file, Scope.PROJECT));
+			}
 		}
 		
 		return projectPackages;

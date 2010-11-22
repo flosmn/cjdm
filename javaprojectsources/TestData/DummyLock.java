@@ -1,6 +1,6 @@
 import java.util.concurrent.locks.Lock;
 
-public class DummyLock {
+public class DummyLock extends Executor{
 
 	Lock lock = new Lock();
 	private int i = 5;
