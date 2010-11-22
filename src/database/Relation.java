@@ -53,9 +53,13 @@ public class Relation {
 			attributeNames += ", " + attribute;
 		}
 		
-		String query = "CREATE TABLE " + scope + " ( ID INTEGER PRIMARY KEY, parentID INTEGER, name VARCHAR(256)" + attributeDefs + " )";
+		String query = "CREATE TABLE " + scope + " ( ID INTEGER PRIMARY KEY, parentID INTEGER";
+		if (scope != Scope.PROJECT) {
+			query += " FOREIGN KEY REFERENCES " + scope.getParent() + "(ID)";
+		}
+		query += ", name VARCHAR(256)" + attributeDefs + " )";
 		insertPrefix = "INSERT INTO " + scope + " ( ID, parentID, name" + attributeNames + " ) VALUES ";
-				
+
 		try {
 			database.update(query);
 		} catch (Exception exception) {

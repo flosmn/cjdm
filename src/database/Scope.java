@@ -21,9 +21,9 @@ public class Scope {
 		if (instances == null) {
 			instances = new ArrayList<Scope>();
 			
-			instances.add(METHOD);
-			instances.add(CLASS);
 			instances.add(PROJECT);
+			instances.add(CLASS);
+			instances.add(METHOD);
 		}
 		
 		return instances;

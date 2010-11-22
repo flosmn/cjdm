@@ -7,7 +7,8 @@ public class Exporter {
 		Database database = new Database(PathAndFileNames.DATA_BASE_PATH);
 		
 		for (Scope scope : Scope.getInstances()) {
-			database.exportArff("SELECT * FROM " + scope + "_view", scope.toString());
+			String query = "SELECT * FROM " + scope + "_view";
+			database.exportArff(query, scope.toString());
 		}
 		
 		database.shutdown();

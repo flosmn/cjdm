@@ -114,9 +114,9 @@ public class WorkerQueue {
 	}
 
 	public void createTables() {
-		for (Relation relation : relations.values()) {
-			relation.createTable();
-		}
+		relations.get(Scope.PROJECT).createTable();
+		relations.get(Scope.CLASS).createTable();
+		relations.get(Scope.METHOD).createTable();
 	}
 
 	public void createViews() {
@@ -142,21 +142,31 @@ public class WorkerQueue {
 		
 		viewQueries.put(Scope.METHOD,
 				" CREATE VIEW method_view AS" +
-				" SELECT " + columns.get(Scope.METHOD) +
-				" FROM method");
+				" SELECT " + combineColumns(
+						"project.name AS project_name",
+						"class.name AS class_name",
+						"method.name AS method_name",
+						columns.get(Scope.METHOD)) +
+				" FROM project INNER JOIN class" +
+				" ON project.ID = class.parentID JOIN method" +
+				" ON class.ID = method.parentID");
 		
 		viewQueries.put(Scope.CLASS,
 				" CREATE VIEW class_view AS" +
 				" SELECT " + combineColumns(
+						"MIN(project.name) AS project_name",
+						"class.name AS class_name",
 						columns.get(Scope.CLASS),
 						groupedColumns.get(Scope.METHOD)) +
-				" FROM class INNER JOIN method" +
+				" FROM project INNER JOIN class" +
+				" ON project.ID = class.parentID JOIN method" +
 				" ON class.ID = method.parentID" +
 				" GROUP BY " + combineColumns("class.ID"));
 		
 		viewQueries.put(Scope.PROJECT,
 				" CREATE VIEW project_view AS" +
 				" SELECT " + combineColumns(
+						"project.name AS project_name",
 						columns.get(Scope.PROJECT),
 						groupedColumns.get(Scope.CLASS),
 						groupedColumns.get(Scope.METHOD)) +

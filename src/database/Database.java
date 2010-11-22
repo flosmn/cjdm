@@ -79,7 +79,7 @@ public class Database {
     public synchronized void query(String expression) {
     	try {
 	        Statement statement = connection.createStatement();
-	        ResultSet resultSet = statement.executeQuery(expression); 
+	        ResultSet resultSet = statement.executeQuery(expression);
 	        dump(resultSet);
 	        statement.close();
     	} catch (Exception exception) {
