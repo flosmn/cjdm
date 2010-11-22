@@ -8,6 +8,7 @@ import weka.core.Attribute;
 import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.converters.ConverterUtils.DataSource;
+import weka.util.AttributeNormalizer;
 
 
 public class EnhancedKMeans implements Runnable
@@ -28,6 +29,14 @@ public class EnhancedKMeans implements Runnable
 	{
 		this.setIterations(i);
 		data = (new DataSource(file)).getDataSet();
+		AttributeNormalizer an = new AttributeNormalizer(data);
+		an.addAttribute("objects");
+		an.addAttribute("interface");
+		an.work();
+		for (int j = 0; j < data.numAttributes(); j++)
+		{
+			System.out.println(data.attribute(j).name() + ": "+data.attribute(j).weight());
+		}
 	}
 	
 	/**
