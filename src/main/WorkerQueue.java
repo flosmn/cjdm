@@ -54,6 +54,7 @@ public class WorkerQueue {
 			(new TreePackageGenerator()).generateTreePackagesForProject(projectPackage.getFile());
 		
 		for (TreePackage treePackage : treePackagesOfProject){
+			System.out.println("process: "+treePackage.getFile().getName());
 			traverse(treePackage);
 		}
 	}
