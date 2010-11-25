@@ -92,6 +92,7 @@ class Main {
 
 		Collection<TreePackage> projectPackages = (new TreePackageGenerator()).generateProjectPackages();
 		for(TreePackage projectPackage: projectPackages) {
+			System.out.println("Process project: "+projectPackage.getName());
 			workerQueue.doWork(projectPackage);
 		}
 		

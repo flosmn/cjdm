@@ -51,14 +51,20 @@ public class AttributeNormalizer
 				for (int i = 0; i < data.numAttributes(); i++)
 				{
 					if (data.attribute(i).name().endsWith("_"+att))
+					{
 						numOfAttributes++;
+					}
 				}
 				// modifying attribute weight
+				System.out.println(this.attributes.get(att));
 				double weight = this.attributes.get(att) / numOfAttributes; // 1.0 instead 1 for float-division
 				for (int i = 0; i < data.numAttributes(); i++)
 				{
 					if (data.attribute(i).name().endsWith("_"+att))
+					{
 						data.attribute(i).setWeight(weight);
+						System.out.println("Setting weight to "+weight+" for "+data.attribute(i).name());
+					}
 				}
 			}
 		}

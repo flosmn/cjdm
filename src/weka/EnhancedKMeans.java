@@ -10,6 +10,7 @@ import weka.core.Instances;
 import weka.core.converters.ConverterUtils.DataSource;
 import weka.filters.Filter;
 import weka.filters.unsupervised.attribute.Normalize;
+import weka.filters.unsupervised.attribute.StringToNominal;
 import weka.util.AttributeNormalizer;
 
 public class EnhancedKMeans implements Runnable {
@@ -32,11 +33,20 @@ public class EnhancedKMeans implements Runnable {
 		an.addAttribute("objects",1);
 		an.addAttribute("interface",1);
 		an.addAttribute("extends",1);
-		an.addAttribute("name", 0);
 		an.work();
 		Normalize norm = new Normalize();
 		norm.setInputFormat(data);
 		//this.data = Filter.useFilter(data, norm);
+		
+		for (int j = 0; j < data.numAttributes(); j++)
+		{
+			if (data.attribute(j).type() == Attribute.STRING)
+			{
+				data.deleteAttributeAt(j);
+				j--;
+			}
+		}
+		
 		for (int j = 0; j < data.numAttributes(); j++)
 		{
 			System.out.println(data.attribute(j).name() + ": "+data.attribute(j).weight());
