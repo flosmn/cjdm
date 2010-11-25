@@ -29,7 +29,7 @@ public class Miner {
 		assert (folder.isDirectory()): "given path to *.arff files is not a directory";
 		File[] listOfFiles = folder.listFiles();
 		for (int i = 0; i < listOfFiles.length; i++) {
-			if (listOfFiles[i].isFile() && listOfFiles[i].getName().endsWith(".arff")) {
+			if (listOfFiles[i].isFile() && listOfFiles[i].getName().endsWith("Summarized.arff")) {
 				System.out.println("____________________________________________");
 				System.out.println(listOfFiles[i].getName());
 				doMining(PathAndFileNames.WEKA_TEST_DATA_PATH + listOfFiles[i].getName());
