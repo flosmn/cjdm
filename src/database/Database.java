@@ -87,15 +87,16 @@ public class Database {
     }
     
     static private String summarize(Integer value) {
-    	if (value <=    0) return         "0";
-    	if (value <=    1) return         "1";
-    	if (value <=    4) return      "2..4";
-    	if (value <=   20) return     "5..20";
-    	if (value <=  100) return   "21..100";
-    	if (value <=  500) return  "101..500";
-    	if (value <= 3000) return "501..3000";
+    	if (value <=     0) return           "0";
+    	if (value <=     1) return           "1";
+    	if (value <=     4) return        "2..4";
+    	if (value <=    20) return       "5..20";
+    	if (value <=   100) return     "21..100";
+    	if (value <=   500) return    "101..500";
+    	if (value <=  3000) return   "501..3000";
+    	if (value <= 20000) return "3001..20000";
     	
-    	return "3001..";
+    	return "20001..";
    	}
 
 	public synchronized void query(String expression) {
