@@ -6,7 +6,7 @@ public class SourceFinder {
 	public static void main(String[] args) {
 		Database database = new Database(PathAndFileNames.DATA_BASE_PATH);
 		
-		find(database, Scope.CLASS, "nestedness_conditionals > 0");
+		find(database, Scope.METHOD, "nestedness_conditionals > 8");
 		
 		database.shutdown();
 	}

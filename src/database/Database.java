@@ -32,11 +32,11 @@ public class Database {
     	}
     }
     
-    public synchronized void exportArff(String expression, String relationName, boolean summarized) {
+    public synchronized void exportArff(String expression, String relationName, boolean summarized, int maxRowCount) {
     	try {
 	        Statement statement = connection.createStatement();
 	        ResultSet resultSet = statement.executeQuery(expression); 
-	        export(resultSet, relationName, summarized);
+	        export(resultSet, relationName, summarized, maxRowCount);
 	        statement.close();
     	} catch (Exception exception) {
     		System.err.println(exception.getMessage());
@@ -44,7 +44,7 @@ public class Database {
     	}
     }
     
-    private synchronized void export(ResultSet resultSet, String relationName, boolean summarized) {
+    private synchronized void export(ResultSet resultSet, String relationName, boolean summarized, int maxRowCount) {
        	try {
 	        ResultSetMetaData metaData = resultSet.getMetaData();
 
@@ -61,8 +61,8 @@ public class Database {
 			}
 			
 			logger.logAndStartNewLine("@data");
-
-	        for (; resultSet.next(); ) {
+System.out.println("rc: " + maxRowCount);
+	        for (int i = 0; resultSet.next() && i < maxRowCount; ++i) {
 	            for (int columnIndex = 0; columnIndex < columnCount; ++columnIndex) {
 	            	if (metaData.getColumnName(columnIndex + 1).endsWith("_NAME")) {
 	            		continue;
