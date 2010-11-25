@@ -8,11 +8,13 @@ public class Exporter {
 		
 		for (Scope scope : Scope.getInstances()) {
 			String query = "SELECT * FROM " + scope + "_view";
-			database.exportArff(query, scope.toString());
+			database.exportArff(query, scope.toString(), true);
 		}
 		
 		database.shutdown();
 		
 		System.out.println("Done!");
 	}
+	
+	
 }

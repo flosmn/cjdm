@@ -32,11 +32,11 @@ public class Database {
     	}
     }
     
-    public synchronized void exportArff(String expression, String relationName) {
+    public synchronized void exportArff(String expression, String relationName, boolean summarized) {
     	try {
 	        Statement statement = connection.createStatement();
 	        ResultSet resultSet = statement.executeQuery(expression); 
-	        export(resultSet, relationName);
+	        export(resultSet, relationName, summarized);
 	        statement.close();
     	} catch (Exception exception) {
     		System.err.println(exception.getMessage());
@@ -44,20 +44,19 @@ public class Database {
     	}
     }
     
-    private synchronized void export(ResultSet resultSet, String relationName) {
+    private synchronized void export(ResultSet resultSet, String relationName, boolean summarized) {
        	try {
 	        ResultSetMetaData metaData = resultSet.getMetaData();
 
 	        Logger logger = new Logger();
 			logger.logAndStartNewLine("@relation " + relationName);
-
+			
+			String typeName = summarized ? "string" : "integer";
 	        int columnCount = metaData.getColumnCount();
 			for (int columnIndex = 0; columnIndex < columnCount; ++columnIndex) {
 				String attributeName = metaData.getColumnName(columnIndex + 1);
-				if (attributeName.endsWith("_NAME")) {
-					logger.logAndStartNewLine("@attribute \"" + attributeName + "\" string");
-				} else {
-					logger.logAndStartNewLine("@attribute \"" + attributeName + "\" integer");
+				if (!attributeName.endsWith("_NAME")) {
+					logger.logAndStartNewLine("@attribute \"" + attributeName + "\" " + typeName);
 				}
 			}
 			
@@ -65,11 +64,16 @@ public class Database {
 
 	        for (; resultSet.next(); ) {
 	            for (int columnIndex = 0; columnIndex < columnCount; ++columnIndex) {
-	                String value = resultSet.getString(columnIndex + 1);
+	            	if (metaData.getColumnName(columnIndex + 1).endsWith("_NAME")) {
+	            		continue;
+	            	}
+	            	
+	                Integer value = resultSet.getInt(columnIndex + 1);
+	                String valueString = summarized ? summarize(value) : value.toString();
 					if (columnIndex != columnCount - 1) {
-						logger.log(value + ", ");
+						logger.log(valueString + ", ");
 					} else {
-						logger.logAndStartNewLine(value);
+						logger.logAndStartNewLine(valueString);
 					}
 	            }
 	        }
@@ -81,7 +85,19 @@ public class Database {
     	}
     }
     
-    public synchronized void query(String expression) {
+    static private String summarize(Integer value) {
+    	if (value <=    0) return         "0";
+    	if (value <=    1) return         "1";
+    	if (value <=    4) return      "2..4";
+    	if (value <=   20) return     "5..20";
+    	if (value <=  100) return   "21..100";
+    	if (value <=  500) return  "101..500";
+    	if (value <= 3000) return "501..3000";
+    	
+    	return "3001..";
+   	}
+
+	public synchronized void query(String expression) {
     	try {
 	        Statement statement = connection.createStatement();
 	        ResultSet resultSet = statement.executeQuery(expression);
