@@ -4,15 +4,15 @@ import utils.PathAndFileNames;
 
 public class SourceFinder {
 	public static void main(String[] args) {
-		find(Scope.CLASS, "nestedness_conditionals > 0");
-	}
-	
-	public static void find(Scope scope, String conditions) {
 		Database database = new Database(PathAndFileNames.DATA_BASE_PATH);
 		
-		String query = "SELECT * FROM " + scope + "_view WHERE " + conditions;
-		database.query(query);
+		find(database, Scope.CLASS, "nestedness_conditionals > 0");
 		
 		database.shutdown();
+	}
+	
+	public static void find(Database database, Scope scope, String conditions) {
+		String query = "SELECT * FROM " + scope + "_view WHERE " + conditions;
+		database.query(query);
 	}
 }

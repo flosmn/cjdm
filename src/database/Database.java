@@ -78,7 +78,8 @@ public class Database {
 	            }
 	        }
 
-	        logger.writeToFile(PathAndFileNames.WEKA_TEST_DATA_PATH, relationName + ".arff");
+	        String fileName = summarized ? relationName + "Summarized.arff" : relationName + ".arff";
+	        logger.writeToFile(PathAndFileNames.WEKA_TEST_DATA_PATH, fileName);
 	        
     	} catch (Exception exception) {
     		exception.printStackTrace();
