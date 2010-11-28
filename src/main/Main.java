@@ -61,13 +61,6 @@ class Main {
 		workerQueue.addWorker(new Counter("semaphore_object_fields", Scope.CLASS, "VAR_DECLARATION", "TYPE", "QUALIFIED_TYPE_IDENT", "Semaphore(<.*>)?"));
 		workerQueue.addWorker(new Counter("threadFactory_object_fields", Scope.CLASS, "VAR_DECLARATION", "TYPE", "QUALIFIED_TYPE_IDENT", "ThreadFactory"));
 		
-		workerQueue.addWorker(new Counter("concurrentMap_objects_extends", Scope.CLASS, "EXTENDS_CLAUSE", "TYPE", "QUALIFIED_TYPE_IDENT", "ConcurrentMap(<.*>)?"));
-		workerQueue.addWorker(new Counter("executorService_objects_extends", Scope.CLASS, "EXTENDS_CLAUSE", "TYPE", "QUALIFIED_TYPE_IDENT", "ExecutorService(<.*>)?"));
-		workerQueue.addWorker(new Counter("threadPoolExecutor_objects_extends", Scope.CLASS, "EXTENDS_CLAUSE", "TYPE", "QUALIFIED_TYPE_IDENT", "ThreadPoolExecutor(<.*>)?"));
-		workerQueue.addWorker(new Counter("cyclicBarrier_objects_extends", Scope.CLASS, "EXTENDS_CLAUSE", "TYPE", "QUALIFIED_TYPE_IDENT", "CyclicBarrier(<.*>)?"));
-		workerQueue.addWorker(new Counter("exchanger_objects_extends", Scope.CLASS, "EXTENDS_CLAUSE", "TYPE", "QUALIFIED_TYPE_IDENT", "Exchanger(<.*>)?"));
-		workerQueue.addWorker(new Counter("semaphore_objects_extends", Scope.CLASS, "EXTENDS_CLAUSE", "TYPE", "QUALIFIED_TYPE_IDENT", "Semaphore(<.*>)?"));
-		
 		workerQueue.addWorker(new Counter("callable_interface", Scope.CLASS, "IMPLEMENTS_CLAUSE", "TYPE", "QUALIFIED_TYPE_IDENT", "Callable(<.*>)?"));
 		workerQueue.addWorker(new Counter("delayed_interface", Scope.CLASS, "IMPLEMENTS_CLAUSE", "TYPE", "QUALIFIED_TYPE_IDENT", "Delayed(<.*>)?"));
 		workerQueue.addWorker(new Counter("threadFactory_interface", Scope.CLASS, "IMPLEMENTS_CLAUSE", "TYPE", "QUALIFIED_TYPE_IDENT", "ThreadFactory(<.*>)?"));
@@ -76,6 +69,22 @@ class Main {
 		workerQueue.addWorker(new RecursiveNestednessCounter("nestedness_synchronized", Scope.METHOD, "synchronized"));
 		workerQueue.addWorker(new RecursiveNestednessCounter("nestedness_conditionals", Scope.METHOD, "if"));
 		workerQueue.addWorker(new RecursiveNestednessCounter("nestedness_loops", Scope.METHOD, "for", "while", "do"));
+
+		// TODO: workers that don't find anything in the analysed projects
+		//workerQueue.addWorker(new Counter("concurrentMap_objects_extends", Scope.CLASS, "EXTENDS_CLAUSE", "TYPE", "QUALIFIED_TYPE_IDENT", "ConcurrentMap(<.*>)?"));
+		//workerQueue.addWorker(new Counter("executorService_objects_extends", Scope.CLASS, "EXTENDS_CLAUSE", "TYPE", "QUALIFIED_TYPE_IDENT", "ExecutorService(<.*>)?"));
+		//workerQueue.addWorker(new Counter("threadPoolExecutor_objects_extends",	Scope.CLASS, "EXTENDS_CLAUSE", "TYPE", "QUALIFIED_TYPE_IDENT", "ThreadPoolExecutor(<.*>)?"));
+		//workerQueue.addWorker(new Counter("cyclicBarrier_objects_extends", Scope.CLASS, "EXTENDS_CLAUSE", "TYPE", "QUALIFIED_TYPE_IDENT", "CyclicBarrier(<.*>)?"));
+		//workerQueue.addWorker(new Counter("exchanger_objects_extends", 	Scope.CLASS, "EXTENDS_CLAUSE", "TYPE", "QUALIFIED_TYPE_IDENT", "Exchanger(<.*>)?"));
+		//workerQueue.addWorker(new Counter("semaphore_objects_extends", Scope.CLASS, "EXTENDS_CLAUSE", "TYPE", "QUALIFIED_TYPE_IDENT", "Semaphore(<.*>)?"));
+		//workerQueue.addWorker(new Counter("lock_objects_extends", Scope.CLASS, "EXTENDS_CLAUSE", "TYPE", "QUALIFIED_TYPE_IDENT", "(Reentrant|Read|Write)?Lock(<.*>)?"));
+		//workerQueue.addWorker(new Counter("executor_objects_extends", Scope.CLASS, "EXTENDS_CLAUSE", "TYPE", "QUALIFIED_TYPE_IDENT", "Executor(<.*>)?"));
+		//workerQueue.addWorker(new Counter("atomicInteger_objects_extends", Scope.CLASS, "EXTENDS_CLAUSE", "TYPE", "QUALIFIED_TYPE_IDENT", "AtomicInteger(<.*>)?"));
+		//workerQueue.addWorker(new Counter("concurrentLinkedQueue_objects_extends", Scope.CLASS, "EXTENDS_CLAUSE", "TYPE", "QUALIFIED_TYPE_IDENT", "ConcurrentLinkedQueue(<.*>)?"));
+		//workerQueue.addWorker(new Counter("copyOnWriteArrayList_objects_extends", Scope.CLASS, "EXTENDS_CLAUSE", "TYPE", "QUALIFIED_TYPE_IDENT", "CopyOnWriteArrayList(<.*>)?"));
+		//workerQueue.addWorker(new Counter("future_objects_extends",	Scope.CLASS, "EXTENDS_CLAUSE", "TYPE", "QUALIFIED_TYPE_IDENT", "Future(<.*>)?"));
+		//workerQueue.addWorker(new Counter("countDownLatch_objects_extends",	Scope.CLASS, "EXTENDS_CLAUSE", "TYPE", "QUALIFIED_TYPE_IDENT", "CountDownLatch(<.*>)?"));
+		//workerQueue.addWorker(new Counter("blockingQueue_interface", Scope.CLASS, "IMPLEMENTS_CLAUSE", "TYPE", "QUALIFIED_TYPE_IDENT", "BlockingQueue(<.*>)?"));
 
 		// TODO: don't drop, but append to existing tables
 		/*
