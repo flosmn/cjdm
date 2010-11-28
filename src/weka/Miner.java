@@ -9,7 +9,7 @@ import weka.core.Instances;
 import weka.core.Utils;
 import weka.core.converters.ConverterUtils.DataSource;
 import weka.filters.unsupervised.attribute.NumericToNominal;
-
+import weka.filters.unsupervised.attribute.StringToNominal;
 /**
  * Miner class
  * How to use: doMining()
@@ -29,7 +29,7 @@ public class Miner {
 		assert (folder.isDirectory()): "given path to *.arff files is not a directory";
 		File[] listOfFiles = folder.listFiles();
 		for (int i = 0; i < listOfFiles.length; i++) {
-			if (listOfFiles[i].isFile() && listOfFiles[i].getName().endsWith(".arff")) {
+			if (listOfFiles[i].isFile() && listOfFiles[i].getName().endsWith("Summarized.arff")) {
 				System.out.println("____________________________________________");
 				System.out.println(listOfFiles[i].getName());
 				doMining(PathAndFileNames.WEKA_TEST_DATA_PATH + listOfFiles[i].getName());
@@ -57,7 +57,8 @@ public class Miner {
 		Apriori apriori = null;
 		try {
 			data = loadDataFromArff(pathAndFile);
-			data = numToNom(data); 		
+			data = strToNom(data);
+			data = numToNom(data);
 			apriori = createAndSetApriori();
 			//mining, returns void, changes apriori
 			apriori.buildAssociations(data);
@@ -90,21 +91,31 @@ public class Miner {
 	}
 
 	/**
-	 * convert from numerical to nominal
+	 * convert attributes from numerical to nominal
 	 * @param data
 	 * @return data
 	 * @throws Exception
 	 */
 	private static Instances numToNom(Instances data) throws Exception {
-		NumericToNominal numToNom = new NumericToNominal(); 
-		String[] numToNomOptions = new String[3];
-		numToNomOptions[0] = "-R ";
-		numToNomOptions[1] = "1,";
-		numToNomOptions[2] = "2";
-		numToNom.setOptions(numToNomOptions);
-		numToNom.setInputFormat(data);
-		data = NumericToNominal.useFilter(data, numToNom);
-		return data;
+		NumericToNominal numericToNominal = new NumericToNominal(); 
+		String[] numToNomOptions = new String[]{"-R","first-last"};
+		numericToNominal.setOptions(numToNomOptions);
+		numericToNominal.setInputFormat(data);
+		return NumericToNominal.useFilter(data, numericToNominal);
+	}
+
+	/**
+	 * convert attributes from string to nominal
+	 * @param data
+	 * @return data
+	 * @throws Exception
+	 */
+	private static Instances strToNom(Instances data) throws Exception {;
+		StringToNominal stringToNominal = new StringToNominal();
+		String[] strToNomOptions = {"-R", "first-last"};
+		stringToNominal.setOptions(strToNomOptions);
+		stringToNominal.setInputFormat(data);
+		return StringToNominal.useFilter(data,stringToNominal);
 	}
 	
 	/**
