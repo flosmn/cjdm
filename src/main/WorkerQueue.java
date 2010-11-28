@@ -31,6 +31,7 @@ public class WorkerQueue {
 			relations.put(scope, new Relation(database, scope));
 			currentIDs.put(scope, new Integer(0));
 		}
+		
 	}
 	
 	public void addWorker(Worker worker) {
@@ -54,7 +55,6 @@ public class WorkerQueue {
 			(new TreePackageGenerator()).generateTreePackagesForProject(projectPackage.getFile());
 		
 		for (TreePackage treePackage : treePackagesOfProject){
-			System.out.println("process: "+treePackage.getFile().getName());
 			traverse(treePackage);
 		}
 	}

@@ -67,7 +67,9 @@ public class TreePackageGenerator {
 				}
 				
 				allSourceFiles.add(parent);
-			} catch (Exception e) { System.err.println("Error: " + e.getMessage());}
+			} catch (Exception e) { 
+				System.err.println("Error: " + e.getMessage());
+			}
 		} else{
 			for(File file : files){
 				allSourceFiles.addAll(getAllSourcesInFolder(file));

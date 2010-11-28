@@ -8,9 +8,7 @@ import weka.core.Attribute;
 import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.converters.ConverterUtils.DataSource;
-import weka.filters.Filter;
 import weka.filters.unsupervised.attribute.Normalize;
-import weka.filters.unsupervised.attribute.StringToNominal;
 import weka.util.AttributeNormalizer;
 
 public class EnhancedKMeans implements Runnable {
@@ -31,6 +29,7 @@ public class EnhancedKMeans implements Runnable {
 		data = (new DataSource(file)).getDataSet();
 		AttributeNormalizer an = new AttributeNormalizer(data);
 		an.addAttribute("objects",1);
+		an.addAttribute("fields",1);
 		an.addAttribute("interface",1);
 		an.addAttribute("extends",1);
 		an.work();

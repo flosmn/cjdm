@@ -19,7 +19,7 @@ public class Logger {
 			out.write(this.stringBuffer.toString());
 		    out.close();
 		} catch (Exception e) {
-			System.err.println("Error: " + e.getMessage());
+			//System.err.println("Error: " + e.getMessage());
 		}
 	}
 	
