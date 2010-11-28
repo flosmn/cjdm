@@ -77,17 +77,6 @@ class Main {
 		workerQueue.addWorker(new RecursiveNestednessCounter("nestedness_conditionals", Scope.METHOD, "if"));
 		workerQueue.addWorker(new RecursiveNestednessCounter("nestedness_loops", Scope.METHOD, "for", "while", "do"));
 
-		// TODO: workers that don't find anything in the analysed projects
-		// workerQueue.addWorker(new Counter("lock_objects_extends", Scope.CLASS, "EXTENDS_CLAUSE", "TYPE", "QUALIFIED_TYPE_IDENT", "(Reentrant|Read|Write)?Lock(<.*>)?"));
-		// workerQueue.addWorker(new Counter("executor_objects_extends", Scope.CLASS, "EXTENDS_CLAUSE", "TYPE", "QUALIFIED_TYPE_IDENT", "Executor(<.*>)?"));
-		// workerQueue.addWorker(new Counter("atomicInteger_objects_extends", Scope.CLASS, "EXTENDS_CLAUSE", "TYPE", "QUALIFIED_TYPE_IDENT", "AtomicInteger(<.*>)?"));
-		// workerQueue.addWorker(new Counter("concurrentLinkedQueue_objects_extends", Scope.CLASS, "EXTENDS_CLAUSE", "TYPE", "QUALIFIED_TYPE_IDENT", "ConcurrentLinkedQueue(<.*>)?"));
-		// workerQueue.addWorker(new Counter("copyOnWriteArrayList_objects_extends", Scope.CLASS, "EXTENDS_CLAUSE", "TYPE", "QUALIFIED_TYPE_IDENT", "CopyOnWriteArrayList(<.*>)?"));
-		// workerQueue.addWorker(new Counter("future_objects_extends", Scope.CLASS, "EXTENDS_CLAUSE", "TYPE", "QUALIFIED_TYPE_IDENT", "Future(<.*>)?"));
-		// workerQueue.addWorker(new Counter("countDownLatch_objects_extends", Scope.CLASS, "EXTENDS_CLAUSE", "TYPE", "QUALIFIED_TYPE_IDENT", "CountDownLatch(<.*>)?"));
-		// workerQueue.addWorker(new Counter("blockingQueue_interface", Scope.CLASS, "IMPLEMENTS_CLAUSE", "TYPE", "QUALIFIED_TYPE_IDENT", "BlockingQueue(<.*>)?"));
-		
-		
 		// TODO: don't drop, but append to existing tables
 		/*
 		 * For that we would need some kind of identification for each project/class/method
