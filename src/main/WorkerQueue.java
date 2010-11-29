@@ -15,8 +15,6 @@ import database.Record;
 import database.Relation;
 import database.Scope;
 
-// TODO: replace all LinkedLists by "LinkedHashLists"
-
 public class WorkerQueue {
 	private boolean workerInitializationFinished;
 	private HashMap<Scope, LinkedList<Worker>> queues = new HashMap<Scope, LinkedList<Worker>>();
@@ -32,7 +30,6 @@ public class WorkerQueue {
 			relations.put(scope, new Relation(database, scope));
 			currentIDs.put(scope, new Integer(0));
 		}
-		
 	}
 	
 	public void addWorker(Worker worker) {

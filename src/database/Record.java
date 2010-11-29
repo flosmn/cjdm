@@ -6,7 +6,7 @@ import java.util.LinkedList;
 public class Record {
 	private HashMap<String, Integer> map = new HashMap<String, Integer>();
 	private LinkedList<String> attributes = new LinkedList<String>();
-	private int ID = -1;				// TODO: setter!
+	private int ID = -1;
 	private int parentID = -1;
 	private String name = "unnamed";
 	

@@ -4,14 +4,12 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
-import database.Database;
-import database.Scope;
-
 import utils.PathAndFileNames;
 import workers.CountNestednessOfLocks;
 import workers.Counter;
 import workers.RecursiveNestednessCounter;
-import workers.SampleWorker;
+import database.Database;
+import database.Scope;
 
 /**
  * Parse a java file or directory of java files using the generated parser
@@ -24,7 +22,7 @@ class Main {
 		WorkerQueue workerQueue = new WorkerQueue(database);
 		
 		workerQueue.addWorker(new Counter("public_methods", Scope.METHOD, ".*METHOD_DECL", "MODIFIER_LIST", "public"));
-/*		workerQueue.addWorker(new Counter("private_methods", Scope.METHOD, ".*METHOD_DECL", "MODIFIER_LIST", "private"));
+		workerQueue.addWorker(new Counter("private_methods", Scope.METHOD, ".*METHOD_DECL", "MODIFIER_LIST", "private"));
 		workerQueue.addWorker(new Counter("synchronized_methods", Scope.METHOD, ".*METHOD_DECL", "MODIFIER_LIST", "synchronized"));
 		workerQueue.addWorker(new Counter("method_calls", Scope.METHOD, "EXPR", "METHOD_CALL"));
 		workerQueue.addWorker(new Counter("number_of_methods", Scope.CLASS, ".*METHOD_DECL"));
@@ -43,9 +41,9 @@ class Main {
 		workerQueue.addWorker(new Counter("condition_objects", Scope.METHOD, "VAR_DECLARATION", "TYPE", "QUALIFIED_TYPE_IDENT", "Condition(<.*>)?"));
 		workerQueue.addWorker(new Counter("semaphore_objects", Scope.METHOD, "VAR_DECLARATION", "TYPE", "QUALIFIED_TYPE_IDENT", "Semaphore(<.*>)?"));
 		workerQueue.addWorker(new Counter("cyclicBarrier_objects", Scope.METHOD, "VAR_DECLARATION", "TYPE", "QUALIFIED_TYPE_IDENT", "CyclicBarrier(<.*>)?"));
-*/		
+		
 		workerQueue.addWorker(new Counter("volatile_variables", Scope.CLASS, "VAR_DECLARATION", "MODIFIER_LIST", "volatile"));
-/*		workerQueue.addWorker(new Counter("public_variables", Scope.CLASS, "VAR_DECLARATION", "MODIFIER_LIST", "public"));
+		workerQueue.addWorker(new Counter("public_variables", Scope.CLASS, "VAR_DECLARATION", "MODIFIER_LIST", "public"));
 		workerQueue.addWorker(new Counter("private_variables", Scope.CLASS, "VAR_DECLARATION", "MODIFIER_LIST", "private"));
 		workerQueue.addWorker(new Counter("lock_object_fields", Scope.CLASS, "VAR_DECLARATION", "TYPE", "QUALIFIED_TYPE_IDENT", "(Reentrant|Read|Write)?Lock(<.*>)?"));
 		workerQueue.addWorker(new Counter("condition_object_fields", Scope.CLASS, "VAR_DECLARATION", "TYPE", "QUALIFIED_TYPE_IDENT", "Condition(<.*>)?"));
@@ -72,7 +70,7 @@ class Main {
 		workerQueue.addWorker(new RecursiveNestednessCounter("nestedness_synchronized", Scope.METHOD, "synchronized"));
 		workerQueue.addWorker(new RecursiveNestednessCounter("nestedness_conditionals", Scope.METHOD, "if"));
 		workerQueue.addWorker(new RecursiveNestednessCounter("nestedness_loops", Scope.METHOD, "for", "while", "do"));
-*/
+
 		// TODO: workers that don't find anything in the analysed projects
 		//workerQueue.addWorker(new Counter("concurrentMap_objects_extends", Scope.CLASS, "EXTENDS_CLAUSE", "TYPE", "QUALIFIED_TYPE_IDENT", "ConcurrentMap(<.*>)?"));
 		//workerQueue.addWorker(new Counter("executorService_objects_extends", Scope.CLASS, "EXTENDS_CLAUSE", "TYPE", "QUALIFIED_TYPE_IDENT", "ExecutorService(<.*>)?"));
