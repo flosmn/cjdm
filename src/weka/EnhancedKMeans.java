@@ -196,6 +196,8 @@ public class EnhancedKMeans implements Runnable {
 					StringBuilder output = new StringBuilder();
 					output.append("Clustering for "+data.getName()+"\n");
 					output.append(c.clusterer);
+					output.append("-------------------------------------------\n");
+					output.append(c.getFlaggedData());
 					System.out.println("javaprojectsources/clustered"+data.getName().substring(0, data.getName().length()-5)+"Clustered.txt");
 					FileWriter fstream = new FileWriter("javaprojectsources/clustered/"+data.getName().substring(0, data.getName().length()-5)+"Clustered.txt");
 					BufferedWriter out = new BufferedWriter(fstream);
