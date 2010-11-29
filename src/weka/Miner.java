@@ -23,25 +23,28 @@ public class Miner {
 	 * @param args
 	 * @throws Exception
 	 */
-	@Deprecated
 	public static void main(String[] args) throws Exception {
-		File folder = new File(PathAndFileNames.WEKA_TEST_DATA_PATH);
+		Apriori apriori = new Apriori();
+		
+		apriori.setLowerBoundMinSupport(0.11);	
+		apriori.setMinMetric(0.95);
+		apriori.setNumRules(10);
+		
+		doMining("methodSummarized.arff", apriori);
+	}
+
+	public static void mineAll() {
+		Apriori apriori = getSampleApriori();
+		File folder = new File(PathAndFileNames.WEKA_DATA_PATH);
 		assert (folder.isDirectory()): "given path to *.arff files is not a directory";
 		File[] listOfFiles = folder.listFiles();
 		for (int i = 0; i < listOfFiles.length; i++) {
 			if (listOfFiles[i].isFile() && listOfFiles[i].getName().endsWith("Summarized.arff")) {
 				System.out.println("____________________________________________");
 				System.out.println(listOfFiles[i].getName());
-				doMining(PathAndFileNames.WEKA_TEST_DATA_PATH + listOfFiles[i].getName());
+				doMining(listOfFiles[i].getName(), apriori);
 			}
 		}
-	}
-	
-	/**
-	 * calls doMining(../../cjdm.arf)
-	 */
-	public static void doMining(){
-		doMining(PathAndFileNames.WEKA_TEST_DATA_PATH + PathAndFileNames.EXPORT_FILE_NAME);
 	}
 	
 	/**
@@ -52,15 +55,12 @@ public class Miner {
 	 *   
 	 * @param pathAndFile, String
 	 */
-	public static void doMining(String pathAndFile){
+	public static void doMining(String fileName, Apriori apriori){
 		Instances data = null;
-		Apriori apriori = null;
 		try {
-			data = loadDataFromArff(pathAndFile);
+			data = loadDataFromArff(PathAndFileNames.WEKA_DATA_PATH + fileName);
 			data = strToNom(data);
 			data = numToNom(data);
-			apriori = createAndSetApriori();
-			//mining, returns void, changes apriori
 			apriori.buildAssociations(data);
 			printRules(apriori, false);
 		} catch (Exception e) {
@@ -73,7 +73,7 @@ public class Miner {
 	/** 
 	 * build association rules
 	 */
-	private static Apriori createAndSetApriori() {
+	public static Apriori getSampleApriori() {
 		Apriori apriori = new Apriori();
 		apriori.setLowerBoundMinSupport(0.11);	
 		apriori.setMinMetric(0.95);

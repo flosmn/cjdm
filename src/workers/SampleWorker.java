@@ -10,6 +10,8 @@ import main.TreePackage;
  * @author welle
  */
 public class SampleWorker extends Worker {
+	public int counter = 0;
+	
 	public SampleWorker() {
 		this.scope = Scope.METHOD;
 		this.aggregator = Aggregator.SUM;
@@ -17,11 +19,11 @@ public class SampleWorker extends Worker {
 	
 	@Override
 	public String getAttributeName() {
-		return "number_of_childs";
+		return "counter";
 	}
 
 	@Override
 	public int doWork(TreePackage treePackage) {
-		return treePackage.getTree().getChildCount();
+		return ++counter;
 	}
 }

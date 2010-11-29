@@ -7,7 +7,7 @@ import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.util.Collection;
-import java.util.HashSet;
+import java.util.LinkedList;
 import java.util.StringTokenizer;
 
 import org.antlr.runtime.ANTLRInputStream;
@@ -43,7 +43,7 @@ public class TreePackageGenerator {
 			return null;
 		}
 		
-		Collection<TreePackage> treePackages = new HashSet<TreePackage>();
+		Collection<TreePackage> treePackages = new LinkedList<TreePackage>();
 		Collection<File> sourceFiles = getAllSourcesInFolder(projectRoot);
 		for(File file : sourceFiles) {
 			try {
@@ -57,7 +57,7 @@ public class TreePackageGenerator {
 	}
 
 	private Collection<File> getAllSourcesInFolder(File parent) {
-		Collection<File> allSourceFiles = new HashSet<File>();
+		Collection<File> allSourceFiles = new LinkedList<File>();
 		File[] files = parent.listFiles();
 		
 		if(files == null){
@@ -106,7 +106,7 @@ public class TreePackageGenerator {
 	}
 
 	public Collection<TreePackage> generateProjectPackages() {
-		Collection<TreePackage> projectPackages = new HashSet<TreePackage>();
+		Collection<TreePackage> projectPackages = new LinkedList<TreePackage>();
 		File[] projects = (new File(PathAndFileNames.PROJECT_SOURCES_PATH)).listFiles();
 		
 		for(File file : projects){

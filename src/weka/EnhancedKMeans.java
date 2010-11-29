@@ -1,6 +1,8 @@
 package weka;
 
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileWriter;
 
 import utils.PathAndFileNames;
 import weka.clusterers.SimpleKMeans;
@@ -185,15 +187,23 @@ public class EnhancedKMeans implements Runnable {
 	public static void main(String[] args) {
 		EnhancedKMeans c;
 		try {
-			File f = new File(PathAndFileNames.WEKA_TEST_DATA_PATH);
+			File f = new File(PathAndFileNames.WEKA_DATA_PATH);
 			File[] files = f.listFiles();
 			for (File data : files) {
 				if (data.getName().endsWith(".arff")) {
 					c = new EnhancedKMeans(100,data.getAbsolutePath());
 					c.run();
-					System.out.println("--------------------------------------");
-					System.out.println("Clustering for "+data.getName());
-					System.out.println(c.clusterer);
+					StringBuilder output = new StringBuilder();
+					output.append("Clustering for "+data.getName()+"\n");
+					output.append(c.clusterer);
+					output.append("-------------------------------------------\n");
+					output.append(c.getFlaggedData());
+					System.out.println("javaprojectsources/clustered"+data.getName().substring(0, data.getName().length()-5)+"Clustered.txt");
+					FileWriter fstream = new FileWriter("javaprojectsources/clustered/"+data.getName().substring(0, data.getName().length()-5)+"Clustered.txt");
+					BufferedWriter out = new BufferedWriter(fstream);
+					
+					out.write(output.toString());
+				    out.close();
 					//System.out.println(c.getFlaggedData());
 				}
 			}

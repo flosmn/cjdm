@@ -45,7 +45,12 @@ public class Relation {
 		}
 	}
 	
-	public void createTable() {
+	/**
+	 * @return next free index
+	 */
+	public int createTable() {
+		int nextIndex = 0;
+		
 		String attributeDefs = "";
 		String attributeNames = "";
 		for (String attribute : attributes) {
@@ -67,10 +72,13 @@ public class Relation {
 		try {
 			database.update(query);
 		} catch (Exception exception) {
+			nextIndex = database.maxID(scope);
 			System.out.println(exception.getMessage());
 		}
+		
+		return nextIndex;
 	}
-
+	
 	public void add(Record record) {
 		if (!record.isValid()) {
 			System.out.println("adding invalid record");
@@ -89,36 +97,11 @@ public class Relation {
 		return attributes.toString();
 	}
 	
-	/*
-	public void export() {
-		Logger logger = new Logger();
-		logger.logAndStartNewLine("@relation "+PathAndFileNames.RELATION_NAME);
-		
-		for (String attribute : attributes) {
-			logger.logAndStartNewLine("@attribute \"" + attribute + "\" integer");
-		}
-		
-		logger.logAndStartNewLine("@data");
-		
-		for (LinkedList<Integer> record : list) {
-			Iterator<Integer> iter = record.iterator();
-			while (iter.hasNext()) {
-				Integer value = iter.next();
-				if (iter.hasNext()) {
-					logger.log(value + ", ");
-				} else {
-					logger.logAndStartNewLine(value + "");
-				}
-			}
-		}
-		
-		logger.writeToFile(
-					PathAndFileNames.WEKA_TEST_DATA_PATH,
-					PathAndFileNames.EXPORT_FILE_NAME);
-	}
-	*/
-	
 	public Scope getScope() {
 		return scope;
+	}
+
+	public boolean hasRowNamed(String name) {
+		return database.hasRow(scope, name);
 	}
 }

@@ -32,11 +32,11 @@ public class Database {
     	}
     }
     
-    public synchronized void exportArff(String expression, String relationName, boolean summarized, int maxRowCount) {
+    public synchronized void exportArff(String expression, String relationName, boolean summarized) {
     	try {
 	        Statement statement = connection.createStatement();
 	        ResultSet resultSet = statement.executeQuery(expression); 
-	        export(resultSet, relationName, summarized, maxRowCount);
+	        export(resultSet, relationName, summarized);
 	        statement.close();
     	} catch (Exception exception) {
     		System.err.println(exception.getMessage());
@@ -44,7 +44,7 @@ public class Database {
     	}
     }
     
-    private synchronized void export(ResultSet resultSet, String relationName, boolean summarized, int maxRowCount) {
+    private synchronized void export(ResultSet resultSet, String relationName, boolean summarized) {
        	try {
 	        ResultSetMetaData metaData = resultSet.getMetaData();
 
@@ -61,8 +61,8 @@ public class Database {
 			}
 			
 			logger.logAndStartNewLine("@data");
-System.out.println("rc: " + maxRowCount);
-	        for (int i = 0; resultSet.next() && i < maxRowCount; ++i) {
+			
+			for (;resultSet.next();) {
 	            for (int columnIndex = 0; columnIndex < columnCount; ++columnIndex) {
 	            	if (metaData.getColumnName(columnIndex + 1).endsWith("_NAME")) {
 	            		continue;
@@ -79,7 +79,7 @@ System.out.println("rc: " + maxRowCount);
 	        }
 
 	        String fileName = summarized ? relationName + "Summarized.arff" : relationName + ".arff";
-	        logger.writeToFile(PathAndFileNames.WEKA_TEST_DATA_PATH, fileName);
+	        logger.writeToFile(PathAndFileNames.WEKA_DATA_PATH, fileName);
 	        
     	} catch (Exception exception) {
     		exception.printStackTrace();
@@ -144,4 +144,33 @@ System.out.println("rc: " + maxRowCount);
     		exception.printStackTrace();
     	}
     }
+
+	public int maxID(Scope scope) {
+		int ID = 0;
+	   	try {
+	        Statement statement = connection.createStatement();
+	        ResultSet resultSet = statement.executeQuery("SELECT MAX (ID) FROM " + scope.toString());
+	        resultSet.next();
+	        ID = resultSet.getInt(1);
+	        statement.close();
+    	} catch (Exception exception) {
+    		System.err.println(exception.getMessage());
+    		exception.printStackTrace();
+    	}
+		return ID;
+	}
+
+	public boolean hasRow(Scope scope, String name) {
+		boolean hasRow = false;
+	   	try {
+	        Statement statement = connection.createStatement();
+	        ResultSet resultSet = statement.executeQuery("SELECT * FROM " + scope.toString() + " WHERE name = '" + name + "'");
+	        hasRow = resultSet.next();
+	        statement.close();
+    	} catch (Exception exception) {
+    		System.err.println(exception.getMessage());
+    		exception.printStackTrace();
+    	}
+		return hasRow;
+	}
 }

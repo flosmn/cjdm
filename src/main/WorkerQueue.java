@@ -1,6 +1,7 @@
 package main;
 
 import java.util.Collection;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
@@ -48,12 +49,19 @@ public class WorkerQueue {
 	
 	public void doWork(TreePackage projectPackage) {
 		workerInitializationFinished = true;
+
+		if (relations.get(Scope.PROJECT).hasRowNamed(projectPackage.getName())) {
+			System.out.println("Skipping project: " + projectPackage.getName());
+			return;
+		}
 		
+		System.out.println("Processing project: "+projectPackage.getName());
+
 		process(projectPackage);
 		
 		Collection<TreePackage> treePackagesOfProject = 
 			(new TreePackageGenerator()).generateTreePackagesForProject(projectPackage.getFile());
-		
+		Collections.sort((List<TreePackage>) treePackagesOfProject);
 		for (TreePackage treePackage : treePackagesOfProject){
 			traverse(treePackage);
 		}
@@ -109,15 +117,23 @@ public class WorkerQueue {
 	}
 
 	public void dropTables() {
-		relations.get(Scope.METHOD).dropTable();
-		relations.get(Scope.CLASS).dropTable();
-		relations.get(Scope.PROJECT).dropTable();
+		dropTable(Scope.METHOD);
+		dropTable(Scope.CLASS);
+		dropTable(Scope.PROJECT);
+	}
+
+	private void dropTable(Scope scope) {
+		relations.get(scope).dropTable();
 	}
 
 	public void createTables() {
-		relations.get(Scope.PROJECT).createTable();
-		relations.get(Scope.CLASS).createTable();
-		relations.get(Scope.METHOD).createTable();
+		createTable(Scope.PROJECT);
+		createTable(Scope.CLASS);
+		createTable(Scope.METHOD);
+	}
+
+	private void createTable(Scope scope) {
+		currentIDs.put(scope, relations.get(scope).createTable());
 	}
 
 	public void createViews() {
