@@ -185,7 +185,7 @@ public class EnhancedKMeans implements Runnable {
 	public static void main(String[] args) {
 		EnhancedKMeans c;
 		try {
-			File f = new File(PathAndFileNames.WEKA_TEST_DATA_PATH);
+			File f = new File(PathAndFileNames.WEKA_DATA_PATH);
 			File[] files = f.listFiles();
 			for (File data : files) {
 				if (data.getName().endsWith(".arff")) {
