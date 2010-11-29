@@ -63,6 +63,7 @@ public class Miner {
 			data = numToNom(data);
 			apriori.buildAssociations(data);
 			printRules(apriori, false);
+			InterestingRuleFilter.printBestRules(apriori);
 		} catch (Exception e) {
 			System.err.println("Error in doMining()");
 			System.err.println("try again");
