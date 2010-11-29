@@ -144,4 +144,33 @@ public class Database {
     		exception.printStackTrace();
     	}
     }
+
+	public int maxID(Scope scope) {
+		int ID = 0;
+	   	try {
+	        Statement statement = connection.createStatement();
+	        ResultSet resultSet = statement.executeQuery("SELECT MAX (ID) FROM " + scope.toString());
+	        resultSet.next();
+	        ID = resultSet.getInt(1);
+	        statement.close();
+    	} catch (Exception exception) {
+    		System.err.println(exception.getMessage());
+    		exception.printStackTrace();
+    	}
+		return ID;
+	}
+
+	public boolean hasRow(Scope scope, String name) {
+		boolean hasRow = false;
+	   	try {
+	        Statement statement = connection.createStatement();
+	        ResultSet resultSet = statement.executeQuery("SELECT * FROM " + scope.toString() + " WHERE name = '" + name + "'");
+	        hasRow = resultSet.next();
+	        statement.close();
+    	} catch (Exception exception) {
+    		System.err.println(exception.getMessage());
+    		exception.printStackTrace();
+    	}
+		return hasRow;
+	}
 }

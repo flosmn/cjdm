@@ -25,6 +25,7 @@ public class Miner {
 	 */
 	public static void main(String[] args) throws Exception {
 		Apriori apriori = new Apriori();
+		
 		apriori.setLowerBoundMinSupport(0.11);	
 		apriori.setMinMetric(0.95);
 		apriori.setNumRules(10);

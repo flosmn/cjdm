@@ -13,23 +13,23 @@ import utils.DirtyLittleHelper;
  * This class implements a data structure to store a CommonTree and more additional 
  * information like the file the tree was created from.
  */
-public class TreePackage extends CommonTree{
+public class TreePackage extends CommonTree implements Comparable<TreePackage> {
 	
 	private File file;
-	private String projectName;
+	private String name;
 	private CommonTree tree;
 	private Scope scope;
 			
 	public TreePackage(CommonTree t, String p, File f, Scope scope) {
 		this.tree = t;
-		this.projectName = p;
+		this.name = p;
 		this.file = f;
 		this.scope = scope;
 	}
 	
 	public TreePackage(CommonTree t, TreePackage p, Scope scope) {
 		this.tree = t;
-		this.projectName = p.projectName;
+		this.name = p.name;
 		this.file = p.file;
 		this.scope = scope;
 	}
@@ -45,7 +45,7 @@ public class TreePackage extends CommonTree{
 	 */
 	public String getName(){
 		if(tree == null){
-			return projectName;
+			return name;
 		}
 		
 		if(tree.getText().matches("VOID_METHOD_DECL")){
@@ -85,7 +85,7 @@ public class TreePackage extends CommonTree{
 	 * @return name of the project
 	 */
 	public String getProjectName(){
-		return this.projectName;
+		return this.name;
 	}
 
 	public File getFile() {
@@ -107,5 +107,10 @@ public class TreePackage extends CommonTree{
 		for(CommonTree child : children) {
 			printTree(child, string + "  ");
 		}
+	}
+
+	@Override
+	public int compareTo(TreePackage treePackage) {
+		return name.compareTo(treePackage.name);
 	}
 }
