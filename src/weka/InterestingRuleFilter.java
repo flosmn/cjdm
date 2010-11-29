@@ -12,7 +12,7 @@ import weka.associations.AprioriItemSet;
  * @author Juergen Walter
  */
 public class InterestingRuleFilter {
-	private static int MIN_RATING = 0;
+	private static int MIN_RATING = 3;
 
 	/**
 	 * prints rules rated better than MIN_RANKING 
@@ -50,7 +50,7 @@ public class InterestingRuleFilter {
 			AprioriItemSet consequence = ((AprioriItemSet) apriori
 					.getAllTheRules()[1].elementAt(i));
 			double confidence = ((Double)apriori.getAllTheRules()[2].elementAt(i)).doubleValue();
-			Rule rule = new Rule(condition, consequence, confidence);
+			Rule rule = new Rule(condition, consequence, confidence, apriori);
 			if (rule.getRating() > MIN_RATING) {
 				bestRules.add(rule);
 			}
