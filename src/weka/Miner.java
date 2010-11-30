@@ -28,7 +28,7 @@ public class Miner {
 		
 		apriori.setLowerBoundMinSupport(0.11);	
 		apriori.setMinMetric(0.95);
-		apriori.setNumRules(10);
+		apriori.setNumRules(20);
 		
 		doMining("methodSummarized.arff", apriori);
 	}
