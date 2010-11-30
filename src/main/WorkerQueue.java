@@ -53,7 +53,7 @@ public class WorkerQueue {
 		}
 		
 		System.out.println("Processing project: "+projectPackage.getName());
-
+		
 		process(projectPackage);
 		
 		Collection<TreePackage> treePackagesOfProject = 
