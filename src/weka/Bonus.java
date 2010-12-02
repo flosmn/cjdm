@@ -9,16 +9,18 @@ import java.util.Collection;
  */
 public class Bonus {
 	private String name;
-	private int value;
+	private String value;
+	private int bonus;
 	
 	/**
 	 * constructor that adds instance to list instances
 	 * @param name
 	 * @param value
 	 */
-	public Bonus(String name, int value) {
+	public Bonus(String name, String value, int bonus) {
 		this.name = name;
 		this.value = value;
+		this.bonus = bonus;
 	}
 	
 	/**
@@ -28,17 +30,17 @@ public class Bonus {
 	public static Collection<Bonus> getSampleBonusSet() {
 		Collection<Bonus> bonusSet = new ArrayList<Bonus>();
 		
-		bonusSet.add(new Bonus("NOTIFY_CALLS=1", 4));
-		bonusSet.add(new Bonus("NOTIFYALL_CALLS=1", 4));
-		bonusSet.add(new Bonus("NOTIFY_CALLS=1", 4));
-		bonusSet.add(new Bonus("=1", 3));
-		bonusSet.add(new Bonus("YIELD_CALLS=1", 1));
-		bonusSet.add(new Bonus("SLEEP_CALLS=1", 1));
-		bonusSet.add(new Bonus("NESTEDNESS_LOCKS=1", 1));
-		bonusSet.add(new Bonus("NESTEDNESS_SYNCHRONIZED=1", 1));
-		bonusSet.add(new Bonus("NESTEDNESS_CONDITIONALS=1", 1));
-		bonusSet.add(new Bonus("NESTEDNESS_LOOPS=1", 1));
-		bonusSet.add(new Bonus("PUBLIC=1", -2));
+		bonusSet.add(new Bonus("NOTIFY_CALLS", "1", 4));
+		bonusSet.add(new Bonus("NOTIFYALL_CALLS", "1", 4));
+		bonusSet.add(new Bonus("NOTIFY_CALLS", "1", 4));
+		bonusSet.add(new Bonus(".*", "1", 3));
+		bonusSet.add(new Bonus("YIELD_CALLS", "1", 1));
+		bonusSet.add(new Bonus("SLEEP_CALLS", "1", 1));
+		bonusSet.add(new Bonus("NESTEDNESS_LOCKS", "1", 1));
+		bonusSet.add(new Bonus("NESTEDNESS_SYNCHRONIZED", "1", 1));
+		bonusSet.add(new Bonus("NESTEDNESS_CONDITIONALS", "1", 1));
+		bonusSet.add(new Bonus("NESTEDNESS_LOOPS", "1", 1));
+		bonusSet.add(new Bonus("PUBLIC", "1", -2));
 		
 		return bonusSet;
 	}
@@ -70,7 +72,7 @@ public class Bonus {
 	 * simple setter
 	 * @param value, int
 	 */
-	public void setValue(int value) {
+	public void setValue(String value) {
 		this.value = value;
 	}
 
@@ -78,7 +80,13 @@ public class Bonus {
 	 * simple getter
 	 * @return name, String
 	 */
-	public int getValue() {
+	public String getValue() {
 		return value;
+	}
+
+	public int rate(String name, String value) {
+		boolean match = name.matches(this.name) && value.matches(this.value);
+
+		return match ? bonus : 0;
 	}
 }
