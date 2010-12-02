@@ -6,34 +6,11 @@ import java.util.Collection;
 /**
  * Bonus is defined as a pair of name and its (bonus)value. 
  * Further more, negative bonuses are possible.
- * 
- * @author Juergen Walter
- * 
  */
 public class Bonus {
-	static Collection<Bonus> instances= new ArrayList<Bonus>();
 	private String name;
 	private int value;
 	
-	/**
-	 * default rules
-	 */
-	public static void createDefaultBonuses() {
-		new Bonus("NOTIFY_CALLS=1", 4);
-		new Bonus("NOTIFYALL_CALLS=1", 4);
-		new Bonus("NOTIFY_CALLS=1", 4);
-		new Bonus("=1", 3);
-
-		new Bonus("YIELD_CALLS=1", 1);
-		new Bonus("SLEEP_CALLS=1", 1);
-		new Bonus("NESTEDNESS_LOCKS=1", 1);
-		new Bonus("NESTEDNESS_SYNCHRONIZED=1", 1);
-		new Bonus("NESTEDNESS_CONDITIONALS=1", 1);
-		new Bonus("NESTEDNESS_LOOPS=1", 1);
-
-		new Bonus("PUBLIC=1", -2);
-	}
-
 	/**
 	 * constructor that adds instance to list instances
 	 * @param name
@@ -42,18 +19,28 @@ public class Bonus {
 	public Bonus(String name, int value) {
 		this.name = name;
 		this.value = value;
-		instances.add(this);
-	}	
+	}
 	
 	/**
 	 * creates default bonus system if no instances exist
 	 * @return instances
 	 */
-	public static Collection<Bonus> getInstances() {
-		if (instances.isEmpty()) {
-			createDefaultBonuses();
-		}
-		return instances;
+	public static Collection<Bonus> getSampleBonusSet() {
+		Collection<Bonus> bonusSet = new ArrayList<Bonus>();
+		
+		bonusSet.add(new Bonus("NOTIFY_CALLS=1", 4));
+		bonusSet.add(new Bonus("NOTIFYALL_CALLS=1", 4));
+		bonusSet.add(new Bonus("NOTIFY_CALLS=1", 4));
+		bonusSet.add(new Bonus("=1", 3));
+		bonusSet.add(new Bonus("YIELD_CALLS=1", 1));
+		bonusSet.add(new Bonus("SLEEP_CALLS=1", 1));
+		bonusSet.add(new Bonus("NESTEDNESS_LOCKS=1", 1));
+		bonusSet.add(new Bonus("NESTEDNESS_SYNCHRONIZED=1", 1));
+		bonusSet.add(new Bonus("NESTEDNESS_CONDITIONALS=1", 1));
+		bonusSet.add(new Bonus("NESTEDNESS_LOOPS=1", 1));
+		bonusSet.add(new Bonus("PUBLIC=1", -2));
+		
+		return bonusSet;
 	}
 
 	/**

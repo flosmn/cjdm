@@ -1,20 +1,21 @@
 package weka;
 
-import weka.associations.Apriori;
-import weka.associations.AprioriItemSet;
+import java.util.Collection;
+
+import weka.associations.ItemSet;
+import weka.core.Instances;
 
 /**
  * Quadruple of condition, consequence, confidence and a rating that is
  * calculated during creation
  * 
- * @author Juergen Walter
  */
 public class Rule implements Comparable<Rule> {
 	private Integer rating;
-	AprioriItemSet condition;
-	AprioriItemSet consequence;
+	ItemSet condition;
+	ItemSet consequence;
 	double confidence;
-	Apriori apriori;
+	Instances instances;
 
 	public Integer getRating() {
 		return rating;
@@ -22,8 +23,8 @@ public class Rule implements Comparable<Rule> {
 
 	public String toString() {
 		return rating + " : "
-				+ condition.toString(apriori.getInstancesNoClass()) + " => "
-				+ consequence.toString(apriori.getInstancesNoClass())
+				+ condition.toString(instances) + " => "
+				+ consequence.toString(instances)
 				+ "  conf(" + confidence + ")";
 	}
 
@@ -33,13 +34,12 @@ public class Rule implements Comparable<Rule> {
 	 * @param consequence
 	 * @param confidence
 	 */
-	public Rule(AprioriItemSet condition, AprioriItemSet consequence,
-			double confidence, Apriori apriori) {
+	public Rule(ItemSet condition, ItemSet consequence,
+			double confidence, Instances instances) {
 		this.condition = condition;
 		this.consequence = consequence;
 		this.confidence = confidence;
-		this.apriori = apriori;
-		computeRating();
+		this.instances = instances;
 	}
 
 	@Override
@@ -50,17 +50,16 @@ public class Rule implements Comparable<Rule> {
 	/**
 	 * computes a rating for a rule
 	 */
-	private void computeRating() {
+	public void computeRating(Collection<Bonus> bonusSet) {
 		rating = 0;
-		String conditionString = condition.toString(apriori
-				.getInstancesNoClass());
-		String consequenceString = consequence.toString(apriori
-				.getInstancesNoClass());
+		String conditionString = condition.toString(instances);
+		String consequenceString = consequence.toString(instances);
 		
-		for (Bonus bonus : Bonus.getInstances()) {
+		for (Bonus bonus : bonusSet) {
+			// TODO: rate items, not item sets
 			if (conditionString.contains(bonus.getName())
 					|| consequenceString.contains(bonus.getName()))
-				rating = rating + bonus.getValue();
+				rating += bonus.getValue();
 		}
 	}
 
