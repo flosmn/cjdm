@@ -1,6 +1,8 @@
 package weka;
 
 import java.io.File;
+import java.util.Collection;
+
 
 import utils.PathAndFileNames;
 import weka.associations.Apriori;
@@ -13,7 +15,6 @@ import weka.filters.unsupervised.attribute.StringToNominal;
 /**
  * Miner class
  * How to use: doMining()
- * @author Juergen Walter
  */
 public class Miner {
 	
@@ -28,7 +29,7 @@ public class Miner {
 		
 		apriori.setLowerBoundMinSupport(0.11);	
 		apriori.setMinMetric(0.95);
-		apriori.setNumRules(10);
+		apriori.setNumRules(20);
 		
 		doMining("methodSummarized.arff", apriori);
 	}
@@ -63,6 +64,11 @@ public class Miner {
 			data = numToNom(data);
 			apriori.buildAssociations(data);
 			printRules(apriori, false);
+			
+			Collection<Bonus> bonusSet = Bonus.getSampleBonusSet();
+			RuleRater filter = new RuleRater(apriori);
+			filter.rateAndSort(bonusSet);
+			filter.printRules(3);
 		} catch (Exception e) {
 			System.err.println("Error in doMining()");
 			System.err.println("try again");
