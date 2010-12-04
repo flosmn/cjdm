@@ -36,7 +36,7 @@ public class Database {
     	try {
 	        Statement statement = connection.createStatement();
 	        ResultSet resultSet = statement.executeQuery(expression); 
-	        export(resultSet, relationName, summarized);
+	        exportArff(resultSet, relationName, summarized);
 	        statement.close();
     	} catch (Exception exception) {
     		System.err.println(exception.getMessage());
@@ -44,7 +44,18 @@ public class Database {
     	}
     }
     
-    private synchronized void export(ResultSet resultSet, String relationName, boolean summarized) {
+    public synchronized void exportCsv(String expression, String relationName) {
+    	try {
+    		Statement statement = connection.createStatement();
+    		ResultSet resultSet = statement.executeQuery(expression); 
+    		exportCsv(resultSet, relationName);
+    		statement.close();
+    	} catch (Exception exception) {
+    		System.err.println(exception.getMessage());
+    		exception.printStackTrace();
+    	}
+    }
+    private synchronized void exportArff(ResultSet resultSet, String relationName, boolean summarized) {
        	try {
 	        ResultSetMetaData metaData = resultSet.getMetaData();
 
@@ -80,6 +91,88 @@ public class Database {
 
 	        String fileName = summarized ? relationName + "Summarized.arff" : relationName + ".arff";
 	        logger.writeToFile(PathAndFileNames.WEKA_DATA_PATH, fileName);
+	        
+    	} catch (Exception exception) {
+    		exception.printStackTrace();
+    	}
+    }
+    
+    private synchronized void exportCsv(ResultSet resultSet, String relationName) {
+       	try {
+	        ResultSetMetaData metaData = resultSet.getMetaData();
+
+	        Logger logger = new Logger();
+			
+			int columnCount = metaData.getColumnCount();
+			for (int columnIndex = 0; columnIndex < columnCount; ++columnIndex) {
+				String attributeName;
+				if (columnIndex == 0 && relationName.equals("class")) {
+					attributeName = metaData.getColumnName(columnIndex + 1) + "->"
+							+ metaData.getColumnName(columnIndex + 2);
+					columnIndex += 1;
+				} else if (columnIndex == 0 && relationName.equals("method")) {
+					attributeName = metaData.getColumnName(columnIndex + 1) + "->"
+							+ metaData.getColumnName(columnIndex + 2) + "->"
+							+ metaData.getColumnName(columnIndex + 3);
+					columnIndex += 2;
+				} else {
+					attributeName = metaData.getColumnName(columnIndex + 1);
+				}
+				if (columnIndex != columnCount - 1) {
+					logger.log(attributeName + ",");
+				} else {
+					logger.logAndStartNewLine(attributeName);
+				}
+			}
+			
+			for (;resultSet.next();) {
+				String s = "[" + String.valueOf((int)(Math.random()*100000)) + "]";
+				StringBuffer sb = new StringBuffer("");
+				int nrOfNotZero = 0;
+				
+				for (int columnIndex = 0; columnIndex < columnCount; ++columnIndex) {
+	            	String valueString;
+	            	if(columnIndex == 0 && relationName.equals("class")){
+	            		valueString = resultSet.getString(columnIndex + 1) + "->" 
+	            					+ resultSet.getString(columnIndex + 2) + s;
+	            		columnIndex += 1;
+	                }
+	            	else if(columnIndex == 0 && relationName.equals("method")){
+	            		valueString = resultSet.getString(columnIndex + 1) + "->" 
+	            					+ resultSet.getString(columnIndex + 2) + "->" 
+	            					+ resultSet.getString(columnIndex + 3) + s;
+	            		columnIndex += 2;
+	                }
+	            	else{
+	            		valueString = resultSet.getString(columnIndex + 1);
+	            		if(!valueString.equals("0")){
+	            			nrOfNotZero++;
+	            		}
+	            	}
+					if (columnIndex != columnCount - 1) {
+						sb.append(valueString + ",");
+					} else {
+						sb.append(valueString);
+					}
+				}
+				
+				if(relationName.equals("class")){
+					if(nrOfNotZero > 11) {
+						logger.logAndStartNewLine(sb.toString());
+					}
+                }
+            	else if(relationName.equals("method")){
+            		if(nrOfNotZero > 6) {
+						logger.logAndStartNewLine(sb.toString());
+					}
+                }
+            	else{
+            		logger.logAndStartNewLine(sb.toString());
+            	}
+	        }
+
+	        String fileName = relationName + ".csv";
+	        logger.writeToFile(PathAndFileNames.R_DATA_PATH, fileName);
 	        
     	} catch (Exception exception) {
     		exception.printStackTrace();
