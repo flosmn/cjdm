@@ -1,9 +1,10 @@
-package weka;
+package weka.util;
 
 import java.util.Collection;
 import java.util.Collections;
 import java.util.LinkedList;
 
+import weka.Bonus;
 import weka.associations.Apriori;
 import weka.associations.AprioriItemSet;
 

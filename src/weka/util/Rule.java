@@ -1,7 +1,8 @@
-package weka;
+package weka.util;
 
 import java.util.Collection;
 
+import weka.Bonus;
 import weka.associations.ItemSet;
 import weka.core.Instances;
 
