@@ -68,8 +68,12 @@ public class WorkerQueue {
 		List<CommonTree> children = DirtyLittleHelper.castList(CommonTree.class, treePackage.getTree().getChildren());
 		
 		for (CommonTree child : children) {
-			if (child.getText().equals("class")) {
+			if (child.getText().equals("class") && child.getChildCount() > 0) {
 				process(new TreePackage(child, treePackage, Scope.CLASS));
+			}
+			
+			if (child.getText().equals("interface")) {
+				continue;
 			}
 			
 			if (child.getText().matches(".*METHOD_DECL")) {
@@ -85,8 +89,11 @@ public class WorkerQueue {
 	private void process(TreePackage treePackage) {
 		Scope scope = treePackage.getScope();
 		Record record = relations.get(scope).newRecord();
-		record.setID(newID(scope));
-		record.setParentID(currentIDs.get(scope.getParent()));
+		int ID = newID(scope);
+		int parentID = currentIDs.get(scope.getParent());
+		
+		record.setID(ID);
+		record.setParentID(parentID);
 		
 		// TODO: remove if when project has own treePackage
 		if (treePackage != null) {
@@ -175,19 +182,38 @@ public class WorkerQueue {
 				" FROM project INNER JOIN class" +
 				" ON project.ID = class.parentID JOIN method" +
 				" ON class.ID = method.parentID" +
-				" GROUP BY " + combineColumns("class.ID"));
+				" GROUP BY class.ID");
+		
+		String queryProjectMethod =
+			" SELECT " + combineColumns(
+					"project.name AS project_name",
+					groupedColumns.get(Scope.METHOD)) +
+			" FROM project INNER JOIN class" +
+			" ON project.ID = class.parentID JOIN method" +
+			" ON class.ID = method.parentID" +
+			" GROUP BY project.ID";
+		
+		String queryProjectClass = 
+			" SELECT " + combineColumns(
+					"project.name AS pname",
+					columns.get(Scope.PROJECT),
+					groupedColumns.get(Scope.CLASS)) +
+			" FROM project INNER JOIN class" +
+			" ON project.ID = class.parentID" +
+			" GROUP BY project.ID";
+		
 		
 		viewQueries.put(Scope.PROJECT,
-				" CREATE VIEW project_view AS" +
+				" CREATE VIEW project_view AS (" +
 				" SELECT " + combineColumns(
-						"project.name AS project_name",
+						"project_name",
 						columns.get(Scope.PROJECT),
 						groupedColumns.get(Scope.CLASS),
 						groupedColumns.get(Scope.METHOD)) +
-				" FROM project INNER JOIN class" +
-				" ON project.ID = class.parentID JOIN method" +
-				" ON class.ID = method.parentID" +
-				" GROUP BY " + combineColumns("project.ID"));
+				" FROM ( " + queryProjectMethod + " )" +
+				" INNER JOIN (" + queryProjectClass + ")" +
+				" ON project_name = pname" +
+				" GROUP BY project_name )");
 		
 		for (Scope scope : Scope.getInstances()) {
 			try {
