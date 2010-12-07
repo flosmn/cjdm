@@ -10,9 +10,9 @@ public class ArffExporter {
 		export(database, Scope.CLASS, "*", false, Integer.MAX_VALUE);
 		export(database, Scope.PROJECT, "*", false, Integer.MAX_VALUE);
 		
-		export(database, Scope.METHOD, "PUBLIC_METHODS, PRIVATE_METHODS, SYNCHRONIZED_METHODS, METHOD_CALLS", true, 100);
-		export(database, Scope.CLASS, "*", true, 100);
-		export(database, Scope.PROJECT, "*", true, 100);
+	//	export(database, Scope.METHOD, "*", true, Integer.MAX_VALUE);
+	//	export(database, Scope.CLASS, "*", true, Integer.MAX_VALUE);
+	//	export(database, Scope.PROJECT, "*", true, Integer.MAX_VALUE);
 		
 		database.shutdown();
 		System.out.println("Done!");
