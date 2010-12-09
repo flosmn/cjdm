@@ -8,6 +8,7 @@ import org.antlr.runtime.tree.CommonTree;
 import org.antlr.runtime.tree.Tree;
 
 import database.Aggregator;
+import database.Attributes;
 import database.Scope;
 
 import utils.DirtyLittleHelper;
@@ -25,7 +26,7 @@ public class CountNestednessOfLocks extends Worker{
 	
 	@Override
 	public String getAttributeName() {
-		return "nestedness_locks";
+		return Attributes.NESTEDNESS_LOCKS;
 	}
 	
 	public void traverse(CommonTree tree){
