@@ -1,10 +1,12 @@
 package attributes;
 
-public class MethodAttribute {
-	public static final String COMBINED_METHOD_NAME = 
-		"CONCAT(PROJECT_NAME,'->',CLASS_NAME,'->',METHOD_NAME," +
-			"'(',CAST(RAND()*1000000 AS INT),')') AS NAME";
+import database.Scope;
 
+public class MethodAttribute {
+	public static final Attribute COMBINED_METHOD_NAME = new Attribute(Scope.METHOD,
+			"CONCAT(PROJECT_NAME,'->',CLASS_NAME,'->',METHOD_NAME," +
+			"'(',CAST(RAND()*1000000 AS INT),')') AS NAME", false);
+	
 	public static final Attribute PROJECT_NAME = Attribute.PROJECT_NAME;
 	public static final Attribute CLASS_NAME = Attribute.CLASS_NAME;
 	public static final Attribute METHOD_NAME = Attribute.METHOD_NAME;

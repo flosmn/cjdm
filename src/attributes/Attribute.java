@@ -3,34 +3,31 @@ package attributes;
 import database.Scope;
 
 public class Attribute {
-	public static String combine(String first, Attribute ... attributes) {
-		for (Attribute attribute : attributes) {
-			String attributeName = attribute.getName();
-			
-			if (!first.equals("") && !attributeName.equals("")) {
-				first += ", ";
-			}
-			
-			first += attributeName;
-		}
-		
-		return first;
-	}
-	
-	public static String combine(Attribute ... attributes) {
-		return combine("", attributes);
-	}
-
 	private Scope scope;
 	private String name;
 	private boolean parallel;
 	
-	private Attribute(Scope scope, String name, boolean parallel) {
+	public static String combine(Attribute ... attributes) {
+		String result = "";
+		for (Attribute attribute : attributes) {
+			String attributeName = attribute.getName();
+			
+			if (!result.equals("") && !attributeName.equals("")) {
+				result += ", ";
+			}
+			
+			result += attributeName;
+		}
+		
+		return result;
+	}
+	
+	public Attribute(Scope scope, String name, boolean parallel) {
 		this.scope = scope;
 		this.name = name;
 		this.parallel = parallel;
 	}
-	
+
 	public Scope getScope() {
 		return scope;
 	}
