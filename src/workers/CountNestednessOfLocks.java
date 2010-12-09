@@ -4,15 +4,15 @@ import java.util.Collection;
 import java.util.HashSet;
 import java.util.List;
 
+import main.TreePackage;
+
 import org.antlr.runtime.tree.CommonTree;
 import org.antlr.runtime.tree.Tree;
 
-import database.Aggregator;
-import database.Attributes;
-import database.Scope;
-
 import utils.DirtyLittleHelper;
-import main.TreePackage;
+import attributes.MethodAttributes;
+import database.Aggregator;
+import database.Scope;
 
 public class CountNestednessOfLocks extends Worker{
 	private int maxNestedness;
@@ -26,7 +26,7 @@ public class CountNestednessOfLocks extends Worker{
 	
 	@Override
 	public String getAttributeName() {
-		return Attributes.NESTEDNESS_LOCKS;
+		return MethodAttributes.NESTEDNESS_LOCKS;
 	}
 	
 	public void traverse(CommonTree tree){
