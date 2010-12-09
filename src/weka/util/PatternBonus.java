@@ -3,6 +3,9 @@ package weka.util;
 import java.util.Collection;
 import java.util.LinkedList;
 
+import weka.associations.ItemSet;
+import attributes.MethodAttributes;
+
 /**
  * PatternBonus stores rules for giving bonus on patterns
  * 
@@ -70,19 +73,39 @@ public class PatternBonus extends Bonus {
 	 */
 	public static Collection<Bonus> getSampleMethodBonusSet() {
 		Collection<Bonus> bonusSet = new LinkedList<Bonus>();
-		//public vs private filter 
+		
+		//public vs private
 		bonusSet.add(new PatternBonus(
-				new Item("PUBLIC_METHODS", "1"),
-				new Item("PRIVATE_METHODS", "0"), -10));
+				new Item(MethodAttributes.PUBLIC_METHODS, "1"),
+				new Item(MethodAttributes.PRIVATE_METHODS, "0"), -10));
 		bonusSet.add(new PatternBonus(
-				new Item("PUBLIC_METHODS", "0"),
-				new Item("PRIVATE_METHODS", "1"), -10));
+				new Item(MethodAttributes.PUBLIC_METHODS, "0"),
+				new Item(MethodAttributes.PRIVATE_METHODS, "1"), -10));
 		bonusSet.add(new PatternBonus(
-				new Item("PRIVATE_METHODS", "1"),
-				new Item("PUBLIC_METHODS", "0"), -10));
+				new Item(MethodAttributes.PRIVATE_METHODS, "1"),
+				new Item(MethodAttributes.PUBLIC_METHODS, "0"), -10));
 		bonusSet.add(new PatternBonus(
-				new Item("PRIVATE_METHODS", "0"),
-				new Item("PUBLIC_METHODS", "1"), -10));
+				new Item(MethodAttributes.PRIVATE_METHODS, "0"),
+				new Item(MethodAttributes.PUBLIC_METHODS, "1"), -10));
+
+		//lock vs unlock
+		bonusSet.add(new PatternBonus(
+				new Item(MethodAttributes.LOCK_CALLS, "0"),
+				new Item(MethodAttributes.UNLOCK_CALLS, "0"), -10));
+
+		// [^0] all but 0 method calls
+		bonusSet.add(new PatternBonus(
+				new Item(MethodAttributes.METHOD_CALLS, "[^0]"),
+				new Item(".*", ".*"), 100));
+
+		// [^01] all but 0 or 1
+		bonusSet.add(new PatternBonus(
+		new Item(MethodAttributes.METHOD_CALLS, "[^01]"),
+		new Item(".*", ".*"), 100));
+
+		bonusSet.add(new PatternBonus(
+				new Item(MethodAttributes.PRIVATE_METHODS, "0"),
+				new Item(MethodAttributes.PUBLIC_METHODS, "1"), -10));
 
 		/**
 		 * A=Z and B=X ==> "" is possible
@@ -101,30 +124,34 @@ public class PatternBonus extends Bonus {
 	 * @param rule
 	 */
 	public int rate(Rule rule) {
-		String conditionString = rule.getConditionItems().toString(rule.getInstances());
-		String consequenceString = rule.getConsequenceItems().toString(rule.getInstances());
-
-		if (!matches(conditionString, conditions)) return 0;
-		if (!matches(consequenceString, consequences)) return 0;
+		if (!matches(rule, rule.getConditionItems(), conditions)) return 0;
+		if (!matches(rule, rule.getConsequenceItems(), consequences)) return 0;
 		
 		return getBonus();
 	}
-	
+
 	/**
-	 * checks if string contains all items
-	 * @param itemSetString
+	 * checks if an itemSet matches all pattern items 
+	 * @param rule
+	 * @param itemSet
 	 * @param patternItems
 	 * @return
 	 */
-	private boolean matches(String itemSetString, Collection<Item> patternItems) {
-		String string = itemSetString;
-		for (Item item : patternItems){
-			if (!string.matches(item.getName()+"="+item.getValue())){
-				return false;
-			}	
+	private boolean matches(Rule rule, ItemSet itemSet, Collection<Item> patternItems) {
+		//for all attributes in instances
+		for (int i=0 ; i< rule.getInstances().numAttributes(); i++){
+			if (itemSet.items()[i] != -1) {
+				String name = rule.getInstances().attribute(i).name();
+				String value = rule.getInstances().attribute(i).value(itemSet.items()[i]);
+				for (Item item : patternItems){					
+					if (!name.matches(item.getName())) return false;
+					if (!value.matches(item.getValue()))return false;
+				}
+			}
 		}
 		return true;
 	}
+
 	
 	/**
 	 * packs an item into a collection
