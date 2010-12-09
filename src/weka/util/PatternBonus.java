@@ -3,9 +3,6 @@ package weka.util;
 import java.util.Collection;
 import java.util.LinkedList;
 
-import weka.associations.ItemSet;
-
-
 /**
  * PatternBonus stores rules for giving bonus on patterns
  * 
@@ -34,13 +31,19 @@ public class PatternBonus extends Bonus {
 		this.setBonus(bonus);
 	}
 
+	/**
+	 * convenient constructor
+	 * @param cond
+	 * @param cons
+	 * @param bonus
+	 */
 	public PatternBonus(Item cond, Item cons, int bonus) {
 		this(packageItem(cond), packageItem(cons), bonus);
 	}
 
 
 	/**
-	 * toString
+	 * conditions ==> consequences    bonus
 	 */
 	public String toString() {
 		StringBuffer sb = new StringBuffer();
@@ -107,6 +110,12 @@ public class PatternBonus extends Bonus {
 		return getBonus();
 	}
 	
+	/**
+	 * checks if string contains all items
+	 * @param itemSetString
+	 * @param patternItems
+	 * @return
+	 */
 	private boolean matches(String itemSetString, Collection<Item> patternItems) {
 		String string = itemSetString;
 		for (Item item : patternItems){
@@ -118,7 +127,7 @@ public class PatternBonus extends Bonus {
 	}
 	
 	/**
-	 * little helper method
+	 * packs an item into a collection
 	 * @param name
 	 * @param value
 	 * @return
@@ -130,7 +139,7 @@ public class PatternBonus extends Bonus {
 	}
 	
 	/**
-	 * little helper method
+	 * packs two items in a collection
 	 * @param name
 	 * @param value
 	 * @return
