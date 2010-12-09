@@ -69,7 +69,8 @@ public class Miner {
 			
 			Collection<Bonus> bonusSet = Bonus.getSampleBonusSet();
 			RuleRater filter = new RuleRater(apriori,bonusSet);
-			filter.printRules(3);
+			filter.rateAndSort();
+			filter.printBest();
 		} catch (Exception e) {
 			System.err.println("Error in doMining()");
 			System.err.println("try again");

@@ -1,5 +1,7 @@
 package weka.util;
 
+import java.util.Collection;
+
 import weka.associations.ItemSet;
 import weka.core.Instances;
 
@@ -8,16 +10,16 @@ import weka.core.Instances;
  * calculated during creation
  */
 public class Rule implements Comparable<Rule> {
-	private ItemSet condition;
-	private ItemSet consequence;
+	private ItemSet conditionItems;
+	private ItemSet consequenceItems;
 	private double confidence;
 	private Integer rating;
 	private Instances instances;
 
 	public String toString() {
 		return rating + " : "
-				+ getCondition().toString(instances) + " ==> "
-				+ getConsequence().toString(instances)
+				+ getConditionItems().toString(instances) + " ==> "
+				+ getConsequenceItems().toString(instances)
 				+ "  conf(" + confidence + ")";
 	}
 
@@ -29,8 +31,8 @@ public class Rule implements Comparable<Rule> {
 	 */
 	public Rule(ItemSet condition, ItemSet consequence,
 			double confidence, Instances instances) {
-		this.setCondition(condition);
-		this.setConsequence(consequence);
+		this.setConditionItems(condition);
+		this.setConsequenceItems(consequence);
 		this.confidence = confidence;
 		this.instances = instances;
 	}
@@ -40,13 +42,21 @@ public class Rule implements Comparable<Rule> {
 		return rating.compareTo(o.rating);
 	}
 	
-	public void setCondition(ItemSet condition) {
-		this.condition = condition;
+	public void setConditionItems(ItemSet conditionItems) {
+		this.conditionItems = conditionItems;
 	}
-	public ItemSet getCondition() {
-		return condition;
+	public ItemSet getConditionItems() {
+		return conditionItems;
 	}
 	
+	public void setConsequenceItems(ItemSet consequenceItems) {
+		this.consequenceItems = consequenceItems;
+	}
+
+	public ItemSet getConsequenceItems() {
+		return consequenceItems;
+	}
+
 	public Integer getRating() {
 		return rating;
 	}
@@ -54,15 +64,17 @@ public class Rule implements Comparable<Rule> {
 		this.rating = rating;
 	}
 
-	public void setConsequence(ItemSet consequence) {
-		this.consequence = consequence;
-	}
-
-	public ItemSet getConsequence() {
-		return consequence;
-	}
-
 	public Instances getInstances() {
 		return instances;
+	}
+
+	public void resetRating() {
+		this.rating = 0;
+	}
+
+	public void addRating(Collection<Bonus> bonusSet) {
+		for (Bonus bonus : bonusSet) {
+			this.rating += bonus.rate(this);
+		}
 	}
 }

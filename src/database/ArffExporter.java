@@ -5,12 +5,12 @@ import utils.PathAndFileNames;
 public class ArffExporter {
 	public static void main (String[] args) {
 		Database database = new Database(PathAndFileNames.DATA_BASE_PATH);
-		
+		/*
 		export(database, Scope.METHOD, "*", false, Integer.MAX_VALUE);
 		export(database, Scope.CLASS, "*", false, Integer.MAX_VALUE);
 		export(database, Scope.PROJECT, "*", false, Integer.MAX_VALUE);
-		
-	//	export(database, Scope.METHOD, "*", true, Integer.MAX_VALUE);
+		*/
+		export(database, Scope.METHOD, "SYNCHRONIZED_METHODS, METHOD_CALLS, SYNCHRONIZED_BLOCKS, LOCK_CALLS", true, 100);
 	//	export(database, Scope.CLASS, "*", true, Integer.MAX_VALUE);
 	//	export(database, Scope.PROJECT, "*", true, Integer.MAX_VALUE);
 		

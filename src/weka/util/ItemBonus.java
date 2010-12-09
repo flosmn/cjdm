@@ -56,6 +56,7 @@ public class ItemBonus extends Bonus{
 		bonusSet.add(new ItemBonus("NESTEDNESS_CONDITIONALS", "1", 1));
 		bonusSet.add(new ItemBonus("NESTEDNESS_LOOPS", "1", 1));
 		bonusSet.add(new ItemBonus("PUBLIC", "1", -2));
+		bonusSet.add(new ItemBonus("LOCK_CALLS", "0", 3));
 		
 		return bonusSet;
 	}
@@ -98,45 +99,40 @@ public class ItemBonus extends Bonus{
 	 * @param itemSet
 	 * @param rule
 	 */
-	public static void rate(Rule rule, Collection<ItemBonus> itemBonusSet) {
-		rateCondition(rule, itemBonusSet);
-		rateConsequence(rule, itemBonusSet);
+	public int rate(Rule rule) {
+		int rating = 0;
+		
+		rating += rateCondition(rule);
+		rating += rateConsequence(rule);
+		
+		return rating;
 	}
 	
-	private static void rateCondition(Rule rule, Collection<ItemBonus> itemBonusSet) {
-		rateItemSet(rule, rule.getCondition(), itemBonusSet);
+	private int rateCondition(Rule rule) {
+		return rateItemSet(rule, rule.getConditionItems());
 	}
 	
-	private static void rateConsequence(Rule rule, Collection<ItemBonus> itemBonusSet) {
-		rateItemSet(rule, rule.getConsequence(), itemBonusSet);
+	private int rateConsequence(Rule rule) {
+		return rateItemSet(rule, rule.getConsequenceItems());
 	}
 
-	private static void rateItemSet(Rule rule, ItemSet itemSet, Collection<ItemBonus> itemBonusSet) {
+	private int rateItemSet(Rule rule, ItemSet itemSet) {
+		int rating = 0;
+		
 		int[] items = itemSet.items();
 		for (int i = 0; i < rule.getInstances().numAttributes(); i++) {
 			if (items[i] != -1) {
 				String name = rule.getInstances().attribute(i).name();
 				String value = rule.getInstances().attribute(i).value(items[i]);
-				rateItem(name, value, rule, itemBonusSet);
+				rating += rateItem(name, value);
 			}
 		}
+		
+		return rating;
 	}
-	/**
-	 * add one item bonus to a rule
-	 * @see ItemBonus
-	 * @param name
-	 * @param value
-	 * @param bonusSet
-	 * @param rule
-	 */
-	private static void rateItem(String name, String value, Rule rule, Collection<ItemBonus> itemBonusSet) {
-		for (ItemBonus bonus : itemBonusSet) {
-			rule.setRating(rule.getRating()+ bonus.rate(name, value));
-		}
-	}
-
-	public int rate(String name, String value) {
-		boolean match = name.matches(this.item.getName()) && value.matches(this.item.getValue());
+	
+	public int rateItem(String name, String value) {
+		boolean match = name.matches(this.getName()) && value.matches(this.getValue());
 
 		return match ? getBonus() : 0;
 	}

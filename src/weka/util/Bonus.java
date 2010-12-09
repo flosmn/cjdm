@@ -13,8 +13,7 @@ public abstract class Bonus {
 	private int bonus;
 	static String toString = "  has a bonus of ";
 	
-	//TODO think about making Bonus an Interface
-	//abstract void rate(Rule rule, Collection<Bonus> bonusSet);
+	abstract public int rate(Rule rule);
 
 	/**
 	 * returns a collection of item and pattern bonus sets
@@ -42,5 +41,4 @@ public abstract class Bonus {
 	public int getBonus() {
 		return bonus;
 	}
-
 }

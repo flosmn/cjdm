@@ -18,8 +18,8 @@ import weka.associations.AprioriItemSet;
  */
 public class RuleRater {
 	private LinkedList<Rule> rules = new LinkedList<Rule>();
-	private Collection<ItemBonus> itemBonusSet;
-	private Collection<PatternBonus> patternBonusSet;
+	private Collection<Bonus> itemBonusSet;
+	private Collection<Bonus> patternBonusSet;
 	
 	/**
 	 * constructor
@@ -80,9 +80,16 @@ public class RuleRater {
 	 * uses item matching and pattern matching
 	 */
 	public void computeRating(Rule rule) {
+		rule.resetRating();
+		rule.addRating(itemBonusSet);
+		rule.addRating(patternBonusSet);
+		
+		
+		/*
 		rule.setRating(0);
 		ItemBonus.rate(rule, itemBonusSet);
 		PatternBonus.ratePattern(rule, patternBonusSet);
+		*/
 	}
 
 	/**
@@ -91,8 +98,8 @@ public class RuleRater {
 	 * @param bonusSet
 	 */
 	public void setBonusSet(Collection<Bonus> bonusSet) {
-		itemBonusSet = new LinkedList<ItemBonus>();
-		patternBonusSet= new LinkedList<PatternBonus>();
+		itemBonusSet = new LinkedList<Bonus>();
+		patternBonusSet= new LinkedList<Bonus>();
 		for (Bonus b : bonusSet){
 			if (b.getClass().equals(ItemBonus.class))
 				itemBonusSet.add((ItemBonus) b);

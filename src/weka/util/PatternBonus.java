@@ -3,6 +3,8 @@ package weka.util;
 import java.util.Collection;
 import java.util.LinkedList;
 
+import weka.associations.ItemSet;
+
 
 /**
  * PatternBonus stores rules for giving bonus on patterns
@@ -17,8 +19,8 @@ import java.util.LinkedList;
  * @see Bonus
  */
 public class PatternBonus extends Bonus {
-	public Collection<Item> cond;
-	public Collection<Item> cons;
+	public Collection<Item> conditions;
+	public Collection<Item> consequences;
 
 	/**
 	 * constructor
@@ -27,21 +29,26 @@ public class PatternBonus extends Bonus {
 	 * @param bonus
 	 */
 	public PatternBonus(Collection<Item> cond, Collection<Item> cons, int bonus) {
-		this.cond = cond;
-		this.cons = cons;
+		this.conditions = cond;
+		this.consequences = cons;
 		this.setBonus(bonus);
 	}
+
+	public PatternBonus(Item cond, Item cons, int bonus) {
+		this(packageItem(cond), packageItem(cons), bonus);
+	}
+
 
 	/**
 	 * toString
 	 */
 	public String toString() {
 		StringBuffer sb = new StringBuffer();
-		for (Item i : cond) {
+		for (Item i : conditions) {
 			sb.append(i.getName() + " " + i.getValue());
 		}
 		sb.append("==>");
-		for (Item i : cons) {
+		for (Item i : consequences) {
 			sb.append(i.getName() + " " + i.getValue());
 		}
 		sb.append(Bonus.toString + getBonus() + "\n");
@@ -61,24 +68,27 @@ public class PatternBonus extends Bonus {
 	public static Collection<Bonus> getSampleMethodBonusSet() {
 		Collection<Bonus> bonusSet = new LinkedList<Bonus>();
 		//public vs private filter 
-		bonusSet.add(new PatternBonus(newItem("PUBLIC_METHODS", "1"), newItem(
-				"PRIVATE_METHODS", "0"), -10));
-		bonusSet.add(new PatternBonus(newItem("PUBLIC_METHODS", "0"), newItem(
-				"PRIVATE_METHODS", "1"), -10));
-		bonusSet.add(new PatternBonus(newItem("PRIVATE_METHODS", "1"), newItem(
-				"PUBLIC_METHODS", "0"), -10));
-		bonusSet.add(new PatternBonus(newItem("PRIVATE_METHODS", "0"), newItem(
-				"PUBLIC_METHODS", "1"), -10));
+		bonusSet.add(new PatternBonus(
+				new Item("PUBLIC_METHODS", "1"),
+				new Item("PRIVATE_METHODS", "0"), -10));
+		bonusSet.add(new PatternBonus(
+				new Item("PUBLIC_METHODS", "0"),
+				new Item("PRIVATE_METHODS", "1"), -10));
+		bonusSet.add(new PatternBonus(
+				new Item("PRIVATE_METHODS", "1"),
+				new Item("PUBLIC_METHODS", "0"), -10));
+		bonusSet.add(new PatternBonus(
+				new Item("PRIVATE_METHODS", "0"),
+				new Item("PUBLIC_METHODS", "1"), -10));
 
 		/**
 		 * A=Z and B=X ==> "" is possible
 		 * A=X and B=Y ==> C="" is possible
 		 */
 		Collection<Item> temp = new LinkedList<Item>();
-		temp.add(new Item("PUBLIC_METHODS", "1"));
-		temp.add(new Item("METHOD_CALLS", "0"));
-		bonusSet.add(new PatternBonus(temp, newItem("SYNCHRONIZED_METHODS", ""), 30));
-		bonusSet.add(new PatternBonus(twoItems("SYNCHRONIZED_METHODS","1","","1"), newItem("",""), 11));
+		temp.add(new Item(".*", ".*"));
+		bonusSet.add(new PatternBonus(temp, packageItem(new Item("LOCK_CALLS", ".*")), 30));
+		bonusSet.add(new PatternBonus(twoItems("SYNCHRONIZED_METHODS","1","","1"), packageItem(new Item(".*",".*")), 11));
 		return bonusSet;
 	}
 	
@@ -87,48 +97,24 @@ public class PatternBonus extends Bonus {
 	 * e.g. @see PatternBonus
 	 * @param rule
 	 */
-	public static void ratePattern(Rule rule, Collection<PatternBonus> bonusSet) {
-		for (PatternBonus b : bonusSet){
-			boolean flag1 = true;
-			boolean flag2 = true;
-			String condString = rule.getCondition().toString(rule.getInstances());
-			String consString = rule.getConsequence().toString(rule.getInstances());
-			for (Item c : b.cond){
-				if (c.getValue()==""){
-					if (c.getName()==""){
-						continue;
-					}else{
-						if (!consString.contains(c.getName()) ){
-							flag2 = false;
-							continue;
-						}						
-					}
-				}
-				if (!condString.contains(c.getName()+"="+c.getValue())){
-					flag1 = false;
-					continue;
-				}	
-			}
-			for (Item c : b.cons){
-				if (c.getValue()==""){
-					if (c.getName()==""){
-						continue;
-					}else{
-						if (!consString.contains(c.getName()) ){
-							flag2 = false;
-							continue;
-						}						
-					}
-				}
-				if (!consString.contains(c.getName()+"="+c.getValue()) ){
-					flag2 = false;
-					continue;
-				}
-			}
-			if (flag1 && flag2){
-				rule.setRating(rule.getRating()+b.getBonus());
-			}
+	public int rate(Rule rule) {
+		String conditionString = rule.getConditionItems().toString(rule.getInstances());
+		String consequenceString = rule.getConsequenceItems().toString(rule.getInstances());
+
+		if (!matches(conditionString, conditions)) return 0;
+		if (!matches(consequenceString, consequences)) return 0;
+		
+		return getBonus();
+	}
+	
+	private boolean matches(String itemSetString, Collection<Item> patternItems) {
+		String string = itemSetString;
+		for (Item item : patternItems){
+			if (!string.matches(item.getName()+"="+item.getValue())){
+				return false;
+			}	
 		}
+		return true;
 	}
 	
 	/**
@@ -137,9 +123,9 @@ public class PatternBonus extends Bonus {
 	 * @param value
 	 * @return
 	 */
-	private static Collection<Item> newItem(String name, String value) {
+	private static Collection<Item> packageItem(Item item) {
 		Collection<Item> collection = new LinkedList<Item>();
-		collection.add(new Item(name, value));
+		collection.add(item);
 		return collection;
 	}
 	
@@ -155,5 +141,7 @@ public class PatternBonus extends Bonus {
 		collection.add(new Item(name2, value2));
 		return collection;
 	}
+
+
 
 }
