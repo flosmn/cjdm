@@ -12,6 +12,8 @@ import weka.core.Utils;
 import weka.core.converters.ConverterUtils.DataSource;
 import weka.filters.unsupervised.attribute.NumericToNominal;
 import weka.filters.unsupervised.attribute.StringToNominal;
+import weka.util.Bonus;
+import weka.util.RuleRater;
 /**
  * Miner class
  * How to use: doMining()
@@ -66,8 +68,7 @@ public class Miner {
 			printRules(apriori, false);
 			
 			Collection<Bonus> bonusSet = Bonus.getSampleBonusSet();
-			RuleRater filter = new RuleRater(apriori);
-			filter.rateAndSort(bonusSet);
+			RuleRater filter = new RuleRater(apriori,bonusSet);
 			filter.printRules(3);
 		} catch (Exception e) {
 			System.err.println("Error in doMining()");

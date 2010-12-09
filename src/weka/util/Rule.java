@@ -1,31 +1,23 @@
 package weka.util;
 
-import java.util.Collection;
-
-import weka.Bonus;
 import weka.associations.ItemSet;
 import weka.core.Instances;
 
 /**
- * Quadruple of condition, consequence, confidence and a rating that is
+ * A rule contains a condition, a consequence, a confidence and a rating that is
  * calculated during creation
- * 
  */
 public class Rule implements Comparable<Rule> {
+	private ItemSet condition;
+	private ItemSet consequence;
+	private double confidence;
 	private Integer rating;
-	ItemSet condition;
-	ItemSet consequence;
-	double confidence;
-	Instances instances;
-
-	public Integer getRating() {
-		return rating;
-	}
+	private Instances instances;
 
 	public String toString() {
 		return rating + " : "
-				+ condition.toString(instances) + " => "
-				+ consequence.toString(instances)
+				+ getCondition().toString(instances) + " ==> "
+				+ getConsequence().toString(instances)
 				+ "  conf(" + confidence + ")";
 	}
 
@@ -37,8 +29,8 @@ public class Rule implements Comparable<Rule> {
 	 */
 	public Rule(ItemSet condition, ItemSet consequence,
 			double confidence, Instances instances) {
-		this.condition = condition;
-		this.consequence = consequence;
+		this.setCondition(condition);
+		this.setConsequence(consequence);
 		this.confidence = confidence;
 		this.instances = instances;
 	}
@@ -47,32 +39,30 @@ public class Rule implements Comparable<Rule> {
 	public int compareTo(Rule o) {
 		return rating.compareTo(o.rating);
 	}
+	
+	public void setCondition(ItemSet condition) {
+		this.condition = condition;
+	}
+	public ItemSet getCondition() {
+		return condition;
+	}
+	
+	public Integer getRating() {
+		return rating;
+	}
+	public void setRating(int rating) {
+		this.rating = rating;
+	}
 
-	/**
-	 * computes a rating for a rule
-	 */
-	public void computeRating(Collection<Bonus> bonusSet) {
-		rating = 0;
-		
-		rate(condition, bonusSet);
-		rate(consequence, bonusSet);
+	public void setConsequence(ItemSet consequence) {
+		this.consequence = consequence;
 	}
-	
-	private void rate(ItemSet itemSet, Collection<Bonus> bonusSet) {
-		int[] items = itemSet.items();
-		for (int i = 0; i < instances.numAttributes(); i++) {
-			if (items[i] != -1) {
-				String name = instances.attribute(i).name();
-				String value = instances.attribute(i).value(items[i]);
-				
-				rate(name, value, bonusSet);
-			}
-		}
+
+	public ItemSet getConsequence() {
+		return consequence;
 	}
-	
-	private void rate(String name, String value, Collection<Bonus> bonusSet) {
-		for (Bonus bonus : bonusSet) {
-			rating += bonus.rate(name, value);
-		}
+
+	public Instances getInstances() {
+		return instances;
 	}
 }
