@@ -1,6 +1,32 @@
 package attributes;
 
-public class ClassAttributes extends MethodAttributes {
+public class ClassAttributes {
+	public static final String PUBLIC_METHODS = "PUBLIC_METHODS";
+	public static final String PRIVATE_METHODS = "PRIVATE_METHODS";
+	public static final String SYNCHRONIZED_METHODS = "SYNCHRONIZED_METHODS";
+	public static final String METHOD_CALLS = "METHOD_CALLS";
+	public static final String SYNCHRONIZED_BLOCKS = "SYNCHRONIZED_BLOCKS";
+	public static final String LOCK_CALLS = "LOCK_CALLS";
+	public static final String UNLOCK_CALLS= "UNLOCK_CALLS";
+	public static final String WAIT_CALLS = "WAIT_CALLS";
+	public static final String NOTIFY_CALLS = "NOTIFY_CALLS";
+	public static final String NOTIFYALL_CALLS = "NOTIFYALL_CALLS";
+	public static final String SLEEP_CALLS = "SLEEP_CALLS";
+	public static final String YIELD_CALLS = "YIELD_CALLS";
+	public static final String JOIN_CALLS = "JOIN_CALLS";
+	
+	public static final String LOCK_OBJECTS = "LOCK_OBJECTS";
+	public static final String COUNT_DOWN_OBJECTS = "COUNTDOWNLATCH_OBJECTS";
+	public static final String CONDITION_OBJECTS = "CONDITION_OBJECTS";
+	public static final String SEMAPHORE_OBJECTS = "SEMAPHORE_OBJECTS";
+	public static final String CYCLICBARRIER_OBJECTS = "CYCLICBARRIER_OBJECTS";
+	
+	public static final String NESTEDNESS_LOCKS = "NESTEDNESS_LOCKS";
+	public static final String NESTEDNESS_SYNCHRONIZED = "NESTEDNESS_SYNCHRONIZED";
+	public static final String NESTEDNESS_CONDITIONALS = "NESTEDNESS_CONDITIONALS";
+	public static final String NESTEDNESS_LOOPS = "NESTEDNESS_LOOPS";
+
+	public static final String NUMBER_OF_METHODS = "NUMBER_OF_METHODS";
 	public static final String VOLATILE_VARIABLES = "VOLATILE_VARIABLES";
 	public static final String PUBLIC_VARIABLES = "PUBLIC_VARIABLES";
 	public static final String PRIVATE_VARIABLES = "PRIVATE_VARIABLES";
@@ -38,5 +64,8 @@ public class ClassAttributes extends MethodAttributes {
 	public static final String CONCURRENTLINKEDQUEUE_OBJECTS_EXTENDS = "CONCURRENTLINKEDQUEUE_OBJECTS_EXTENDS";
 	public static final String COPYONWRITEARRAYLIST_OBJECTS_EXTENDS = "COPYONWRITEARRAYLIST_OBJECTS_EXTENDS";
 	public static final String FUTURE_OBJECTS_EXTENDS = "FUTURE_OBJECTS_EXTENDS";
-	public static final String COUNTDOWNLATCH_OBJECTS_EXTENDS = "COUNTDOWNLATCH_OBJECTS_EXTENDS";	
+	public static final String COUNTDOWNLATCH_OBJECTS_EXTENDS = "COUNTDOWNLATCH_OBJECTS_EXTENDS";
+	
+	public static final String PROJECT_NAME = "PROJECT_NAME";
+	public static final String CLASS_NAME = "CLASS_NAME";
 }
