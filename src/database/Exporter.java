@@ -6,8 +6,8 @@ import java.sql.SQLException;
 
 import utils.Logger;
 import utils.PathAndFileNames;
-import attributes.Attributes;
-import attributes.MethodAttributes;
+import attributes.Attribute;
+import attributes.MethodAttribute;
 
 public class Exporter implements ResultSetReceiver {
 	private Scope scope;
@@ -22,14 +22,14 @@ public class Exporter implements ResultSetReceiver {
 	public static void main (String[] args) {
 		Database database = new Database(PathAndFileNames.DATA_BASE_PATH);
 		
-		export(Scope.METHOD, ExportType.CSV, database, Attributes.combine(
-				MethodAttributes.COMBINED_METHOD_NAME,
-				MethodAttributes.PUBLIC_METHODS,
-				MethodAttributes.PRIVATE_METHODS), 100);
+		export(Scope.METHOD, ExportType.CSV, database, Attribute.combine(
+				MethodAttribute.COMBINED_METHOD_NAME,
+				MethodAttribute.PUBLIC_METHODS,
+				MethodAttribute.PRIVATE_METHODS), 100);
 		
-		export(Scope.METHOD, ExportType.ARFF, database, Attributes.combine(
-				MethodAttributes.PUBLIC_METHODS,
-				MethodAttributes.PRIVATE_METHODS), 100);
+		export(Scope.METHOD, ExportType.ARFF, database, Attribute.combine(
+				MethodAttribute.PUBLIC_METHODS,
+				MethodAttribute.PRIVATE_METHODS), 100);
 		
 		database.shutdown();
 		System.out.println("Done!");
@@ -55,20 +55,26 @@ public class Exporter implements ResultSetReceiver {
 	}
 	
     private void export(ResultSet resultSet) throws SQLException {
-    	String fileName = scope.toString() + getExtension();
-
         Logger logger = new Logger();
 		logger.log(getHeader(resultSet.getMetaData()));
 		logger.log(getBody(resultSet));
-        logger.writeToFile(PathAndFileNames.WEKA_DATA_PATH, fileName);		
+        logger.writeToFile(getFilePath(), getFileName());		
 	}
 
-	private String getExtension() {
+	private String getFilePath() {
+		switch (exportType) {
+			case ARFF: return PathAndFileNames.WEKA_DATA_PATH;
+			case CSV: return PathAndFileNames.R_DATA_PATH;
+		}
+		return null;
+	}
+
+	private String getFileName() {
     	switch(exportType) {
-	    	case ARFF: return ".arff";
-	    	case CSV: return ".csv";
+	    	case ARFF: return scope.toString() + ".arff";
+	    	case CSV: return scope.toString() + ".csv";
     	}
-    	return ".null";
+    	return null;
 	}
 	
 	private String getHeader(ResultSetMetaData metaData) throws SQLException {
@@ -76,7 +82,7 @@ public class Exporter implements ResultSetReceiver {
 			case ARFF: return getArffHeader(metaData);
 			case CSV: return getCsvHeader(metaData);
 		}
-		return "";
+		return null;
 	}
 	
 	private String getArffHeader(ResultSetMetaData metaData) throws SQLException {

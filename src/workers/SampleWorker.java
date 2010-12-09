@@ -1,8 +1,7 @@
 package workers;
 
-import database.Aggregator;
-import database.Scope;
 import main.TreePackage;
+import database.Aggregator;
 
 /**
  * This sample worker illustrates how a worker is meant to be implemented.
@@ -13,7 +12,7 @@ public class SampleWorker extends Worker {
 	public int counter = 0;
 	
 	public SampleWorker() {
-		this.scope = Scope.METHOD;
+		// TODO: set attribute
 		this.aggregator = Aggregator.SUM;
 	}
 	

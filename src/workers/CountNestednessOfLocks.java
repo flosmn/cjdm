@@ -10,9 +10,8 @@ import org.antlr.runtime.tree.CommonTree;
 import org.antlr.runtime.tree.Tree;
 
 import utils.DirtyLittleHelper;
-import attributes.MethodAttributes;
+import attributes.MethodAttribute;
 import database.Aggregator;
-import database.Scope;
 
 public class CountNestednessOfLocks extends Worker{
 	private int maxNestedness;
@@ -20,13 +19,8 @@ public class CountNestednessOfLocks extends Worker{
 	private Collection<String> lockObjects;
 
 	public CountNestednessOfLocks() {
-		this.scope = Scope.METHOD;
+		this.attribute = MethodAttribute.NESTEDNESS_LOCKS;
 		this.aggregator = Aggregator.MAX;
-	}
-	
-	@Override
-	public String getAttributeName() {
-		return MethodAttributes.NESTEDNESS_LOCKS;
 	}
 	
 	public void traverse(CommonTree tree){

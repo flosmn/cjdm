@@ -2,15 +2,14 @@ package workers;
 
 import java.util.List;
 
-
 import main.TreePackage;
 
 import org.antlr.runtime.tree.CommonTree;
 
+import utils.DirtyLittleHelper;
+import attributes.Attribute;
 import database.Aggregator;
 import database.Scope;
-
-import utils.DirtyLittleHelper;
 
 /**
  * Extend this abstract class to implement a worker.
@@ -18,14 +17,8 @@ import utils.DirtyLittleHelper;
  * @author welle
  */
 public abstract class Worker {
-	protected Scope scope;
+	protected Attribute attribute;
 	protected Aggregator aggregator;
-	
-	/**
-	 * getter for attribute name
-	 * @return the name of the computed attribute
-	 */
-	public abstract String getAttributeName();
 	
 	/**
 	 * computes the value
@@ -34,12 +27,22 @@ public abstract class Worker {
 	 */
 	public abstract int doWork(TreePackage treePackage);
 	
-	public final Scope getScope() {
-		return scope;
+	public final Attribute getAttribute() {
+		return attribute;
 	}
 	
 	public final Aggregator getAggregator() {
 		return aggregator;
+	}
+
+	// needed?
+	public final Scope getScope() {
+		return attribute.getScope();
+	}
+	
+	// needed?
+	public String getAttributeName() {
+		return attribute.getName();
 	}
 	
 	/**
