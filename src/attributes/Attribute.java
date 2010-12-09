@@ -1,11 +1,15 @@
 package attributes;
 
+import java.util.HashMap;
+
 import database.Scope;
 
 public class Attribute {
 	private Scope scope;
 	private String name;
 	private boolean parallel;
+	
+	private static HashMap<String, Attribute> attributes = new HashMap<String, Attribute>();
 	
 	public static String combine(Attribute ... attributes) {
 		String result = "";
@@ -26,6 +30,12 @@ public class Attribute {
 		this.scope = scope;
 		this.name = name;
 		this.parallel = parallel;
+		
+		attributes.put(name, this);
+	}
+	
+	public static Attribute getAttribute(String name) {
+		return attributes.get(name);
 	}
 
 	public Scope getScope() {
