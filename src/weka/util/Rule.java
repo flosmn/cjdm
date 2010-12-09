@@ -16,13 +16,6 @@ public class Rule implements Comparable<Rule> {
 	private Integer rating;
 	private Instances instances;
 
-	public String toString() {
-		return rating + " : "
-				+ getConditionItems().toString(instances) + " ==> "
-				+ getConsequenceItems().toString(instances)
-				+ "  conf(" + confidence + ")";
-	}
-
 	/**
 	 * constructor
 	 * @param condition
@@ -36,45 +29,78 @@ public class Rule implements Comparable<Rule> {
 		this.confidence = confidence;
 		this.instances = instances;
 	}
-
-	@Override
-	public int compareTo(Rule o) {
-		return rating.compareTo(o.rating);
+	
+	/**
+	 * rating : condition ==> consequence  confidence(confidence)
+	 */
+	public String toString() {
+		return rating + " : "
+				+ getConditionItems().toString(instances) + " ==> "
+				+ getConsequenceItems().toString(instances)
+				+ "  confidence(" + confidence + ")";
 	}
 	
-	public void setConditionItems(ItemSet conditionItems) {
-		this.conditionItems = conditionItems;
-	}
-	public ItemSet getConditionItems() {
-		return conditionItems;
-	}
-	
-	public void setConsequenceItems(ItemSet consequenceItems) {
-		this.consequenceItems = consequenceItems;
-	}
-
-	public ItemSet getConsequenceItems() {
-		return consequenceItems;
-	}
-
-	public Integer getRating() {
-		return rating;
-	}
-	public void setRating(int rating) {
-		this.rating = rating;
-	}
-
-	public Instances getInstances() {
-		return instances;
-	}
-
+	/**
+	 * rating = 0
+	 */
 	public void resetRating() {
 		this.rating = 0;
 	}
 
+	/**
+	 * rating += rating of bonusSet
+	 * @param bonusSet
+	 */
 	public void addRating(Collection<Bonus> bonusSet) {
 		for (Bonus bonus : bonusSet) {
 			this.rating += bonus.rate(this);
 		}
+	}
+
+	/**
+	 * simple getter
+	 */
+	public Integer getRating() {
+		return rating;
+	}
+
+	/**
+	 * simple setter
+	 */
+	public void setConditionItems(ItemSet conditionItems) {
+		this.conditionItems = conditionItems;
+	}
+	
+	/**
+	 * simple getter
+	 */
+	public ItemSet getConditionItems() {
+		return conditionItems;
+	}
+	
+	/**
+	 * simple setter
+	 */
+	public void setConsequenceItems(ItemSet consequenceItems) {
+		this.consequenceItems = consequenceItems;
+	}
+	
+	/**
+	 * simple getter
+	 */
+	public ItemSet getConsequenceItems() {
+		return consequenceItems;
+	}	
+
+	/**
+	 * simple getter
+	 */
+	public Instances getInstances() {
+		return instances;
+	}
+	
+	@Override
+	public int compareTo(Rule o) {
+		return rating.compareTo(o.rating);
 	}
 }
