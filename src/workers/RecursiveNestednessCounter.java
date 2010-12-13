@@ -2,29 +2,22 @@ package workers;
 
 import java.util.List;
 
+import main.TreePackage;
+
 import org.antlr.runtime.tree.CommonTree;
 
-import database.Aggregator;
-import database.Scope;
-
 import utils.DirtyLittleHelper;
-import main.TreePackage;
+import attributes.Attribute;
+import database.Aggregator;
 
 public class RecursiveNestednessCounter extends Worker{
 	private int maxNestedness;
-	private String attributeName;
 	private String[] children;
 
-	public RecursiveNestednessCounter(String attributeName, Scope scope, String ... children) {
-		this.scope = Scope.METHOD;
-		this.attributeName = attributeName;
+	public RecursiveNestednessCounter(Attribute attribute, String ... children) {
+		this.attribute = attribute;
 		this.children = children;
 		this.aggregator = Aggregator.MAX;
-	}
-	
-	@Override
-	public String getAttributeName() {
-		return this.attributeName;
 	}
 	
 	public void traverse(CommonTree tree, int nestedness){

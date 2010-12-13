@@ -1,5 +1,8 @@
 package weka.util;
 
+import attributes.Attribute;
+
+
 /**
  * pair of String and int
  * 
@@ -19,6 +22,10 @@ public class Item {
 	public Item(String name, String value) {
 		this.name = name;
 		this.value = value;
+	}
+	
+	public Item(Attribute attribute, String value) {
+		this(attribute.getName(), value);
 	}
 
 	/**

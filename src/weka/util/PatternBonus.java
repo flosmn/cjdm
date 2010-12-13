@@ -4,7 +4,7 @@ import java.util.Collection;
 import java.util.LinkedList;
 
 import weka.associations.ItemSet;
-import attributes.MethodAttributes;
+import attributes.MethodAttribute;
 
 /**
  * PatternBonus stores rules for giving bonus on patterns
@@ -76,36 +76,62 @@ public class PatternBonus extends Bonus {
 		
 		//public vs private
 		bonusSet.add(new PatternBonus(
-				new Item(MethodAttributes.PUBLIC_METHODS, "1"),
-				new Item(MethodAttributes.PRIVATE_METHODS, "0"), -10));
+				new Item(MethodAttribute.PUBLIC_METHODS, "1"),
+				new Item(MethodAttribute.PRIVATE_METHODS, "0"), -10));
 		bonusSet.add(new PatternBonus(
-				new Item(MethodAttributes.PUBLIC_METHODS, "0"),
-				new Item(MethodAttributes.PRIVATE_METHODS, "1"), -10));
+				new Item(MethodAttribute.PUBLIC_METHODS, "0"),
+				new Item(MethodAttribute.PRIVATE_METHODS, "1"), -10));
 		bonusSet.add(new PatternBonus(
-				new Item(MethodAttributes.PRIVATE_METHODS, "1"),
-				new Item(MethodAttributes.PUBLIC_METHODS, "0"), -10));
+				new Item(MethodAttribute.PRIVATE_METHODS, "1"),
+				new Item(MethodAttribute.PUBLIC_METHODS, "0"), -10));
 		bonusSet.add(new PatternBonus(
-				new Item(MethodAttributes.PRIVATE_METHODS, "0"),
-				new Item(MethodAttributes.PUBLIC_METHODS, "1"), -10));
+				new Item(MethodAttribute.PRIVATE_METHODS, "0"),
+				new Item(MethodAttribute.PUBLIC_METHODS, "1"), -10));
 
 		//lock vs unlock
 		bonusSet.add(new PatternBonus(
-				new Item(MethodAttributes.LOCK_CALLS, "0"),
-				new Item(MethodAttributes.UNLOCK_CALLS, "0"), -10));
+				new Item(MethodAttribute.LOCK_CALLS, "0"),
+				new Item(MethodAttribute.UNLOCK_CALLS, "0"), -10));
 
 		// [^0] all but 0 method calls
 		bonusSet.add(new PatternBonus(
-				new Item(MethodAttributes.METHOD_CALLS, "[^0]"),
+				new Item(MethodAttribute.METHOD_CALLS, "[^0]"),
+				new Item(MethodAttribute.PUBLIC_METHODS, "1"),
+				-10));
+		bonusSet.add(new PatternBonus(
+				new Item(MethodAttribute.PUBLIC_METHODS, "0"),
+				new Item(MethodAttribute.PRIVATE_METHODS, "1"), -10));
+		bonusSet.add(new PatternBonus(
+				new Item(MethodAttribute.PRIVATE_METHODS, "1"),
+				new Item(MethodAttribute.PUBLIC_METHODS, "0"), -10));
+		bonusSet.add(new PatternBonus(
+				new Item(MethodAttribute.PRIVATE_METHODS, "0"),
+				new Item(MethodAttribute.PUBLIC_METHODS, "1"), -10));
+
+		//lock vs unlock
+		bonusSet.add(new PatternBonus(
+				new Item(MethodAttribute.LOCK_CALLS, "0"),
+				new Item(MethodAttribute.UNLOCK_CALLS, "0"), -10));
+
+		// [^0] all but 0 method calls
+		bonusSet.add(new PatternBonus(
+				new Item(MethodAttribute.METHOD_CALLS, "[^0]"),
 				new Item(".*", ".*"), 100));
 
 		// [^01] all but 0 or 1
 		bonusSet.add(new PatternBonus(
-		new Item(MethodAttributes.METHOD_CALLS, "[^01]"),
+		new Item(MethodAttribute.METHOD_CALLS, "[^01]"),
 		new Item(".*", ".*"), 100));
 
 		bonusSet.add(new PatternBonus(
-				new Item(MethodAttributes.PRIVATE_METHODS, "0"),
-				new Item(MethodAttributes.PUBLIC_METHODS, "1"), -10));
+				new Item(MethodAttribute.PRIVATE_METHODS, "0"),
+				new Item(MethodAttribute.PUBLIC_METHODS, "1"), -10));
+		new Item(MethodAttribute.METHOD_CALLS, "[^01]"),
+		new Item(".*", ".*"), 100));
+
+		bonusSet.add(new PatternBonus(
+				new Item(MethodAttribute.PRIVATE_METHODS, "0"),
+				new Item(MethodAttribute.PUBLIC_METHODS, "1"), -10));
 
 		/**
 		 * A=Z and B=X ==> "" is possible

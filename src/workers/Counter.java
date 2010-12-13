@@ -2,24 +2,21 @@ package workers;
 
 import java.util.List;
 
-import database.Aggregator;
-import database.Scope;
-
 import main.TreePackage;
 
 import org.antlr.runtime.tree.CommonTree;
 
 import utils.DirtyLittleHelper;
+import attributes.Attribute;
+import database.Aggregator;
 
 public class Counter extends Worker {
 	private int counter;
-	private String attributeName;
 	private String[] nodeNames;
 	private boolean isMethodCallCounter;
 	
-	public Counter(String attributeName, Scope scope, String ... nodeNames) {
-		this.attributeName = attributeName;
-		this.scope = scope;
+	public Counter(Attribute attribute, String ... nodeNames) {
+		this.attribute = attribute;
 		this.aggregator = Aggregator.SUM;
 		this.nodeNames = nodeNames;
 		this.isMethodCallCounter = nodeNames[0].equals("METHOD_CALL");
@@ -36,7 +33,7 @@ public class Counter extends Worker {
 	
 	@Override
 	public String getAttributeName() {
-		return attributeName;
+		return attribute.getName();
 	}
 
 	private boolean matchesPattern(CommonTree tree) {
