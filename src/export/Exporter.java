@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import utils.Logger;
 import utils.PathAndFileNames;
 import attributes.Attribute;
-import attributes.MethodAttribute;
+import attributes.ClassAttribute;
 import database.Database;
 import database.ResultSetReceiver;
 import database.Scope;
@@ -16,18 +16,13 @@ public class Exporter implements ResultSetReceiver {
 	public static void main (String[] args) {
 		Database database = new Database(PathAndFileNames.DATA_BASE_PATH);
 		
-		export(Scope.METHOD, ExportType.CSV, database, Attribute.combine(
-				MethodAttribute.COMBINED_METHOD_NAME,
-				MethodAttribute.PUBLIC_METHODS,
-				MethodAttribute.PRIVATE_METHODS), 100);
-		
-		export(Scope.CLASS, ExportType.CSV, database, "*", 100, new ParallelFilter(2));
-		
-		export(Scope.METHOD, ExportType.ARFF, database, Attribute.combine(
-				MethodAttribute.PUBLIC_METHODS,
-				MethodAttribute.PRIVATE_METHODS), 100);
-		
-		export(Scope.CLASS, ExportType.ARFF, database, "*", 100, new SummarizeFilter());
+		export(Scope.CLASS, ExportType.CSV, database, Attribute.combine(
+				ClassAttribute.COMBINED_CLASS_NAME) + "," +
+				Attribute.getAllMethodCallAttributes() + "," +
+				Attribute.getAllSynchronizedAttributes() + "," +
+				Attribute.getAllNestednessAttributes() + "," +
+				Attribute.getAllObjectAttributes() + "," +
+				Attribute.getAllObjectFieldsAttributes(), Integer.MAX_VALUE, new ParallelFilter(2));
 
 		database.shutdown();
 		System.out.println("Done!");

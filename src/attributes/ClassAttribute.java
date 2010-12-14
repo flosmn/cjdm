@@ -1,6 +1,12 @@
 package attributes;
 
+import database.Scope;
+
 public class ClassAttribute {
+	public static final Attribute COMBINED_CLASS_NAME = new Attribute(Scope.CLASS,
+			"CONCAT(PROJECT_NAME,'->',CLASS_NAME," +
+			"'(',CAST(RAND()*1000000 AS INT),')') AS NAME", false);
+	
 	public static final Attribute PROJECT_NAME = Attribute.PROJECT_NAME;
 	public static final Attribute CLASS_NAME = Attribute.CLASS_NAME;
 	
