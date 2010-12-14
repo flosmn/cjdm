@@ -61,6 +61,10 @@ public class Attribute {
 	public static final Attribute METHOD_CALLS = new Attribute(Scope.METHOD, "METHOD_CALLS", false);
 	public static final Attribute SYNCHRONIZED_BLOCKS = new Attribute(Scope.METHOD, "SYNCHRONIZED_BLOCKS", true);
 	
+	public static final Attribute WHILE_WAIT = new Attribute(Scope.METHOD, "WHILE_WAIT", true);
+	public static final Attribute CONDITIONAL_WAIT = new Attribute(Scope.METHOD, "CONDITIONAL_WAIT", true);
+	public static final Attribute DOUBLE_CHECKED_LOCK = new Attribute(Scope.METHOD, "DOUBLE_CHECKED_LOCK", true);;
+
 	public static final Attribute LOCK_CALLS = new Attribute(Scope.METHOD, "LOCK_CALLS", true);
 	public static final Attribute UNLOCK_CALLS= new Attribute(Scope.METHOD, "UNLOCK_CALLS", true);
 	public static final Attribute WAIT_CALLS = new Attribute(Scope.METHOD, "WAIT_CALLS", true);
@@ -69,6 +73,8 @@ public class Attribute {
 	public static final Attribute SLEEP_CALLS = new Attribute(Scope.METHOD, "SLEEP_CALLS", true);
 	public static final Attribute YIELD_CALLS = new Attribute(Scope.METHOD, "YIELD_CALLS", true);
 	public static final Attribute JOIN_CALLS = new Attribute(Scope.METHOD, "JOIN_CALLS", true);
+	public static final Attribute START_CALLS = new Attribute(Scope.METHOD, "START_CALLS", true);
+	public static final Attribute RUN_CALLS = new Attribute(Scope.METHOD, "RUN_CALLS", true);
 	
 	public static final Attribute LOCK_OBJECTS = new Attribute(Scope.METHOD, "LOCK_OBJECTS", true);
 	public static final Attribute COUNT_DOWN_OBJECTS = new Attribute(Scope.METHOD, "COUNTDOWNLATCH_OBJECTS", true);
@@ -126,6 +132,13 @@ public class Attribute {
 				SYNCHRONIZED_BLOCKS);
 	}
 	
+	public static String getAllPatternAttributes() {
+		return Attribute.combine(
+				WHILE_WAIT, 
+				CONDITIONAL_WAIT,
+				DOUBLE_CHECKED_LOCK);
+	}
+	
 	public static String getAllMethodCallAttributes() {
 		return Attribute.combine(LOCK_CALLS, 
 				UNLOCK_CALLS,
@@ -134,7 +147,9 @@ public class Attribute {
 				NOTIFYALL_CALLS,
 				SLEEP_CALLS,
 				YIELD_CALLS,
-				JOIN_CALLS);
+				JOIN_CALLS,
+				START_CALLS,
+				RUN_CALLS);
 	}
 	
 	public static String getAllObjectAttributes() {

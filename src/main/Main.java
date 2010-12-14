@@ -7,6 +7,7 @@ import java.util.List;
 import utils.PathAndFileNames;
 import workers.CountNestednessOfLocks;
 import workers.Counter;
+import workers.PatternCounter;
 import workers.RecursiveNestednessCounter;
 import attributes.ClassAttribute;
 import attributes.MethodAttribute;
@@ -21,6 +22,13 @@ class Main {
 		Database database = new Database(PathAndFileNames.DATA_BASE_PATH);
 		
 		WorkerQueue workerQueue = new WorkerQueue(database);
+
+		workerQueue.addWorker(new PatternCounter(MethodAttribute.WHILE_WAIT, 
+				"BLOCK_SCOPE", "synchronized", "BLOCK_SCOPE", "(while|for)", "BLOCK_SCOPE", "METHOD_CALL", "\\.", "wait"));
+		workerQueue.addWorker(new PatternCounter(MethodAttribute.CONDITIONAL_WAIT, 
+				"BLOCK_SCOPE", "synchronized", "BLOCK_SCOPE", "if", "BLOCK_SCOPE", "METHOD_CALL", "\\.", "wait"));
+		workerQueue.addWorker(new PatternCounter(MethodAttribute.DOUBLE_CHECKED_LOCK, 
+				"if", "synchronized", "if"));
 		
 		workerQueue.addWorker(new Counter(MethodAttribute.PUBLIC_METHODS, ".*METHOD_DECL", "MODIFIER_LIST", "public"));
 		workerQueue.addWorker(new Counter(MethodAttribute.PRIVATE_METHODS, ".*METHOD_DECL", "MODIFIER_LIST", "private"));
@@ -35,6 +43,8 @@ class Main {
 		workerQueue.addWorker(new Counter(MethodAttribute.SLEEP_CALLS, "METHOD_CALL", "\\.", "sleep"));
 		workerQueue.addWorker(new Counter(MethodAttribute.YIELD_CALLS, "METHOD_CALL", "\\.", "yield"));
 		workerQueue.addWorker(new Counter(MethodAttribute.JOIN_CALLS, "METHOD_CALL", "\\.", "join"));
+		workerQueue.addWorker(new Counter(MethodAttribute.START_CALLS, "METHOD_CALL", "\\.", "start"));
+		workerQueue.addWorker(new Counter(MethodAttribute.RUN_CALLS, "METHOD_CALL", "\\.", "run"));
 		
 		workerQueue.addWorker(new Counter(MethodAttribute.LOCK_OBJECTS, "VAR_DECLARATION", "TYPE", "QUALIFIED_TYPE_IDENT", "(Reentrant|Read|Write)?Lock(<.*>)?"));
 		workerQueue.addWorker(new Counter(MethodAttribute.COUNT_DOWN_OBJECTS, "VAR_DECLARATION", "TYPE", "QUALIFIED_TYPE_IDENT", "CountDownLatch(<.*>)?"));
@@ -86,7 +96,7 @@ class Main {
 		workerQueue.addWorker(new Counter(ClassAttribute.COPYONWRITEARRAYLIST_OBJECTS_EXTENDS, "EXTENDS_CLAUSE", "TYPE", "QUALIFIED_TYPE_IDENT", "CopyOnWriteArrayList(<.*>)?"));
 		workerQueue.addWorker(new Counter(ClassAttribute.FUTURE_OBJECTS_EXTENDS, "EXTENDS_CLAUSE", "TYPE", "QUALIFIED_TYPE_IDENT", "Future(<.*>)?"));
 		workerQueue.addWorker(new Counter(ClassAttribute.COUNTDOWNLATCH_OBJECTS_EXTENDS, "EXTENDS_CLAUSE", "TYPE", "QUALIFIED_TYPE_IDENT", "CountDownLatch(<.*>)?"));
-		
+
 		workerQueue.createTables();
 		
 		Collection<TreePackage> projectPackages = (new TreePackageGenerator()).generateProjectPackages();

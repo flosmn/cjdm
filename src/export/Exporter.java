@@ -8,6 +8,7 @@ import utils.Logger;
 import utils.PathAndFileNames;
 import attributes.Attribute;
 import attributes.ClassAttribute;
+import attributes.MethodAttribute;
 import database.Database;
 import database.ResultSetReceiver;
 import database.Scope;
@@ -17,13 +18,19 @@ public class Exporter implements ResultSetReceiver {
 		Database database = new Database(PathAndFileNames.DATA_BASE_PATH);
 		
 		export(Scope.CLASS, ExportType.CSV, database, Attribute.combine(
-				ClassAttribute.COMBINED_CLASS_NAME) + "," +
+				ClassAttribute.COMBINED_CLASS_NAME, Attribute.WHILE_WAIT) + "," +
 				Attribute.getAllMethodCallAttributes() + "," +
 				Attribute.getAllSynchronizedAttributes() + "," +
 				Attribute.getAllNestednessAttributes() + "," +
 				Attribute.getAllObjectAttributes() + "," +
-				Attribute.getAllObjectFieldsAttributes(), Integer.MAX_VALUE, new ParallelFilter(2));
+				Attribute.getAllObjectFieldsAttributes(), Integer.MAX_VALUE, new ParallelFilter(1));
 
+		export(Scope.METHOD, ExportType.CSV, database, Attribute.combine(
+				MethodAttribute.COMBINED_METHOD_NAME) + "," + 
+				Attribute.getAllPatternAttributes() + "," + 
+				Attribute.getAllMethodCallAttributes()
+				, Integer.MAX_VALUE, new ExportFilter());
+		
 		database.shutdown();
 		System.out.println("Done!");
 	}
