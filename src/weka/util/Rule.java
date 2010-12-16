@@ -1,6 +1,7 @@
 package weka.util;
 
 import java.util.Collection;
+import java.util.List;
 
 import weka.associations.ItemSet;
 import weka.core.Instances;
@@ -101,6 +102,28 @@ public class Rule implements Comparable<Rule> {
 	
 	@Override
 	public int compareTo(Rule o) {
-		return rating.compareTo(o.rating);
+		return o.rating.compareTo(rating);
+	}
+
+	public static void printBestRules(List<Rule> rules, double ratio) {
+		if (ratio > 1) {
+			ratio = 1;
+		}
+		
+		System.out.println("best " + (100 * ratio) + "%:");
+		for (int i = 0; i < rules.size() * ratio; i++) {
+			System.out.println(rules.get(i).toString());
+		}
+	}
+
+	public static void printBestRules(List<Rule> rules, int maxCount) {
+		if (maxCount > rules.size()) {
+			maxCount = rules.size();
+		}
+		
+		System.out.println("best " + maxCount + ":");
+		for (int i = 0; i < maxCount; i++) {
+			System.out.println(rules.get(i).toString());
+		}
 	}
 }

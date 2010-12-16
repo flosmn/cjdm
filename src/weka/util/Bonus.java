@@ -2,6 +2,7 @@ package weka.util;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.LinkedList;
 
 
 /**
@@ -40,5 +41,15 @@ public abstract class Bonus {
 	 */
 	public int getBonus() {
 		return bonus;
+	}
+
+	public static Collection<Bonus> buildBonusSet(Bonus ... bonuses) {
+		Collection<Bonus> bonusSet = new LinkedList<Bonus>();
+		
+		for (Bonus bonus : bonuses) {
+			bonusSet.add(bonus);
+		}
+		
+		return bonusSet;
 	}
 }
