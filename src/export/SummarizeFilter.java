@@ -13,7 +13,7 @@ public class SummarizeFilter extends ExportFilter {
 		int columnCount = resultSet.getMetaData().getColumnCount();
         for (int columnIndex = 0; columnIndex < columnCount; ++columnIndex) {
         	
-    		if (metaData.getColumnType(columnIndex + 1) == java.sql.Types.INTEGER) {
+        	if (metaData.getColumnTypeName(columnIndex + 1).equals("DECIMAL")) {
     			Integer value = resultSet.getInt(columnIndex + 1);
     			stringBuffer.append(summarize(value));
     		} else {
@@ -24,7 +24,7 @@ public class SummarizeFilter extends ExportFilter {
 			boolean isLastColumn = (columnIndex == columnCount - 1);
 			stringBuffer.append(isLastColumn ? "\n" : ", ");
         }
-
+        
 		return stringBuffer.toString();
 	}
 	

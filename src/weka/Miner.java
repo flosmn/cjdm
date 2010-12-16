@@ -3,7 +3,6 @@ package weka;
 import java.io.File;
 import java.util.Collection;
 
-
 import utils.PathAndFileNames;
 import weka.associations.Apriori;
 import weka.associations.AprioriItemSet;
@@ -33,7 +32,7 @@ public class Miner {
 		apriori.setMinMetric(0.95);
 		apriori.setNumRules(20);
 		
-		doMining("methodSummarized.arff", apriori);
+		doMining("project.arff", apriori);
 	}
 
 	public static void mineAll() {

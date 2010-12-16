@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import utils.Logger;
 import utils.PathAndFileNames;
 import attributes.Attribute;
-import attributes.MethodAttribute;
+import attributes.ProjectAttribute;
 import database.Database;
 import database.ResultSetReceiver;
 import database.Scope;
@@ -15,7 +15,7 @@ import database.Scope;
 public class Exporter implements ResultSetReceiver {
 	public static void main (String[] args) {
 		Database database = new Database(PathAndFileNames.DATA_BASE_PATH);
-		
+	/*	
 		export(Scope.METHOD, ExportType.CSV, database, Attribute.combine(
 				MethodAttribute.COMBINED_METHOD_NAME,
 				MethodAttribute.PUBLIC_METHODS,
@@ -28,7 +28,13 @@ public class Exporter implements ResultSetReceiver {
 				MethodAttribute.PRIVATE_METHODS), 100);
 		
 		export(Scope.CLASS, ExportType.ARFF, database, "*", 100, new SummarizeFilter());
-
+	*/
+		
+		export(Scope.PROJECT, ExportType.ARFF, database, Attribute.combine(
+				ProjectAttribute.PROJECT_NAME,
+				ProjectAttribute.NOTIFY_CALLS,
+				ProjectAttribute.NOTIFYALL_CALLS), Integer.MAX_VALUE);
+		
 		database.shutdown();
 		System.out.println("Done!");
 	}
@@ -48,12 +54,12 @@ public class Exporter implements ResultSetReceiver {
 		this(scope, exportType, new ExportFilter());
 	}
 	
-	static private void export(Scope scope, ExportType exportType, Database database, String attributes, int maxRowCount, ExportFilter exportFilter) {
+	static public void export(Scope scope, ExportType exportType, Database database, String attributes, int maxRowCount, ExportFilter exportFilter) {
 		Exporter exporter = new Exporter(scope, exportType, exportFilter);
 		exporter.export(database, attributes, maxRowCount);
 	}
 
-	static private void export(Scope scope, ExportType exportType, Database database, String attributes, int maxRowCount) {
+	static public void export(Scope scope, ExportType exportType, Database database, String attributes, int maxRowCount) {
 		export(scope, exportType, database, attributes, maxRowCount, new ExportFilter());
 	}
 
