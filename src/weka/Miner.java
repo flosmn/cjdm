@@ -22,48 +22,31 @@ import weka.util.RuleRater;
 import attributes.MethodAttribute;
 /**
  * Miner class
- * How to use: doMining()
  */
 public class Miner {
 	
 	/**
-	 * do not call from external class,
-	 * better call doMining()
-	 * @param args
-	 * @throws Exception
+	 * print best rated rules of project, class and method scope
 	 */
 	public static void main(String[] args) throws Exception {
 		Apriori projectApriori = buildApriori(0.11, 0.95, 20);
 		Apriori classApriori = buildApriori(0, 0, 1);
 		Apriori methodApriori = buildApriori(0.11, 0.95, 20);
 		
+		//TODO solve this better, without SuppressWarnings
+		@SuppressWarnings("unchecked")
 		Collection<Bonus> projectBonusSet = Bonus.buildBonusSet(
-				new PatternBonus(
-						new Item(MethodAttribute.PUBLIC_METHODS, "1"),
-						new Item(MethodAttribute.PRIVATE_METHODS, "0"), -10),
-				new PatternBonus(
-						new Item(MethodAttribute.PUBLIC_METHODS, "0"),
-						new Item(MethodAttribute.PRIVATE_METHODS, "1"), -10),
-				new PatternBonus(
-						new Item(MethodAttribute.PRIVATE_METHODS, "1"),
-						new Item(MethodAttribute.PUBLIC_METHODS, "0"), -10),
-				new PatternBonus(
-						new Item(MethodAttribute.PRIVATE_METHODS, "0"),
-						new Item(MethodAttribute.PUBLIC_METHODS, "1"), -10));
+				Bonus.buildBonusSet(
+						new PatternBonus(
+								new Item(MethodAttribute.PUBLIC_METHODS, "1"),
+								new Item(MethodAttribute.PRIVATE_METHODS, "0"), -10)
+						),
+				Bonus.getPublicPrivateBonus(),
+				Bonus.getSynchronizedBonus()
+		);
 		
-		Collection<Bonus> classBonusSet = Bonus.buildBonusSet(
-				new PatternBonus(
-						new Item(MethodAttribute.PUBLIC_METHODS, "1"),
-						new Item(MethodAttribute.PRIVATE_METHODS, "0"), -10),
-				new PatternBonus(
-						new Item(MethodAttribute.PUBLIC_METHODS, "0"),
-						new Item(MethodAttribute.PRIVATE_METHODS, "1"), -10),
-				new PatternBonus(
-						new Item(MethodAttribute.PRIVATE_METHODS, "1"),
-						new Item(MethodAttribute.PUBLIC_METHODS, "0"), -10),
-				new PatternBonus(
-						new Item(MethodAttribute.PRIVATE_METHODS, "0"),
-						new Item(MethodAttribute.PUBLIC_METHODS, "1"), -10));
+		Collection<Bonus> classBonusSet = Bonus.getSynchronizedBonus();
+
 		
 		Collection<Bonus> methodBonusSet = Bonus.buildBonusSet(
 				new PatternBonus(
@@ -79,20 +62,40 @@ public class Miner {
 						new Item(MethodAttribute.PRIVATE_METHODS, "0"),
 						new Item(MethodAttribute.PUBLIC_METHODS, "1"), -10));
 		
-	//	printBestRules("project.arff", projectApriori, projectBonusSet);
-	//	printBestRules("class.arff", classApriori, classBonusSet);
-		List<Rule> methodRules = getBestRules("method.arff", methodApriori, methodBonusSet);
+		List<Rule> projectRules = rateAndSort("project.arff", projectApriori, projectBonusSet);
+		List<Rule> classRules = rateAndSort("class.arff", classApriori, classBonusSet);
+		List<Rule> methodRules = rateAndSort("method.arff", methodApriori, methodBonusSet);
 		
-		Rule.printBestRules(methodRules, 0.1);
+		System.out.println("project: " );
+		Rule.printBestRules(projectRules, 0.3);
+		System.out.println("class: " );
+		Rule.printBestRules(classRules, 0.3);
+		System.out.println("method: " );
+		Rule.printBestRules(methodRules, 0.3);
 	}
 	
-	private static List<Rule> getBestRules(String fileName, Apriori apriori, Collection<Bonus> bonusSet) throws Exception {
+	/**
+	 * get rated and sorted rules
+	 * @param fileName
+	 * @param apriori
+	 * @param bonusSet
+	 * @return
+	 * @throws Exception
+	 */
+	private static List<Rule> rateAndSort(String fileName, Apriori apriori, Collection<Bonus> bonusSet) throws Exception {
 		Instances instances = loadNominalInstances(fileName);
 		apriori.buildAssociations(instances);
 		
 		return RuleRater.sortRules(apriori, bonusSet);
 	}
 
+	/**
+	 * Convenient creation of a special Apriori
+	 * @param lowerBoundMinSupport
+	 * @param minMetric
+	 * @param numRules
+	 * @return
+	 */
 	private static Apriori buildApriori(double lowerBoundMinSupport, double minMetric, int numRules) {
 		Apriori apriori = new Apriori();
 		apriori.setLowerBoundMinSupport(lowerBoundMinSupport);	
@@ -102,6 +105,9 @@ public class Miner {
 		return apriori;
 	}
 
+	/**
+	 * TODO write this method correct
+	 */
 	public static void mineAll() {
 		Apriori apriori = getSampleApriori();
 		File folder = new File(PathAndFileNames.WEKA_DATA_PATH);
@@ -118,7 +124,7 @@ public class Miner {
 	}
 	
 	/** 
-	 * build association rules
+	 * @return Apriori with special settings
 	 */
 	public static Apriori getSampleApriori() {
 		Apriori apriori = new Apriori();
@@ -140,9 +146,11 @@ public class Miner {
 	}
 
 	/**
-	 * convert attributes from numerical to nominal
+	 * convert attributes to nominal
 	 * @param data
 	 * @return data
+	 * @see NumericToNominal
+	 * @see StringToNominal
 	 * @throws Exception
 	 */
 	private static Instances convertToNominal(Instances data, Filter filter) throws Exception {
@@ -150,48 +158,5 @@ public class Miner {
 		((OptionHandler) filter).setOptions(options);
 		filter.setInputFormat(data);
 		return NumericToNominal.useFilter(data, filter);
-	}
-	
-	/**
-	 * print rules, detailed == false
-	 * @param apriori, Apriori
-	 */
-	static void printRules(Apriori apriori) {
-		printRules(apriori, false);
-	}
-
-	/**
-	 * prints the rules
-	 * @param apriori, Apriori
-	 * @param detailed, boolean
-	 */
-	static void printRules(Apriori apriori, boolean detailed) {
-		if(detailed){
-				System.out.println(apriori);
-		}else{
-			StringBuffer text = new StringBuffer();
-			text.append("\nBest rules found:\n\n");
-			for (int i = 0; i < apriori.getAllTheRules()[0].size(); i++) {
-				text.append(Utils
-					.doubleToString((double) i + 1, (int) (Math
-							.log(apriori.getNumRules())
-							/ Math.log(10) + 1), 0)
-							+ ". "
-							+ ((AprioriItemSet) apriori.getAllTheRules()[0]	
-							                                             .elementAt(i)).toString(apriori.getInstancesNoClass())//(apriori.m_instances)
-                            + " ==> "
-                            + ((AprioriItemSet) apriori.getAllTheRules()[1]
-                                                                         .elementAt(i)).toString(apriori.getInstancesNoClass())//(apriori.m_instances)
-                            + "    conf:("
-			                + Utils
-			                .doubleToString(
-			                		((Double) apriori.getAllTheRules()[2]
-			                		                                   .elementAt(i))
-			                		                                   .doubleValue(), 2)
-			                 + ")");
-				text.append('\n');
-			}
-			System.out.println(text);
-		}
 	}
 }

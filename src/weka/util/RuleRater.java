@@ -12,12 +12,17 @@ import weka.associations.AprioriItemSet;
  * RuleRater rates the rules according to a given bonus set 
  * and sorts them.
  * 
- * The bonus set is split into item and patter boni
- * 
  * @see Bonus
  * @see Rule
  */
 public class RuleRater {
+	
+	/**
+	 * extract rules, add rating and sort
+	 * @param apriori
+	 * @param bonusSet
+	 * @return
+	 */
 	public static List<Rule> sortRules(Apriori apriori, Collection<Bonus> bonusSet) {
 		List<Rule> rules = extractRules(apriori);
 		
@@ -31,6 +36,11 @@ public class RuleRater {
 		return rules;
 	}
 
+	/**
+	 * convert rules to weka.util.Rule
+	 * @param apriori
+	 * @return
+	 */
 	private static List<Rule> extractRules(Apriori apriori) {
 		List<Rule> rules = new LinkedList<Rule>();
 		
