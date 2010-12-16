@@ -57,8 +57,14 @@ public class Attribute {
 	public static final Attribute PUBLIC_METHODS = new Attribute(Scope.METHOD, "PUBLIC_METHODS", false);
 	public static final Attribute PRIVATE_METHODS = new Attribute(Scope.METHOD, "PRIVATE_METHODS", false);
 	public static final Attribute SYNCHRONIZED_METHODS = new Attribute(Scope.METHOD, "SYNCHRONIZED_METHODS", true);
+	
 	public static final Attribute METHOD_CALLS = new Attribute(Scope.METHOD, "METHOD_CALLS", false);
 	public static final Attribute SYNCHRONIZED_BLOCKS = new Attribute(Scope.METHOD, "SYNCHRONIZED_BLOCKS", true);
+	
+	public static final Attribute WHILE_WAIT = new Attribute(Scope.METHOD, "WHILE_WAIT", true);
+	public static final Attribute CONDITIONAL_WAIT = new Attribute(Scope.METHOD, "CONDITIONAL_WAIT", true);
+	public static final Attribute DOUBLE_CHECKED_LOCK = new Attribute(Scope.METHOD, "DOUBLE_CHECKED_LOCK", true);;
+
 	public static final Attribute LOCK_CALLS = new Attribute(Scope.METHOD, "LOCK_CALLS", true);
 	public static final Attribute UNLOCK_CALLS= new Attribute(Scope.METHOD, "UNLOCK_CALLS", true);
 	public static final Attribute WAIT_CALLS = new Attribute(Scope.METHOD, "WAIT_CALLS", true);
@@ -67,6 +73,8 @@ public class Attribute {
 	public static final Attribute SLEEP_CALLS = new Attribute(Scope.METHOD, "SLEEP_CALLS", true);
 	public static final Attribute YIELD_CALLS = new Attribute(Scope.METHOD, "YIELD_CALLS", true);
 	public static final Attribute JOIN_CALLS = new Attribute(Scope.METHOD, "JOIN_CALLS", true);
+	public static final Attribute START_CALLS = new Attribute(Scope.METHOD, "START_CALLS", true);
+	public static final Attribute RUN_CALLS = new Attribute(Scope.METHOD, "RUN_CALLS", true);
 	
 	public static final Attribute LOCK_OBJECTS = new Attribute(Scope.METHOD, "LOCK_OBJECTS", true);
 	public static final Attribute COUNT_DOWN_OBJECTS = new Attribute(Scope.METHOD, "COUNTDOWNLATCH_OBJECTS", true);
@@ -118,4 +126,87 @@ public class Attribute {
 	public static final Attribute COPYONWRITEARRAYLIST_OBJECTS_EXTENDS = new Attribute(Scope.CLASS, "COPYONWRITEARRAYLIST_OBJECTS_EXTENDS", true);
 	public static final Attribute FUTURE_OBJECTS_EXTENDS = new Attribute(Scope.CLASS, "FUTURE_OBJECTS_EXTENDS", true);
 	public static final Attribute COUNTDOWNLATCH_OBJECTS_EXTENDS = new Attribute(Scope.CLASS, "COUNTDOWNLATCH_OBJECTS_EXTENDS", true);
+	
+	public static String getAllSynchronizedAttributes() {
+		return Attribute.combine(SYNCHRONIZED_METHODS, 
+				SYNCHRONIZED_BLOCKS);
+	}
+	
+	public static String getAllPatternAttributes() {
+		return Attribute.combine(
+				WHILE_WAIT, 
+				CONDITIONAL_WAIT,
+				DOUBLE_CHECKED_LOCK);
+	}
+	
+	public static String getAllMethodCallAttributes() {
+		return Attribute.combine(LOCK_CALLS, 
+				UNLOCK_CALLS,
+				WAIT_CALLS,
+				NOTIFY_CALLS,
+				NOTIFYALL_CALLS,
+				SLEEP_CALLS,
+				YIELD_CALLS,
+				JOIN_CALLS,
+				START_CALLS,
+				RUN_CALLS);
+	}
+	
+	public static String getAllObjectAttributes() {
+		return Attribute.combine(LOCK_OBJECTS, 
+				COUNT_DOWN_OBJECTS,
+				CONDITION_OBJECTS,
+				SEMAPHORE_OBJECTS,
+				CYCLICBARRIER_OBJECTS);
+	}
+	
+	public static String getAllNestednessAttributes() {
+		return Attribute.combine(NESTEDNESS_LOCKS, 
+				NESTEDNESS_SYNCHRONIZED,
+				NESTEDNESS_CONDITIONALS,
+				NESTEDNESS_LOOPS);
+	}
+	
+	public static String getAllObjectFieldsAttributes() {
+		return Attribute.combine(LOCK_OBJECT_FIELDS, 
+				CONDITION_OBJECT_FIELDS,
+				EXECUTOR_OBJECT_FIELDS,
+				CONCURRENTMAP_OBJECT_FIELDS,
+				ATOMICINTEGER_OBJECT_FIELDS,
+				BLOCKINGQUEUE_OBJECT_FIELDS,
+				CONCURRENTLINKEDQUEUE_OBJECT_FIELDS,
+				COPYONWRITEARRAYLIST_OBJECT_FIELDS,
+				EXECUTORSERVICE_OBJECT_FIELDS,
+				FUTURE_OBJECT_FIELDS,
+				THREADPOOLEXECUTOR_OBJECT_FIELDS,
+				COUNTDOWNLATCH_OBJECT_FIELDS,
+				CYCLICBARRIER_OBJECT_FIELDS,
+				EXCHANGER_OBJECT_FIELDS,
+				SEMAPHORE_OBJECT_FIELDS,
+				THREADFACTORY_OBJECT_FIELDS);
+	}
+	
+	public static String getAllInterfaceAttributes() {
+		return Attribute.combine(CALLABLE_INTERFACE, 
+				DELAYED_INTERFACE,
+				THREADFACTORY_INTERFACE,
+				BLOCKINGQUEUE_INTERFACE);
+	}
+	
+	public static String getAllObjectExtendsAttributes() {
+		return Attribute.combine(CONCURRENTMAP_OBJECTS_EXTENDS, 
+				EXECUTORSERVICE_OBJECTS_EXTENDS,
+				THREADPOOLEXECUTOR_OBJECTS_EXTENDS,
+				CYCLICBARRIER_OBJECTS_EXTENDS,
+				EXCHANGER_OBJECTS_EXTENDS,
+				SEMAPHORE_OBJECTS_EXTENDS,
+				LOCK_OBJECTS_EXTENDS,
+				EXECUTOR_OBJECTS_EXTENDS,
+				ATOMICINTEGER_OBJECTS_EXTENDS,
+				CONCURRENTLINKEDQUEUE_OBJECTS_EXTENDS,
+				COPYONWRITEARRAYLIST_OBJECTS_EXTENDS,
+				FUTURE_OBJECTS_EXTENDS,
+				COUNTDOWNLATCH_OBJECTS_EXTENDS);
+	}
+
 }

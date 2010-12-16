@@ -25,6 +25,8 @@ public class MethodAttribute {
 	public static final Attribute SLEEP_CALLS = Attribute.SLEEP_CALLS;
 	public static final Attribute YIELD_CALLS = Attribute.YIELD_CALLS;
 	public static final Attribute JOIN_CALLS = Attribute.JOIN_CALLS;
+	public static final Attribute START_CALLS = Attribute.START_CALLS;
+	public static final Attribute RUN_CALLS = Attribute.RUN_CALLS;
 	
 	public static final Attribute LOCK_OBJECTS = Attribute.LOCK_OBJECTS;
 	public static final Attribute COUNT_DOWN_OBJECTS = Attribute.COUNT_DOWN_OBJECTS;
@@ -36,4 +38,9 @@ public class MethodAttribute {
 	public static final Attribute NESTEDNESS_SYNCHRONIZED = Attribute.NESTEDNESS_SYNCHRONIZED;
 	public static final Attribute NESTEDNESS_CONDITIONALS = Attribute.NESTEDNESS_CONDITIONALS;
 	public static final Attribute NESTEDNESS_LOOPS = Attribute.NESTEDNESS_LOOPS;
+
+	public static final Attribute WHILE_WAIT = Attribute.WHILE_WAIT;
+	public static final Attribute CONDITIONAL_WAIT = Attribute.CONDITIONAL_WAIT;
+	public static final Attribute DOUBLE_CHECKED_LOCK = Attribute.DOUBLE_CHECKED_LOCK;
+
 }
