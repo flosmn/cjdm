@@ -15,34 +15,39 @@ import database.Scope;
 public class Exporter implements ResultSetReceiver {
 	public static void main (String[] args) {
 		Database database = new Database(PathAndFileNames.DATA_BASE_PATH);
-	/*	
 		
-		export(Scope.CLASS, ExportType.CSV, database, Attribute.combine(
-				ClassAttribute.COMBINED_CLASS_NAME, Attribute.WHILE_WAIT) + "," +
-				Attribute.getAllMethodCallAttributes() + "," +
-				Attribute.getAllSynchronizedAttributes() + "," +
-				Attribute.getAllNestednessAttributes() + "," +
-				Attribute.getAllObjectAttributes() + "," +
-				Attribute.getAllObjectFieldsAttributes(), Integer.MAX_VALUE, new ParallelFilter(1));
+		/*		
+		export(Scope.CLASS, ExportType.CSV, database,
+				Attribute.combine(ClassAttribute.COMBINED_CLASS_NAME, Attribute.WHILE_WAIT) + ","
+						+ Attribute.getAllMethodCallAttributes() + ","
+						+ Attribute.getAllSynchronizedAttributes() + ","
+						+ Attribute.getAllNestednessAttributes() + ","
+						+ Attribute.getAllObjectAttributes() + ","
+						+ Attribute.getAllObjectFieldsAttributes(),
+				Integer.MAX_VALUE, new ParallelFilter(2));
 
-		export(Scope.METHOD, ExportType.CSV, database, Attribute.combine(
-				MethodAttribute.COMBINED_METHOD_NAME) + "," + 
-				Attribute.getAllPatternAttributes() + "," + 
-				Attribute.getAllMethodCallAttributes()
-				, Integer.MAX_VALUE, new ExportFilter());
+		export(Scope.METHOD, ExportType.CSV, database, 
+				Attribute.combine(MethodAttribute.COMBINED_METHOD_NAME, Attribute.WHILE_WAIT) + ","
+				+ Attribute.getAllMethodCallAttributes() + ","
+				+ Attribute.getAllSynchronizedAttributes() + ","
+				+ Attribute.getAllNestednessAttributes(),
+		Integer.MAX_VALUE, new ParallelFilter(3));
 		
 		export(Scope.METHOD, ExportType.ARFF, database, Attribute.combine(
 				MethodAttribute.PUBLIC_METHODS,
 				MethodAttribute.PRIVATE_METHODS), 100);
 		
 		export(Scope.CLASS, ExportType.ARFF, database, "*", 100, new SummarizeFilter());
-	*/
-		
+		*/
+
 		export(Scope.PROJECT, ExportType.ARFF, database, Attribute.combine(
 				ProjectAttribute.PROJECT_NAME,
 				ProjectAttribute.NOTIFY_CALLS,
 				ProjectAttribute.NOTIFYALL_CALLS), Integer.MAX_VALUE);
-		
+
+		database.shutdown();
+		System.out.println("Done!");
+				
 		database.shutdown();
 		System.out.println("Done!");
 	}
@@ -97,7 +102,7 @@ public class Exporter implements ResultSetReceiver {
 	private String getFilePath() {
 		switch (exportType) {
 			case ARFF: return PathAndFileNames.WEKA_DATA_PATH;
-			case CSV: return PathAndFileNames.R_DATA_PATH;
+			case CSV: return PathAndFileNames.CSV_DATA_PATH;
 		}
 		return null;
 	}
