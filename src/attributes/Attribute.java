@@ -50,9 +50,9 @@ public class Attribute {
 		return parallel;
 	}
 
-	public static final Attribute PROJECT_NAME = new Attribute(Scope.PROJECT, "PROJECT_NAME", true);
-	public static final Attribute CLASS_NAME = new Attribute(Scope.METHOD, "CLASS_NAME", true);
-	public static final Attribute METHOD_NAME = new Attribute(Scope.CLASS, "METHOD_NAME", true);
+	public static final Attribute PROJECT_NAME = new Attribute(Scope.PROJECT, "PROJECT_NAME", false);
+	public static final Attribute CLASS_NAME = new Attribute(Scope.METHOD, "CLASS_NAME", false);
+	public static final Attribute METHOD_NAME = new Attribute(Scope.CLASS, "METHOD_NAME", false);
 	
 	public static final Attribute PUBLIC_METHODS = new Attribute(Scope.METHOD, "PUBLIC_METHODS", false);
 	public static final Attribute PRIVATE_METHODS = new Attribute(Scope.METHOD, "PRIVATE_METHODS", false);

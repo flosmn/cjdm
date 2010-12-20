@@ -6,9 +6,6 @@ import java.sql.SQLException;
 
 import utils.Logger;
 import utils.PathAndFileNames;
-import attributes.Attribute;
-import attributes.MethodAttribute;
-import attributes.ProjectAttribute;
 import database.Database;
 import database.ResultSetReceiver;
 import database.Scope;
@@ -38,7 +35,7 @@ public class Exporter implements ResultSetReceiver {
 						+ Attribute.getAllInterfaceAttributes() + ","
 						+ Attribute.getAllObjectAttributes() + ","
 						+ Attribute.getAllObjectFieldsAttributes(),
-				Integer.MAX_VALUE, new ParallelFilter(2));
+				Integer.MAX_VALUE, new ParallelFilter(2, false));
 
 		export(Scope.METHOD, ExportType.CSV, database, 
 				Attribute.combine(MethodAttribute.COMBINED_METHOD_NAME, Attribute.WHILE_WAIT) + ","
@@ -46,20 +43,23 @@ public class Exporter implements ResultSetReceiver {
 					+ Attribute.getAllPatternAttributes() + ","
 					+ Attribute.getAllMethodCallAttributes() + ","
 					+ Attribute.getAllNestednessAttributes(),
-				Integer.MAX_VALUE, new ParallelFilter(3));
+				Integer.MAX_VALUE, new ParallelFilter(3, false));
 		
 		*/
+		/*
 		export(Scope.METHOD, ExportType.ARFF, database, Attribute.combine(
 				MethodAttribute.PUBLIC_METHODS,
 				MethodAttribute.PRIVATE_METHODS), 100);
-		
-		export(Scope.CLASS, ExportType.ARFF, database, "*", 100, new SummarizeFilter());
-		
+		*/
+		export(Scope.METHOD, ExportType.ARFF, database, "*", Integer.MAX_VALUE, new ParallelFilter(1, false));
+		export(Scope.CLASS, ExportType.ARFF, database, "*", Integer.MAX_VALUE, new ParallelFilter(1, false));
+		export(Scope.PROJECT, ExportType.ARFF, database, "*", Integer.MAX_VALUE, new ParallelFilter(1, false));
+		/*
 		export(Scope.PROJECT, ExportType.ARFF, database, Attribute.combine(
 				ProjectAttribute.PROJECT_NAME,
 				ProjectAttribute.NOTIFY_CALLS,
 				ProjectAttribute.NOTIFYALL_CALLS), Integer.MAX_VALUE);
-		
+		*/
 		database.shutdown();
 		System.out.println("Done!");
 	}
