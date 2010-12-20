@@ -1,25 +1,25 @@
 package weka;
 
-import java.io.File;
 import java.util.Collection;
 import java.util.List;
 
 import utils.PathAndFileNames;
 import weka.associations.Apriori;
-import weka.associations.AprioriItemSet;
 import weka.core.Instances;
 import weka.core.OptionHandler;
-import weka.core.Utils;
 import weka.core.converters.ConverterUtils.DataSource;
 import weka.filters.Filter;
 import weka.filters.unsupervised.attribute.NumericToNominal;
 import weka.filters.unsupervised.attribute.StringToNominal;
 import weka.util.Bonus;
 import weka.util.Item;
+import weka.util.ItemBonus;
 import weka.util.PatternBonus;
 import weka.util.Rule;
 import weka.util.RuleRater;
+import attributes.Attribute;
 import attributes.MethodAttribute;
+
 /**
  * Miner class
  */
@@ -41,11 +41,11 @@ public class Miner {
 								new Item(MethodAttribute.PUBLIC_METHODS, "1"),
 								new Item(MethodAttribute.PRIVATE_METHODS, "0"), -10)
 						),
-				Bonus.getPublicPrivateBonus(),
-				Bonus.getSynchronizedBonus()
+				getPublicPrivateBonus(),
+				getSynchronizedBonus()
 		);
 		
-		Collection<Bonus> classBonusSet = Bonus.getSynchronizedBonus();
+		Collection<Bonus> classBonusSet = getSynchronizedBonus();
 
 		
 		Collection<Bonus> methodBonusSet = Bonus.buildBonusSet(
@@ -73,6 +73,42 @@ public class Miner {
 		System.out.println("method: " );
 		Rule.printBestRules(methodRules, 0.3);
 	}
+	
+
+	/**
+	 * @return standard bonusSet to give a minus point 
+	 * on simple public-private stuff 
+	 */
+	public static Collection<Bonus> getPublicPrivateBonus() {
+		return Bonus.buildBonusSet(
+				new PatternBonus(
+						new Item(Attribute.PUBLIC_METHODS, "[^0]"),
+						new Item(Attribute.PRIVATE_METHODS, "0"), -10),
+				new PatternBonus(
+						new Item(Attribute.PUBLIC_METHODS, "0"),
+						new Item(Attribute.PRIVATE_METHODS, "[^0]"), -10),
+				new PatternBonus(
+						new Item(Attribute.PRIVATE_METHODS, "[^0]"),
+						new Item(Attribute.PUBLIC_METHODS, "0"), -10),
+				new PatternBonus(
+						new Item(Attribute.PRIVATE_METHODS, "0"),
+						new Item(Attribute.PUBLIC_METHODS, "[^0]"), -10));
+	}
+	
+	/**
+	 * TODO: set good bonuses
+	 * @return
+	 */
+	public static Collection<Bonus> getSynchronizedBonus() {
+		return Bonus.buildBonusSet(
+				new ItemBonus(Attribute.SYNCHRONIZED_BLOCKS.getName(), "[^0]", 10),
+				new ItemBonus(Attribute.SYNCHRONIZED_BLOCKS.getName(), "[0]", -1),
+				new PatternBonus(
+						new Item(Attribute.SYNCHRONIZED_BLOCKS, "[^0]"),
+						new Item(Attribute.SYNCHRONIZED_METHODS, ".*"), 10)
+				);
+	}
+
 	
 	/**
 	 * get rated and sorted rules
@@ -103,24 +139,6 @@ public class Miner {
 		apriori.setNumRules(numRules);
 		
 		return apriori;
-	}
-
-	/**
-	 * TODO write this method correct
-	 */
-	public static void mineAll() {
-		Apriori apriori = getSampleApriori();
-		File folder = new File(PathAndFileNames.WEKA_DATA_PATH);
-		assert (folder.isDirectory()): "given path to *.arff files is not a directory";
-		File[] listOfFiles = folder.listFiles();
-		for (int i = 0; i < listOfFiles.length; i++) {
-			if (listOfFiles[i].isFile() && listOfFiles[i].getName().endsWith("Summarized.arff")) {
-				System.out.println("____________________________________________");
-				System.out.println(listOfFiles[i].getName());
-				
-				// TODO: sample mining
-			}
-		}
 	}
 	
 	/** 

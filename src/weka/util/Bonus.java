@@ -4,8 +4,6 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.LinkedList;
 
-import attributes.Attribute;
-
 /**
  * See how the class is extended
  * 
@@ -47,41 +45,7 @@ public abstract class Bonus {
 	public int getBonus() {
 		return bonus;
 	}
-
-	/**
-	 * @return standard bonusSet to give a minus point 
-	 * on simple public-private stuff 
-	 */
-	public static Collection<Bonus> getPublicPrivateBonus() {
-		return buildBonusSet(
-				new PatternBonus(
-						new Item(Attribute.PUBLIC_METHODS, "1"),
-						new Item(Attribute.PRIVATE_METHODS, "0"), -10),
-				new PatternBonus(
-						new Item(Attribute.PUBLIC_METHODS, "0"),
-						new Item(Attribute.PRIVATE_METHODS, "1"), -10),
-				new PatternBonus(
-						new Item(Attribute.PRIVATE_METHODS, "1"),
-						new Item(Attribute.PUBLIC_METHODS, "0"), -10),
-				new PatternBonus(
-						new Item(Attribute.PRIVATE_METHODS, "0"),
-						new Item(Attribute.PUBLIC_METHODS, "1"), -10));
-	}
 	
-	/**
-	 * TODO: set god bonuses
-	 * @return
-	 */
-	public static Collection<Bonus> getSynchronizedBonus() {
-		return buildBonusSet(
-				new ItemBonus(Attribute.SYNCHRONIZED_BLOCKS.getName(), "[^0]", 10),
-				new ItemBonus(Attribute.SYNCHRONIZED_BLOCKS.getName(), "[0]", -1),
-				new PatternBonus(
-						new Item(Attribute.SYNCHRONIZED_BLOCKS, "[^0]"),
-						new Item(Attribute.SYNCHRONIZED_METHODS, ".*"), 10)
-				);
-	}
-
 	/**
 	 * @param bonusesCollections, Collection<Bonus> ...
 	 * @return Collection<Bonus>
@@ -95,7 +59,7 @@ public abstract class Bonus {
 
 		return bonusSet;
 	}
-
+	
 	/**
 	 * @param bonuses, Bonus ...
 	 * @return Collection<Bonus>
@@ -108,8 +72,5 @@ public abstract class Bonus {
 		}
 
 		return bonusSet;
-	}
-	
-
-	
+	}	
 }
