@@ -23,13 +23,15 @@ public class Miner {
 	 * print best rated rules of project, class and method scope
 	 */
 	public static void main(String[] args) throws Exception {
+		
+		// reference usage of mining
 		Apriori projectApriori = buildApriori(0.11, 0.95, 20);
 		Apriori classApriori = buildApriori(0, 0, 1);
 		Apriori methodApriori = buildApriori(0.11, 0.95, 20);
 		
 		//TODO solve this better, without SuppressWarnings
 		@SuppressWarnings("unchecked")
-		Collection<Bonus> projectBonusSet = Bonus.buildBonusSet(
+		Collection<Bonus> projectBonusSet = Bonus.combineBonusSets(
 				Bonus.buildBonusSet(
 						new PatternBonus(
 								new Item(MethodAttribute.PUBLIC_METHODS, "1"),
@@ -111,7 +113,7 @@ public class Miner {
 	 * @return
 	 * @throws Exception
 	 */
-	private static List<Rule> rateAndSort(String fileName, Apriori apriori, Collection<Bonus> bonusSet) throws Exception {
+	public static List<Rule> rateAndSort(String fileName, Apriori apriori, Collection<Bonus> bonusSet) throws Exception {
 		Instances instances = loadNominalInstances(fileName);
 		apriori.buildAssociations(instances);
 		
@@ -125,7 +127,7 @@ public class Miner {
 	 * @param numRules
 	 * @return
 	 */
-	private static Apriori buildApriori(double lowerBoundMinSupport, double minMetric, int numRules) {
+	public static Apriori buildApriori(double lowerBoundMinSupport, double minMetric, int numRules) {
 		Apriori apriori = new Apriori();
 		apriori.setLowerBoundMinSupport(lowerBoundMinSupport);	
 		apriori.setMinMetric(minMetric);

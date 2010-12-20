@@ -50,7 +50,7 @@ public abstract class Bonus {
 	 * @param bonusesCollections, Collection<Bonus> ...
 	 * @return Collection<Bonus>
 	 */
-	public static Collection<Bonus> buildBonusSet(Collection<Bonus> ... bonusesCollections) {
+	public static Collection<Bonus> combineBonusSets(Collection<Bonus> ... bonusesCollections) {
 		Collection<Bonus> bonusSet = new LinkedList<Bonus>();
 
 		for (Collection<Bonus> bonusCollection : bonusesCollections) {
