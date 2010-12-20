@@ -1,4 +1,5 @@
 bin/*
+*Ignored*
 src/grammar/*.java
 src/grammar/*.tokens
 javaprojectsources/*
