@@ -1,4 +1,4 @@
-package weka.util;
+package mining;
 
 import java.util.Collection;
 import java.util.LinkedList;
@@ -41,7 +41,7 @@ public class PatternBonus extends Bonus {
 	 * @param bonus
 	 */
 	public PatternBonus(Item cond, Item cons, int bonus) {
-		this(packageItem(cond), packageItem(cons), bonus);
+		this(packageItems(cond), packageItems(cons), bonus);
 	}
 
 
@@ -138,8 +138,10 @@ public class PatternBonus extends Bonus {
 		 */
 		Collection<Item> temp = new LinkedList<Item>();
 		temp.add(new Item(".*", ".*"));
-		bonusSet.add(new PatternBonus(temp, packageItem(new Item("LOCK_CALLS", ".*")), 30));
-		bonusSet.add(new PatternBonus(twoItems("SYNCHRONIZED_METHODS","1","","1"), packageItem(new Item(".*",".*")), 11));
+		bonusSet.add(new PatternBonus(temp, packageItems(new Item("LOCK_CALLS", ".*")), 30));
+		bonusSet.add(new PatternBonus(
+				packageItems(new Item("SYNCHRONIZED_METHODS", "1"), new Item(".*", "1")),
+				packageItems(new Item(".*",".*")), 11));
 		return bonusSet;
 	}
 	
@@ -176,19 +178,6 @@ public class PatternBonus extends Bonus {
 		}
 		return true;
 	}
-
-	
-	/**
-	 * packs an item into a collection
-	 * @param name
-	 * @param value
-	 * @return
-	 */
-	private static Collection<Item> packageItem(Item item) {
-		Collection<Item> collection = new LinkedList<Item>();
-		collection.add(item);
-		return collection;
-	}
 	
 	/**
 	 * packs two items in a collection
@@ -196,13 +185,13 @@ public class PatternBonus extends Bonus {
 	 * @param value
 	 * @return
 	 */
-	private static Collection<Item> twoItems(String name, String value,String name2, String value2) {
+	private static Collection<Item> packageItems(Item ... items) {
 		Collection<Item> collection = new LinkedList<Item>();
-		collection.add(new Item(name, value));
-		collection.add(new Item(name2, value2));
+		
+		for (Item item : items) {
+			collection.add(item);
+		}
+		
 		return collection;
 	}
-
-
-
 }

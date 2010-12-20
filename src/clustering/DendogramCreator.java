@@ -1,4 +1,4 @@
-package r;
+package clustering;
 
 import org.rosuda.JRI.Rengine;
 

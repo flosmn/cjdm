@@ -1,9 +1,10 @@
-package weka.util;
+package mining;
 
 import java.util.ArrayList;
 import java.util.Collection;
 
 import weka.associations.ItemSet;
+import attributes.Attribute;
 
 
 /**
@@ -31,6 +32,10 @@ public class ItemBonus extends Bonus{
 		this.setBonus(bonus);
 	}
 	
+	public ItemBonus(Attribute attribute, String value, int bonus) {
+		this(attribute.getName(), value, bonus);
+	}
+
 	/**
 	 * name + brings you + value + bonus
 	 */

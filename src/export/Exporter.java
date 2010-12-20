@@ -7,6 +7,7 @@ import java.sql.SQLException;
 import utils.Logger;
 import utils.PathAndFileNames;
 import attributes.Attribute;
+import attributes.ClassAttribute;
 import attributes.MethodAttribute;
 import attributes.ProjectAttribute;
 import database.Database;
@@ -17,56 +18,48 @@ public class Exporter implements ResultSetReceiver {
 	public static void main (String[] args) {
 		Database database = new Database(PathAndFileNames.DATA_BASE_PATH);
 		
-		/*
+		// reference usage of export
 		export(Scope.PROJECT, ExportType.CSV, database,
-				Attribute.combine(ProjectAttribute.PROJECT_NAME) + ","
-				+ Attribute.getAllSynchronizedAttributes() + ","
-				+ Attribute.getAllPatternAttributes() + ","
-				+ Attribute.getAllMethodCallAttributes() + ","
-				+ Attribute.getAllNestednessAttributes() + ","
-				+ Attribute.getAllInterfaceAttributes() + ","
-				+ Attribute.getAllObjectAttributes() + ","
-				+ Attribute.getAllObjectFieldsAttributes(),
-				Integer.MAX_VALUE, new ExportFilter());
+				Attribute.combine(
+						ProjectAttribute.PROJECT_NAME,
+						Attribute.getAllSynchronizedAttributes(),
+						Attribute.getAllPatternAttributes(),
+						Attribute.getAllMethodCallAttributes(),
+						Attribute.getAllNestednessAttributes(),
+						Attribute.getAllInterfaceAttributes(),
+						Attribute.getAllObjectAttributes(),
+						Attribute.getAllObjectFieldsAttributes()),
+				Integer.MAX_VALUE);
 
 		export(Scope.CLASS, ExportType.CSV, database,
-				Attribute.combine(ClassAttribute.COMBINED_CLASS_NAME) + ","
-						+ Attribute.getAllSynchronizedAttributes() + ","
-						+ Attribute.getAllPatternAttributes() + ","
-						+ Attribute.getAllMethodCallAttributes() + ","
-						+ Attribute.getAllNestednessAttributes() + ","
-						+ Attribute.getAllInterfaceAttributes() + ","
-						+ Attribute.getAllObjectAttributes() + ","
-						+ Attribute.getAllObjectFieldsAttributes(),
-				Integer.MAX_VALUE, new ParallelFilter(2));
+				Attribute.combine(
+						ClassAttribute.COMBINED_CLASS_NAME,
+						Attribute.getAllSynchronizedAttributes(),
+						Attribute.getAllPatternAttributes(),
+						Attribute.getAllMethodCallAttributes(),
+						Attribute.getAllNestednessAttributes(),
+						Attribute.getAllInterfaceAttributes(),
+						Attribute.getAllObjectAttributes(),
+						Attribute.getAllObjectFieldsAttributes()),
+				Integer.MAX_VALUE, new ParallelFilter(2, false));
 
 		export(Scope.METHOD, ExportType.CSV, database, 
-				Attribute.combine(MethodAttribute.COMBINED_METHOD_NAME, Attribute.WHILE_WAIT) + ","
-					+ Attribute.getAllSynchronizedAttributes() + ","
-					+ Attribute.getAllPatternAttributes() + ","
-					+ Attribute.getAllMethodCallAttributes() + ","
-					+ Attribute.getAllNestednessAttributes(),
-				Integer.MAX_VALUE, new ParallelFilter(3));
-		
-		*/
-		export(Scope.METHOD, ExportType.ARFF, database, Attribute.combine(
-				MethodAttribute.PUBLIC_METHODS,
-				MethodAttribute.PRIVATE_METHODS), 100);
-		
-		export(Scope.CLASS, ExportType.ARFF, database, "*", 100, new SummarizeFilter());
-		
+				Attribute.combine(
+						MethodAttribute.COMBINED_METHOD_NAME,
+						MethodAttribute.WHILE_WAIT,
+						Attribute.getAllSynchronizedAttributes(),
+						Attribute.getAllPatternAttributes(),
+						Attribute.getAllMethodCallAttributes(),
+						Attribute.getAllNestednessAttributes()),
+				Integer.MAX_VALUE, new ParallelFilter(3, false));
 
-		export(Scope.PROJECT, ExportType.ARFF, database, Attribute.combine(
-				ProjectAttribute.PROJECT_NAME,
-				ProjectAttribute.NOTIFY_CALLS,
-				ProjectAttribute.NOTIFYALL_CALLS), Integer.MAX_VALUE);
-		
 		database.shutdown();
 		System.out.println("Done!");
 	}
-	
+
+	public enum ExportType { ARFF, CSV };
+
 	private Scope scope;
-	private enum ExportType { ARFF, CSV };
 	private ExportType exportType;
 	private ExportFilter exportFilter;
 	

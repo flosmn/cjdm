@@ -1,4 +1,4 @@
-package weka.util;
+package mining;
 
 import java.util.Collection;
 import java.util.Collections;
@@ -26,6 +26,7 @@ public class RuleRater {
 	public static List<Rule> sortRules(Apriori apriori, Collection<Bonus> bonusSet) {
 		List<Rule> rules = extractRules(apriori);
 		
+		System.out.println("rating rules");
 		for (Rule rule : rules) {
 			rule.resetRating();
 			rule.addRating(bonusSet);

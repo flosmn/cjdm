@@ -11,10 +11,10 @@ public class Attribute {
 	
 	private static HashMap<String, Attribute> attributes = new HashMap<String, Attribute>();
 	
-	public static String combine(Attribute ... attributes) {
+	public static String combine(Object ... objects) {
 		String result = "";
-		for (Attribute attribute : attributes) {
-			String attributeName = attribute.getName();
+		for (Object object: objects) {
+			String attributeName = object.toString();
 			
 			if (!result.equals("") && !attributeName.equals("")) {
 				result += ", ";
@@ -46,13 +46,17 @@ public class Attribute {
 		return name;
 	}
 	
+	public String toString() {
+		return getName();
+	}
+	
 	public boolean isParallel() {
 		return parallel;
 	}
 
-	public static final Attribute PROJECT_NAME = new Attribute(Scope.PROJECT, "PROJECT_NAME", true);
-	public static final Attribute CLASS_NAME = new Attribute(Scope.METHOD, "CLASS_NAME", true);
-	public static final Attribute METHOD_NAME = new Attribute(Scope.CLASS, "METHOD_NAME", true);
+	public static final Attribute PROJECT_NAME = new Attribute(Scope.PROJECT, "PROJECT_NAME", false);
+	public static final Attribute CLASS_NAME = new Attribute(Scope.METHOD, "CLASS_NAME", false);
+	public static final Attribute METHOD_NAME = new Attribute(Scope.CLASS, "METHOD_NAME", false);
 	
 	public static final Attribute PUBLIC_METHODS = new Attribute(Scope.METHOD, "PUBLIC_METHODS", false);
 	public static final Attribute PRIVATE_METHODS = new Attribute(Scope.METHOD, "PRIVATE_METHODS", false);

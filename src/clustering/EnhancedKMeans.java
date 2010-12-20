@@ -1,8 +1,10 @@
-package weka;
+package clustering;
 
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
+
+import mining.AttributeNormalizer;
 
 import utils.PathAndFileNames;
 import weka.clusterers.SimpleKMeans;
@@ -11,7 +13,6 @@ import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.converters.ConverterUtils.DataSource;
 import weka.filters.unsupervised.attribute.Normalize;
-import weka.util.AttributeNormalizer;
 
 public class EnhancedKMeans implements Runnable {
 	SimpleKMeans clusterer;

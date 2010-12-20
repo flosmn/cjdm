@@ -1,25 +1,19 @@
-package weka;
+package mining;
 
-import java.io.File;
 import java.util.Collection;
 import java.util.List;
 
 import utils.PathAndFileNames;
 import weka.associations.Apriori;
-import weka.associations.AprioriItemSet;
 import weka.core.Instances;
 import weka.core.OptionHandler;
-import weka.core.Utils;
 import weka.core.converters.ConverterUtils.DataSource;
 import weka.filters.Filter;
 import weka.filters.unsupervised.attribute.NumericToNominal;
 import weka.filters.unsupervised.attribute.StringToNominal;
-import weka.util.Bonus;
-import weka.util.Item;
-import weka.util.PatternBonus;
-import weka.util.Rule;
-import weka.util.RuleRater;
+import attributes.Attribute;
 import attributes.MethodAttribute;
+
 /**
  * Miner class
  */
@@ -29,24 +23,25 @@ public class Miner {
 	 * print best rated rules of project, class and method scope
 	 */
 	public static void main(String[] args) throws Exception {
+		
+		// reference usage of mining
 		Apriori projectApriori = buildApriori(0.11, 0.95, 20);
 		Apriori classApriori = buildApriori(0, 0, 1);
 		Apriori methodApriori = buildApriori(0.11, 0.95, 20);
 		
 		//TODO solve this better, without SuppressWarnings
 		@SuppressWarnings("unchecked")
-		Collection<Bonus> projectBonusSet = Bonus.buildBonusSet(
+		Collection<Bonus> projectBonusSet = Bonus.combineBonusSets(
 				Bonus.buildBonusSet(
 						new PatternBonus(
 								new Item(MethodAttribute.PUBLIC_METHODS, "1"),
 								new Item(MethodAttribute.PRIVATE_METHODS, "0"), -10)
 						),
-				Bonus.getPublicPrivateBonus(),
-				Bonus.getSynchronizedBonus()
+				getPublicPrivateBonus(),
+				getSynchronizedBonus()
 		);
 		
-		Collection<Bonus> classBonusSet = Bonus.getSynchronizedBonus();
-
+		Collection<Bonus> classBonusSet = getSynchronizedBonus();
 		
 		Collection<Bonus> methodBonusSet = Bonus.buildBonusSet(
 				new PatternBonus(
@@ -62,9 +57,9 @@ public class Miner {
 						new Item(MethodAttribute.PRIVATE_METHODS, "0"),
 						new Item(MethodAttribute.PUBLIC_METHODS, "1"), -10));
 		
-		List<Rule> projectRules = rateAndSort("project.arff", projectApriori, projectBonusSet);
-		List<Rule> classRules = rateAndSort("class.arff", classApriori, classBonusSet);
-		List<Rule> methodRules = rateAndSort("method.arff", methodApriori, methodBonusSet);
+		List<Rule> projectRules = getRules("project.arff", projectApriori, projectBonusSet);
+		List<Rule> classRules = getRules("class.arff", classApriori, classBonusSet);
+		List<Rule> methodRules = getRules("method.arff", methodApriori, methodBonusSet);
 		
 		System.out.println("project: " );
 		Rule.printBestRules(projectRules, 0.3);
@@ -74,6 +69,42 @@ public class Miner {
 		Rule.printBestRules(methodRules, 0.3);
 	}
 	
+
+	/**
+	 * @return standard bonusSet to give a minus point 
+	 * on simple public-private stuff 
+	 */
+	public static Collection<Bonus> getPublicPrivateBonus() {
+		return Bonus.buildBonusSet(
+				new PatternBonus(
+						new Item(Attribute.PUBLIC_METHODS, "[^0]"),
+						new Item(Attribute.PRIVATE_METHODS, "0"), -10),
+				new PatternBonus(
+						new Item(Attribute.PUBLIC_METHODS, "0"),
+						new Item(Attribute.PRIVATE_METHODS, "[^0]"), -10),
+				new PatternBonus(
+						new Item(Attribute.PRIVATE_METHODS, "[^0]"),
+						new Item(Attribute.PUBLIC_METHODS, "0"), -10),
+				new PatternBonus(
+						new Item(Attribute.PRIVATE_METHODS, "0"),
+						new Item(Attribute.PUBLIC_METHODS, "[^0]"), -10));
+	}
+	
+	/**
+	 * TODO: set good bonuses
+	 * @return
+	 */
+	public static Collection<Bonus> getSynchronizedBonus() {
+		return Bonus.buildBonusSet(
+				new ItemBonus(Attribute.SYNCHRONIZED_BLOCKS.getName(), "[^0]", 10),
+				new ItemBonus(Attribute.SYNCHRONIZED_BLOCKS.getName(), "[0]", -1),
+				new PatternBonus(
+						new Item(Attribute.SYNCHRONIZED_BLOCKS, "[^0]"),
+						new Item(Attribute.SYNCHRONIZED_METHODS, ".*"), 10)
+				);
+	}
+
+	
 	/**
 	 * get rated and sorted rules
 	 * @param fileName
@@ -82,8 +113,10 @@ public class Miner {
 	 * @return
 	 * @throws Exception
 	 */
-	private static List<Rule> rateAndSort(String fileName, Apriori apriori, Collection<Bonus> bonusSet) throws Exception {
+	public static List<Rule> getRules(String fileName, Apriori apriori, Collection<Bonus> bonusSet) throws Exception {
 		Instances instances = loadNominalInstances(fileName);
+		
+		System.out.println("building associatons for " + fileName);
 		apriori.buildAssociations(instances);
 		
 		return RuleRater.sortRules(apriori, bonusSet);
@@ -96,31 +129,13 @@ public class Miner {
 	 * @param numRules
 	 * @return
 	 */
-	private static Apriori buildApriori(double lowerBoundMinSupport, double minMetric, int numRules) {
+	public static Apriori buildApriori(double lowerBoundMinSupport, double minMetric, int numRules) {
 		Apriori apriori = new Apriori();
 		apriori.setLowerBoundMinSupport(lowerBoundMinSupport);	
 		apriori.setMinMetric(minMetric);
 		apriori.setNumRules(numRules);
 		
 		return apriori;
-	}
-
-	/**
-	 * TODO write this method correct
-	 */
-	public static void mineAll() {
-		Apriori apriori = getSampleApriori();
-		File folder = new File(PathAndFileNames.WEKA_DATA_PATH);
-		assert (folder.isDirectory()): "given path to *.arff files is not a directory";
-		File[] listOfFiles = folder.listFiles();
-		for (int i = 0; i < listOfFiles.length; i++) {
-			if (listOfFiles[i].isFile() && listOfFiles[i].getName().endsWith("Summarized.arff")) {
-				System.out.println("____________________________________________");
-				System.out.println(listOfFiles[i].getName());
-				
-				// TODO: sample mining
-			}
-		}
 	}
 	
 	/** 
