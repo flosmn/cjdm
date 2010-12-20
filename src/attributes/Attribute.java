@@ -11,10 +11,10 @@ public class Attribute {
 	
 	private static HashMap<String, Attribute> attributes = new HashMap<String, Attribute>();
 	
-	public static String combine(Attribute ... attributes) {
+	public static String combine(Object ... objects) {
 		String result = "";
-		for (Attribute attribute : attributes) {
-			String attributeName = attribute.getName();
+		for (Object object: objects) {
+			String attributeName = object.toString();
 			
 			if (!result.equals("") && !attributeName.equals("")) {
 				result += ", ";
@@ -44,6 +44,10 @@ public class Attribute {
 	
 	public String getName() {
 		return name;
+	}
+	
+	public String toString() {
+		return getName();
 	}
 	
 	public boolean isParallel() {

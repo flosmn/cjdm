@@ -57,9 +57,9 @@ public class Miner {
 						new Item(MethodAttribute.PRIVATE_METHODS, "0"),
 						new Item(MethodAttribute.PUBLIC_METHODS, "1"), -10));
 		
-		List<Rule> projectRules = rateAndSort("project.arff", projectApriori, projectBonusSet);
-		List<Rule> classRules = rateAndSort("class.arff", classApriori, classBonusSet);
-		List<Rule> methodRules = rateAndSort("method.arff", methodApriori, methodBonusSet);
+		List<Rule> projectRules = getRules("project.arff", projectApriori, projectBonusSet);
+		List<Rule> classRules = getRules("class.arff", classApriori, classBonusSet);
+		List<Rule> methodRules = getRules("method.arff", methodApriori, methodBonusSet);
 		
 		System.out.println("project: " );
 		Rule.printBestRules(projectRules, 0.3);
@@ -113,8 +113,10 @@ public class Miner {
 	 * @return
 	 * @throws Exception
 	 */
-	public static List<Rule> rateAndSort(String fileName, Apriori apriori, Collection<Bonus> bonusSet) throws Exception {
+	public static List<Rule> getRules(String fileName, Apriori apriori, Collection<Bonus> bonusSet) throws Exception {
 		Instances instances = loadNominalInstances(fileName);
+		
+		System.out.println("building associatons for " + fileName);
 		apriori.buildAssociations(instances);
 		
 		return RuleRater.sortRules(apriori, bonusSet);

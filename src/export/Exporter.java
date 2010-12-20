@@ -20,33 +20,37 @@ public class Exporter implements ResultSetReceiver {
 		
 		// reference usage of export
 		export(Scope.PROJECT, ExportType.CSV, database,
-				Attribute.combine(ProjectAttribute.PROJECT_NAME) + ","
-				+ Attribute.getAllSynchronizedAttributes() + ","
-				+ Attribute.getAllPatternAttributes() + ","
-				+ Attribute.getAllMethodCallAttributes() + ","
-				+ Attribute.getAllNestednessAttributes() + ","
-				+ Attribute.getAllInterfaceAttributes() + ","
-				+ Attribute.getAllObjectAttributes() + ","
-				+ Attribute.getAllObjectFieldsAttributes(),
-				Integer.MAX_VALUE, new ExportFilter());
+				Attribute.combine(
+						ProjectAttribute.PROJECT_NAME,
+						Attribute.getAllSynchronizedAttributes(),
+						Attribute.getAllPatternAttributes(),
+						Attribute.getAllMethodCallAttributes(),
+						Attribute.getAllNestednessAttributes(),
+						Attribute.getAllInterfaceAttributes(),
+						Attribute.getAllObjectAttributes(),
+						Attribute.getAllObjectFieldsAttributes()),
+				Integer.MAX_VALUE);
 
 		export(Scope.CLASS, ExportType.CSV, database,
-				Attribute.combine(ClassAttribute.COMBINED_CLASS_NAME) + ","
-						+ Attribute.getAllSynchronizedAttributes() + ","
-						+ Attribute.getAllPatternAttributes() + ","
-						+ Attribute.getAllMethodCallAttributes() + ","
-						+ Attribute.getAllNestednessAttributes() + ","
-						+ Attribute.getAllInterfaceAttributes() + ","
-						+ Attribute.getAllObjectAttributes() + ","
-						+ Attribute.getAllObjectFieldsAttributes(),
+				Attribute.combine(
+						ClassAttribute.COMBINED_CLASS_NAME,
+						Attribute.getAllSynchronizedAttributes(),
+						Attribute.getAllPatternAttributes(),
+						Attribute.getAllMethodCallAttributes(),
+						Attribute.getAllNestednessAttributes(),
+						Attribute.getAllInterfaceAttributes(),
+						Attribute.getAllObjectAttributes(),
+						Attribute.getAllObjectFieldsAttributes()),
 				Integer.MAX_VALUE, new ParallelFilter(2, false));
 
 		export(Scope.METHOD, ExportType.CSV, database, 
-				Attribute.combine(MethodAttribute.COMBINED_METHOD_NAME, Attribute.WHILE_WAIT) + ","
-					+ Attribute.getAllSynchronizedAttributes() + ","
-					+ Attribute.getAllPatternAttributes() + ","
-					+ Attribute.getAllMethodCallAttributes() + ","
-					+ Attribute.getAllNestednessAttributes(),
+				Attribute.combine(
+						MethodAttribute.COMBINED_METHOD_NAME,
+						MethodAttribute.WHILE_WAIT,
+						Attribute.getAllSynchronizedAttributes(),
+						Attribute.getAllPatternAttributes(),
+						Attribute.getAllMethodCallAttributes(),
+						Attribute.getAllNestednessAttributes()),
 				Integer.MAX_VALUE, new ParallelFilter(3, false));
 
 		database.shutdown();
