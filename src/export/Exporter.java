@@ -6,6 +6,10 @@ import java.sql.SQLException;
 
 import utils.Logger;
 import utils.PathAndFileNames;
+import attributes.Attribute;
+import attributes.ClassAttribute;
+import attributes.MethodAttribute;
+import attributes.ProjectAttribute;
 import database.Database;
 import database.ResultSetReceiver;
 import database.Scope;
@@ -14,7 +18,7 @@ public class Exporter implements ResultSetReceiver {
 	public static void main (String[] args) {
 		Database database = new Database(PathAndFileNames.DATA_BASE_PATH);
 		
-		/*
+		// reference usage of export
 		export(Scope.PROJECT, ExportType.CSV, database,
 				Attribute.combine(ProjectAttribute.PROJECT_NAME) + ","
 				+ Attribute.getAllSynchronizedAttributes() + ","
@@ -44,22 +48,7 @@ public class Exporter implements ResultSetReceiver {
 					+ Attribute.getAllMethodCallAttributes() + ","
 					+ Attribute.getAllNestednessAttributes(),
 				Integer.MAX_VALUE, new ParallelFilter(3, false));
-		
-		*/
-		/*
-		export(Scope.METHOD, ExportType.ARFF, database, Attribute.combine(
-				MethodAttribute.PUBLIC_METHODS,
-				MethodAttribute.PRIVATE_METHODS), 100);
-		*/
-	//	export(Scope.METHOD, ExportType.ARFF, database, "*", Integer.MAX_VALUE, new ParallelFilter(1, false));
-	//	export(Scope.CLASS, ExportType.ARFF, database, "*", Integer.MAX_VALUE, new ParallelFilter(17, false));
-		export(Scope.PROJECT, ExportType.ARFF, database, "*", Integer.MAX_VALUE, new ParallelFilter(20, false));
-		/*
-		export(Scope.PROJECT, ExportType.ARFF, database, Attribute.combine(
-				ProjectAttribute.PROJECT_NAME,
-				ProjectAttribute.NOTIFY_CALLS,
-				ProjectAttribute.NOTIFYALL_CALLS), Integer.MAX_VALUE);
-		*/
+
 		database.shutdown();
 		System.out.println("Done!");
 	}
