@@ -51,9 +51,9 @@ public class Exporter implements ResultSetReceiver {
 				MethodAttribute.PUBLIC_METHODS,
 				MethodAttribute.PRIVATE_METHODS), 100);
 		*/
-		export(Scope.METHOD, ExportType.ARFF, database, "*", Integer.MAX_VALUE, new ParallelFilter(1, false));
-		export(Scope.CLASS, ExportType.ARFF, database, "*", Integer.MAX_VALUE, new ParallelFilter(1, false));
-		export(Scope.PROJECT, ExportType.ARFF, database, "*", Integer.MAX_VALUE, new ParallelFilter(1, false));
+	//	export(Scope.METHOD, ExportType.ARFF, database, "*", Integer.MAX_VALUE, new ParallelFilter(1, false));
+	//	export(Scope.CLASS, ExportType.ARFF, database, "*", Integer.MAX_VALUE, new ParallelFilter(17, false));
+		export(Scope.PROJECT, ExportType.ARFF, database, "*", Integer.MAX_VALUE, new ParallelFilter(20, false));
 		/*
 		export(Scope.PROJECT, ExportType.ARFF, database, Attribute.combine(
 				ProjectAttribute.PROJECT_NAME,
@@ -63,9 +63,10 @@ public class Exporter implements ResultSetReceiver {
 		database.shutdown();
 		System.out.println("Done!");
 	}
-	
+
+	public enum ExportType { ARFF, CSV };
+
 	private Scope scope;
-	private enum ExportType { ARFF, CSV };
 	private ExportType exportType;
 	private ExportFilter exportFilter;
 	
