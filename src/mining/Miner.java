@@ -1,4 +1,4 @@
-package weka;
+package mining;
 
 import java.util.Collection;
 import java.util.List;
@@ -11,12 +11,6 @@ import weka.core.converters.ConverterUtils.DataSource;
 import weka.filters.Filter;
 import weka.filters.unsupervised.attribute.NumericToNominal;
 import weka.filters.unsupervised.attribute.StringToNominal;
-import weka.util.Bonus;
-import weka.util.Item;
-import weka.util.ItemBonus;
-import weka.util.PatternBonus;
-import weka.util.Rule;
-import weka.util.RuleRater;
 import attributes.Attribute;
 import attributes.MethodAttribute;
 
@@ -46,7 +40,6 @@ public class Miner {
 		);
 		
 		Collection<Bonus> classBonusSet = getSynchronizedBonus();
-
 		
 		Collection<Bonus> methodBonusSet = Bonus.buildBonusSet(
 				new PatternBonus(

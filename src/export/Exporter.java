@@ -55,7 +55,6 @@ public class Exporter implements ResultSetReceiver {
 		
 		export(Scope.CLASS, ExportType.ARFF, database, "*", 100, new SummarizeFilter());
 		
-
 		export(Scope.PROJECT, ExportType.ARFF, database, Attribute.combine(
 				ProjectAttribute.PROJECT_NAME,
 				ProjectAttribute.NOTIFY_CALLS,

@@ -1,4 +1,4 @@
-package weka.util;
+package mining;
 
 import java.util.Collection;
 import java.util.Collections;
