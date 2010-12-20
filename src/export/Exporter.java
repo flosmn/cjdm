@@ -56,32 +56,42 @@ public class Exporter implements ResultSetReceiver {
 		database.shutdown();
 		System.out.println("Done!");
 	}
-
+	
 	public enum ExportType { ARFF, CSV };
 
 	private Scope scope;
 	private ExportType exportType;
+	private String fileName;
 	private ExportFilter exportFilter;
 	
-	public Exporter(Scope scope, ExportType exportType, ExportFilter exportFilter) {
+	public Exporter(Scope scope, ExportType exportType, String fileName, ExportFilter exportFilter) {
 		this.scope = scope;
 		this.exportType = exportType;
+		this.fileName = fileName;
 		this.exportFilter = exportFilter;
 	}
 
-	public Exporter(Scope scope, ExportType exportType) {
-		this(scope, exportType, new ExportFilter());
+	public Exporter(Scope scope, ExportType exportType, String fileName) {
+		this(scope, exportType, fileName, new ExportFilter());
 	}
 	
-	static public void export(Scope scope, ExportType exportType, Database database, String attributes, int maxRowCount, ExportFilter exportFilter) {
-		Exporter exporter = new Exporter(scope, exportType, exportFilter);
+	public static void export(Scope scope, ExportType exportType, String fileName, Database database, String attributes, int maxRowCount, ExportFilter exportFilter) {
+		Exporter exporter = new Exporter(scope, exportType, fileName, exportFilter);
 		exporter.export(database, attributes, maxRowCount);
 	}
 
-	static public void export(Scope scope, ExportType exportType, Database database, String attributes, int maxRowCount) {
-		export(scope, exportType, database, attributes, maxRowCount, new ExportFilter());
+	public static void export(Scope scope, ExportType exportType, String fileName, Database database, String attributes, int maxRowCount) {
+		export(scope, exportType, fileName, database, attributes, maxRowCount, new ExportFilter());
 	}
-
+	
+	public static void export(Scope scope, ExportType exportType, Database database, String attributes, int maxValue, ExportFilter exportFilter) {
+		export(scope, exportType, getFileName(scope, exportType), database, attributes, maxValue, exportFilter);
+	}
+	
+	public static void export(Scope scope, ExportType exportType, Database database, String attributes, int maxValue) {
+		export(scope, exportType, getFileName(scope, exportType), database, attributes, maxValue);
+	}
+	
 	public void export(Database database, String attributes, int maxRowCount) {
 		System.out.println("exporting " + scope.toString() + " to " + exportType);
 		
@@ -102,7 +112,7 @@ public class Exporter implements ResultSetReceiver {
         Logger logger = new Logger();
 		logger.log(getHeader(resultSet.getMetaData()));
 		logger.log(getBody(resultSet));
-        logger.writeToFile(getFilePath(), getFileName());		
+        logger.writeToFile(getFilePath(), fileName);
 	}
 
 	private String getFilePath() {
@@ -112,19 +122,19 @@ public class Exporter implements ResultSetReceiver {
 		}
 		return null;
 	}
-
-	private String getFileName() {
-    	switch(exportType) {
-	    	case ARFF: return scope.toString() + ".arff";
-	    	case CSV: return scope.toString() + ".csv";
-    	}
-    	return null;
-	}
 	
 	private String getHeader(ResultSetMetaData metaData) throws SQLException {
 		switch (exportType) {
 			case ARFF: return getArffHeader(metaData);
 			case CSV: return getCsvHeader(metaData);
+		}
+		return null;
+	}
+	
+	private static String getFileName(Scope scope, ExportType exportType) {
+		switch(exportType) {
+    		case ARFF: return scope.toString() + ".arff";
+    		case CSV: return scope.toString() + ".csv";
 		}
 		return null;
 	}
