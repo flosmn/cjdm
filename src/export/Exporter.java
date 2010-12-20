@@ -44,10 +44,7 @@ public class Exporter implements ResultSetReceiver {
 				ProjectAttribute.PROJECT_NAME,
 				ProjectAttribute.NOTIFY_CALLS,
 				ProjectAttribute.NOTIFYALL_CALLS), Integer.MAX_VALUE);
-
-		database.shutdown();
-		System.out.println("Done!");
-				
+		
 		database.shutdown();
 		System.out.println("Done!");
 	}

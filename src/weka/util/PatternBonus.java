@@ -96,8 +96,7 @@ public class PatternBonus extends Bonus {
 		// [^0] all but 0 method calls
 		bonusSet.add(new PatternBonus(
 				new Item(MethodAttribute.METHOD_CALLS, "[^0]"),
-				new Item(MethodAttribute.PUBLIC_METHODS, "1"),
-				-10));
+				new Item(MethodAttribute.PUBLIC_METHODS, "1"), -10));
 		bonusSet.add(new PatternBonus(
 				new Item(MethodAttribute.PUBLIC_METHODS, "0"),
 				new Item(MethodAttribute.PRIVATE_METHODS, "1"), -10));
