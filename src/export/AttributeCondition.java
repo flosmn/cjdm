@@ -13,8 +13,12 @@ public class AttributeCondition {
 		this.maxValue = maxValue;
 	}
 	
+	public AttributeCondition(Attribute attribute, int minValue) {
+		this(attribute, minValue, Integer.MAX_VALUE);
+	}
+	
 	public AttributeCondition(Attribute attribute) {
-		this(attribute, 1, Integer.MAX_VALUE);
+		this(attribute, 1);
 	}
 	
 	public boolean matches(String attributeName, int value) {
