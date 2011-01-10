@@ -31,7 +31,7 @@ import attributes.MethodAttribute;
 public class Miner {
 	
 	/**
-	 * print best rated rules of project, class and method scope
+	 * prints the best rated rules of project, class and method scope
 	 * @throws Exception
 	 */
 	public static void main(String[] args) throws Exception {
@@ -83,11 +83,11 @@ public class Miner {
 	
 
 	/**
-	 * get a standard {@link Bonus} set 
+	 * gets a standard {@link Bonus} set 
 	 * to give malus on trivial public private stuff  
-	 * @see {@link ItemBonus}
-	 * @see {@link PatternBonus}
-	 * @return Collection<{@link Bonus}> 
+	 * @return fix collection of <{@link Bonus}> 
+	 * @see ItemBonus
+	 * @see PatternBonus
 	 */
 	public static Collection<Bonus> getPublicPrivateBonus() {
 		return Bonus.buildBonusSet(
@@ -106,11 +106,11 @@ public class Miner {
 	}
 	
 	/**
-	 * get a standard {@link Bonus} set
+	 * gets a standard {@link Bonus} set
 	 * for synchronized stuff
-	 * @see {@link ItemBonus}
-	 * @see {@link PatternBonus}
-	 * @return Collection<{@link Bonus}> 
+	 * @return fix collection of <{@link Bonus}> 
+	 * @see ItemBonus
+	 * @see PatternBonus
 	 */
 	public static Collection<Bonus> getSynchronizedBonus() {
 		 // TODO: set god bonuses
@@ -125,11 +125,11 @@ public class Miner {
 
 	
 	/**
-	 * get rated and sorted rules
-	 * @param {@link String} fileName
-	 * @param {@link Apriori} apriori
-	 * @param Collection<{@link Bonus}> bonusSet
-	 * @return List{@link Rule}
+	 * gets rated and sorted rules
+	 * @param fileName name of the *.arff file
+	 * @param apriori Apriori 
+	 * @param bonusSet collection of bonuses
+	 * @return List of {@link Rule}
 	 * @throws Exception
 	 */
 	public static List<Rule> getRules(String fileName, Apriori apriori, Collection<Bonus> bonusSet) throws Exception {
@@ -142,12 +142,12 @@ public class Miner {
 	}
 
 	/**
-	 * convenient creation of an {@link Apriori} with parametrized features
-	 * @param <b>Double</b> lowerBoundMinSupport
+	 * creates an {@link Apriori} with parameterized features
+	 * @param lowerBoundMinSupport
 	 * @param upperBoundMinSupport 
-	 * @param <b>double</b> minMetric
-	 * @param <b>int</b> numRules
-	 * @return {@link Apriori}
+	 * @param minMetric 
+	 * @param numRules maximum number of rules to read
+	 * @return Apriori 
 	 * @see #getSampleApriori()
 	 */
 	public static Apriori buildApriori(double lowerBoundMinSupport, double upperBoundMinSupport, double minMetric, int numRules) {
@@ -161,8 +161,8 @@ public class Miner {
 	}
 	
 	/** 
-	 * convenient creation of an {@link Apriori}, features fixed
-	 * @return {@link Apriori} with special settings
+	 * creates an {@link Apriori} convenient, features set
+	 * @return Apriori with special settings
 	 * @see #buildApriori()
 	 */
 	public static Apriori getSampleApriori() {
@@ -174,12 +174,12 @@ public class Miner {
 	}
 
 	/** 
-	 * load from file
-	 * @param {@link String} pathAndFileName
-	 * @return {@link Instances} nominal Instances
+	 * loads Instances from *.arff file
+	 * @param fileName name of the *.arff file
+	 * @return Instances converted to nominal
 	 */
-	private static Instances loadNominalInstances(String pathAndFileName) throws Exception {
-		DataSource source = new DataSource(PathAndFileNames.WEKA_DATA_PATH + pathAndFileName);		
+	private static Instances loadNominalInstances(String fileName) throws Exception {
+		DataSource source = new DataSource(PathAndFileNames.WEKA_DATA_PATH + fileName);		
 		Instances data = source.getDataSet();
 		data = convertToNominal(data, new NumericToNominal());
 		data = convertToNominal(data, new StringToNominal());
@@ -187,13 +187,11 @@ public class Miner {
 	}
 
 	/**
-	 * convert attributes to nominal
-	 * @param {@link Instances}
-	 * @param {@link Filter} filter
-	 * @return {@link Instances}
+	 * converts attributes to nominal
+	 * @param data Instances to filter
+	 * @param filter filters to nominal e.g. {@link StringToNominal} or {@link NumericToNominal}
+	 * @return filtered Instances
 	 * @throws Exception
-	 * @see {@link NumericToNominal}
-	 * @see {@linkStringToNominal}
 	 */
 	private static Instances convertToNominal(Instances data, Filter filter) throws Exception {
 		String[] options = new String[]{"-R", "first-last"};
