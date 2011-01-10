@@ -37,9 +37,9 @@ public class Miner {
 	public static void main(String[] args) throws Exception {
 		
 		// reference usage of mining
-		Apriori projectApriori = buildApriori(0.11, 0.95, 20);
-		Apriori classApriori = buildApriori(0, 0, 1);
-		Apriori methodApriori = buildApriori(0.11, 0.95, 20);
+		Apriori projectApriori = buildApriori(0.11, 1.0, 0.95, 20);
+		Apriori classApriori = buildApriori(0, 1.0, 0, 1);
+		Apriori methodApriori = buildApriori(0.11, 1.0, 0.95, 20);
 		
 		//TODO solve this better, without SuppressWarnings
 		@SuppressWarnings("unchecked")
@@ -144,14 +144,16 @@ public class Miner {
 	/**
 	 * convenient creation of an {@link Apriori} with parametrized features
 	 * @param <b>Double</b> lowerBoundMinSupport
+	 * @param upperBoundMinSupport 
 	 * @param <b>double</b> minMetric
 	 * @param <b>int</b> numRules
 	 * @return {@link Apriori}
 	 * @see #getSampleApriori()
 	 */
-	public static Apriori buildApriori(double lowerBoundMinSupport, double minMetric, int numRules) {
+	public static Apriori buildApriori(double lowerBoundMinSupport, double upperBoundMinSupport, double minMetric, int numRules) {
 		Apriori apriori = new Apriori();
-		apriori.setLowerBoundMinSupport(lowerBoundMinSupport);	
+		apriori.setLowerBoundMinSupport(lowerBoundMinSupport);
+		apriori.setUpperBoundMinSupport(upperBoundMinSupport);
 		apriori.setMinMetric(minMetric);
 		apriori.setNumRules(numRules);
 		
