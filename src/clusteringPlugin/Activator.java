@@ -1,5 +1,8 @@
 package clusteringPlugin;
 
+import java.io.File;
+import java.util.Set;
+
 import org.eclipse.jface.resource.ImageDescriptor;
 import org.eclipse.ui.commands.ICommandService;
 import org.eclipse.ui.plugin.AbstractUIPlugin;
@@ -16,6 +19,8 @@ public class Activator extends AbstractUIPlugin {
 	// The shared instance
 	private static Activator plugin;
 	
+	SaveListener executionListener;
+	
 	/**
 	 * The constructor
 	 */
@@ -31,7 +36,7 @@ public class Activator extends AbstractUIPlugin {
 		plugin = this;
 		    ICommandService service = (ICommandService) Activator.getDefault().getWorkbench().
 		    getService(ICommandService.class);
-		    SaveListener executionListener = new SaveListener();
+		    executionListener = new SaveListener();
 		    service.addExecutionListener(executionListener);
 	}
 
@@ -41,8 +46,30 @@ public class Activator extends AbstractUIPlugin {
 	 */
 	public void stop(BundleContext context) throws Exception {
 		plugin = null;
+		System.out.println("shut down");
+		Set<String> paths = executionListener.getProjectPaths();
+		for(String path : paths){
+			File javaprojectsources = new File(path + "/javaprojectsources");
+			deleteDirectory(javaprojectsources);
+		}
+		
 		super.stop(context);
 	}
+
+	private boolean deleteDirectory(File path) {
+		if (path.exists()) {
+			File[] files = path.listFiles();
+			for (int i = 0; i < files.length; i++) {
+				if (files[i].isDirectory()) {
+					deleteDirectory(files[i]);
+				} else {
+					files[i].delete();
+				}
+			}
+		}
+		return (path.delete());
+	}
+		
 
 	/**
 	 * Returns the shared instance
