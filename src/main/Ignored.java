@@ -12,10 +12,13 @@ import mining.Rule;
 import utils.PathAndFileNames;
 import weka.associations.Apriori;
 import attributes.Attribute;
+import attributes.ClassAttribute;
 import attributes.MethodAttribute;
 import attributes.ProjectAttribute;
 import database.Database;
 import database.Scope;
+import export.AttributeCondition;
+import export.AttributeFilter;
 import export.Exporter;
 import export.Exporter.ExportType;
 import export.ParallelFilter;
@@ -24,9 +27,9 @@ public class Ignored {
 	public static void main(String[] args) throws Exception {
 		export();
 		
-		mineProject("project.arff");
-		mineClass("class.arff");
-		mineMethod("method.arff");
+		//mineProject("project.arff");
+		//mineClass("class.arff");
+		//mineMethod("method.arff");
 	}
 	
 	public static void export() {
@@ -34,22 +37,32 @@ public class Ignored {
 		
 		exportProject(database, "project.arff");
 		//exportClass(database, "class.arff");
-		exportMethod(database, "method.arff");
+		//exportMethod(database, "method.arff");
 		
 		database.shutdown();
 	}
 
 	public static void exportProject(Database database, String fileName) {
-		Exporter.export(Scope.PROJECT, ExportType.ARFF, fileName, database, Attribute.combine(
-				ProjectAttribute.WAIT_CALLS,
-				ProjectAttribute.NOTIFY_CALLS,
-				ProjectAttribute.NOTIFYALL_CALLS,
-				ProjectAttribute.JOIN_CALLS
-				), Integer.MAX_VALUE, new ParallelFilter(1, false));
+		Exporter.export(Scope.PROJECT, ExportType.ARFF, fileName, database,
+				Attribute.combine(
+						ProjectAttribute.WAIT_CALLS,
+						ProjectAttribute.NOTIFY_CALLS,
+						ProjectAttribute.NOTIFYALL_CALLS,
+						ProjectAttribute.JOIN_CALLS
+				), Integer.MAX_VALUE,
+				new AttributeFilter(true,
+						new AttributeCondition(ProjectAttribute.JOIN_CALLS)
+				)
+		);
 	}
 	
 	public static void exportClass(Database database, String fileName) {
-		Exporter.export(Scope.CLASS, ExportType.ARFF, fileName, database, "*", Integer.MAX_VALUE, new ParallelFilter(1, false));
+		Exporter.export(Scope.CLASS, ExportType.ARFF, fileName, database, Attribute.combine(
+				ClassAttribute.WAIT_CALLS,
+				ClassAttribute.NOTIFY_CALLS,
+				ClassAttribute.NOTIFYALL_CALLS,
+				ClassAttribute.JOIN_CALLS
+				), Integer.MAX_VALUE, new ParallelFilter(1, true));
 	}
 	
 	private static void exportMethod(Database database, String fileName) {
@@ -58,7 +71,7 @@ public class Ignored {
 				MethodAttribute.NOTIFY_CALLS,
 				MethodAttribute.NOTIFYALL_CALLS,
 				MethodAttribute.JOIN_CALLS
-				), Integer.MAX_VALUE, new ParallelFilter(1, false));
+				), Integer.MAX_VALUE, new ParallelFilter(1, true));
 	}
 	
 	private static void mineProject(String fileName) throws Exception {
@@ -86,7 +99,7 @@ public class Ignored {
 	}
 	
 	private static void mineMethod(String fileName) throws Exception {
-		Apriori apriori = Miner.buildApriori(0.11, 0.95, 20);
+		Apriori apriori = Miner.buildApriori(0.05, 0.8, 1000);
 		
 		Collection<Bonus> bonusSet = Bonus.combineBonusSets(
 				Bonus.buildBonusSet(
@@ -107,7 +120,7 @@ public class Ignored {
 		
 		List<Rule> rules = Miner.getRules(fileName, apriori, bonusSet);
 		
-		Rule.printBestRules(rules, 0.3);
+		Rule.printBestRules(rules, 1.0);
 
 	}
 }

@@ -1,6 +1,0 @@
-Workers that are not implemented yet
-
-method scope:
-	- collect maximal nesting of loops
-	- collect maximal nesting of conditionals
-	- collect maximal nesting of locks

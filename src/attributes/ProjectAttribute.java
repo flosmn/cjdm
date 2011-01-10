@@ -30,6 +30,10 @@ public class ProjectAttribute {
 	public static final Attribute NESTEDNESS_CONDITIONALS = Attribute.NESTEDNESS_CONDITIONALS;
 	public static final Attribute NESTEDNESS_LOOPS = Attribute.NESTEDNESS_LOOPS;
 	
+	public static final Attribute WHILE_WAIT = Attribute.WHILE_WAIT;
+	public static final Attribute CONDITIONAL_WAIT = Attribute.CONDITIONAL_WAIT;
+	public static final Attribute DOUBLE_CHECKED_LOCK = Attribute.DOUBLE_CHECKED_LOCK;
+
 	// class attributes
 	public static final Attribute NUMBER_OF_METHODS = Attribute.NUMBER_OF_METHODS;
 	public static final Attribute VOLATILE_VARIABLES = Attribute.VOLATILE_VARIABLES;
