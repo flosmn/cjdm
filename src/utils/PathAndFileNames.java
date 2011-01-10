@@ -1,11 +1,25 @@
 package utils;
 
 public class PathAndFileNames {
+	
+	public static String PROJECT_SOURCES_PATH;
+	public static String WEKA_DATA_PATH;
+	public static String R_DATA_PATH;
+	public static String CSV_DATA_PATH;
+	public static String DATA_BASE_PATH;
+	
+	static {
+		setPaths("");
+	}
 
-	public static final String PROJECT_SOURCES_PATH = "javaprojectsources/projects";
-	public static final String WEKA_DATA_PATH = "javaprojectsources/arff/";
-	public static final String R_DATA_PATH = "javaprojectsources/r/";
-	public static final String CSV_DATA_PATH = "javaprojectsources/csv/";
-	public static final String DATA_BASE_PATH = "javaprojectsources/database/cjdm";
+	public static void setPaths(String basePath) {
+		if(basePath.length()>0){
+			basePath += "/";
+		}
+		PROJECT_SOURCES_PATH = basePath + "javaprojectsources/TestData";
+		WEKA_DATA_PATH = basePath + "javaprojectsources/arff/";
+		R_DATA_PATH = basePath + "javaprojectsources/r/";
+		CSV_DATA_PATH = basePath + "javaprojectsources/csv/";
+		DATA_BASE_PATH = basePath + "javaprojectsources/database/cjdm";
+	}	
 }
-

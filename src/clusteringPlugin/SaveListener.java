@@ -1,5 +1,8 @@
 package clusteringPlugin;
 
+import java.util.HashSet;
+import java.util.Set;
+
 import main.ProjectParser;
 
 import org.eclipse.core.commands.ExecutionEvent;
@@ -13,6 +16,12 @@ import org.eclipse.ui.PlatformUI;
 
 public class SaveListener implements IExecutionListener{
 
+	private final Set<String> projectPaths = new HashSet<String>();
+	
+	public Set<String> getProjectPaths(){
+		return projectPaths;
+	}
+	
 	public void postExecuteSuccess(String action, Object arg1) {
 		if (action.equals("org.eclipse.ui.file.save")) {
 			try {
@@ -28,8 +37,9 @@ public class SaveListener implements IExecutionListener{
 						@Override
 						public void run() {
 							String projectPath = oProject.getLocation().toOSString();
+							projectPaths.add(projectPath);
 							ProjectParser projectParser = new ProjectParser();
-							//projectParser.parseProjects(projectPath);
+							projectParser.parseProjects(projectPath, projectPath);
 						}
 					});
 					t.start();
