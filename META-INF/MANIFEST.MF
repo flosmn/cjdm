@@ -183,3 +183,4 @@ Require-Bundle: org.eclipse.ui;bundle-version="3.6.1",
  org.eclipse.core.runtime;bundle-version="3.6.0",
  org.eclipse.core.resources;bundle-version="3.6.0"
 Bundle-ActivationPolicy: lazy
+Import-Package: main

@@ -17,7 +17,7 @@ import database.Database;
  * Parse a java file or directory of java files using the generated parser
  * ANTclassOrInterfaceDeclarationLR builds from java.g
  */
-class ProjectParser {
+public class ProjectParser {
 	public static void main(String[] args) {
 		new ProjectParser().parseProjects(PathAndFileNames.PROJECT_SOURCES_PATH);
 	}
