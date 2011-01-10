@@ -14,9 +14,8 @@ import org.antlr.runtime.ANTLRInputStream;
 import org.antlr.runtime.CommonTokenStream;
 import org.antlr.runtime.tree.CommonTree;
 
-import database.Scope;
-
 import utils.PathAndFileNames;
+import database.Scope;
 
 /**
  * This class reads all java source files in the folder 
@@ -105,9 +104,9 @@ public class TreePackageGenerator {
 		return name; 
 	}
 
-	public Collection<TreePackage> generateProjectPackages() {
+	public Collection<TreePackage> generateProjectPackages(String pathToProjects) {
 		Collection<TreePackage> projectPackages = new LinkedList<TreePackage>();
-		File[] projects = (new File(PathAndFileNames.PROJECT_SOURCES_PATH)).listFiles();
+		File[] projects = (new File(pathToProjects)).listFiles();
 		
 		for(File file : projects){
 			if(!(file.getName().equals("data"))){
