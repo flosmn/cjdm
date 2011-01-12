@@ -19,10 +19,11 @@ import database.Database;
  */
 public class ProjectParser {
 	public static void main(String[] args) {
-		new ProjectParser().parseProjects(PathAndFileNames.PROJECT_SOURCES_PATH);
+		new ProjectParser().parseProjects("", PathAndFileNames.PROJECT_SOURCES_PATH);
 	}
 
-	public void parseProjects(String pathToProjects) {
+	public void parseProjects(String pathToProject, String pathToProjects) {
+		PathAndFileNames.setPaths(pathToProject);
 		Database database = new Database(PathAndFileNames.DATA_BASE_PATH);
 		
 		WorkerQueue workerQueue = new WorkerQueue(database);
