@@ -35,8 +35,8 @@ public class RuleMiner {
 		
         String jsonString = 
         	"{" +
-        	"	'scope' : 'class'," +
         	"	'export' : {" +
+        	"		'scope' : 'class'," +
         	"		'maxRows' : 1000," +
         	"		'attributes' : [" +
         	"			'WHILE_WAIT'," +
@@ -100,12 +100,11 @@ public class RuleMiner {
         
         System.out.println(ruleMiningData);
         
-        Scope scope = ruleMiningData.buildScope();
         ExportData exportData = ruleMiningData.getExport();
         MiningData miningData = ruleMiningData.getMining();
         
         if (exportData != null) {
-        	export(scope, exportData, arffName);
+        	export(exportData, arffName);
         }
         
         if (miningData != null) {
@@ -113,11 +112,12 @@ public class RuleMiner {
         }
     }
 	
-	public static void export(Scope scope, ExportData exportData, String fileName) {
+	public static void export(ExportData exportData, String fileName) {
 		Database database = new Database(PathAndFileNames.DATA_BASE_PATH);
 		
-		List<String> attributes = exportData.getAttributes();
+		Scope scope = exportData.buildScope();
 		int maxRows = exportData.getMaxRows();
+		List<String> attributes = exportData.getAttributes();
 		ExportFilter filter = exportData.buildFilter();
 
 		String combinedAttributes = "";
@@ -142,10 +142,26 @@ public class RuleMiner {
 }
 
 class RuleMiningData {
-    private String scope = "project";
     private ExportData export;
     private MiningData mining;
     
+    public ExportData getExport() { return export; }
+    public MiningData getMining() { return mining; }
+
+    public void setExport(ExportData export) { this.export = export; }
+    public void setMining(MiningData mining) { this.mining = mining; }
+
+    public String toString() {
+        return String.format("export:%s\nmining:%s", export, mining);
+    }
+}
+
+class ExportData {
+    private String scope = "project";
+	private int maxRows;
+	private List<String> attributes;
+	private FilterData filter = null;	// optional
+	
     public Scope buildScope() {
     	if (scope.equals("method")) return Scope.METHOD;
     	if (scope.equals("class")) return Scope.CLASS;
@@ -154,26 +170,8 @@ class RuleMiningData {
     	System.out.println("invalid scope type, using 'project'");
     	return Scope.PROJECT;
     }
-
-    public String getScope() { return scope; }
-    public ExportData getExport() { return export; }
-    public MiningData getMining() { return mining; }
-
-    public void setScope(String scope) { this.scope = scope; }
-    public void setExport(ExportData export) { this.export = export; }
-    public void setMining(MiningData mining) { this.mining = mining; }
-
-    public String toString() {
-        return String.format("scope:%s\nexport:%s\nmining:%s", scope, export, mining);
-    }
-}
-
-class ExportData {
-	private int maxRows;
-	private List<String> attributes;
-	private FilterData filter = null;	// optional
-	
-	public ExportFilter buildFilter() {
+    
+    public ExportFilter buildFilter() {
 		if (filter == null) {
 			return new ExportFilter();
 		}
@@ -198,16 +196,18 @@ class ExportData {
 		return new ExportFilter();
 	}
 	
+    public String getScope() { return scope; }
 	public int getMaxRows() { return maxRows; }
 	public List<String> getAttributes() { return attributes; }
 	public FilterData getFilter() { return filter; }
 	
+    public void setScope(String scope) { this.scope = scope; }
 	public void setMaxRows(int maxRows) { this.maxRows = maxRows; }
 	public void setAttributes(List<String> attributes) { this.attributes = attributes; }
 	public void setFilter(FilterData filter) { this.filter = filter; }
 	
 	public String toString() {
-		return String.format("maxRows:%d, attributes:%s, filter:(%s)", maxRows, attributes, filter);
+		return String.format("scope:%s, maxRows:%d, attributes:%s, filter:(%s)", scope, maxRows, attributes, filter);
 	}
 }
 
