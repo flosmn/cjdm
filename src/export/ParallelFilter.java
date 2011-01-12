@@ -10,7 +10,7 @@ public class ParallelFilter extends ExportFilter {
 	int minParallel;
 	boolean summarized;
 	
-	public ParallelFilter(int minParallel, boolean summarized) {
+	public ParallelFilter(boolean summarized, int minParallel) {
 		this.minParallel = minParallel;
 		this.summarized = summarized;
 	}

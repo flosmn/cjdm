@@ -41,7 +41,7 @@ public class Exporter implements ResultSetReceiver {
 						Attribute.getAllInterfaceAttributes(),
 						Attribute.getAllObjectAttributes(),
 						Attribute.getAllObjectFieldsAttributes()),
-				Integer.MAX_VALUE, new ParallelFilter(2, false));
+				Integer.MAX_VALUE, new ParallelFilter(false, 2));
 
 		export(Scope.METHOD, ExportType.CSV, database, 
 				Attribute.combine(
@@ -51,7 +51,7 @@ public class Exporter implements ResultSetReceiver {
 						Attribute.getAllPatternAttributes(),
 						Attribute.getAllMethodCallAttributes(),
 						Attribute.getAllNestednessAttributes()),
-				Integer.MAX_VALUE, new ParallelFilter(3, false));
+				Integer.MAX_VALUE, new ParallelFilter(false, 3));
 
 		database.shutdown();
 		System.out.println("Done!");

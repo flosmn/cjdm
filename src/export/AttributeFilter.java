@@ -3,14 +3,24 @@ package export;
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class AttributeFilter extends ExportFilter {
-	AttributeCondition[] conditions;
+	List<AttributeCondition> conditions;
 	boolean summarized;
+	
+	public AttributeFilter(boolean summarized, List<AttributeCondition> conditions) {
+		this.summarized = summarized;
+		this.conditions = conditions;
+	}
 	
 	public AttributeFilter(boolean summarized, AttributeCondition ... conditions) {
 		this.summarized = summarized;
-		this.conditions = conditions;
+		this.conditions = new ArrayList<AttributeCondition>();
+		for (AttributeCondition condition : conditions) {
+			this.conditions.add(condition);
+		}
 	}
 	
 	public String filter(ResultSet resultSet) throws SQLException {
@@ -45,7 +55,7 @@ public class AttributeFilter extends ExportFilter {
     		}
         }
         
-        return (matches == conditions.length) ? stringBuffer.toString() : null;
+        return (matches == conditions.size()) ? stringBuffer.toString() : null;
 	}
 	
 	static private String summarize(Integer value) {

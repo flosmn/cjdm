@@ -172,7 +172,7 @@ public class PatternBonus extends Bonus {
 				String value = rule.getInstances().attribute(i).value(itemSet.items()[i]);
 				for (Item item : patternItems){					
 					if (!name.matches(item.getName())) return false;
-					if (!value.matches(item.getValue()))return false;
+					if (!value.matches(item.getValue())) return false;
 				}
 			}
 		}
