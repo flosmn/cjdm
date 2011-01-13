@@ -1,5 +1,9 @@
 package main;
 
+import java.io.BufferedInputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
@@ -42,88 +46,63 @@ public class RuleMiner {
 	 * @throws Exception
 	 */
 	public static void main(String[] args) throws Exception {
-		for (String arg : args) {
-			System.out.println(arg);
+		String jsonString = "";
+		boolean noCjdmPassed = true;
+
+		for (String fileName : args) {
+			if(fileName.endsWith(".cjdm")){
+				noCjdmPassed = false;
+				System.out.println("_____________________________________________");
+				System.out.println(fileName);
+				//read settings
+				jsonString = readFileAsString(fileName);
+				
+		        //create setting object
+		        //RuleMiningData data = new Gson().fromJson(jsonString, RuleMiningData.class);
+
+		        //extract arff file name
+		        String arffName = fileName.split(".cjdm")[0] + ".arff";
+		        
+		        //create data classes from Json
+		        RuleMiningData ruleMiningData = new Gson().fromJson(jsonString, RuleMiningData.class);      
+		        System.out.println(ruleMiningData);
+		        ExportData exportData = ruleMiningData.getExport();		        
+		        MiningData miningData = ruleMiningData.getMining();
+		        
+		        //do export
+		        if (exportData != null) {
+		        	export(exportData, arffName);
+		        }
+		        
+		        //do mining
+		        if (miningData != null) {
+		        	mine(miningData, arffName);
+		        }
+			}
 		}
-		
-        String jsonString = 
-        	"{" +
-        	"	'export' : {" +
-        	"		'scope' : 'class'," +
-        	"		'maxRows' : 1000," +
-        	"		'attributes' : [" +
-        	"			'WHILE_WAIT'," +
-        	"			'WAIT_CALLS'," +
-        	"			'NOTIFY_CALLS'," +
-        	"			'NOTIFYALL_CALLS'," +
-        	"			'JOIN_CALLS'" +
-        	"		]," +
-        	"		'filter' : {" +
-        	"			'type' : 'attributeFilter'," +
-        	"			'summarized' : 'true'," +
-        	"			'conditions' : [ {" +
-        	"					'attribute' : 'WHILE_WAIT'," +
-        	"					'minValue' : 1," +
-        	"					'maxValue' : 100" +
-        	"				}, {" +
-        	"					'attribute' : 'JOIN_CALLS'," +
-        	"					'minValue' : 0," +
-        	"					'maxValue' : 2" +
-        	"				}" +
-        	"			]" +
-        	"		}" +
-        	"	}," +
-        	"	'mining' : {" +
-        	"		'apriori' : {" +
-        	"			'lowerBoundMinSupport' : 0.1," +
-        	"			'upperBoundMinSupport' : 0.9," +
-        	"			'minMetric' : 0.95," +
-        	"			'numRules' : 1000" +
-        	"		}," +
-        	"		'bonusSet' : [ {" +
-        	"				'type' : 'itemBonus'," +
-        	"				'attribute' : 'WAIT_CALLS'," +
-        	"				'value' : '[^0]'," +
-        	"				'bonus' : 1" +
-        	"			}, {" +
-        	"				'type' : 'patternBonus'," +
-        	"				'conditions' : [ {" +
-        	"						'name' : 'WAIT_CALLS'," +
-        	"						'value' : '.*'" +
-        	"					}, {" +
-        	"						'name' : '.*'," +
-        	"						'value' : '[^0]'" +
-        	"					}" +
-        	"				]," +
-        	"				'consequences' : [ {" +
-        	"						'name' : 'WHILE_WAIT'," +
-        	"						'value' : '.*'" +
-        	"					}" +
-        	"				]," +
-        	"				'bonus' : 2" +
-        	"			}" +
-        	"		]," +
-        	"		'numRules' : 200" +
-        	"	}" +
-        	"}";
-        
-        String fileName = "temp";
-        String arffName = fileName + ".arff";
-        RuleMiningData ruleMiningData = new Gson().fromJson(jsonString, RuleMiningData.class);
-        
-        System.out.println(ruleMiningData);
-        
-        ExportData exportData = ruleMiningData.getExport();
-        MiningData miningData = ruleMiningData.getMining();
-        
-        if (exportData != null) {
-        	export(exportData, arffName);
-        }
-        
-        if (miningData != null) {
-        	mine(miningData, arffName);
-        }
+
+		if (noCjdmPassed){	
+			printNoCjdmPassed();
+		}
     }
+	
+	/**
+	 * Reads file 
+	 * @param filePath path of the file
+	 * @return text stored in the file
+	 * @throws java.io.IOException
+	 */
+	private static String readFileAsString(String filePath) throws java.io.IOException{
+	    byte[] buffer = new byte[(int) new File(filePath).length()];
+	    BufferedInputStream f = null;
+	    try {
+	        f = new BufferedInputStream(new FileInputStream(filePath));
+	        f.read(buffer);
+	    } finally {
+	        if (f != null) try { f.close(); } catch (IOException ignored) { }
+	    }
+	    return new String(buffer);
+	}
 	
 	/**
 	 * Writes data in an *.arff file 
@@ -162,6 +141,18 @@ public class RuleMiner {
 		List<Rule> rules = Miner.getRules(fileName, apriori, bonusSet);
 		
 		Rule.printBestRules(rules, miningData.getNumRules());
+	}
+	
+	/**
+	 * prints a warning that no cjdm file was passed
+	 */
+	private static void printNoCjdmPassed() {
+		System.out.println("WARNING:");
+		System.out.println("There was no *.cjdm file path passed to this method. ");
+		System.out.println("Correct use 1:\tPass path to your *.cjdm files");
+		System.out.println("Correct use 2:\tPut some files in");
+		System.out.println("\t\t"+System.getProperty("user.dir"));
+		System.out.println("\t\tand pass * ");
 	}
 }
 
