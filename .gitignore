@@ -1,5 +1,5 @@
 bin/*
-src/main/*
+src/main/*.java
 src/grammar/*.java
 src/grammar/*.tokens
 javaprojectsources/*
