@@ -1,5 +1,5 @@
 bin/*
-src/main/Ignored.java
+src/main/Ignored*
 src/grammar/*.java
 src/grammar/*.tokens
 javaprojectsources/*
