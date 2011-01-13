@@ -25,12 +25,25 @@ import export.Exporter;
 import export.Exporter.ExportType;
 import export.ParallelFilter;
 
-
+/**
+ * This is the main class for using cjdm. Cjdm is typically used by 
+ * calling {@link #main(String[])} with file names of JSON config files.
+ * 
+ * Then export, mining and filtering are done according to configs
+ * 
+ */
 public class RuleMiner {
+	
+	/**
+	 * Reads JSON file to get settings and then calls {@link #export(ExportData, String)} and 
+	 * {@link #mine(MiningData, String)}
+	 * 
+	 * @param args fileNames of JSON setting files
+	 * @throws Exception
+	 */
 	public static void main(String[] args) throws Exception {
 		for (String arg : args) {
 			System.out.println(arg);
-			
 		}
 		
         String jsonString = 
@@ -112,6 +125,11 @@ public class RuleMiner {
         }
     }
 	
+	/**
+	 * Writes data in an *.arff file 
+	 * @param exportData settings for export e.g. filter
+	 * @param fileName name of new *.arff file
+	 */
 	public static void export(ExportData exportData, String fileName) {
 		Database database = new Database(PathAndFileNames.DATA_BASE_PATH);
 		
@@ -130,6 +148,12 @@ public class RuleMiner {
 		database.shutdown();
 	}
 	
+	/**
+	 * Mines *.arff file according to mining data settings
+	 * @param miningData apriori settings and bonus sets
+	 * @param fileName name of *.arff file to mine
+	 * @throws Exception
+	 */
 	public static void mine(MiningData miningData, String fileName) throws Exception {
 		Apriori apriori = miningData.buildApriori();
 		
@@ -162,6 +186,10 @@ class ExportData {
 	private List<String> attributes;
 	private FilterData filter = null;	// optional
 	
+	/**
+	 * Transforms a {@link String} to {@link Scope}
+	 * @return scope instance according to String
+	 */
     public Scope buildScope() {
     	if (scope.equals("method")) return Scope.METHOD;
     	if (scope.equals("class")) return Scope.CLASS;
@@ -171,6 +199,11 @@ class ExportData {
     	return Scope.PROJECT;
     }
     
+    /**
+     * Builds a filter with settings of {@link #filter}
+     * @return filter
+     * @see FilterData
+     */
     public ExportFilter buildFilter() {
 		if (filter == null) {
 			return new ExportFilter();
