@@ -20,7 +20,8 @@ public class ClusteringViewComponents {
 	public static final String TARGET_DIR_LABEL_CSV_LABEL = "Select directory in which to save the Csv files containing the result of the analyse phase.";
 	public static final String CHOOSE_TEXT_LABEL_CLASS = "Enter name of the Csv file containing the class information.";
 	public static final String CHOOSE_TEXT_LABEL_METHOD = "Enter name of the Csv file containing the method information.";
-	public static final String CHOOSE_FILTER_LEVEL_LABEL = "Set a filter level for the datavectors. The number indicates how much elements of a datavector have to be non-zero to be included in the dataset. So the higher the number the smaller will the dataset be.";
+	public static final String CHOOSE_FILTER_LEVEL_CLASS_LABEL = "Set a filter level for the class datavectors. The number indicates how much elements of a datavector have to be non-zero to be included in the dataset. So the higher the number the smaller will the dataset be.";
+	public static final String CHOOSE_FILTER_LEVEL_METHOD_LABEL = "Set a filter level for the method datavectors.";
 	public static final String CHOOSE_DATASET_DIR_LABEL = "Select a directory containing the Csv files which should be used for Clustering.";
 	
 	public static final String DIR_LABEL = "Directory:";
@@ -132,9 +133,14 @@ public class ClusteringViewComponents {
 		return textField;
 	}
 
-	public static Label getFilterLevelLabel(Composite parent, int numColumns) {
-		Label label = getLabelFillHoleWidth(parent, CHOOSE_FILTER_LEVEL_LABEL, numColumns);
+	public static Label getFilterLevelClassLabel(Composite parent, int numColumns) {
+		Label label = getLabelFillHoleWidth(parent, CHOOSE_FILTER_LEVEL_CLASS_LABEL, numColumns);
 		return label;
+	}
+	
+	public static Label getFilterLevelMethodLabel(Composite parent, int numColumns) {
+		Label label = getLabelFillHoleWidth(parent, CHOOSE_FILTER_LEVEL_METHOD_LABEL, numColumns);
+		return label;		
 	}
 
 	public static Label getFilterLabel(Composite parent) {
@@ -152,10 +158,10 @@ public class ClusteringViewComponents {
 	}
 
 	public static Button getAnalyseButton(Composite parent, int numColumns, Text rootDir,
-			Text targetDir, Text className, Text methodName, Text filterLevel) {
+			Text targetDir, Text className, Text methodName, Text filterLevelClass, Text filterLevelMethod) {
 		Button button = new Button(parent, SWT.PUSH);
 		button.setText(ANALYSE_BUTTON_LABEL);
-		button.addSelectionListener(new AnalyseButtonSelectionListener(rootDir, targetDir, className, methodName, filterLevel));
+		button.addSelectionListener(new AnalyseButtonSelectionListener(rootDir, targetDir, className, methodName, filterLevelClass, filterLevelMethod));
 		gridData = new GridData(GridData.BEGINNING, GridData.CENTER, false, false);
 		gridData.horizontalSpan = numColumns;
 		gridData.verticalIndent = 10;

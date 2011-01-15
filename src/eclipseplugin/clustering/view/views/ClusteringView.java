@@ -71,10 +71,13 @@ public class ClusteringView extends ViewPart {
 		ClusteringViewComponents.getTargetNameMethodLabel(comp, numColumns);
 		ClusteringViewComponents.getNameLabel(comp);
 		Text methodName = ClusteringViewComponents.getNameTextField(comp, numColumns);
-		ClusteringViewComponents.getFilterLevelLabel(comp, numColumns);
+		ClusteringViewComponents.getFilterLevelClassLabel(comp, numColumns);
 		ClusteringViewComponents.getFilterLabel(comp);
-		Text filterLevel = ClusteringViewComponents.getFilterLevelTextField(comp, numColumns);
-		ClusteringViewComponents.getAnalyseButton(comp, numColumns, rootDir, targetDir, className, methodName, filterLevel);
+		Text filterLevelClass = ClusteringViewComponents.getFilterLevelTextField(comp, numColumns);
+		ClusteringViewComponents.getFilterLevelMethodLabel(comp, numColumns);
+		ClusteringViewComponents.getFilterLabel(comp);
+		Text filterLevelMethod = ClusteringViewComponents.getFilterLevelTextField(comp, numColumns);
+		ClusteringViewComponents.getAnalyseButton(comp, numColumns, rootDir, targetDir, className, methodName, filterLevelClass, filterLevelMethod);
 				
 		ClusteringViewComponents.getHeadingPhase2(comp, numColumns);
 		ClusteringViewComponents.getDatasetDirLabel(comp, numColumns);

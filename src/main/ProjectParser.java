@@ -19,11 +19,10 @@ import database.Database;
  */
 public class ProjectParser {
 	public static void main(String[] args) {
-		new ProjectParser().parseProjects("", PathAndFileNames.PROJECT_SOURCES_PATH);
+		new ProjectParser().parseProjects();
 	}
 
-	public void parseProjects(String pathToProject, String pathToProjects) {
-		PathAndFileNames.setPaths(pathToProject);
+	public void parseProjects() {
 		Database database = new Database(PathAndFileNames.DATA_BASE_PATH);
 		
 		WorkerQueue workerQueue = new WorkerQueue(database);
@@ -104,7 +103,7 @@ public class ProjectParser {
 
 		workerQueue.createTables();
 		
-		Collection<TreePackage> projectPackages = (new TreePackageGenerator()).generateProjectPackages(pathToProjects);
+		Collection<TreePackage> projectPackages = (new TreePackageGenerator()).generateProjectPackages();
 		Collections.sort((List<TreePackage>) projectPackages);
 		for(TreePackage projectPackage: projectPackages) {
 			workerQueue.doWork(projectPackage);
