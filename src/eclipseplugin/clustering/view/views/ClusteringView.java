@@ -37,17 +37,13 @@ public class ClusteringView extends ViewPart {
 
 	@Override
 	public void createPartControl(Composite parent) {
-	    ScrolledComposite sc = new ScrolledComposite(parent, SWT.H_SCROLL
-	        | SWT.V_SCROLL);
+	    ScrolledComposite sc = new ScrolledComposite(parent, SWT.H_SCROLL | SWT.V_SCROLL);
 
-	    // Create a child composite to hold the controls
 	    Composite componentParent = getComponents(sc);
 	    sc.setContent(componentParent);
 
-	    // Set the minimum size
 	    sc.setMinSize(600, 600);
 
-	    // Expand both horizontally and vertically
 	    sc.setExpandHorizontal(true);
 	    sc.setExpandVertical(true);
 	}
