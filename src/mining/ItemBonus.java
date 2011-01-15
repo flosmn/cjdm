@@ -8,7 +8,7 @@ import attributes.Attribute;
 
 
 /**
- * ItemBonus stores rules for giving bonus on items
+ * This class stores items for rule rating.
  *  
  * ItemBonus is defined as a pair of name and its (bonus)value. 
  * e.g. X=1  has bonus 3 OR Y=0 has bonus -3
@@ -22,22 +22,28 @@ public class ItemBonus extends Bonus{
 	public Item item;
 
 	/**
-	 * constructor that adds instance to list instances
-	 * @param name
-	 * @param value
-	 * @param bonus
+	 * Constructor
+	 * @param name name of the item
+	 * @param value value of the item
+	 * @param bonus bonus value of item
 	 */
 	public ItemBonus(String name, String value, int bonus) {
 		this.item = new Item(name,value);
 		this.setBonus(bonus);
 	}
 	
+	/**
+	 * Convenient Constructor
+	 * @param attribute
+	 * @param value
+	 * @param bonus
+	 */
 	public ItemBonus(Attribute attribute, String value, int bonus) {
 		this(attribute.getName(), value, bonus);
 	}
 
 	/**
-	 * name + brings you + value + bonus
+	 * prints item name + bonus
 	 */
 	public String toString() {
 		return item.getName() + Bonus.toString + item.getValue() + "\n";
@@ -45,7 +51,7 @@ public class ItemBonus extends Bonus{
 	
 	/**
 	 * creates default bonus system if no instances exist
-	 * @return instances
+	 * @return a collection of {@code Bonus}
 	 */
 	public static Collection<Bonus> getSampleBonusSet() {
 		Collection<Bonus> bonusSet = new ArrayList<Bonus>();
@@ -67,42 +73,40 @@ public class ItemBonus extends Bonus{
 	}
 	
 	/**
-	 * simple setter
-	 * @param name, String
+	 * sets name of the item
+	 * @param name name of the item
 	 */
 	public void setName(String name) {
 		this.item.setName(name);
 	}
 
 	/**
-	 * simple getter
-	 * @return name, String
+	 * gets name of the item
+	 * @return name of the item
 	 */
 	public String getName() {
 		return this.item.getName();
 	}
 
 	/**
-	 * simple setter
-	 * @param value, int
+	 * sets the value of the item
+	 * @param value new name of the ItemBonus Item
 	 */
 	public void setValue(String value) {
 		this.item.setValue(value);
 	}
 
 	/**
-	 * simple getter
-	 * @return name, String
+	 * gets value of the item
+	 * @return the name of the item 
 	 */
 	public String getValue() {
 		return item.getValue();
 	}
 	
 	/**
-	 * give bonus for items
-	 * e.g. SYNCHRONIZED=1
-	 * @param itemSet
-	 * @param rule
+	 * gives bonus for items
+	 * @param rule the rule to be rated
 	 */
 	public int rate(Rule rule) {
 		int rating = 0;
@@ -113,10 +117,20 @@ public class ItemBonus extends Bonus{
 		return rating;
 	}
 	
+	/**
+	 * gives bonus on condition
+	 * @param rule the rule to be rated
+	 * @return given bonus
+	 */
 	private int rateCondition(Rule rule) {
 		return rateItemSet(rule, rule.getConditionItems());
 	}
 	
+	/**
+	 * gives bonus on consequence
+	 * @param rule the rule to be rated
+	 * @return given bonus
+	 */
 	private int rateConsequence(Rule rule) {
 		return rateItemSet(rule, rule.getConsequenceItems());
 	}
@@ -136,6 +150,12 @@ public class ItemBonus extends Bonus{
 		return rating;
 	}
 	
+	/**
+	 * calculates rating for an item
+	 * @param name name of item
+	 * @param value value of item 
+	 * @return rating of item
+	 */
 	public int rateItem(String name, String value) {
 		boolean match = name.matches(this.getName()) && value.matches(this.getValue());
 

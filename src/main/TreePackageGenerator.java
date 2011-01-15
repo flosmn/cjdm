@@ -20,7 +20,7 @@ import database.Scope;
 /**
  * This class reads all java source files in the folder 
  * PathAndFileNames.PROJECT_SOURCES_PATH
- * and generates a collection of CommonTreePackages 
+ * and generates a collection of CommonTreePackage.
  */
 public class TreePackageGenerator {
 
@@ -32,7 +32,7 @@ public class TreePackageGenerator {
 	 * Generate a collection of tree packages. One tree package for each java source file
 	 * in the project represented by projectTreePackage.
 	 * 
-	 * @param projectTreePackage
+	 * @param projectRoot path where the project is stored
 	 * @return treePackages
 	 */
 	public Collection<TreePackage> generateTreePackagesForProject(

@@ -1,6 +1,8 @@
 package attributes;
 
-
+/**
+ * This class stores all project {@code Scope} attribute names that can be used for mining.
+ */
 public class ProjectAttribute {
 	public static final Attribute PROJECT_NAME = Attribute.PROJECT_NAME;
 	

@@ -2,6 +2,9 @@ package attributes;
 
 import database.Scope;
 
+/**
+ * This class stores all method {@code Scope} attribute names that can be used for mining.
+ */
 public class MethodAttribute {
 	public static final Attribute COMBINED_METHOD_NAME = new Attribute(Scope.METHOD,
 			"CONCAT(PROJECT_NAME,'->',CLASS_NAME,'->',METHOD_NAME," +

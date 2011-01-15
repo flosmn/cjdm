@@ -5,7 +5,7 @@ import java.util.Collection;
 import java.util.LinkedList;
 
 /**
- * See how the class is extended
+ * This class rates rules.
  * 
  * @see ItemBonus
  * @see PatternBonus
@@ -29,26 +29,25 @@ public abstract class Bonus {
 	}
 
 	/**
-	 * simple setter
-	 * 
-	 * @param bonus
+	 * sets bonus value
+	 * @param bonus bonus value
 	 */
 	public void setBonus(int bonus) {
 		this.bonus = bonus;
 	}
 
 	/**
-	 * simple getter
-	 * 
-	 * @return
+	 * gets bonus value
+	 * @return bonus value
 	 */
 	public int getBonus() {
 		return bonus;
 	}
 	
 	/**
-	 * @param bonusesCollections, Collection<Bonus> ...
-	 * @return Collection<Bonus>
+	 * combines collections of bonuses to one collection
+	 * @param bonusesCollections collections of Bonuses to be combined
+	 * @return collection of bonuses
 	 */
 	public static Collection<Bonus> combineBonusSets(Collection<Bonus> ... bonusesCollections) {
 		Collection<Bonus> bonusSet = new LinkedList<Bonus>();
@@ -61,8 +60,9 @@ public abstract class Bonus {
 	}
 	
 	/**
-	 * @param bonuses, Bonus ...
-	 * @return Collection<Bonus>
+	 * combines bonuses to one collection
+	 * @param bonuses bonuses that will be combined as a collection
+	 * @return collection of bonuses
 	 */
 	public static Collection<Bonus> buildBonusSet(Bonus ... bonuses) {
 		Collection<Bonus> bonusSet = new LinkedList<Bonus>();

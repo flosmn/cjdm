@@ -1,5 +1,8 @@
 package utils;
 
+/**
+ * This class stores all data paths
+ */
 public class PathAndFileNames {
 	
 	public static String PROJECT_SOURCES_PATH;
