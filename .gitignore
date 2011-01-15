@@ -1,6 +1,11 @@
 bin/*
+
 src/main/Ignored.java
+
 src/grammar/*.java
+
 src/grammar/*.tokens
+
 javaprojectsources/*
+
 *.DS_Store
