@@ -287,16 +287,31 @@ class ConditionData {
 }
 
 class MiningData {
-	private AprioriData apriori = new AprioriData();
+	private AprioriData aprioriData = new AprioriData();
 	private List<BonusData> bonusSet;
 	private int numRules;
 	
-	public Apriori buildApriori() {
-		return Miner.buildApriori(
-				apriori.getLowerBoundMinSupport(),
-				apriori.getUpperBoundMinSupport(),
-				apriori.getMinMetric(),
-				apriori.getNumRules());
+	/**
+	 * creates new apriori and sets values
+	 * @return apriori instance with values of aprioriData
+	 * @throws Exception
+	 */
+	public Apriori buildApriori() throws Exception {
+		Apriori apriori = new Apriori();
+		String[] options = {
+				"-N",Integer.toString(aprioriData.N),
+				"-T",Integer.toString(aprioriData.T),
+				"-C",Double.toString(aprioriData.C),
+				"-D",Double.toString(aprioriData.D),
+				"-U",Double.toString(aprioriData.U),
+				"-M",Double.toString(aprioriData.M),
+				"-S",Double.toString(aprioriData.S),
+				"-I",Boolean.toString(aprioriData.I),
+				"-V",Boolean.toString(aprioriData.V),
+				"-R",Boolean.toString(aprioriData.R),
+				};
+		apriori.setOptions(options);
+		return apriori;
 	}
 	
 	public Collection<Bonus> buildBonusSet() {
@@ -308,20 +323,56 @@ class MiningData {
 		return bonuses;
 	}
 	
-	public AprioriData getApriori() { return apriori; }
+	public AprioriData getApriori() { return aprioriData; }
 	public List<BonusData> getBonusSet() { return bonusSet; }
 	public int getNumRules() { return numRules; }
 	
-	public void setApriori(AprioriData apriori) { this.apriori = apriori; }
+	public void setApriori(AprioriData apriori) { this.aprioriData = apriori; }
 	public void setBonusSet(List<BonusData> bonusSet) { this.bonusSet = bonusSet; }
 	public void setNumRules(int numRules) { this.numRules = numRules; }
 	
 	public String toString() {
-		return String.format("numRules:%d, bonusSet:(%s), apriori:(%s)", numRules, bonusSet, apriori);
+		return String.format("numRules:%d, bonusSet:(%s), apriori:(%s)", numRules, bonusSet, aprioriData);
 	}
 }
 
+/**
+ * This class stores data for the use of weka apriori algorithm
+ * @see Apriori
+ */
 class AprioriData {
+	
+	int N = 200 ;//required number of rules
+	//The required number of rules (default: 10).
+
+	int T = 0; // type of metric by which to sort rules
+	//0 = confidence | 1 = lift | 2 = leverage | 3 = Conviction.
+
+	double C = 0.9; //minimum metric score of a rule
+	//The minimum confidence of a rule (default: 0.9).
+
+	double D = 0.05; //delta for minimum support
+	//The delta by which the minimum support is decreased in each iteration (default: 0.05). 
+	
+	double U = 1.0; // upper bound for minimum support
+	//The upper bound for minimum support. Don't explicitly look for rules with more than this level of support.
+
+	double M = 0.1; // lower bound for minimum support
+	//The lower bound for the minimum support (default = 0.1).
+
+	double S = -1; //significance level
+	//If used, rules are tested for significance at the given level. Slower (default = no significance testing).
+
+	boolean I = false;
+	//If set the itemsets found are also output (default = no).
+
+	boolean V = false;
+	//If set then progress is reported iteratively during execution.
+
+	boolean R = false;
+	//If set then columns that contain all missing values are removed from the data. 
+	
+	
 	private double lowerBoundMinSupport = 0.1;
 	private double upperBoundMinSupport = 0.9;
 	private double minMetric = 0.9;
