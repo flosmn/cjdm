@@ -21,23 +21,22 @@ import export.AttributeCondition;
 import export.AttributeFilter;
 import export.Exporter;
 import export.Exporter.ExportType;
-import export.ParallelFilter;
 
 public class Ignored {
 	public static void main(String[] args) throws Exception {
 		export();
 		
-		//mineProject("project.arff");
-		//mineClass("class.arff");
-		//mineMethod("method.arff");
+		mineProject("project.arff");
+	//	mineClass("class.arff");
+	//	mineMethod("method.arff");
 	}
 	
 	public static void export() {
 		Database database = new Database(PathAndFileNames.DATA_BASE_PATH);
 		
 		exportProject(database, "project.arff");
-		//exportClass(database, "class.arff");
-		//exportMethod(database, "method.arff");
+	//	exportClass(database, "class.arff");
+	//	exportMethod(database, "method.arff");
 		
 		database.shutdown();
 	}
@@ -45,37 +44,52 @@ public class Ignored {
 	public static void exportProject(Database database, String fileName) {
 		Exporter.export(Scope.PROJECT, ExportType.ARFF, fileName, database,
 				Attribute.combine(
+						ProjectAttribute.WHILE_WAIT,
 						ProjectAttribute.WAIT_CALLS,
 						ProjectAttribute.NOTIFY_CALLS,
 						ProjectAttribute.NOTIFYALL_CALLS,
 						ProjectAttribute.JOIN_CALLS
 				), Integer.MAX_VALUE,
 				new AttributeFilter(true,
-						new AttributeCondition(ProjectAttribute.JOIN_CALLS)
+						new AttributeCondition(ProjectAttribute.WHILE_WAIT)
 				)
 		);
 	}
 	
 	public static void exportClass(Database database, String fileName) {
-		Exporter.export(Scope.CLASS, ExportType.ARFF, fileName, database, Attribute.combine(
-				ClassAttribute.WAIT_CALLS,
-				ClassAttribute.NOTIFY_CALLS,
-				ClassAttribute.NOTIFYALL_CALLS,
-				ClassAttribute.JOIN_CALLS
-				), Integer.MAX_VALUE, new ParallelFilter(1, true));
+		Exporter.export(Scope.CLASS, ExportType.ARFF, fileName, database,
+				Attribute.combine(
+						ClassAttribute.WHILE_WAIT,
+						ClassAttribute.WAIT_CALLS,
+						ClassAttribute.NOTIFY_CALLS,
+						ClassAttribute.NOTIFYALL_CALLS,
+						ClassAttribute.JOIN_CALLS
+				), Integer.MAX_VALUE,
+				new AttributeFilter(true,
+						new AttributeCondition(ClassAttribute.WHILE_WAIT)
+				)
+		);
 	}
+	
 	
 	private static void exportMethod(Database database, String fileName) {
-		Exporter.export(Scope.METHOD, ExportType.ARFF, fileName, database, Attribute.combine(
-				MethodAttribute.WAIT_CALLS,
-				MethodAttribute.NOTIFY_CALLS,
-				MethodAttribute.NOTIFYALL_CALLS,
-				MethodAttribute.JOIN_CALLS
-				), Integer.MAX_VALUE, new ParallelFilter(1, true));
+		Exporter.export(Scope.METHOD, ExportType.ARFF, fileName, database,
+				Attribute.combine(
+						MethodAttribute.WHILE_WAIT,
+						MethodAttribute.WAIT_CALLS,
+						MethodAttribute.NOTIFY_CALLS,
+						MethodAttribute.NOTIFYALL_CALLS,
+						MethodAttribute.JOIN_CALLS
+				), Integer.MAX_VALUE,
+				new AttributeFilter(true,
+						new AttributeCondition(MethodAttribute.WHILE_WAIT)
+				)
+		);
 	}
 	
+	
 	private static void mineProject(String fileName) throws Exception {
-		Apriori apriori = Miner.buildApriori(0.11, 0.95, 1000);
+		Apriori apriori = Miner.buildApriori(0.11, 0.99, 0.95, 1000);
 		
 		Collection<Bonus> bonusSet = Bonus.buildBonusSet(
 				new ItemBonus(".*", "0", -1),
@@ -85,21 +99,21 @@ public class Ignored {
 		
 		List<Rule> rules = Miner.getRules(fileName, apriori, bonusSet);
 
-		Rule.printBestRules(rules, 100);
+		Rule.printBestRules(rules, 20);
 	}
 		
 	private static void mineClass(String fileName) throws Exception {
-		Apriori apriori = Miner.buildApriori(0, 0, 1);
+		Apriori apriori = Miner.buildApriori(0.05, 0.8, 0.9, 1000);
 
 		Collection<Bonus> bonusSet = Miner.getSynchronizedBonus();
 
 		List<Rule> rules = Miner.getRules(fileName, apriori, bonusSet);
 		
-		Rule.printBestRules(rules, 0.3);
+		Rule.printBestRules(rules, 20);
 	}
 	
 	private static void mineMethod(String fileName) throws Exception {
-		Apriori apriori = Miner.buildApriori(0.05, 0.8, 1000);
+		Apriori apriori = Miner.buildApriori(0.05, 0.95, 0.8, 1000);
 		
 		Collection<Bonus> bonusSet = Bonus.combineBonusSets(
 				Bonus.buildBonusSet(
@@ -114,9 +128,10 @@ public class Ignored {
 								new Item(MethodAttribute.PUBLIC_METHODS, "0"), -10),
 						new PatternBonus(
 								new Item(MethodAttribute.PRIVATE_METHODS, "0"),
-								new Item(MethodAttribute.PUBLIC_METHODS, "1"), -10)),
+								new Item(MethodAttribute.PUBLIC_METHODS, "1"), -10)
+				),
 				Bonus.getSampleBonusSet()
-				);
+		);
 		
 		List<Rule> rules = Miner.getRules(fileName, apriori, bonusSet);
 		
