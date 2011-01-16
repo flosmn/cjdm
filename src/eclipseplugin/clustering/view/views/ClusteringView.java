@@ -37,17 +37,13 @@ public class ClusteringView extends ViewPart {
 
 	@Override
 	public void createPartControl(Composite parent) {
-	    ScrolledComposite sc = new ScrolledComposite(parent, SWT.H_SCROLL
-	        | SWT.V_SCROLL);
+	    ScrolledComposite sc = new ScrolledComposite(parent, SWT.H_SCROLL | SWT.V_SCROLL);
 
-	    // Create a child composite to hold the controls
 	    Composite componentParent = getComponents(sc);
 	    sc.setContent(componentParent);
 
-	    // Set the minimum size
-	    sc.setMinSize(600, 600);
+	    sc.setMinSize(600, 1000);
 
-	    // Expand both horizontally and vertically
 	    sc.setExpandHorizontal(true);
 	    sc.setExpandVertical(true);
 	}
@@ -64,28 +60,42 @@ public class ClusteringView extends ViewPart {
 		ClusteringViewComponents.getRootDirLabel(comp, numColumns);
 		ClusteringViewComponents.getDirectoryLabel(comp);
 		Text rootDir = ClusteringViewComponents.getDirTextField(comp);
-		ClusteringViewComponents.getBrowseButton(comp, rootDir);
-		ClusteringViewComponents.getTargetDirLabel(comp, numColumns);
+		ClusteringViewComponents.getButtonBrowse(comp, rootDir);
+		ClusteringViewComponents.getDatabaseTargetDirLabel(comp, numColumns);
 		ClusteringViewComponents.getDirectoryLabel(comp);
-		Text targetDir = ClusteringViewComponents.getDirTextField(comp);
-		ClusteringViewComponents.getBrowseButton(comp, targetDir);
-		ClusteringViewComponents.getTargetNameClassLabel(comp, numColumns);
+		Text databaseTargetDir = ClusteringViewComponents.getDirTextField(comp);
+		ClusteringViewComponents.getButtonBrowse(comp, databaseTargetDir);
+		ClusteringViewComponents.getButtonAnalyse(comp, numColumns, rootDir, databaseTargetDir);
+		
+		ClusteringViewComponents.getHeadingPhase2(comp, numColumns);
+		ClusteringViewComponents.getDatabaseSourceDirLabel(comp, numColumns);
+		ClusteringViewComponents.getDirectoryLabel(comp);
+		Text databaseSourceDir = ClusteringViewComponents.getDirTextField(comp);
+		ClusteringViewComponents.getButtonBrowse(comp, databaseSourceDir);
+		ClusteringViewComponents.getCsvTargetDirLabel(comp, numColumns);
+		ClusteringViewComponents.getDirectoryLabel(comp);
+		Text csvTargetDir = ClusteringViewComponents.getDirTextField(comp);
+		ClusteringViewComponents.getButtonBrowse(comp, csvTargetDir);
+		ClusteringViewComponents.getClassNameLabel(comp, numColumns);
 		ClusteringViewComponents.getNameLabel(comp);
 		Text className = ClusteringViewComponents.getNameTextField(comp, numColumns);
-		ClusteringViewComponents.getTargetNameMethodLabel(comp, numColumns);
+		ClusteringViewComponents.getMethodNameLabel(comp, numColumns);
 		ClusteringViewComponents.getNameLabel(comp);
 		Text methodName = ClusteringViewComponents.getNameTextField(comp, numColumns);
-		ClusteringViewComponents.getFilterLevelLabel(comp, numColumns);
+		ClusteringViewComponents.getFilterLevelClassLabel(comp, numColumns);
 		ClusteringViewComponents.getFilterLabel(comp);
-		Text filterLevel = ClusteringViewComponents.getFilterLevelTextField(comp, numColumns);
-		ClusteringViewComponents.getAnalyseButton(comp, numColumns, rootDir, targetDir, className, methodName, filterLevel);
+		Text filterLevelClass = ClusteringViewComponents.getFilterLevelTextField(comp, numColumns);
+		ClusteringViewComponents.getFilterLevelMethodLabel(comp, numColumns);
+		ClusteringViewComponents.getFilterLabel(comp);
+		Text filterLevelMethod = ClusteringViewComponents.getFilterLevelTextField(comp, numColumns);
+		ClusteringViewComponents.getButtonExport(comp, numColumns, databaseSourceDir, csvTargetDir, className, methodName, filterLevelClass, filterLevelMethod);
 				
-		ClusteringViewComponents.getHeadingPhase2(comp, numColumns);
-		ClusteringViewComponents.getDatasetDirLabel(comp, numColumns);
+		ClusteringViewComponents.getHeadingPhase3(comp, numColumns);
+		ClusteringViewComponents.getCsvSourceDirLabel(comp, numColumns);
 		ClusteringViewComponents.getDirectoryLabel(comp);
-		Text datasetDir = ClusteringViewComponents.getDirTextField(comp);
-		ClusteringViewComponents.getBrowseButton(comp, datasetDir);
-		ClusteringViewComponents.getPerformClusteringButton(comp, numColumns, datasetDir);
+		Text csvSourceDir = ClusteringViewComponents.getDirTextField(comp);
+		ClusteringViewComponents.getButtonBrowse(comp, csvSourceDir);
+		ClusteringViewComponents.getButtonPerformClustering(comp, numColumns, csvSourceDir);
 		
 		return comp;
 	}

@@ -6,10 +6,10 @@ import org.eclipse.swt.widgets.Text;
 
 public class ClusteringButtonSelectionListener implements SelectionListener {
 
-	private final Text datasetDir;
+	private final Text csvSourceDir;
 
-	public ClusteringButtonSelectionListener(Text datasetDir) {
-		this.datasetDir = datasetDir;
+	public ClusteringButtonSelectionListener(Text csvSourceDir) {
+		this.csvSourceDir = csvSourceDir;
 	}
 
 	@Override

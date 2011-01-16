@@ -9,52 +9,12 @@ import utils.PathAndFileNames;
 import attributes.Attribute;
 import attributes.ClassAttribute;
 import attributes.MethodAttribute;
-import attributes.ProjectAttribute;
 import database.Database;
 import database.ResultSetReceiver;
 import database.Scope;
 
 public class Exporter implements ResultSetReceiver {
 	public static void main (String[] args) {
-		Database database = new Database(PathAndFileNames.DATA_BASE_PATH);
-		
-		// reference usage of export
-		export(Scope.PROJECT, ExportType.CSV, database,
-				Attribute.combine(
-						ProjectAttribute.PROJECT_NAME,
-						Attribute.getAllSynchronizedAttributes(),
-						Attribute.getAllPatternAttributes(),
-						Attribute.getAllMethodCallAttributes(),
-						Attribute.getAllNestednessAttributes(),
-						Attribute.getAllInterfaceAttributes(),
-						Attribute.getAllObjectAttributes(),
-						Attribute.getAllObjectFieldsAttributes()),
-				Integer.MAX_VALUE);
-
-		export(Scope.CLASS, ExportType.CSV, database,
-				Attribute.combine(
-						ClassAttribute.COMBINED_CLASS_NAME,
-						Attribute.getAllSynchronizedAttributes(),
-						Attribute.getAllPatternAttributes(),
-						Attribute.getAllMethodCallAttributes(),
-						Attribute.getAllNestednessAttributes(),
-						Attribute.getAllInterfaceAttributes(),
-						Attribute.getAllObjectAttributes(),
-						Attribute.getAllObjectFieldsAttributes()),
-				Integer.MAX_VALUE, new ParallelFilter(false, 2));
-
-		export(Scope.METHOD, ExportType.CSV, database, 
-				Attribute.combine(
-						MethodAttribute.COMBINED_METHOD_NAME,
-						MethodAttribute.WHILE_WAIT,
-						Attribute.getAllSynchronizedAttributes(),
-						Attribute.getAllPatternAttributes(),
-						Attribute.getAllMethodCallAttributes(),
-						Attribute.getAllNestednessAttributes()),
-				Integer.MAX_VALUE, new ParallelFilter(false, 3));
-
-		database.shutdown();
-		System.out.println("Done!");
 	}
 	
 	public enum ExportType { ARFF, CSV };
@@ -98,6 +58,32 @@ public class Exporter implements ResultSetReceiver {
 		String query = "SELECT " + attributes + " FROM " + scope + "_view LIMIT " + maxRowCount;
 		database.requestResultSet(query, this);
 	}
+	
+	public static void exportClassCsv(int filterLevel, Database database){
+		export(Scope.CLASS, ExportType.CSV, database,
+				Attribute.combine(
+						ClassAttribute.COMBINED_CLASS_NAME,
+						Attribute.getAllSynchronizedAttributes(),
+						Attribute.getAllPatternAttributes(),
+						Attribute.getAllMethodCallAttributes(),
+						Attribute.getAllNestednessAttributes(),
+						Attribute.getAllInterfaceAttributes(),
+						Attribute.getAllObjectAttributes(),
+						Attribute.getAllObjectFieldsAttributes()),
+				Integer.MAX_VALUE, new ParallelFilter(false, filterLevel));
+	}
+	
+	public static void exportMethodCsv(int filterLevel, Database database){
+		export(Scope.METHOD, ExportType.CSV, database, 
+				Attribute.combine(
+						MethodAttribute.COMBINED_METHOD_NAME,
+						MethodAttribute.WHILE_WAIT,
+						Attribute.getAllSynchronizedAttributes(),
+						Attribute.getAllPatternAttributes(),
+						Attribute.getAllMethodCallAttributes(),
+						Attribute.getAllNestednessAttributes()),
+				Integer.MAX_VALUE, new ParallelFilter(false, filterLevel));
+	}
 
 	@Override
 	public void receive(ResultSet resultSet) {
@@ -134,11 +120,28 @@ public class Exporter implements ResultSetReceiver {
 	private static String getFileName(Scope scope, ExportType exportType) {
 		switch(exportType) {
     		case ARFF: return scope.toString() + ".arff";
-    		case CSV: return scope.toString() + ".csv";
+    		case CSV: return getCsvName(scope);
 		}
 		return null;
 	}
 	
+	private static String getCsvName(Scope scope) {
+		String name = "";
+		if(scope == Scope.CLASS){
+			name = PathAndFileNames.CLASS_CSV_NAME;
+		}
+		else if(scope == Scope.METHOD){
+			name = PathAndFileNames.METHOD_CSV_NAME;
+		}
+		else{
+			name = "project";
+		}
+		if(!name.endsWith(".csv")){
+			name += ".csv";
+		}
+		return name;
+	}
+
 	private String getArffHeader(ResultSetMetaData metaData) throws SQLException {
 		StringBuffer stringBuffer = new StringBuffer();
 		stringBuffer.append("@relation " + scope.toString() + "\n");
