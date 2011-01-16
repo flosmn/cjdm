@@ -48,6 +48,9 @@ public class RuleMiner {
 	public static void main(String[] args) throws Exception {
 		String jsonString = "";
 		boolean noCjdmPassed = true;
+		
+		args = new String[1];
+		args[0] = "script.cjdm";
 
 		for (String fileName : args) {
 			if(fileName.endsWith(".cjdm")){
@@ -299,16 +302,16 @@ class MiningData {
 	public Apriori buildApriori() throws Exception {
 		Apriori apriori = new Apriori();
 		String[] options = {
-				"-N",Integer.toString(aprioriData.N),
-				"-T",Integer.toString(aprioriData.T),
-				"-C",Double.toString(aprioriData.C),
-				"-D",Double.toString(aprioriData.D),
-				"-U",Double.toString(aprioriData.U),
-				"-M",Double.toString(aprioriData.M),
-				"-S",Double.toString(aprioriData.S),
-				"-I",Boolean.toString(aprioriData.I),
-				"-V",Boolean.toString(aprioriData.V),
-				"-R",Boolean.toString(aprioriData.R),
+				"-N",Integer.toString(aprioriData.minRules),
+				"-T",Integer.toString(aprioriData.metricType),
+				"-C",Double.toString(aprioriData.minMetricScore),
+				"-D",Double.toString(aprioriData.deltaMinSupport),
+				"-U",Double.toString(aprioriData.upperBoundMinSupport),
+				"-M",Double.toString(aprioriData.lowerBoundMinSupport),
+				"-S",Double.toString(aprioriData.significanceLevel),
+				"-I",Boolean.toString(aprioriData.outputItemSets),
+				"-V",Boolean.toString(aprioriData.reportProgress),
+				"-R",Boolean.toString(aprioriData.removeMissingColumns),
 				};
 		apriori.setOptions(options);
 		return apriori;
@@ -342,54 +345,36 @@ class MiningData {
  */
 class AprioriData {
 	
-	int N = 200 ;//required number of rules
-	//The required number of rules (default: 10).
-
-	int T = 0; // type of metric by which to sort rules
-	//0 = confidence | 1 = lift | 2 = leverage | 3 = Conviction.
-
-	double C = 0.9; //minimum metric score of a rule
-	//The minimum confidence of a rule (default: 0.9).
-
-	double D = 0.05; //delta for minimum support
-	//The delta by which the minimum support is decreased in each iteration (default: 0.05). 
+	// required number of rules (default: 10).
+	int minRules = 200 ;
 	
-	double U = 1.0; // upper bound for minimum support
-	//The upper bound for minimum support. Don't explicitly look for rules with more than this level of support.
-
-	double M = 0.1; // lower bound for minimum support
-	//The lower bound for the minimum support (default = 0.1).
-
-	double S = -1; //significance level
-	//If used, rules are tested for significance at the given level. Slower (default = no significance testing).
-
-	boolean I = false;
-	//If set the itemsets found are also output (default = no).
-
-	boolean V = false;
-	//If set then progress is reported iteratively during execution.
-
-	boolean R = false;
-	//If set then columns that contain all missing values are removed from the data. 
+	// type of metric by which to sort rules
+	// 0 = confidence | 1 = lift | 2 = leverage | 3 = conviction.
+	int metricType = 0; 
 	
+	// minimum metric score of a rule (default: 0.9).
+	double minMetricScore = 0.9; 
 	
-	private double lowerBoundMinSupport = 0.1;
-	private double upperBoundMinSupport = 0.9;
-	private double minMetric = 0.9;
-	private int numRules = Integer.MAX_VALUE;
+	// delta by which the minimum support is decreased in each iteration (default: 0.05).
+	double deltaMinSupport = 0.05;
 	
-	public double getLowerBoundMinSupport() { return lowerBoundMinSupport; }
-	public double getUpperBoundMinSupport() { return upperBoundMinSupport; }
-	public double getMinMetric() { return minMetric; }
-	public int getNumRules() { return numRules; }
+	// upper bound for minimum support. Don't explicitly look for rules with more than this level of support.
+	double upperBoundMinSupport = 1.0;
 	
-	public void setLowerBoundMinSupport(double lowerBoundMinSupport) { this.lowerBoundMinSupport = lowerBoundMinSupport; }
-	public void setUpperBoundMinSupport(double upperBoundMinSupport) { this.upperBoundMinSupport = upperBoundMinSupport; }
-	public void setMinMetric(double minMetric) { this.minMetric = minMetric; }
+	// lower bound for the minimum support (default = 0.1).
+	double lowerBoundMinSupport = 0.1;
 	
-	public String toString() {
-		return String.format("lowerBoundMinSupport:%f, upperBoundMinSupport:%f, minMetric:%f, numRules:%d", lowerBoundMinSupport, upperBoundMinSupport, minMetric, numRules);
-	}
+	// If used, rules are tested for significance at the given level. Slower (default = no significance testing).
+	double significanceLevel = -1;
+	
+	// If set the itemsets found are also output (default = no).
+	boolean outputItemSets = false;
+	
+	// If set then progress is reported iteratively during execution.
+	boolean reportProgress = false;
+	
+	// If set then columns that contain all missing values are removed from the data. 
+	boolean removeMissingColumns = false;
 }
 
 class BonusData {
