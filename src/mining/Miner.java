@@ -15,14 +15,8 @@ import attributes.Attribute;
 import attributes.MethodAttribute;
 
 /**
- * Miner class
- * <hr>
- * <pre>
- * Intention:
- * input:  *.arff files
- * output: {@link Rule}s <br>
- * </pre>
- * <hr>
+ * This class creates association rules out of arff files 
+ * 
  * @see Bonus
  * @see Rule
  * @see Apriori
@@ -161,9 +155,10 @@ public class Miner {
 	}
 	
 	/** 
-	 * creates an {@link Apriori} convenient, features set
+	 * creates an {@link Apriori} convenient, features are set
 	 * @return Apriori with special settings
-	 * @see #buildApriori()
+	 * @see #buildApriori(double lowerBoundMinSupport, 
+	 * 		double upperBoundMinSupport, double minMetric, int numRules)
 	 */
 	public static Apriori getSampleApriori() {
 		Apriori apriori = new Apriori();

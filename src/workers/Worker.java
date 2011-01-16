@@ -14,7 +14,6 @@ import database.Scope;
 /**
  * Extend this abstract class to implement a worker.
  * Every worker computes the value for one attribute using a CommonTreePackage.
- * @author welle
  */
 public abstract class Worker {
 	protected Attribute attribute;

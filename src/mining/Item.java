@@ -4,7 +4,7 @@ import attributes.Attribute;
 
 
 /**
- * pair of String and int
+ * This class stores a pair of item name and value
  * 
  */
 public class Item {
@@ -15,7 +15,7 @@ public class Item {
 		return name +"="+value;
 	}
 	/**
-	 * constructor
+	 * Constructor
 	 * @param name
 	 * @param value
 	 */
@@ -24,37 +24,42 @@ public class Item {
 		this.value = value;
 	}
 	
+	/**
+	 * Convenient constructor that transforms {@code Attribute} to a {@code String}
+	 * @param attribute
+	 * @param value
+	 */
 	public Item(Attribute attribute, String value) {
 		this(attribute.getName(), value);
 	}
 
 	/**
-	 * simple setter
-	 * @param name
+	 * sets name of item
+	 * @param name of item
 	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 
 	/**
-	 * simple getter
-	 * @return
+	 * gets name of item
+	 * @return the name of the item
 	 */
 	public String getName() {
 		return name;
 	}
 
 	/**
-	 * simple setter
-	 * @param value
+	 * sets value of item
+	 * @param value of item
 	 */
 	public void setValue(String value) {
 		this.value = value;
 	}
 
 	/**
-	 * simple getter
-	 * @return
+	 * gets value of item
+	 * @return value of item
 	 */
 	public String getValue() {
 		return value;

@@ -4,6 +4,9 @@ import java.util.HashMap;
 
 import database.Scope;
 
+/**
+ * This class stores all attribute names that can be used for mining.
+ */
 public class Attribute {
 	private Scope scope;
 	private String name;

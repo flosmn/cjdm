@@ -7,9 +7,8 @@ import weka.associations.ItemSet;
 import attributes.MethodAttribute;
 
 /**
- * PatternBonus stores rules for giving bonus on patterns
+ * This class stores patterns for rule rating.
  * 
- * e.g.
  * A=X and B=Y ==> C=Y and D=""  has bonus 10
  * A=X and B=Y ==> ""=""         has bonus 2
  * 

@@ -1,5 +1,9 @@
 package main;
 
+import java.io.BufferedInputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
@@ -25,93 +29,89 @@ import export.Exporter;
 import export.Exporter.ExportType;
 import export.ParallelFilter;
 
-
+/**
+ * This is the main class for using cjdm. Cjdm is typically used by 
+ * calling {@link #main(String[])} with file names of JSON config files.
+ * 
+ * Then export, mining and filtering are done according to configs
+ * 
+ */
 public class RuleMiner {
+	
+	/**
+	 * Reads JSON file to get settings and then calls {@link #export(ExportData, String)} and 
+	 * {@link #mine(MiningData, String)}
+	 * 
+	 * @param args fileNames of JSON setting files
+	 * @throws Exception
+	 */
 	public static void main(String[] args) throws Exception {
-		for (String arg : args) {
-			System.out.println(arg);
-			
-		}
+		String jsonString = "";
+		boolean noCjdmPassed = true;
 		
-        String jsonString = 
-        	"{" +
-        	"	'export' : {" +
-        	"		'scope' : 'class'," +
-        	"		'maxRows' : 1000," +
-        	"		'attributes' : [" +
-        	"			'WHILE_WAIT'," +
-        	"			'WAIT_CALLS'," +
-        	"			'NOTIFY_CALLS'," +
-        	"			'NOTIFYALL_CALLS'," +
-        	"			'JOIN_CALLS'" +
-        	"		]," +
-        	"		'filter' : {" +
-        	"			'type' : 'attributeFilter'," +
-        	"			'summarized' : 'true'," +
-        	"			'conditions' : [ {" +
-        	"					'attribute' : 'WHILE_WAIT'," +
-        	"					'minValue' : 1," +
-        	"					'maxValue' : 100" +
-        	"				}, {" +
-        	"					'attribute' : 'JOIN_CALLS'," +
-        	"					'minValue' : 0," +
-        	"					'maxValue' : 2" +
-        	"				}" +
-        	"			]" +
-        	"		}" +
-        	"	}," +
-        	"	'mining' : {" +
-        	"		'apriori' : {" +
-        	"			'lowerBoundMinSupport' : 0.1," +
-        	"			'upperBoundMinSupport' : 0.9," +
-        	"			'minMetric' : 0.95," +
-        	"			'numRules' : 1000" +
-        	"		}," +
-        	"		'bonusSet' : [ {" +
-        	"				'type' : 'itemBonus'," +
-        	"				'attribute' : 'WAIT_CALLS'," +
-        	"				'value' : '[^0]'," +
-        	"				'bonus' : 1" +
-        	"			}, {" +
-        	"				'type' : 'patternBonus'," +
-        	"				'conditions' : [ {" +
-        	"						'name' : 'WAIT_CALLS'," +
-        	"						'value' : '.*'" +
-        	"					}, {" +
-        	"						'name' : '.*'," +
-        	"						'value' : '[^0]'" +
-        	"					}" +
-        	"				]," +
-        	"				'consequences' : [ {" +
-        	"						'name' : 'WHILE_WAIT'," +
-        	"						'value' : '.*'" +
-        	"					}" +
-        	"				]," +
-        	"				'bonus' : 2" +
-        	"			}" +
-        	"		]," +
-        	"		'numRules' : 200" +
-        	"	}" +
-        	"}";
-        
-        String fileName = "temp";
-        String arffName = fileName + ".arff";
-        RuleMiningData ruleMiningData = new Gson().fromJson(jsonString, RuleMiningData.class);
-        
-        System.out.println(ruleMiningData);
-        
-        ExportData exportData = ruleMiningData.getExport();
-        MiningData miningData = ruleMiningData.getMining();
-        
-        if (exportData != null) {
-        	export(exportData, arffName);
-        }
-        
-        if (miningData != null) {
-        	mine(miningData, arffName);
-        }
+		args = new String[1];
+		args[0] = "script.cjdm";
+
+		for (String fileName : args) {
+			if(fileName.endsWith(".cjdm")){
+				noCjdmPassed = false;
+				System.out.println("_____________________________________________");
+				System.out.println(fileName);
+				//read settings
+				jsonString = readFileAsString(fileName);
+				
+		        //create setting object
+		        //RuleMiningData data = new Gson().fromJson(jsonString, RuleMiningData.class);
+
+		        //extract arff file name
+		        String arffName = fileName.split(".cjdm")[0] + ".arff";
+		        
+		        //create data classes from Json
+		        RuleMiningData ruleMiningData = new Gson().fromJson(jsonString, RuleMiningData.class);      
+		        System.out.println(ruleMiningData);
+		        ExportData exportData = ruleMiningData.getExport();		        
+		        MiningData miningData = ruleMiningData.getMining();
+		        
+		        //do export
+		        if (exportData != null) {
+		        	export(exportData, arffName);
+		        }
+		        
+		        //do mining
+		        if (miningData != null) {
+		        	mine(miningData, arffName);
+		        }
+			}
+		}
+
+		if (noCjdmPassed){	
+			printNoCjdmPassed();
+		}
     }
 	
+	/**
+	 * Reads file 
+	 * @param filePath path of the file
+	 * @return text stored in the file
+	 * @throws java.io.IOException
+	 */
+	private static String readFileAsString(String filePath) throws java.io.IOException{
+	    byte[] buffer = new byte[(int) new File(filePath).length()];
+	    BufferedInputStream f = null;
+	    try {
+	        f = new BufferedInputStream(new FileInputStream(filePath));
+	        f.read(buffer);
+	    } finally {
+	        if (f != null) try { f.close(); } catch (IOException ignored) { }
+	    }
+	    return new String(buffer);
+	}
+	
+	/**
+	 * Writes data in an *.arff file 
+	 * @param exportData settings for export e.g. filter
+	 * @param fileName name of new *.arff file
+	 */
 	public static void export(ExportData exportData, String fileName) {
 		Database database = new Database(PathAndFileNames.DATA_BASE_PATH);
 		
@@ -130,6 +130,12 @@ public class RuleMiner {
 		database.shutdown();
 	}
 	
+	/**
+	 * Mines *.arff file according to mining data settings
+	 * @param miningData apriori settings and bonus sets
+	 * @param fileName name of *.arff file to mine
+	 * @throws Exception
+	 */
 	public static void mine(MiningData miningData, String fileName) throws Exception {
 		Apriori apriori = miningData.buildApriori();
 		
@@ -138,6 +144,18 @@ public class RuleMiner {
 		List<Rule> rules = Miner.getRules(fileName, apriori, bonusSet);
 		
 		Rule.printBestRules(rules, miningData.getNumRules());
+	}
+	
+	/**
+	 * prints a warning that no cjdm file was passed
+	 */
+	private static void printNoCjdmPassed() {
+		System.out.println("WARNING:");
+		System.out.println("There was no *.cjdm file path passed to this method. ");
+		System.out.println("Correct use 1:\tPass path to your *.cjdm files");
+		System.out.println("Correct use 2:\tPut some files in");
+		System.out.println("\t\t"+System.getProperty("user.dir"));
+		System.out.println("\t\tand pass * ");
 	}
 }
 
@@ -162,6 +180,10 @@ class ExportData {
 	private List<String> attributes;
 	private FilterData filter = null;	// optional
 	
+	/**
+	 * Transforms a {@link String} to {@link Scope}
+	 * @return scope instance according to String
+	 */
     public Scope buildScope() {
     	if (scope.equals("method")) return Scope.METHOD;
     	if (scope.equals("class")) return Scope.CLASS;
@@ -171,6 +193,11 @@ class ExportData {
     	return Scope.PROJECT;
     }
     
+    /**
+     * Builds a filter with settings of {@link #filter}
+     * @return filter
+     * @see FilterData
+     */
     public ExportFilter buildFilter() {
 		if (filter == null) {
 			return new ExportFilter();
@@ -263,16 +290,31 @@ class ConditionData {
 }
 
 class MiningData {
-	private AprioriData apriori = new AprioriData();
+	private AprioriData aprioriData = new AprioriData();
 	private List<BonusData> bonusSet;
 	private int numRules;
 	
-	public Apriori buildApriori() {
-		return Miner.buildApriori(
-				apriori.getLowerBoundMinSupport(),
-				apriori.getUpperBoundMinSupport(),
-				apriori.getMinMetric(),
-				apriori.getNumRules());
+	/**
+	 * creates new apriori and sets values
+	 * @return apriori instance with values of aprioriData
+	 * @throws Exception
+	 */
+	public Apriori buildApriori() throws Exception {
+		Apriori apriori = new Apriori();
+		String[] options = {
+				"-N",Integer.toString(aprioriData.minRules),
+				"-T",Integer.toString(aprioriData.metricType),
+				"-C",Double.toString(aprioriData.minMetricScore),
+				"-D",Double.toString(aprioriData.deltaMinSupport),
+				"-U",Double.toString(aprioriData.upperBoundMinSupport),
+				"-M",Double.toString(aprioriData.lowerBoundMinSupport),
+				"-S",Double.toString(aprioriData.significanceLevel),
+				"-I",Boolean.toString(aprioriData.outputItemSets),
+				"-V",Boolean.toString(aprioriData.reportProgress),
+				"-R",Boolean.toString(aprioriData.removeMissingColumns),
+				};
+		apriori.setOptions(options);
+		return apriori;
 	}
 	
 	public Collection<Bonus> buildBonusSet() {
@@ -284,37 +326,55 @@ class MiningData {
 		return bonuses;
 	}
 	
-	public AprioriData getApriori() { return apriori; }
+	public AprioriData getApriori() { return aprioriData; }
 	public List<BonusData> getBonusSet() { return bonusSet; }
 	public int getNumRules() { return numRules; }
 	
-	public void setApriori(AprioriData apriori) { this.apriori = apriori; }
+	public void setApriori(AprioriData apriori) { this.aprioriData = apriori; }
 	public void setBonusSet(List<BonusData> bonusSet) { this.bonusSet = bonusSet; }
 	public void setNumRules(int numRules) { this.numRules = numRules; }
 	
 	public String toString() {
-		return String.format("numRules:%d, bonusSet:(%s), apriori:(%s)", numRules, bonusSet, apriori);
+		return String.format("numRules:%d, bonusSet:(%s), apriori:(%s)", numRules, bonusSet, aprioriData);
 	}
 }
 
+/**
+ * This class stores data for the use of weka apriori algorithm
+ * @see Apriori
+ */
 class AprioriData {
-	private double lowerBoundMinSupport = 0.1;
-	private double upperBoundMinSupport = 0.9;
-	private double minMetric = 0.9;
-	private int numRules = Integer.MAX_VALUE;
 	
-	public double getLowerBoundMinSupport() { return lowerBoundMinSupport; }
-	public double getUpperBoundMinSupport() { return upperBoundMinSupport; }
-	public double getMinMetric() { return minMetric; }
-	public int getNumRules() { return numRules; }
+	// required number of rules (default: 10).
+	int minRules = 200 ;
 	
-	public void setLowerBoundMinSupport(double lowerBoundMinSupport) { this.lowerBoundMinSupport = lowerBoundMinSupport; }
-	public void setUpperBoundMinSupport(double upperBoundMinSupport) { this.upperBoundMinSupport = upperBoundMinSupport; }
-	public void setMinMetric(double minMetric) { this.minMetric = minMetric; }
+	// type of metric by which to sort rules
+	// 0 = confidence | 1 = lift | 2 = leverage | 3 = conviction.
+	int metricType = 0; 
 	
-	public String toString() {
-		return String.format("lowerBoundMinSupport:%f, upperBoundMinSupport:%f, minMetric:%f, numRules:%d", lowerBoundMinSupport, upperBoundMinSupport, minMetric, numRules);
-	}
+	// minimum metric score of a rule (default: 0.9).
+	double minMetricScore = 0.9; 
+	
+	// delta by which the minimum support is decreased in each iteration (default: 0.05).
+	double deltaMinSupport = 0.05;
+	
+	// upper bound for minimum support. Don't explicitly look for rules with more than this level of support.
+	double upperBoundMinSupport = 1.0;
+	
+	// lower bound for the minimum support (default = 0.1).
+	double lowerBoundMinSupport = 0.1;
+	
+	// If used, rules are tested for significance at the given level. Slower (default = no significance testing).
+	double significanceLevel = -1;
+	
+	// If set the itemsets found are also output (default = no).
+	boolean outputItemSets = false;
+	
+	// If set then progress is reported iteratively during execution.
+	boolean reportProgress = false;
+	
+	// If set then columns that contain all missing values are removed from the data. 
+	boolean removeMissingColumns = false;
 }
 
 class BonusData {
