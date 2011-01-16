@@ -56,48 +56,88 @@ public class ClusteringView extends ViewPart {
 		
 		ClusteringViewComponents.getHeading(comp, numColumns);
 		
-		ClusteringViewComponents.getHeadingPhase1(comp, numColumns);
-		ClusteringViewComponents.getRootDirLabel(comp, numColumns);
-		ClusteringViewComponents.getDirectoryLabel(comp);
-		Text rootDir = ClusteringViewComponents.getDirTextField(comp);
-		ClusteringViewComponents.getButtonBrowse(comp, rootDir);
-		ClusteringViewComponents.getDatabaseTargetDirLabel(comp, numColumns);
-		ClusteringViewComponents.getDirectoryLabel(comp);
-		Text databaseTargetDir = ClusteringViewComponents.getDirTextField(comp);
-		ClusteringViewComponents.getButtonBrowse(comp, databaseTargetDir);
-		ClusteringViewComponents.getButtonAnalyse(comp, numColumns, rootDir, databaseTargetDir);
+		addAnalysePhaseComponents(comp);
+		addExportPhaseComponents(comp);
+		addClusteringPhaseComponents(comp);
 		
+		return comp;
+	}
+
+	private void addClusteringPhaseComponents(Composite comp) {
+		ClusteringViewComponents.getHeadingPhase3(comp, numColumns);
+		
+		// csv source file
+		ClusteringViewComponents.getCsvSourceDirLabel(comp, numColumns);
+		ClusteringViewComponents.getDirectoryLabel(comp);
+		Text csvSource = ClusteringViewComponents.getDirTextField(comp);
+		ClusteringViewComponents.getButtonBrowseFile(comp, csvSource);
+		
+		// pdf target dir
+		ClusteringViewComponents.getPdfTargetDirLabel(comp, numColumns);
+		ClusteringViewComponents.getDirectoryLabel(comp);
+		Text pdfTargetDir = ClusteringViewComponents.getDirTextField(comp);
+		ClusteringViewComponents.getButtonBrowseDirectory(comp, pdfTargetDir);
+		
+		// pdf name
+		ClusteringViewComponents.getPdfNameLabel(comp, numColumns);
+		ClusteringViewComponents.getNameLabel(comp);
+		Text pdfName = ClusteringViewComponents.getNameTextField(comp, numColumns);
+		
+		ClusteringViewComponents.getButtonPerformClustering(comp, numColumns, csvSource, pdfTargetDir, pdfName);
+	}
+
+	private void addExportPhaseComponents(Composite comp) {
 		ClusteringViewComponents.getHeadingPhase2(comp, numColumns);
+		
+		// database source dir 
 		ClusteringViewComponents.getDatabaseSourceDirLabel(comp, numColumns);
 		ClusteringViewComponents.getDirectoryLabel(comp);
 		Text databaseSourceDir = ClusteringViewComponents.getDirTextField(comp);
-		ClusteringViewComponents.getButtonBrowse(comp, databaseSourceDir);
+		ClusteringViewComponents.getButtonBrowseDirectory(comp, databaseSourceDir);
+		
+		// csv target dir
 		ClusteringViewComponents.getCsvTargetDirLabel(comp, numColumns);
 		ClusteringViewComponents.getDirectoryLabel(comp);
 		Text csvTargetDir = ClusteringViewComponents.getDirTextField(comp);
-		ClusteringViewComponents.getButtonBrowse(comp, csvTargetDir);
+		ClusteringViewComponents.getButtonBrowseDirectory(comp, csvTargetDir);
+		
+		// name of class csv
 		ClusteringViewComponents.getClassNameLabel(comp, numColumns);
 		ClusteringViewComponents.getNameLabel(comp);
 		Text className = ClusteringViewComponents.getNameTextField(comp, numColumns);
+		
+		// name of method csv
 		ClusteringViewComponents.getMethodNameLabel(comp, numColumns);
 		ClusteringViewComponents.getNameLabel(comp);
 		Text methodName = ClusteringViewComponents.getNameTextField(comp, numColumns);
+		
+		// filter level of class
 		ClusteringViewComponents.getFilterLevelClassLabel(comp, numColumns);
 		ClusteringViewComponents.getFilterLabel(comp);
 		Text filterLevelClass = ClusteringViewComponents.getFilterLevelTextField(comp, numColumns);
+		
+		// filter level of method
 		ClusteringViewComponents.getFilterLevelMethodLabel(comp, numColumns);
 		ClusteringViewComponents.getFilterLabel(comp);
 		Text filterLevelMethod = ClusteringViewComponents.getFilterLevelTextField(comp, numColumns);
 		ClusteringViewComponents.getButtonExport(comp, numColumns, databaseSourceDir, csvTargetDir, className, methodName, filterLevelClass, filterLevelMethod);
-				
-		ClusteringViewComponents.getHeadingPhase3(comp, numColumns);
-		ClusteringViewComponents.getCsvSourceDirLabel(comp, numColumns);
-		ClusteringViewComponents.getDirectoryLabel(comp);
-		Text csvSourceDir = ClusteringViewComponents.getDirTextField(comp);
-		ClusteringViewComponents.getButtonBrowse(comp, csvSourceDir);
-		ClusteringViewComponents.getButtonPerformClustering(comp, numColumns, csvSourceDir);
+	}
+
+	private void addAnalysePhaseComponents(Composite comp) {
+		ClusteringViewComponents.getHeadingPhase1(comp, numColumns);
 		
-		return comp;
+		// root dir
+		ClusteringViewComponents.getRootDirLabel(comp, numColumns);
+		ClusteringViewComponents.getDirectoryLabel(comp);
+		Text rootDir = ClusteringViewComponents.getDirTextField(comp);
+		ClusteringViewComponents.getButtonBrowseDirectory(comp, rootDir);
+		
+		// database target dir
+		ClusteringViewComponents.getDatabaseTargetDirLabel(comp, numColumns);
+		ClusteringViewComponents.getDirectoryLabel(comp);
+		Text databaseTargetDir = ClusteringViewComponents.getDirTextField(comp);
+		ClusteringViewComponents.getButtonBrowseDirectory(comp, databaseTargetDir);
+		ClusteringViewComponents.getButtonAnalyse(comp, numColumns, rootDir, databaseTargetDir);
 	}
 
 	@Override

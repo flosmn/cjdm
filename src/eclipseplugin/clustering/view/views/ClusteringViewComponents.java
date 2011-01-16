@@ -21,6 +21,7 @@ public class ClusteringViewComponents {
 	public static final String CLUSTERING_BUTTON_LABEL = "Perform Clustering";
 	public static final String CSV_SOURCE_DIR_LABEL = "Select a directory containing the csv datasets which should be used for Clustering.";
 	public static final String CSV_TARGET_DIR_LABEL = "Select directory in which to save the csv datasets.";
+	private static final String PDF_TARGET_DIR_LABEL = "Select directory in which to save the pdf file containing the clustering result.";;
 	public static final String DATABASE_SOURCE_DIR_LABEL = "Select the directory of a database to export to csv datasets.";
 	public static final String DATABASE_TARGET_DIR_LABEL = "Select the directory in which to save the database containing the result of the analyse phase.";
 	public static final String DIR_LABEL = "Directory:";
@@ -34,8 +35,11 @@ public class ClusteringViewComponents {
 	public static final String HEADING_PHASE2 = "Export a database to csv datasets which can be used for the clustering.";
 	public static final String HEADING_PHASE3 = "Perform a clustering on csv datasets.";
 	public static final String METHOD_NAME_LABEL = "Enter name of the csv dataset containing the method information.";
+	private static final String PDF_NAME_LABEL = "Enter name of the pdf file containing the clustering result.";
 	public static final String NAME_LABEL = "Name:";
 	public static final String ROOT_DIR_LABEL = "Select root directory of Java files to analyse.";
+
+
 	
 	public static Button getButtonAnalyse(Composite parent, int numColumns, Text rootDir,
 			Text databaseTargetDir) {
@@ -49,11 +53,19 @@ public class ClusteringViewComponents {
 		return button;
 	}
 	
-
-	public static Button getButtonBrowse(Composite parent, Text textField) {
+	public static Button getButtonBrowseFile(Composite parent, Text textField) {
 		Button button = new Button(parent, SWT.PUSH);
 		button.setText(BROWSE_BUTTON_LABEL);
-		button.addSelectionListener(new BrowseButtonSelectionListener(textField));
+		button.addSelectionListener(new BrowseFileButtonSelectionListener(textField));
+		gridData = new GridData(GridData.BEGINNING, GridData.CENTER, false, false);
+		button.setLayoutData(gridData);
+		return button;
+	}
+	
+	public static Button getButtonBrowseDirectory(Composite parent, Text textField) {
+		Button button = new Button(parent, SWT.PUSH);
+		button.setText(BROWSE_BUTTON_LABEL);
+		button.addSelectionListener(new BrowseDirectoryButtonSelectionListener(textField));
 		gridData = new GridData(GridData.BEGINNING, GridData.CENTER, false, false);
 		button.setLayoutData(gridData);
 		return button;
@@ -72,10 +84,10 @@ public class ClusteringViewComponents {
 	}
 	
 	public static Button getButtonPerformClustering(Composite parent,
-			int numColumns, Text csvSourceDir) {
+			int numColumns, Text csvSource, Text pdfTargetDir, Text pdfName) {
 		Button button = new Button(parent, SWT.PUSH);
 		button.setText(CLUSTERING_BUTTON_LABEL);
-		button.addSelectionListener(new ClusteringButtonSelectionListener(csvSourceDir));
+		button.addSelectionListener(new ClusteringButtonSelectionListener(csvSource, pdfTargetDir, pdfName));
 		gridData = new GridData(GridData.BEGINNING, GridData.CENTER, false, false);
 		gridData.horizontalSpan = numColumns;
 		gridData.verticalSpan = 10;
@@ -95,6 +107,11 @@ public class ClusteringViewComponents {
 	
 	public static Label getCsvTargetDirLabel(Composite parent, int numColumns) {
 		Label label = getLabelFillHoleWidth(parent, CSV_TARGET_DIR_LABEL, numColumns);
+		return label;
+	}
+	
+	public static Label getPdfTargetDirLabel(Composite parent, int numColumns) {
+		Label label = getLabelFillHoleWidth(parent, PDF_TARGET_DIR_LABEL, numColumns);
 		return label;
 	}
 
@@ -197,6 +214,11 @@ public class ClusteringViewComponents {
 
 	public static Label getMethodNameLabel(Composite parent, int numColumns) {
 		Label label = getLabelFillHoleWidth(parent, METHOD_NAME_LABEL, numColumns);
+		return label;
+	}
+	
+	public static Label getPdfNameLabel(Composite parent, int numColumns) {
+		Label label = getLabelFillHoleWidth(parent, PDF_NAME_LABEL, numColumns);
 		return label;
 	}
 
