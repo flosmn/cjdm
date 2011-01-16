@@ -2,6 +2,7 @@ package eclipseplugin.clustering.view.views;
 
 
 import org.eclipse.swt.events.SelectionEvent;
+import org.eclipse.swt.widgets.DirectoryDialog;
 import org.eclipse.swt.widgets.Text;
 
 public class BrowseDirectoryButtonSelectionListener implements
@@ -15,8 +16,9 @@ public class BrowseDirectoryButtonSelectionListener implements
 
 	@Override
 	public void widgetSelected(SelectionEvent e) {
-		System.out.println("Open directory choosing dialog.");
-
+		 DirectoryDialog dlg = new DirectoryDialog(this.textField.getShell());
+		 String selectedDirectory = dlg.open();
+		 this.textField.setText(selectedDirectory);   
 	}
 
 	@Override

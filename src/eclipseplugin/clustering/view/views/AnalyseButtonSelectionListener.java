@@ -20,9 +20,8 @@ public class AnalyseButtonSelectionListener implements SelectionListener {
 
 	@Override
 	public void widgetSelected(SelectionEvent e) {
-		System.out.println("Analyse");
-		String rootDirPath = "C:/root/projects";
-		String databaseTargetDirPath = "C:/root/database/" + "cjdm";
+		String rootDirPath = rootDir.getText();
+		String databaseTargetDirPath = databaseTargetDir.getText() + "/cjdm";
 		
 		PathAndFileNames.setProjectSourcesPath(rootDirPath);
 		PathAndFileNames.setDataBasePath(databaseTargetDirPath);

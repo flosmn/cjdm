@@ -1,5 +1,8 @@
 package clustering;
 
+import java.io.File;
+
+import org.eclipse.swt.program.Program;
 import org.rosuda.JRI.REXP;
 import org.rosuda.JRI.Rengine;
 
@@ -19,40 +22,45 @@ public class DendogramCreator {
 	}
 
 	public void createClustering(){
-		Rengine re=new Rengine(new String[]{""}, false, null);
+		File dir = new File(this.pdfTargetPath);
+		if(!dir.exists()){
+			dir.mkdirs();
+		}
 		
-		REXP p;
-		p = re.eval("5+5");
-		System.out.println(p);
+		invokeRAndCreateClustering(csvSourceFile, pdfTargetPath, pdfName);
 		
-		
-		//re.eval("install.packages(\"lib/squash.zip\")");
-		//re.eval("source(\"" + PathAndFileNames.R_DATA_PATH + "classscript2.R\")");
-		//re.eval(getClassScript(csvSourceFile, pdfTargetPath, pdfName));
-		
-		System.out.println("done");
+		Program p = Program.findProgram (".pdf");
+		if (p != null) {
+			// open pdf
+			//p.execute (pdfTargetPath + pdfName);
+		}
 	}
 	
-	private String getClassScript(String csvSourceFile, String pdfTargetPath, String pdfName){
-		String str = "";
-		str += "library(squash)\n";
-		str += "palette(gray((255:0)/255))\n";
-		str += "sourceFile <- \""+csvSourceFile+"\"\n";
-		str += "targetFile <- \""+pdfTargetPath + pdfName+"\"\n";
-		str += "data <- read.table(sourceFile,header=TRUE,sep=\",\")\n";
-		str += "rownames(data)<-data[,1]\n";
-		str += "data <- data[,-1]\n";
-		str += "centerVec <- (apply(data,2,max)+apply(data,2,min))/2\n";
-		str += "scaleVec <- (apply(data,2,max)-apply(data,2,min))/2\n";
-		str += "data <- scale(data, centerVec, scaleVec)\n";
-		str += "colMat <- ((data + 1)/2)*255\n";
-		str += "d<-dist(data, method=\"euclidean\")\n";
-		str += "dend <- hclust(d,method=\"ward\")\n";
-		str += "pdf(file=targetFile, height=75, width=125)\n";
-		str += "par(mar=par()$mar+c(10,20,0,0))\n";
-		str += "dendromat(dend, colMat, main = 'Class Clustering')\n";
-		str += "dev.off()\n";
-		return str;		
+	private void invokeRAndCreateClustering(String csvSourceFile, String pdfTargetPath, String pdfName){
+		Rengine re = ClusteringRengine.getInstance().getRengine();
+		re.eval( "sourceFile <- \""+csvSourceFile+"\"", false);
+		re.eval( "data <- read.table(sourceFile,header=TRUE,sep=\",\")", false);
+		REXP r = re.eval("nrow(data)", true);
+
+		int nrows = r.asInt();
+		int width = (int)(0.047*(4*nrows+1000));
+		int height = 35 + (int)(nrows/10.0);
+		
+		re.eval( "library(squash)" , false);
+		re.eval( "palette(gray((255:0)/255))", false);
+		re.eval( "targetFile <- \""+pdfTargetPath + pdfName+"\"", false);
+		re.eval( "rownames(data)<-data[,1]", false);
+		re.eval( "data <- data[,-1]", false);
+		re.eval( "centerVec <- (apply(data,2,max)+apply(data,2,min))/2", false);
+		re.eval( "scaleVec <- (apply(data,2,max)-apply(data,2,min))/2", false);
+		re.eval( "data <- scale(data, centerVec, scaleVec)", false);
+		re.eval( "colMat <- ((data + 1)/2)*255", false);
+		re.eval( "d<-dist(data, method=\"euclidean\")", false);
+		re.eval( "dend <- hclust(d,method=\"ward\")", false);
+		re.eval( "pdf(file=targetFile, height="+height+", width="+width+")", false);
+		re.eval( "par(mar=par()$mar+c(10,20,0,0))", false);
+		re.eval( "dendromat(dend, colMat, main = 'Clustering Result', ylab=\"Distance\")", false);
+		re.eval( "dev.off()", false);
 	}
 
 	public static void main(String[] args) {

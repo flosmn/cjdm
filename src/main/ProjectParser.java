@@ -112,7 +112,5 @@ public class ProjectParser {
 		workerQueue.createViews();
 
 		database.shutdown();
-		
-		System.out.println("Done!");
 	}
 }

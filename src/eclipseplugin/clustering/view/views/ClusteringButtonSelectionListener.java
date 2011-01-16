@@ -20,11 +20,16 @@ public class ClusteringButtonSelectionListener implements SelectionListener {
 
 	@Override
 	public void widgetSelected(SelectionEvent e) {
-		System.out.println("Clustering");
+		String csvSourceFile = csvSource.getText();
+		String pdfTargetDirPath = pdfTargetDir.getText() + "/";
+		String pdfNameTemp = pdfName.getText();
+
+		csvSourceFile = csvSourceFile.replaceAll("\\\\", "/");
+		pdfTargetDirPath = pdfTargetDirPath.replaceAll("\\\\", "/");
 		
-		String csvSourceFile = "C:/root/csv/classbla.csv";
-		String pdfTargetDirPath = "C:/root/pdf/";
-		String pdfNameTemp = "class.pdf";
+		if(!pdfNameTemp.endsWith(".pdf")) {
+			pdfNameTemp += ".pdf";
+		}
 		
 		DendogramCreator dendogramCreator = new DendogramCreator(csvSourceFile, pdfTargetDirPath, pdfNameTemp);
 		dendogramCreator.createClustering();
@@ -33,7 +38,6 @@ public class ClusteringButtonSelectionListener implements SelectionListener {
 	@Override
 	public void widgetDefaultSelected(SelectionEvent e) {
 		// TODO Auto-generated method stub
-
 	}
 
 }

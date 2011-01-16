@@ -19,7 +19,7 @@ public class ClusteringViewComponents {
 	public static final String BROWSE_BUTTON_LABEL = "Browse";
 	public static final String CLASS_NAME_LABEL = "Enter name of the csv dataset containing the class information.";
 	public static final String CLUSTERING_BUTTON_LABEL = "Perform Clustering";
-	public static final String CSV_SOURCE_DIR_LABEL = "Select a directory containing the csv datasets which should be used for Clustering.";
+	public static final String CSV_SOURCE_DIR_LABEL = "Select a csv dataset for Clustering.";
 	public static final String CSV_TARGET_DIR_LABEL = "Select directory in which to save the csv datasets.";
 	private static final String PDF_TARGET_DIR_LABEL = "Select directory in which to save the pdf file containing the clustering result.";;
 	public static final String DATABASE_SOURCE_DIR_LABEL = "Select the directory of a database to export to csv datasets.";
