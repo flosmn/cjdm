@@ -23,23 +23,32 @@ public class Exporter implements ResultSetReceiver {
 	private ExportType exportType;
 	private String fileName;
 	private ExportFilter exportFilter;
+	private boolean debug = false;
 	
-	public Exporter(Scope scope, ExportType exportType, String fileName, ExportFilter exportFilter) {
+	public Exporter(Scope scope, ExportType exportType, String fileName, ExportFilter exportFilter, boolean debug) {
 		this.scope = scope;
 		this.exportType = exportType;
 		this.fileName = fileName;
 		this.exportFilter = exportFilter;
+		this.debug = debug;
+	}
+	
+	public Exporter(Scope scope, ExportType exportType, String fileName, ExportFilter exportFilter) {
+		this(scope, exportType, fileName, exportFilter, false);
 	}
 
 	public Exporter(Scope scope, ExportType exportType, String fileName) {
 		this(scope, exportType, fileName, new ExportFilter());
 	}
 	
-	public static void export(Scope scope, ExportType exportType, String fileName, Database database, String attributes, int maxRowCount, ExportFilter exportFilter) {
-		Exporter exporter = new Exporter(scope, exportType, fileName, exportFilter);
+	public static void export(Scope scope, ExportType exportType, String fileName, Database database, String attributes, int maxRowCount, ExportFilter exportFilter, boolean debug) {
+		Exporter exporter = new Exporter(scope, exportType, fileName, exportFilter, debug);
 		exporter.export(database, attributes, maxRowCount);
 	}
-
+	public static void export(Scope scope, ExportType exportType, String fileName, Database database, String attributes, int maxRowCount, ExportFilter exportFilter) {
+		export(scope, exportType, fileName, database, attributes, maxRowCount, exportFilter, false);
+	}
+	
 	public static void export(Scope scope, ExportType exportType, String fileName, Database database, String attributes, int maxRowCount) {
 		export(scope, exportType, fileName, database, attributes, maxRowCount, new ExportFilter());
 	}
@@ -53,8 +62,9 @@ public class Exporter implements ResultSetReceiver {
 	}
 	
 	public void export(Database database, String attributes, int maxRowCount) {
-		System.out.println("exporting " + scope.toString() + " to " + exportType);
-		
+		if (debug) {
+			System.out.println("exporting " + scope.toString() + " to " + exportType);
+		}
 		String query = "SELECT " + attributes + " FROM " + scope + "_view LIMIT " + maxRowCount;
 		database.requestResultSet(query, this);
 	}
@@ -187,7 +197,9 @@ public class Exporter implements ResultSetReceiver {
 			}
         }
 		
-		System.out.println("exported " + matchCounter + " of " + resultCounter + " results");
+		if (debug) {
+			System.out.println("exported " + matchCounter + " of " + resultCounter + " results");
+		}
 		
 		return stringBuffer.toString();
     }
