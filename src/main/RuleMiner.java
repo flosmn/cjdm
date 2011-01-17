@@ -40,8 +40,8 @@ import export.ParallelFilter;
 public class RuleMiner {
 	
 	/**
-	 * Reads JSON file to get settings and then calls {@link #export(ExportData, String)} and 
-	 * {@link #mine(MiningData, String)}
+	 * Reads JSON file to get settings and then calls {@link #export(ExportData, String, boolean)} and 
+	 * {@link #mine(MiningData, String, boolean)}
 	 * 
 	 * @param args fileNames of JSON setting files
 	 * @throws Exception
