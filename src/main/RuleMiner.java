@@ -28,6 +28,7 @@ import export.ExportFilter;
 import export.Exporter;
 import export.Exporter.ExportType;
 import export.ParallelFilter;
+import utils.Logger;
 
 /**
  * This is the main class for using cjdm. Cjdm is typically used by 
@@ -59,7 +60,8 @@ public class RuleMiner {
 		        //RuleMiningData data = new Gson().fromJson(jsonString, RuleMiningData.class);
 
 		        //extract arff file name
-		        String arffName = fileName.split(".cjdm")[0] + ".arff";
+		        String arffFileName = fileName.split(".cjdm")[0] + ".arff";
+		        String rulesFileName = fileName.split(".cjdm")[0] + ".log";
 		        
 		        //create data classes from Json
 		        RuleMiningData ruleMiningData = new Gson().fromJson(jsonString, RuleMiningData.class);
@@ -75,13 +77,21 @@ public class RuleMiner {
 		        
 		        //do export
 		        if (exportData != null) {
-		        	export(exportData, arffName, debug);
+		        	export(exportData, arffFileName, debug);
 		        }
-		        /*
+		        
+		        String rulesString = null;
 		        //do mining
 		        if (miningData != null) {
-		        	mine(miningData, arffName, debug);
-		        }*/
+		        	rulesString = mine(miningData, arffFileName, debug);
+			        //write to file
+					Logger logger = new Logger();
+					logger.log(rulesString);
+					logger.writeToFile("", rulesFileName);
+
+					System.out.println("done, rules exported to "+rulesFileName);
+		        }
+
 			}
 		}
 
@@ -139,14 +149,14 @@ public class RuleMiner {
 	 * @param debug 
 	 * @throws Exception
 	 */
-	public static void mine(MiningData miningData, String fileName, boolean debug) throws Exception {
+	public static String mine(MiningData miningData, String fileName, boolean debug) throws Exception {
 		Apriori apriori = miningData.buildApriori();
 		
 		Collection<Bonus> bonusSet = miningData.buildBonusSet();
 		
 		List<Rule> rules = Miner.getRules(fileName, apriori, bonusSet);
 		
-		Rule.printBestRules(rules, miningData.getNumRules());
+		return Rule.getBestRules(rules, miningData.getNumRules());
 	}
 	
 	/**

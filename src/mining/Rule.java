@@ -116,14 +116,19 @@ public class Rule implements Comparable<Rule> {
 		}
 	}
 
-	public static void printBestRules(List<Rule> rules, int maxCount) {
+	public static String getBestRules(List<Rule> rules, int maxCount) {
 		if (maxCount > rules.size()) {
 			maxCount = rules.size();
 		}
-		
-		System.out.println("best " + maxCount + ":");
+		StringBuffer sb = new StringBuffer();
 		for (int i = 0; i < maxCount; i++) {
-			System.out.println(rules.get(i).toString());
+			sb.append(rules.get(i).toString()+"\n");
 		}
+		return sb.toString();
+	}
+	
+	public static void printBestRules(List<Rule> rules, int maxCount) {
+		System.out.println("best " + maxCount + ":");
+		System.out.println(getBestRules(rules, maxCount));
 	}
 }
