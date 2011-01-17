@@ -1,8 +1,0 @@
-Manifest-Version: 1.0
-Bundle-ManifestVersion: 2
-Bundle-Name: Java3D Vector Mathematics Plug-in
-Bundle-SymbolicName: javax.vecmath
-Bundle-Version: 1.5.1
-Bundle-Vendor: ogre4j.org
-Bundle-ClassPath: vecmath-1_5_1.jar
-Export-Package: javax.vecmath

@@ -1,4 +1,0 @@
-tr.NewThread.fin
-tr.NewThread.array
-tr.NewThread.priority
-tr.NewThread.endd

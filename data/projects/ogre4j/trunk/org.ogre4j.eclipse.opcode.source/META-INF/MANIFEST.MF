@@ -1,6 +1,0 @@
-Manifest-Version: 1.0
-Bundle-ManifestVersion: 2
-Bundle-Name: OPCODE Source Plug-in
-Bundle-SymbolicName: org.ogre4j.eclipse.opcode.source;singleton:=true
-Bundle-Version: 0.1.1
-Bundle-Vendor: ogre4j.org

@@ -1,8 +1,0 @@
-<project name="org.ogre4j.eclipse.3dlines.win32.win32.x86" default="copylibs">
-	<target name="copylibs">
-		<copy failonerror="false" file="../org.ogre4j.eclipse.3dlines/bin/c/bin/release/3dlines.dll" todir="."/>
-	</target>
-	<target name="clean">
-		<delete file="3dlines.dll" />
-	</target>
-</project>

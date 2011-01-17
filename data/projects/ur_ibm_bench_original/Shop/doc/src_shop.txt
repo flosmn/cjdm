@@ -1,3 +1,0 @@
-"D:\\Uni\\software testing\\shop\\supplier.java"
-"D:\\Uni\\software testing\\shop\\shop.java"
-"D:\\Uni\\software testing\\shop\\costumer.java"

@@ -1,110 +1,0 @@
-10
-
-dir
-361
-https://ogre4j.svn.sourceforge.net/svnroot/ogre4j/trunk/org.ogre4j.demos.swt/src/org/ogre4j/demos/swt
-https://ogre4j.svn.sourceforge.net/svnroot/ogre4j
-
-
-
-2009-05-31T13:10:00.891396Z
-355
-kex347
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-f7a11f6c-9f15-0410-ac78-9da7919e6c4f
-
-Bezier
-dir
-
-overlay
-dir
-
-log
-dir
-
-skyplane
-dir
-
-exampleapp
-dir
-
-EmptyScene.java
-file
-
-
-
-
-2010-11-22T14:17:41.418000Z
-63a30a5d48dbb825bdaacae8eb8134d4
-2008-11-18T11:17:34.153623Z
-297
-marcel_gill
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2129
-
-texturefx
-dir
-
-fresnel
-dir
-
-particlefx
-dir
-
-celshading
-dir
-
-skeletalanimation
-dir
-
-manualobject
-dir
-
-lighting
-dir
-
-transparency
-dir
-
-skydome
-dir
-
-cameratrack
-dir
-
-smoke
-dir
-

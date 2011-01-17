@@ -1,7 +1,0 @@
-Writer._buf
-Buffer._pos
-Buffer._size
-Buffer._array
-Writer._writeVal
-Buffer._count
-Writer._writeCount

@@ -1,1 +1,0 @@
-< bugOutput.txt , Concurency=average , Interleaving >
