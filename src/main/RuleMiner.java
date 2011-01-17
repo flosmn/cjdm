@@ -61,7 +61,7 @@ public class RuleMiner {
 
 		        //extract arff file name
 		        String arffFileName = fileName.split(".cjdm")[0] + ".arff";
-		        String rulesFileName = fileName.split(".cjdm")[0] + ".log";
+		        String rulesFileName = fileName.split(".cjdm")[0] + ".rules";
 		        
 		        //create data classes from Json
 		        RuleMiningData ruleMiningData = new Gson().fromJson(jsonString, RuleMiningData.class);
@@ -83,12 +83,7 @@ public class RuleMiner {
 		        //do mining
 		        if (miningData != null) {
 		        	String rulesString = mine(miningData, arffFileName, debug);
-			        //write to file
-					Logger logger = new Logger();
-					logger.log(rulesString);
-					logger.writeToFile("", rulesFileName);
-
-					System.out.println("done, rules exported to "+rulesFileName);
+		        	writeToFile(rulesString, rulesFileName);
 		        }
 
 			}
@@ -98,6 +93,20 @@ public class RuleMiner {
 			printNoCjdmPassed();
 		}
     }
+	
+	/**
+	 * writes dataString to file
+	 * @param dataString text to store
+	 * @param fileName path to store
+	 * @param debug
+	 */
+	static void writeToFile(String dataString, String fileName){
+    	//write to file
+		Logger logger = new Logger();
+		logger.log(dataString);
+		logger.writeToFile("", fileName);
+		System.out.println("done, rules exported to "+fileName);
+	}
 	
 	/**
 	 * Reads file 
