@@ -6,7 +6,7 @@ import main.TreePackage;
 
 import org.antlr.runtime.tree.CommonTree;
 
-import utils.DirtyLittleHelper;
+import utils.Utils;
 import attributes.Attribute;
 import database.Aggregator;
 
@@ -49,7 +49,7 @@ public class Counter extends Worker {
 			return true;
 		}
 		
-		List<CommonTree> children = DirtyLittleHelper.castList(CommonTree.class, tree.getChildren());
+		List<CommonTree> children = Utils.castList(CommonTree.class, tree.getChildren());
 		
 		if (this.isMethodCallCounter && nameIndex == nodeNames.length - 2) {
 			if (children.size() != 2) {
@@ -79,7 +79,7 @@ public class Counter extends Worker {
 			++counter;
 		}
 		
-		List<CommonTree> children = DirtyLittleHelper.castList(CommonTree.class, tree.getChildren());
+		List<CommonTree> children = Utils.castList(CommonTree.class, tree.getChildren());
 
 		for (CommonTree child : children) {
 			traverse(child);

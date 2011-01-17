@@ -9,7 +9,7 @@ import org.antlr.runtime.tree.CommonTree;
 /**
  * class for some helper methods which can not be associated with just one class
  */
-public class DirtyLittleHelper {
+public class Utils {
 
 	public static <T> List<T> castList(Class<? extends T> clazz, Collection<?> c) { 
         List<T> r = new LinkedList<T>(); 
@@ -29,7 +29,7 @@ public class DirtyLittleHelper {
 	private static void printTree(CommonTree tree, String s){
 		System.out.println(s + tree.getText());
 		
-		List<CommonTree> children = DirtyLittleHelper.castList(
+		List<CommonTree> children = Utils.castList(
 				CommonTree.class, tree.getChildren());
 		
 		for(CommonTree child : children){

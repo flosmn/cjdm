@@ -6,7 +6,7 @@ import main.TreePackage;
 
 import org.antlr.runtime.tree.CommonTree;
 
-import utils.DirtyLittleHelper;
+import utils.Utils;
 import attributes.Attribute;
 import database.Aggregator;
 
@@ -50,7 +50,7 @@ public class PatternCounter extends Worker {
 			++nameIndex;
 		}
 		
-		List<CommonTree> children = DirtyLittleHelper.castList(CommonTree.class, tree.getChildren());
+		List<CommonTree> children = Utils.castList(CommonTree.class, tree.getChildren());
 		
 		boolean matches = false;
 		for (CommonTree child : children) {
