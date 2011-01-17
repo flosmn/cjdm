@@ -49,14 +49,9 @@ public class RuleMiner {
 		String jsonString = "";
 		boolean noCjdmPassed = true;
 		
-		args = new String[1];
-		args[0] = "script.cjdm";
-
 		for (String fileName : args) {
 			if(fileName.endsWith(".cjdm")){
 				noCjdmPassed = false;
-				System.out.println("_____________________________________________");
-				System.out.println(fileName);
 				//read settings
 				jsonString = readFileAsString(fileName);
 				
@@ -67,20 +62,26 @@ public class RuleMiner {
 		        String arffName = fileName.split(".cjdm")[0] + ".arff";
 		        
 		        //create data classes from Json
-		        RuleMiningData ruleMiningData = new Gson().fromJson(jsonString, RuleMiningData.class);      
-		        System.out.println(ruleMiningData);
+		        RuleMiningData ruleMiningData = new Gson().fromJson(jsonString, RuleMiningData.class);
+		        
 		        ExportData exportData = ruleMiningData.getExport();		        
 		        MiningData miningData = ruleMiningData.getMining();
+		        boolean debug = ruleMiningData.getDebug();
+		        
+		        if (debug) {
+					System.out.println("-----" + fileName + "-----");
+		        	System.out.println(ruleMiningData);
+		        }
 		        
 		        //do export
 		        if (exportData != null) {
-		        	export(exportData, arffName);
+		        	export(exportData, arffName, debug);
 		        }
-		        
+		        /*
 		        //do mining
 		        if (miningData != null) {
-		        	mine(miningData, arffName);
-		        }
+		        	mine(miningData, arffName, debug);
+		        }*/
 			}
 		}
 
@@ -111,8 +112,9 @@ public class RuleMiner {
 	 * Writes data in an *.arff file 
 	 * @param exportData settings for export e.g. filter
 	 * @param fileName name of new *.arff file
+	 * @param debug 
 	 */
-	public static void export(ExportData exportData, String fileName) {
+	public static void export(ExportData exportData, String fileName, boolean debug) {
 		Database database = new Database(PathAndFileNames.DATA_BASE_PATH);
 		
 		Scope scope = exportData.buildScope();
@@ -134,9 +136,10 @@ public class RuleMiner {
 	 * Mines *.arff file according to mining data settings
 	 * @param miningData apriori settings and bonus sets
 	 * @param fileName name of *.arff file to mine
+	 * @param debug 
 	 * @throws Exception
 	 */
-	public static void mine(MiningData miningData, String fileName) throws Exception {
+	public static void mine(MiningData miningData, String fileName, boolean debug) throws Exception {
 		Apriori apriori = miningData.buildApriori();
 		
 		Collection<Bonus> bonusSet = miningData.buildBonusSet();
@@ -162,15 +165,17 @@ public class RuleMiner {
 class RuleMiningData {
     private ExportData export;
     private MiningData mining;
+    private boolean debug = false;
     
     public ExportData getExport() { return export; }
-    public MiningData getMining() { return mining; }
+	public MiningData getMining() { return mining; }
+    public boolean getDebug() { return debug; }
 
     public void setExport(ExportData export) { this.export = export; }
     public void setMining(MiningData mining) { this.mining = mining; }
 
     public String toString() {
-        return String.format("export:%s\nmining:%s", export, mining);
+        return String.format("debug:%b\nexport:%s\nmining:%s", debug, export, mining);
     }
 }
 

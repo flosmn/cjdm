@@ -14,8 +14,6 @@ public class Logger {
 	
 	public void writeToFile(String path, String filename) {
 		try {
-			System.out.println("path+filename: " + path+filename);
-			
 			File dir = new File(path);
 			if(!dir.exists()){
 				dir.mkdirs();
