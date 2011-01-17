@@ -147,7 +147,7 @@ public class RuleMiner {
 			combinedAttributes = Attribute.combine(combinedAttributes, attribute);
 		}
 		
-		Exporter.export(scope, ExportType.ARFF, fileName, database, combinedAttributes, maxRows, filter, debug);
+		Exporter.export(scope, ExportType.ARFF, fileName, database, combinedAttributes, maxRows, filter, debug, true);
 		
 		database.shutdown();
 	}

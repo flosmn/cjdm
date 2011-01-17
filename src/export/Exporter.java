@@ -23,30 +23,32 @@ public class Exporter implements ResultSetReceiver {
 	private ExportType exportType;
 	private String fileName;
 	private ExportFilter exportFilter;
-	private boolean debug = false;
+	private boolean debug = true;
+	private boolean noPath = false;
 	
-	public Exporter(Scope scope, ExportType exportType, String fileName, ExportFilter exportFilter, boolean debug) {
+	public Exporter(Scope scope, ExportType exportType, String fileName, ExportFilter exportFilter, boolean debug, boolean noPath) {
 		this.scope = scope;
 		this.exportType = exportType;
 		this.fileName = fileName;
 		this.exportFilter = exportFilter;
 		this.debug = debug;
+		this.noPath = noPath;
 	}
 	
 	public Exporter(Scope scope, ExportType exportType, String fileName, ExportFilter exportFilter) {
-		this(scope, exportType, fileName, exportFilter, false);
+		this(scope, exportType, fileName, exportFilter, false, false);
 	}
 
 	public Exporter(Scope scope, ExportType exportType, String fileName) {
 		this(scope, exportType, fileName, new ExportFilter());
 	}
 	
-	public static void export(Scope scope, ExportType exportType, String fileName, Database database, String attributes, int maxRowCount, ExportFilter exportFilter, boolean debug) {
-		Exporter exporter = new Exporter(scope, exportType, fileName, exportFilter, debug);
+	public static void export(Scope scope, ExportType exportType, String fileName, Database database, String attributes, int maxRowCount, ExportFilter exportFilter, boolean debug, boolean noPath) {
+		Exporter exporter = new Exporter(scope, exportType, fileName, exportFilter, debug, noPath);
 		exporter.export(database, attributes, maxRowCount);
 	}
 	public static void export(Scope scope, ExportType exportType, String fileName, Database database, String attributes, int maxRowCount, ExportFilter exportFilter) {
-		export(scope, exportType, fileName, database, attributes, maxRowCount, exportFilter, true);
+		export(scope, exportType, fileName, database, attributes, maxRowCount, exportFilter, true, false);
 	}
 	
 	public static void export(Scope scope, ExportType exportType, String fileName, Database database, String attributes, int maxRowCount) {
@@ -112,10 +114,15 @@ public class Exporter implements ResultSetReceiver {
 	}
 
 	private String getFilePath() {
+		if (noPath ) {
+			return "";
+		}
+		
 		switch (exportType) {
 			case ARFF: return PathAndFileNames.WEKA_DATA_PATH;
 			case CSV: return PathAndFileNames.CSV_DATA_PATH;
 		}
+		
 		return null;
 	}
 	

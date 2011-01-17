@@ -25,7 +25,7 @@ public class PathAndFileNames {
 		WEKA_DATA_PATH = basePath + "javaprojectsources/arff/";
 		R_DATA_PATH = basePath + "javaprojectsources/r/";
 		CSV_DATA_PATH = basePath + "javaprojectsources/csv/";
-		DATA_BASE_PATH = basePath + "javaprojectsources/database/cjdm";
+		DATA_BASE_PATH = basePath + "database/cjdm";
 		CLASS_CSV_NAME = "class.csv";
 		METHOD_CSV_NAME = "method.csv";
 		
