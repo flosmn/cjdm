@@ -1,0 +1,8 @@
+MergeSort.MergeSort.bIsInit
+MergeSort.MergeSort.m_iArray
+MergeSort.MergeSort.m_iThreadLimit
+MergeSort.MergeSort.m_iCurrentThreadsAlive
+MergeSort.MergeSort.outputFile
+MergeSort.MergeSort.fWriter
+MergeSort.MergeSort.bWriter
+java.lang.System.out

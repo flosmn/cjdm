@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/ogre4j/!svn/ver/353/trunk/org.ogre4j.eclipse.meshviewer.rcp
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/ogre4j/!svn/ver/353/trunk/org.ogre4j.eclipse.meshviewer.rcp/.classpath
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/ogre4j/!svn/ver/353/trunk/org.ogre4j.eclipse.meshviewer.rcp/.project
+END
+build.properties
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/ogre4j/!svn/ver/353/trunk/org.ogre4j.eclipse.meshviewer.rcp/build.properties
+END
+mesh_viewer.product
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/ogre4j/!svn/ver/353/trunk/org.ogre4j.eclipse.meshviewer.rcp/mesh_viewer.product
+END
+plugin.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/ogre4j/!svn/ver/353/trunk/org.ogre4j.eclipse.meshviewer.rcp/plugin.xml
+END

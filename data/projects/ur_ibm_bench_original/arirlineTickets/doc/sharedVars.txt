@@ -1,0 +1,3 @@
+bug.Num_Of_Seats_Sold
+bug.Maximum_Capacity
+bug.StopSales

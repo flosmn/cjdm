@@ -1,0 +1,47 @@
+\section{Java Native Interface}
+\label{sec:JavaNativeInterface}
+Java Native Interface (JNI) is a programming framework that allows Java code 
+running in the Java virtual machine (VM) to call and be called by native 
+applications\footnote{Programs specific to a hardware and operating system 
+platform} and libraries written in other languages, such as C, C++ and assembly.
+
+The JNI is used to write native methods to handle situations when an 
+application cannot be written entirely in the Java programming language such as 
+when the standard Java class library does not support the platform-specific 
+features or program library. It is also used to modify an existing application, 
+written in another programming language, to be accessible to Java applications. 
+Many of the standard library classes depend on the JNI to provide functionality 
+to the developer and the user, e.g. I/O file reading and sound capabilities. 
+Including performance- and platform-sensitive API implementations in the 
+standard library allows all Java applications to access this functionality in a 
+safe and platform-independent manner.
+
+The JNI framework lets a native method utilize Java objects in the same way 
+that Java code uses these objects. A native method can create Java objects and 
+then inspect and use these objects to perform its tasks. A native method can 
+also inspect and use objects created by Java application code.
+
+JNI is sometimes referred to as the "escape valve" for Java developers because 
+it allows them to add functionality to their Java Application that the Java API 
+can't provide. It can be used to interface with code written in other 
+languages, like C++. It is also used for time-critical calculations or 
+operations like solving complicated mathematical equations, since native code 
+can potentially be faster than JVM code.
+
+The JNI is not trivial and requires a considerable effort to learn, and some 
+people recommend that only advanced programmers should use the JNI. However, 
+the capability for Java to communicate with C++ and assembly removes any 
+limitations on what function Java programs can perform. Programmers considering 
+using the JNI should be aware that
+\begin{enumerate}
+	\item as mentioned before, the JNI is not an easy API to learn;
+	\item only applications and signed applets can invoke the JNI;
+	\item an application that relies on JNI loses the platform portability Java 
+	  	offers (a workaround is to write a separate implementation of the JNI code
+	 	for each platform and have Java detect the Operating System and load the correct 
+	 	one at runtime)
+	\item there is no garbage collection for the JNI side (JNI code must do 
+		explicit deallocation);
+	\item error checking is a MUST or it has the potential to crash the JNI side 
+		and the JVM.
+\end{enumerate}

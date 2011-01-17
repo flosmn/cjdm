@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- JNLP File for org.ogre4j.examples.swt -->
+
+<jnlp spec="1.0+"
+	codebase="http://ogre4j.sourceforge.net/webstart"
+	href="org.ogre4j.examples.swt.helloworld-gl.jnlp">
+	<information>
+		<title>ogre4j SWT Example - HelloWorld</title>
+		<vendor>netAllied GmbH</vendor>
+		<description>ogre4j SWT HelloWorld example.</description>
+		<homepage
+			href="http://ogre4j.sourceforge.net/webstart/index.html" />
+		<description kind="short">
+			ogre4j example that uses SWT.
+		</description>
+		<offline-allowed />
+	</information>
+	<security>
+	   <all-permissions/>
+	</security>
+	<resources>
+		<jar href="lib/org.ogre4j.examples.launcher.jar" />
+		<jar href="lib/org.ogre4j.examples.swt.jar" />
+		<jar href="lib/org.ogre4j_1.4.3.jar" />
+		<jar href="lib/swt.jar" />
+		<jar href="lib/media.jar" />
+		<j2se version="1.5+"
+			href="http://java.sun.com/products/autodl/j2se" />		
+	</resources>
+	<resources os="Windows">	    
+		<nativelib href="lib/org.ogre4j_1.4.3-win32.jar" />
+		<nativelib href="lib/swt-win32.jar" />
+	</resources>
+	<application-desc main-class="org.ogre4j.examples.WebStartLauncher">
+		<argument>org.ogre4j.examples.swt.HelloWorld</argument>
+		<argument>OpenGL</argument>
+	</application-desc>
+</jnlp>

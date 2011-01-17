@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: 3D Lines Plug-in
+Bundle-SymbolicName: org.ogre4j.eclipse.3dlines
+Bundle-Version: 0.3.0
+Bundle-ClassPath: .
+Bundle-Vendor: ogre4j.org
+Require-Bundle: org.ogre4j.eclipse,
+ org.eclipse.core.runtime
+Eclipse-LazyStart: true
+Bundle-Activator: org.ogre4j.eclipse.lines.LinesPlugin
+Export-Package: org.ogre4j.eclipse.lines

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/ogre4j/!svn/ver/308/trunk/org.ogre4j.examples.webstart
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/ogre4j/!svn/ver/308/trunk/org.ogre4j.examples.webstart/.classpath
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/ogre4j/!svn/ver/147/trunk/org.ogre4j.examples.webstart/.project
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/ogre4j/!svn/ver/202/trunk/org.ogre4j.examples.webstart/build.xml
+END

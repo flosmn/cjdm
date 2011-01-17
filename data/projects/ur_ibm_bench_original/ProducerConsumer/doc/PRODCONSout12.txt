@@ -1,0 +1,156 @@
+Concurrency Level is HIGH
+
+ PRODUCED[0] :50
+At time :50
+
+ PRODUCED[1] :50
+At time :50
+
+ PRODUCED[2] :50
+At time :50
+
+ PRODUCED[3] :50
+At time :50
+
+ PRODUCED[4] :50
+At time :50
+
+ PRODUCED[5] :50
+At time :50
+
+ CONSUMED[0] :60
+At time :60
+
+ CONSUMED[1] :60
+At time :60
+
+ CONSUMED[2] :60
+At time :60
+
+ CONSUMED[3] :60
+At time :60
+
+ CONSUMED[4] :70
+At time :70
+
+ PRODUCED[6] :100
+At time :100
+
+ PRODUCED[7] :100
+At time :100
+
+ PRODUCED[8] :100
+At time :100
+
+ PRODUCED[9] :100
+At time :100
+
+ Exception Thrown because Counter >= 10
+
+ Bug Number1
+ <ProducerConsumer.java , counter > 10 so Exception is thrown , Orphaned_Bug>
+
+ Exception Thrown because Counter >= 10
+
+ Bug Number2
+ <ProducerConsumer.java , counter > 10 so Exception is thrown , Orphaned_Bug>
+
+ Exception Thrown because Counter >= 10
+
+ Bug Number3
+ <ProducerConsumer.java , counter > 10 so Exception is thrown , Orphaned_Bug>
+
+ Exception Thrown because Counter >= 10
+
+ Bug Number4
+ <ProducerConsumer.java , counter > 10 so Exception is thrown , Orphaned_Bug>
+
+ CONSUMED[5] :170
+At time :170
+
+ CONSUMED[6] :100
+At time :170
+
+ CONSUMED[6] :100
+At time :170
+
+ CONSUMED[6] :100
+At time :170
+
+ CONSUMED[6] :100
+At time :170
+
+ Exception Thrown because Counter >= 10
+
+ Bug Number5
+ <ProducerConsumer.java , counter > 10 so Exception is thrown , Orphaned_Bug>
+
+ Exception Thrown because Counter >= 10
+
+ Bug Number6
+ <ProducerConsumer.java , counter > 10 so Exception is thrown , Orphaned_Bug>
+
+ Exception Thrown because Counter >= 10
+
+ Bug Number7
+ <ProducerConsumer.java , counter > 10 so Exception is thrown , Orphaned_Bug>
+
+ Exception Thrown because Counter >= 10
+
+ Bug Number8
+ <ProducerConsumer.java , counter > 10 so Exception is thrown , Orphaned_Bug>
+
+ Exception Thrown because Counter >= 10
+
+ Bug Number9
+ <ProducerConsumer.java , counter > 10 so Exception is thrown , Orphaned_Bug>
+
+ Exception Thrown because Counter >= 10
+
+ Bug Number10
+ <ProducerConsumer.java , counter > 10 so Exception is thrown , Orphaned_Bug>
+
+ Exception Thrown because Counter >= 10
+
+ Bug Number11
+ <ProducerConsumer.java , counter > 10 so Exception is thrown , Orphaned_Bug>
+
+ Exception Thrown because Counter >= 10
+
+ Bug Number12
+ <ProducerConsumer.java , counter > 10 so Exception is thrown , Orphaned_Bug>
+
+ Exception Thrown because Counter >= 10
+
+ Bug Number13
+ <ProducerConsumer.java , counter > 10 so Exception is thrown , Orphaned_Bug>
+
+ Exception Thrown because Counter >= 10
+
+ Bug Number14
+ <ProducerConsumer.java , counter > 10 so Exception is thrown , Orphaned_Bug>
+
+ Exception Thrown because Counter >= 10
+
+ Bug Number15
+ <ProducerConsumer.java , counter > 10 so Exception is thrown , Orphaned_Bug>
+
+ Exception Thrown because Counter >= 10
+
+ Bug Number16
+ <ProducerConsumer.java , counter > 10 so Exception is thrown , Orphaned_Bug>
+
+ Exception Thrown because Counter >= 10
+
+ Bug Number17
+ <ProducerConsumer.java , counter > 10 so Exception is thrown , Orphaned_Bug>
+
+ Exception Thrown because Counter >= 10
+
+ Bug Number18
+ <ProducerConsumer.java , counter > 10 so Exception is thrown , Orphaned_Bug>
+
+ Exception Thrown because Counter >= 10
+
+ Bug Number19
+ <ProducerConsumer.java , counter > 10 so Exception is thrown , Orphaned_Bug>

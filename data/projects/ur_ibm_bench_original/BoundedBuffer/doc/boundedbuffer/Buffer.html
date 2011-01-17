@@ -1,0 +1,119 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML><!--JBuilder QuickDoc-->
+<HEAD>
+<TITLE>Class boundedbuffer.Buffer</TITLE><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+</HEAD>
+<BODY>
+
+<H2>
+<FONT SIZE="-1">boundedbuffer</FONT>
+<BR>Class Buffer</H2>
+<DL>
+<DT>public class <B>Buffer</B>
+</DL>
+<DL><DD><p><h1><u>Bounded Buffer</p> <p>Description: the bounded buffer logic</p> <p>Copyright: Copyright (c) 2003</p> <p>Company: Haifa University</p><DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Version:</B><DD>1.0</DD>
+<DT><B>Author:</B><DD>Tomer Sharon, Id: 038555819 Ofir Germansky, Id: 031594427 *</DD>
+</DL>
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF"><TD COLSPAN=1><FONT SIZE="+2">
+<B>Field Detail</B>
+</FONT></TD></TR></TABLE>
+
+<H3>CAPACITY</H3>
+<PRE>
+static final int <B>CAPACITY</B></PRE>
+<DL><DD>capacity of the buffer<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<H3>BUFSIZE</H3>
+<PRE>
+static final int <B>BUFSIZE</B></PRE>
+<DL><DD>buffer actual size, the extra slot needed to tell if the buffer full or empty<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<H3>consoleOut</H3>
+<PRE>
+static final boolean <B>consoleOut</B></PRE>
+<DL><DD>boolean field which enable/disable the output sream to the console<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<H3>first</H3>
+<PRE>
+private int <B>first</B></PRE>
+<DL><DD>first is the start of the buffer<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<H3>last</H3>
+<PRE>
+private int <B>last</B></PRE>
+<DL><DD>last is the end of the buffer, the place which you enq to and deq to<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<H3>bufArr</H3>
+<PRE>
+private Object[] <B>bufArr</B></PRE>
+<DL><DD>the buffer array<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF"><TD COLSPAN=1><FONT SIZE="+2">
+<B>Constructor Detail</B>
+</FONT></TD></TR></TABLE>
+
+<H3>Buffer</H3>
+<PRE>
+public <B>Buffer</B>()</PRE>
+<DL><DD>the class constructor<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF"><TD COLSPAN=1><FONT SIZE="+2">
+<B>Method Detail</B>
+</FONT></TD></TR></TABLE>
+
+<H3>enq</H3>
+<PRE>
+public synchronized void <B>enq</B>(Object&nbsp;newObj)</PRE>
+<DL><DD>enq new object to the buffer<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>newObj</CODE> - the new object insert to the buffer</DD>
+<DT><B>Throws:</B><DD><CODE>InterruptedException</CODE> - </DD>
+</DL>
+<HR>
+
+<H3>deq</H3>
+<PRE>
+public synchronized Object <B>deq</B>(String&nbsp;conName)</PRE>
+<DL><DD>deq an object from the buffer<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Returns:</B><DD>the object which just had been removed from the buffer</DD>
+<DT><B>Throws:</B><DD><CODE>InterruptedException</CODE> - </DD>
+</DL>
+<HR>
+
+<H3>printBuffer</H3>
+<PRE>
+public synchronized void <B>printBuffer</B>()</PRE>
+<DL><DD>print the buffer from place 0 to the end*<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+</BODY>
+</HTML>

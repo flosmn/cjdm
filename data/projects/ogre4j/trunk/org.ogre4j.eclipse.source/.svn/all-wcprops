@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/ogre4j/!svn/ver/253/trunk/org.ogre4j.eclipse.source
+END
+ant_build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/ogre4j/!svn/ver/253/trunk/org.ogre4j.eclipse.source/ant_build.xml
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/ogre4j/!svn/ver/220/trunk/org.ogre4j.eclipse.source/.project
+END
+plugin.properties
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/ogre4j/!svn/ver/209/trunk/org.ogre4j.eclipse.source/plugin.properties
+END
+plugin.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/ogre4j/!svn/ver/209/trunk/org.ogre4j.eclipse.source/plugin.xml
+END

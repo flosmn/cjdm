@@ -1,0 +1,8 @@
+Manager.request_counter
+Manager.flag
+Manager.rel_counter_lock
+Trelease.t_num
+Manager.notes_lock
+Manager.num_of_notes_set
+Manager.released_counter
+java.lang.System.out

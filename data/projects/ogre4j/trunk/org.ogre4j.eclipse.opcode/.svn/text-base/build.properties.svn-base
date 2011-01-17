@@ -1,0 +1,4 @@
+source.. = src/java/
+output.. = bin/java/
+bin.includes = META-INF/,\
+               .

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/plugin/massivecompiler
+END
+MassiveCompilerFrame.form
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/repos/ireport/!svn/ver/795/trunk/iReport2/src/it/businesslogic/ireport/plugin/massivecompiler/MassiveCompilerFrame.form
+END
+CompileThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/plugin/massivecompiler/CompileThread.java
+END
+FileEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/plugin/massivecompiler/FileEntry.java
+END
+MassiveCompiler.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/plugin/massivecompiler/MassiveCompiler.java
+END
+FileDetails.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/plugin/massivecompiler/FileDetails.java
+END
+FileDetails.form
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/repos/ireport/!svn/ver/795/trunk/iReport2/src/it/businesslogic/ireport/plugin/massivecompiler/FileDetails.form
+END
+FindThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/plugin/massivecompiler/FindThread.java
+END
+ImageCellRenderer.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/plugin/massivecompiler/ImageCellRenderer.java
+END
+MassiveCompilerFrame.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/plugin/massivecompiler/MassiveCompilerFrame.java
+END

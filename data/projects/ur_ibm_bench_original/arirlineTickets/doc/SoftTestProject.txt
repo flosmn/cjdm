@@ -1,0 +1,40 @@
+
+
+SoftTestProject by 	Amit Rotstein 
+			I.D: 037698867
+
+Syntax: thread == agent;
+	run()  == "make a sale";
+	FOR loop == airline issuing tickets;
+
+The Idea:
+	This program simulates selling airline tickets via sales agents.
+	An array of threads is running in a FOR loop which is 10% "too long", much like in real life were more tickets 
+	are printed and distributed then possible ( Maximum_Capacity + 10% = Num_of_tickets_issued ).
+
+Control Flow:
+	
+	FOR (1 to Num_of_tickets_issued)   /* by the airline */ {
+		if there are vacant places:  allow agent to sell a ticket;
+		}
+
+	"make a sale" :  /*by the agent*/  {
+		increase Num_Of_Seats_Sold by 1;
+		if sales excided the no. of vacant seats on the plane:  notify airline;
+		}
+		
+The Bug:
+	Some times, before the agents notifyes the airline that he sold the last ticket, more tickets are distributed 
+	and sold.
+	A second bug appears only when the concurancy is little (e.g. selling 10 tickets). That bug stops all sales before
+	all seats are occupied.
+	This is caused because the programer thought that there is no interleaving between commands, that every 
+	action is atomic. 
+
+How to Run:
+	The program expects 2 arguments: name of output file, concurancy.
+	concurancy can be : 	little  = issuing 10   tickets;
+				average	= issuing 100  tickets;		
+				lot     = issuing 5000 tickets;
+
+	The output is a 3 tupple of: < (name of output file) , (concurancy) , (No Bug) or (Interleaving) > ;

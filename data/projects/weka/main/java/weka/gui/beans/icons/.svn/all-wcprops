@@ -1,0 +1,2105 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/weka/!svn/ver/5349/trunk/weka/src/main/java/weka/gui/beans/icons
+END
+CostSensitiveClassifier.gif
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/CostSensitiveClassifier.gif
+END
+filters.unsupervised.attribute.RemoveUseless.gif
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.attribute.RemoveUseless.gif
+END
+DefaultGraph.gif
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/DefaultGraph.gif
+END
+ClassAssigner_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/ClassAssigner_animated.gif
+END
+filters.supervised.attribute.NominalToBinary.gif
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.supervised.attribute.NominalToBinary.gif
+END
+filters.unsupervised.attribute.MakeIndicator_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.attribute.MakeIndicator_animated.gif
+END
+AODE_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/AODE_animated.gif
+END
+DatabaseLoader_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/DatabaseLoader_animated.gif
+END
+SerializedInstancesLoader_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/SerializedInstancesLoader_animated.gif
+END
+ClassBalancedND.gif
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/ClassBalancedND.gif
+END
+ModelPerformanceChart.gif
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/ModelPerformanceChart.gif
+END
+RBFNetwork.gif
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/RBFNetwork.gif
+END
+SimpleLinearRegression.gif
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/SimpleLinearRegression.gif
+END
+Vote_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/Vote_animated.gif
+END
+filters.unsupervised.attribute.AddCluster_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.attribute.AddCluster_animated.gif
+END
+M5P_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/M5P_animated.gif
+END
+END.gif
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/END.gif
+END
+filters.unsupervised.attribute.Standardize_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.attribute.Standardize_animated.gif
+END
+ClustererPerformanceEvaluator_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/ClustererPerformanceEvaluator_animated.gif
+END
+filters.unsupervised.attribute.MergeTwoValues_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.attribute.MergeTwoValues_animated.gif
+END
+filters.unsupervised.attribute.Normalize.gif
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.attribute.Normalize.gif
+END
+Cobweb.gif
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/Cobweb.gif
+END
+filters.supervised.instance.Resample.gif
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.supervised.instance.Resample.gif
+END
+ScatterPlotMatrix.gif
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/ScatterPlotMatrix.gif
+END
+ADTree_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/ADTree_animated.gif
+END
+LibSVM.gif
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/LibSVM.gif
+END
+filters.unsupervised.attribute.StringToWordVector.gif
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.attribute.StringToWordVector.gif
+END
+FilteredClassifier_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/FilteredClassifier_animated.gif
+END
+Default_nestedDichotomiesClassifier_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/Default_nestedDichotomiesClassifier_animated.gif
+END
+filters.unsupervised.instance.NonSparseToSparse.gif
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.instance.NonSparseToSparse.gif
+END
+J48.gif
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/J48.gif
+END
+RegressionByDiscretization_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/RegressionByDiscretization_animated.gif
+END
+SimpleLogistic.gif
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/SimpleLogistic.gif
+END
+ClassAssigner.gif
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/ClassAssigner.gif
+END
+filters.unsupervised.instance.NonSparseToSparse_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.instance.NonSparseToSparse_animated.gif
+END
+Default_rulesClassifier.gif
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/Default_rulesClassifier.gif
+END
+MultilayerPerceptron_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/MultilayerPerceptron_animated.gif
+END
+filters.unsupervised.attribute.Copy_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.attribute.Copy_animated.gif
+END
+filters.unsupervised.attribute.ReplaceMissingValues_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.attribute.ReplaceMissingValues_animated.gif
+END
+filters.unsupervised.attribute.TimeSeriesDelta_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.attribute.TimeSeriesDelta_animated.gif
+END
+MultiClassClassifier.gif
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/MultiClassClassifier.gif
+END
+filters.supervised.attribute.ClassOrder_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.supervised.attribute.ClassOrder_animated.gif
+END
+NaiveBayesMultinomial_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/NaiveBayesMultinomial_animated.gif
+END
+filters.unsupervised.attribute.Normalize_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.attribute.Normalize_animated.gif
+END
+filters.unsupervised.attribute.SwapValues.gif
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.attribute.SwapValues.gif
+END
+TrainingSetMaker_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/TrainingSetMaker_animated.gif
+END
+MultilayerPerceptron.gif
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/MultilayerPerceptron.gif
+END
+ClassValuePicker.gif
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/ClassValuePicker.gif
+END
+ComplementNaiveBayes.gif
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/ComplementNaiveBayes.gif
+END
+filters.unsupervised.attribute.NumericToBinary_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.attribute.NumericToBinary_animated.gif
+END
+NaiveBayesSimple_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/NaiveBayesSimple_animated.gif
+END
+SerializedInstancesLoader.gif
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/SerializedInstancesLoader.gif
+END
+DataNearBalancedND.gif
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/DataNearBalancedND.gif
+END
+IBk.gif
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/IBk.gif
+END
+LMT.gif
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/LMT.gif
+END
+MakeDensityBasedClusterer_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/MakeDensityBasedClusterer_animated.gif
+END
+DefaultGraph_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/DefaultGraph_animated.gif
+END
+Default_nestedDichotomiesClassifier.gif
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/Default_nestedDichotomiesClassifier.gif
+END
+Default_bayesClassifier_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/Default_bayesClassifier_animated.gif
+END
+Stacking.gif
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/Stacking.gif
+END
+filters.supervised.attribute.ClassOrder.gif
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.supervised.attribute.ClassOrder.gif
+END
+filters.unsupervised.attribute.StringToNominal.gif
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.attribute.StringToNominal.gif
+END
+LWL_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/LWL_animated.gif
+END
+Logistic_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/Logistic_animated.gif
+END
+TrainTestSplitMaker.gif
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/TrainTestSplitMaker.gif
+END
+HNB_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/HNB_animated.gif
+END
+filters.unsupervised.attribute.MergeTwoValues.gif
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.attribute.MergeTwoValues.gif
+END
+ClustererPerformanceEvaluator.gif
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/ClustererPerformanceEvaluator.gif
+END
+filters.unsupervised.attribute.TimeSeriesTranslate_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.attribute.TimeSeriesTranslate_animated.gif
+END
+AdaBoostM1.gif
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/AdaBoostM1.gif
+END
+ZeroR.gif
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/ZeroR.gif
+END
+ClassBalancedND_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/ClassBalancedND_animated.gif
+END
+IncrementalClassifierEvaluator_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/IncrementalClassifierEvaluator_animated.gif
+END
+filters.unsupervised.instance.RemoveFolds.gif
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.instance.RemoveFolds.gif
+END
+filters.unsupervised.attribute.RemoveType_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.attribute.RemoveType_animated.gif
+END
+LogitBoost.gif
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/LogitBoost.gif
+END
+SimpleKMeans.gif
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/SimpleKMeans.gif
+END
+StackingC_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/StackingC_animated.gif
+END
+RacedIncrementalLogitBoost.gif
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/RacedIncrementalLogitBoost.gif
+END
+LBR.gif
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/LBR.gif
+END
+Dagging_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/Dagging_animated.gif
+END
+Pointer.gif
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/Pointer.gif
+END
+NNge.gif
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/NNge.gif
+END
+DefaultDataSink.gif
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/DefaultDataSink.gif
+END
+ConjunctiveRule_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/ConjunctiveRule_animated.gif
+END
+LWL.gif
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/LWL.gif
+END
+filters.supervised.instance.Resample_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.supervised.instance.Resample_animated.gif
+END
+NaiveBayes.gif
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/NaiveBayes.gif
+END
+DecisionStump_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/DecisionStump_animated.gif
+END
+DefaultFilter_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/DefaultFilter_animated.gif
+END
+filters.unsupervised.instance.RemoveMisclassified.gif
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.instance.RemoveMisclassified.gif
+END
+filters.unsupervised.instance.SparseToNonSparse_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.instance.SparseToNonSparse_animated.gif
+END
+PaceRegression_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/PaceRegression_animated.gif
+END
+AODE.gif
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/AODE.gif
+END
+MetaCost_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/MetaCost_animated.gif
+END
+SerializedModelSaver.gif
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/SerializedModelSaver.gif
+END
+filters.unsupervised.attribute.Obfuscate_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.attribute.Obfuscate_animated.gif
+END
+filters.supervised.attribute.NominalToBinary_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.supervised.attribute.NominalToBinary_animated.gif
+END
+DefaultEvaluator_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/DefaultEvaluator_animated.gif
+END
+C45Loader.gif
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/C45Loader.gif
+END
+ZeroR_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/ZeroR_animated.gif
+END
+FilteredClassifier.gif
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/FilteredClassifier.gif
+END
+filters.unsupervised.attribute.TimeSeriesTranslate.gif
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.attribute.TimeSeriesTranslate.gif
+END
+filters.unsupervised.instance.RemoveWithValues_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.instance.RemoveWithValues_animated.gif
+END
+filters.unsupervised.attribute.PKIDiscretize_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.attribute.PKIDiscretize_animated.gif
+END
+Default_treeClassifier.gif
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/Default_treeClassifier.gif
+END
+NaiveBayes_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/NaiveBayes_animated.gif
+END
+SMOreg.gif
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/SMOreg.gif
+END
+GaussianProcesses_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/GaussianProcesses_animated.gif
+END
+ClassifierPerformanceEvaluator.gif
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/ClassifierPerformanceEvaluator.gif
+END
+filters.unsupervised.attribute.RandomProjection.gif
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.attribute.RandomProjection.gif
+END
+Default_functionsClassifier_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/Default_functionsClassifier_animated.gif
+END
+DBScan_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/DBScan_animated.gif
+END
+Stacking_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/Stacking_animated.gif
+END
+M5P.gif
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/M5P.gif
+END
+filters.unsupervised.attribute.AddNoise.gif
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.attribute.AddNoise.gif
+END
+RBFNetwork_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/RBFNetwork_animated.gif
+END
+SimpleLinearRegression_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/SimpleLinearRegression_animated.gif
+END
+DefaultAssociator.gif
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/DefaultAssociator.gif
+END
+filters.supervised.instance.SpreadSubsample_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.supervised.instance.SpreadSubsample_animated.gif
+END
+BayesNet_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/BayesNet_animated.gif
+END
+Grading_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/Grading_animated.gif
+END
+filters.unsupervised.instance.RemoveFolds_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.instance.RemoveFolds_animated.gif
+END
+NBTree_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/NBTree_animated.gif
+END
+TestSetMaker.gif
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/TestSetMaker.gif
+END
+filters.unsupervised.attribute.Remove.gif
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.attribute.Remove.gif
+END
+DefaultText_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/DefaultText_animated.gif
+END
+AdditiveRegression_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/AdditiveRegression_animated.gif
+END
+filters.supervised.instance.SpreadSubsample.gif
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.supervised.instance.SpreadSubsample.gif
+END
+BayesNet.gif
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/BayesNet.gif
+END
+Default_miscClassifier_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/Default_miscClassifier_animated.gif
+END
+filters.unsupervised.attribute.AddExpression_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.attribute.AddExpression_animated.gif
+END
+OrdinalClassClassifier_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/OrdinalClassClassifier_animated.gif
+END
+ADTree.gif
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/ADTree.gif
+END
+filters.unsupervised.attribute.ClusterMembership_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.attribute.ClusterMembership_animated.gif
+END
+Help24.gif
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/Help24.gif
+END
+Stop24.gif
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/Stop24.gif
+END
+Default_metaClassifier.gif
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/Default_metaClassifier.gif
+END
+KStar_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/KStar_animated.gif
+END
+LBR_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/LBR_animated.gif
+END
+Default_rulesClassifier_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/Default_rulesClassifier_animated.gif
+END
+filters.unsupervised.instance.RemovePercentage_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.instance.RemovePercentage_animated.gif
+END
+filters.unsupervised.instance.Resample_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.instance.Resample_animated.gif
+END
+XMeans_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/XMeans_animated.gif
+END
+DefaultText.gif
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/DefaultText.gif
+END
+LMT_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/LMT_animated.gif
+END
+filters.unsupervised.attribute.MakeIndicator.gif
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.attribute.MakeIndicator.gif
+END
+filters.unsupervised.instance.Normalize.gif
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.instance.Normalize.gif
+END
+JRip_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/JRip_animated.gif
+END
+Decorate_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/Decorate_animated.gif
+END
+DiamondPlain.gif
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/DiamondPlain.gif
+END
+DefaultDataVisualizer_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/DefaultDataVisualizer_animated.gif
+END
+SerializedInstancesSaver.gif
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/SerializedInstancesSaver.gif
+END
+StripChart_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/StripChart_animated.gif
+END
+HNB.gif
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/HNB.gif
+END
+Default_functionsClassifier.gif
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/Default_functionsClassifier.gif
+END
+LeastMedSq.gif
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/LeastMedSq.gif
+END
+Dagging.gif
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/Dagging.gif
+END
+DefaultClusterer.gif
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/DefaultClusterer.gif
+END
+OPTICS.gif
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/OPTICS.gif
+END
+filters.unsupervised.attribute.NominalToBinary.gif
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.attribute.NominalToBinary.gif
+END
+ClassificationViaRegression.gif
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/ClassificationViaRegression.gif
+END
+Vote.gif
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/Vote.gif
+END
+CVParameterSelection_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/CVParameterSelection_animated.gif
+END
+SimpleKMeans_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/SimpleKMeans_animated.gif
+END
+DefaultEvaluator.gif
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/DefaultEvaluator.gif
+END
+DecisionTable_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/DecisionTable_animated.gif
+END
+CSVSaver_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/CSVSaver_animated.gif
+END
+M5Rules_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/M5Rules_animated.gif
+END
+PredictionAppender.gif
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/PredictionAppender.gif
+END
+CostSensitiveClassifier_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/CostSensitiveClassifier_animated.gif
+END
+ClassificationViaRegression_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/ClassificationViaRegression_animated.gif
+END
+TrainingSetMaker.gif
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/TrainingSetMaker.gif
+END
+DefaultClassifier_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/DefaultClassifier_animated.gif
+END
+filters.unsupervised.attribute.ClusterMembership.gif
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.attribute.ClusterMembership.gif
+END
+DefaultClassifier.gif
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/DefaultClassifier.gif
+END
+DefaultDataSink_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/DefaultDataSink_animated.gif
+END
+NNge_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/NNge_animated.gif
+END
+NaiveBayesUpdateable.gif
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/NaiveBayesUpdateable.gif
+END
+filters.unsupervised.instance.RemoveWithValues.gif
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.instance.RemoveWithValues.gif
+END
+REPTree_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/REPTree_animated.gif
+END
+DefaultDataVisualizer.gif
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/DefaultDataVisualizer.gif
+END
+MultiBoostAB.gif
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/MultiBoostAB.gif
+END
+C45Loader_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/C45Loader_animated.gif
+END
+Open24.gif
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/Open24.gif
+END
+filters.unsupervised.instance.Randomize_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.instance.Randomize_animated.gif
+END
+filters.unsupervised.attribute.RemoveType.gif
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.attribute.RemoveType.gif
+END
+DecisionTable.gif
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/DecisionTable.gif
+END
+filters.unsupervised.attribute.NumericTransform_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.attribute.NumericTransform_animated.gif
+END
+NaiveBayesSimple.gif
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/NaiveBayesSimple.gif
+END
+AttributeSummarizer_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/AttributeSummarizer_animated.gif
+END
+MultiBoostAB_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/MultiBoostAB_animated.gif
+END
+filters.unsupervised.instance.SparseToNonSparse.gif
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.instance.SparseToNonSparse.gif
+END
+filters.unsupervised.attribute.Discretize.gif
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.attribute.Discretize.gif
+END
+IB1.gif
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/IB1.gif
+END
+CrossValidationFoldMaker_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/CrossValidationFoldMaker_animated.gif
+END
+filters.unsupervised.instance.RemovePercentage.gif
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.instance.RemovePercentage.gif
+END
+InstanceStreamToBatchMaker.gif
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/weka/!svn/ver/4772/trunk/weka/src/main/java/weka/gui/beans/icons/InstanceStreamToBatchMaker.gif
+END
+REPTree.gif
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/REPTree.gif
+END
+filters.unsupervised.attribute.SwapValues_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.attribute.SwapValues_animated.gif
+END
+ArffLoader_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/ArffLoader_animated.gif
+END
+ArffSaver_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/ArffSaver_animated.gif
+END
+ClassifierPerformanceEvaluator_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/ClassifierPerformanceEvaluator_animated.gif
+END
+ArffSaver.gif
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/ArffSaver.gif
+END
+ArffLoader.gif
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/ArffLoader.gif
+END
+filters.unsupervised.attribute.Copy.gif
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.attribute.Copy.gif
+END
+filters.unsupervised.attribute.AddExpression.gif
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.attribute.AddExpression.gif
+END
+ThresholdSelector.gif
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/ThresholdSelector.gif
+END
+AttributeSelectedClassifier_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/AttributeSelectedClassifier_animated.gif
+END
+MakeDensityBasedClusterer.gif
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/MakeDensityBasedClusterer.gif
+END
+Default_lazyClassifier_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/Default_lazyClassifier_animated.gif
+END
+filters.unsupervised.instance.Normalize_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.instance.Normalize_animated.gif
+END
+filters.unsupervised.attribute.Obfuscate.gif
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.attribute.Obfuscate.gif
+END
+filters.unsupervised.attribute.Add_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.attribute.Add_animated.gif
+END
+SerializedModelSaver_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/SerializedModelSaver_animated.gif
+END
+filters.unsupervised.attribute.RemoveUseless_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.attribute.RemoveUseless_animated.gif
+END
+filters.unsupervised.attribute.AddNoise_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.attribute.AddNoise_animated.gif
+END
+VotedPerceptron_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/VotedPerceptron_animated.gif
+END
+EM_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/EM_animated.gif
+END
+DefaultDataSource_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/DefaultDataSource_animated.gif
+END
+LinearRegression_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/LinearRegression_animated.gif
+END
+LibSVM_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/LibSVM_animated.gif
+END
+NaiveBayesMultinomial.gif
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/NaiveBayesMultinomial.gif
+END
+DefaultDataSource.gif
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/DefaultDataSource.gif
+END
+LinearRegression.gif
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/LinearRegression.gif
+END
+SerializedInstancesSaver_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/SerializedInstancesSaver_animated.gif
+END
+RandomCommittee_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/RandomCommittee_animated.gif
+END
+UserClassifier.gif
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/UserClassifier.gif
+END
+AttributeSummarizer.gif
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/AttributeSummarizer.gif
+END
+filters.supervised.attribute.Discretize_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.supervised.attribute.Discretize_animated.gif
+END
+C45Saver.gif
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/C45Saver.gif
+END
+NBTree.gif
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/NBTree.gif
+END
+PART.gif
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/PART.gif
+END
+J48_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/J48_animated.gif
+END
+ID3.gif
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/ID3.gif
+END
+DefaultFilter.gif
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/DefaultFilter.gif
+END
+ClassValuePicker_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/ClassValuePicker_animated.gif
+END
+filters.unsupervised.attribute.RandomProjection_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.attribute.RandomProjection_animated.gif
+END
+Logistic.gif
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/Logistic.gif
+END
+RandomTree_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/RandomTree_animated.gif
+END
+Prism_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/Prism_animated.gif
+END
+filters.unsupervised.attribute.StringToNominal_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.attribute.StringToNominal_animated.gif
+END
+GaussianProcesses.gif
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/GaussianProcesses.gif
+END
+Bagging.gif
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/Bagging.gif
+END
+Cobweb_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/Cobweb_animated.gif
+END
+DatabaseSaver_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/DatabaseSaver_animated.gif
+END
+StackingC.gif
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/StackingC.gif
+END
+ID3_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/ID3_animated.gif
+END
+Default_miscClassifier.gif
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/Default_miscClassifier.gif
+END
+DatabaseLoader.gif
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/DatabaseLoader.gif
+END
+DataNearBalancedND_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/DataNearBalancedND_animated.gif
+END
+MetaCost.gif
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/MetaCost.gif
+END
+filters.unsupervised.instance.Randomize.gif
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.instance.Randomize.gif
+END
+DefaultAssociator_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/DefaultAssociator_animated.gif
+END
+AdaBoostM1_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/AdaBoostM1_animated.gif
+END
+Winnow.gif
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/Winnow.gif
+END
+DBScan.gif
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/DBScan.gif
+END
+NaiveBayesUpdateable_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/NaiveBayesUpdateable_animated.gif
+END
+Default_metaClassifier_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/Default_metaClassifier_animated.gif
+END
+Prism.gif
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/Prism.gif
+END
+RandomTree.gif
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/RandomTree.gif
+END
+ConjunctiveRule.gif
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/ConjunctiveRule.gif
+END
+MultiClassClassifier_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/MultiClassClassifier_animated.gif
+END
+MultiScheme_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/MultiScheme_animated.gif
+END
+filters.supervised.instance.StratifiedRemoveFolds.gif
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.supervised.instance.StratifiedRemoveFolds.gif
+END
+filters.unsupervised.attribute.Standardize.gif
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.attribute.Standardize.gif
+END
+VotedPerceptron.gif
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/VotedPerceptron.gif
+END
+EM.gif
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/EM.gif
+END
+Winnow_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/Winnow_animated.gif
+END
+ModelPerformanceChart_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/ModelPerformanceChart_animated.gif
+END
+PredictionAppender_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/PredictionAppender_animated.gif
+END
+Decorate.gif
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/Decorate.gif
+END
+FarthestFirst_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/FarthestFirst_animated.gif
+END
+filters.unsupervised.attribute.Remove_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.attribute.Remove_animated.gif
+END
+TestSetMaker_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/TestSetMaker_animated.gif
+END
+filters.unsupervised.attribute.NumericTransform.gif
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.attribute.NumericTransform.gif
+END
+RegressionByDiscretization.gif
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/RegressionByDiscretization.gif
+END
+filters.supervised.attribute.Discretize.gif
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.supervised.attribute.Discretize.gif
+END
+C45Saver_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/C45Saver_animated.gif
+END
+Grading.gif
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/Grading.gif
+END
+SMO.gif
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/SMO.gif
+END
+OneR_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/OneR_animated.gif
+END
+CVParameterSelection.gif
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/CVParameterSelection.gif
+END
+filters.unsupervised.instance.RemoveMisclassified_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.instance.RemoveMisclassified_animated.gif
+END
+AttributeSelectedClassifier.gif
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/AttributeSelectedClassifier.gif
+END
+filters.unsupervised.attribute.NumericToBinary.gif
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.attribute.NumericToBinary.gif
+END
+ComplementNaiveBayes_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/ComplementNaiveBayes_animated.gif
+END
+DatabaseSaver.gif
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/DatabaseSaver.gif
+END
+DecisionStump.gif
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/DecisionStump.gif
+END
+OPTICS_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/OPTICS_animated.gif
+END
+DefaultClusterer_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/DefaultClusterer_animated.gif
+END
+KStar.gif
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/KStar.gif
+END
+filters.unsupervised.instance.RemoveRange.gif
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.instance.RemoveRange.gif
+END
+ScatterPlotMatrix_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/ScatterPlotMatrix_animated.gif
+END
+New24.gif
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/New24.gif
+END
+StripChart.gif
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/StripChart.gif
+END
+RacedIncrementalLogitBoost_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/RacedIncrementalLogitBoost_animated.gif
+END
+filters.unsupervised.attribute.Discretize_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.attribute.Discretize_animated.gif
+END
+IB1_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/IB1_animated.gif
+END
+OneR.gif
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/OneR.gif
+END
+AdditiveRegression.gif
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/AdditiveRegression.gif
+END
+filters.unsupervised.attribute.FirstOrder.gif
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.attribute.FirstOrder.gif
+END
+CSVSaver.gif
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/CSVSaver.gif
+END
+M5Rules.gif
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/M5Rules.gif
+END
+IBk_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/IBk_animated.gif
+END
+filters.unsupervised.attribute.Add.gif
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.attribute.Add.gif
+END
+PaceRegression.gif
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/PaceRegression.gif
+END
+XMeans.gif
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/XMeans.gif
+END
+filters.unsupervised.attribute.StringToWordVector_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.attribute.StringToWordVector_animated.gif
+END
+RandomCommittee.gif
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/RandomCommittee.gif
+END
+Bagging_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/Bagging_animated.gif
+END
+RandomForest.gif
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/RandomForest.gif
+END
+Default_treeClassifier_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/Default_treeClassifier_animated.gif
+END
+filters.unsupervised.attribute.AddCluster.gif
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.attribute.AddCluster.gif
+END
+Default_bayesClassifier.gif
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/Default_bayesClassifier.gif
+END
+SMO_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/SMO_animated.gif
+END
+LogitBoost_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/LogitBoost_animated.gif
+END
+JRip.gif
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/JRip.gif
+END
+PART_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/PART_animated.gif
+END
+SimpleLogistic_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/SimpleLogistic_animated.gif
+END
+filters.unsupervised.attribute.FirstOrder_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.attribute.FirstOrder_animated.gif
+END
+IncrementalClassifierEvaluator.gif
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/IncrementalClassifierEvaluator.gif
+END
+FarthestFirst.gif
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/FarthestFirst.gif
+END
+ThresholdSelector_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/ThresholdSelector_animated.gif
+END
+filters.unsupervised.attribute.NominalToBinary_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.attribute.NominalToBinary_animated.gif
+END
+filters.supervised.instance.StratifiedRemoveFolds_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.supervised.instance.StratifiedRemoveFolds_animated.gif
+END
+TrainTestSplitMaker_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/TrainTestSplitMaker_animated.gif
+END
+splash.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/splash.jpg
+END
+filters.unsupervised.instance.RemoveRange_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.instance.RemoveRange_animated.gif
+END
+filters.unsupervised.attribute.PKIDiscretize.gif
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.attribute.PKIDiscretize.gif
+END
+InstanceStreamToBatchMaker_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/weka/!svn/ver/4772/trunk/weka/src/main/java/weka/gui/beans/icons/InstanceStreamToBatchMaker_animated.gif
+END
+DefaultTrainTest_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/DefaultTrainTest_animated.gif
+END
+filters.supervised.attribute.AttributeSelection_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.supervised.attribute.AttributeSelection_animated.gif
+END
+CSVLoader_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/CSVLoader_animated.gif
+END
+CrossValidationFoldMaker.gif
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/CrossValidationFoldMaker.gif
+END
+Default_lazyClassifier.gif
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/Default_lazyClassifier.gif
+END
+UserClassifier_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/UserClassifier_animated.gif
+END
+filters.unsupervised.instance.Resample.gif
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.instance.Resample.gif
+END
+filters.supervised.attribute.AttributeSelection.gif
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.supervised.attribute.AttributeSelection.gif
+END
+CSVLoader.gif
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/CSVLoader.gif
+END
+DefaultTrainTest.gif
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/DefaultTrainTest.gif
+END
+MultiScheme.gif
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/MultiScheme.gif
+END
+Save24.gif
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/Save24.gif
+END
+LeastMedSq_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/LeastMedSq_animated.gif
+END
+RandomForest_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/RandomForest_animated.gif
+END
+SMOreg_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/SMOreg_animated.gif
+END
+filters.unsupervised.attribute.TimeSeriesDelta.gif
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.attribute.TimeSeriesDelta.gif
+END
+filters.unsupervised.attribute.ReplaceMissingValues.gif
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/filters.unsupervised.attribute.ReplaceMissingValues.gif
+END
+END_animated.gif
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/END_animated.gif
+END
+OrdinalClassClassifier.gif
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/icons/OrdinalClassClassifier.gif
+END

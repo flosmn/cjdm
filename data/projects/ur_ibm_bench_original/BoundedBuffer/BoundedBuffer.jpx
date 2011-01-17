@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--JBuilder XML Project-->
+<project>
+  <property category="generalFormatting" name="blockIndent" value="4"/>
+  <property category="generalFormatting" name="tabSize" value="4"/>
+  <property category="idl" name="ProcessIDL" value="false"/>
+  <property category="javaFormatting" name="packagePrefixGroups.1" value="&lt;*&gt;"/>
+  <property category="javadoc" name="custom.tags.1" value="todo;a;To Do:"/>
+  <property category="runtime" name="ConfigurationCount" value="2"/>
+  <property category="runtime" name="DefaultConfiguration" value="-1"/>
+  <property category="runtime.0" name="BuildTargetOnRun" value="com.borland.jbuilder.build.ProjectBuilder$ProjectBuildAction;make"/>
+  <property category="runtime.0" name="ConfigurationName" value="HIGH RISK"/>
+  <property category="runtime.0" name="RunnableType" value="com.borland.jbuilder.runtime.ApplicationRunner"/>
+  <property category="runtime.0" name="application.class" value="boundedbuffer.BufferNotify"/>
+  <property category="runtime.0" name="application.parameters" value="test.txt 3"/>
+  <property category="runtime.0" name="test.harness" value="com.borland.jbuilder.unittest.JBTestRunner"/>
+  <property category="runtime.1" name="BuildTargetOnRun" value="com.borland.jbuilder.build.ProjectBuilder$ProjectBuildAction;make"/>
+  <property category="runtime.1" name="ConfigurationName" value="LOW RISK"/>
+  <property category="runtime.1" name="RunnableType" value="com.borland.jbuilder.runtime.ApplicationRunner"/>
+  <property category="runtime.1" name="application.class" value="boundedbuffer.BufferNotify"/>
+  <property category="runtime.1" name="application.parameters" value="test.txt 1 true"/>
+  <property category="runtime.1" name="appserver.parameters" value=""/>
+  <property category="runtime.1" name="appserver.servername" value="myserver"/>
+  <property category="runtime.1" name="appserver.vmparameters" value="-ms64m -mx64m    -Djava.library.path=C:/bea/weblogic700/server/bin    -Dbea.home=C:/bea -Dweblogic.Domain=mydomain    -Dweblogic.Name=myserver    -Djava.security.policy==C:/bea/weblogic700/server/lib/weblogic.policy    -Dweblogic.management.discover=false    -Dweblogic.ProductionModeEnabled=false    -Dweblogic.management.password=weblogic -Dweblogic.management.username=system"/>
+  <property category="runtime.1" name="server.arguments" value=""/>
+  <property category="runtime.1" name="server.disableServerClassTracing" value="0"/>
+  <property category="runtime.1" name="server.instance.name" value="myserver"/>
+  <property category="runtime.1" name="server.name" value="WebLogic Application Server 6.x+"/>
+  <property category="runtime.1" name="server.vmparameters" value="-ms64m -mx64m    -Djava.library.path=C:/bea/weblogic700/server/bin    -Dbea.home=C:/bea -Dweblogic.Domain=mydomain    -Dweblogic.Name=myserver    -Djava.security.policy==C:/bea/weblogic700/server/lib/weblogic.policy    -Dweblogic.management.discover=false    -Dweblogic.ProductionModeEnabled=false    -Dweblogic.management.password=weblogic -Dweblogic.management.username=system"/>
+  <property category="runtime.1" name="test.harness" value="com.borland.jbuilder.unittest.JBTestRunner"/>
+  <property category="runtime.2" name="BuildTargetOnRun" value="com.borland.jbuilder.build.ProjectBuilder$ProjectBuildAction;make"/>
+  <property category="runtime.2" name="ConfigurationName" value="MEDIUM RISK"/>
+  <property category="runtime.2" name="RunnableType" value="com.borland.jbuilder.runtime.ApplicationRunner"/>
+  <property category="runtime.2" name="application.class" value="boundedbuffer.BufferNotify"/>
+  <property category="runtime.2" name="application.parameters" value="test.txt 4 true 20 10 3 1 500"/>
+  <property category="runtime.2" name="appserver.parameters" value=""/>
+  <property category="runtime.2" name="appserver.servername" value="myserver"/>
+  <property category="runtime.2" name="appserver.vmparameters" value="-ms64m -mx64m    -Djava.library.path=C:/bea/weblogic700/server/bin    -Dbea.home=C:/bea -Dweblogic.Domain=mydomain    -Dweblogic.Name=myserver    -Djava.security.policy==C:/bea/weblogic700/server/lib/weblogic.policy    -Dweblogic.management.discover=false    -Dweblogic.ProductionModeEnabled=false    -Dweblogic.management.password=weblogic -Dweblogic.management.username=system"/>
+  <property category="runtime.2" name="server.arguments" value=""/>
+  <property category="runtime.2" name="server.disableServerClassTracing" value="0"/>
+  <property category="runtime.2" name="server.instance.name" value="myserver"/>
+  <property category="runtime.2" name="server.name" value="WebLogic Application Server 6.x+"/>
+  <property category="runtime.2" name="server.vmparameters" value="-ms64m -mx64m    -Djava.library.path=C:/bea/weblogic700/server/bin    -Dbea.home=C:/bea -Dweblogic.Domain=mydomain    -Dweblogic.Name=myserver    -Djava.security.policy==C:/bea/weblogic700/server/lib/weblogic.policy    -Dweblogic.management.discover=false    -Dweblogic.ProductionModeEnabled=false    -Dweblogic.management.password=weblogic -Dweblogic.management.username=system"/>
+  <property category="runtime.2" name="test.harness" value="com.borland.jbuilder.unittest.JBTestRunner"/>
+  <property category="serverservices" name="disabled.services" value="connector;jdatastore"/>
+  <property category="serverservices" name="single.server.name" value="WebLogic Application Server 6.x+"/>
+  <property category="sys" name="AuthorLabel" value="@author"/>
+  <property category="sys" name="BackupPath" value="bak"/>
+  <property category="sys" name="BeansInstantiate" value="false"/>
+  <property category="sys" name="BraceStyle" value="0"/>
+  <property category="sys" name="CheckStable" value="1"/>
+  <property category="sys" name="Company" value=""/>
+  <property category="sys" name="CompanyLabel" value="Company:"/>
+  <property category="sys" name="Copyright" value="Copyright (c) 2003"/>
+  <property category="sys" name="CopyrightLabel" value="Copyright:"/>
+  <property category="sys" name="DefaultPath" value="src"/>
+  <property category="sys" name="Description" value=""/>
+  <property category="sys" name="DescriptionLabel" value="Description:"/>
+  <property category="sys" name="DocPath" value="doc"/>
+  <property category="sys" name="EventMatch" value="false"/>
+  <property category="sys" name="EventStyle" value="1"/>
+  <property category="sys" name="ExcludeClassEnabled" value="0"/>
+  <property category="sys" name="IncludeTestPath" value="1"/>
+  <property category="sys" name="InstanceVisibility" value="2"/>
+  <property category="sys" name="JDK" value="java version 1.4.1_02-b06"/>
+  <property category="sys" name="LastTag" value="0"/>
+  <property category="sys" name="Libraries" value="mysql"/>
+  <property category="sys" name="MakeStable" value="0"/>
+  <property category="sys" name="OutPath" value="classes"/>
+  <property category="sys" name="SourcePath" value="src;test"/>
+  <property category="sys" name="TestPath" value="test"/>
+  <property category="sys" name="Title" value=""/>
+  <property category="sys" name="TitleLabel" value="Title:"/>
+  <property category="sys" name="Version" value="1.0"/>
+  <property category="sys" name="VersionLabel" value="@version"/>
+  <property category="sys" name="WorkingDirectory" value="."/>
+  <file path="src/boundedbuffer/Buffer.java"/>
+  <file path="src/boundedbuffer/BufferNotify.java"/>
+  <file path="read.me.txt"/>
+  <file path="remarks.txt"/>
+  <file path="test.txt"/>
+</project>

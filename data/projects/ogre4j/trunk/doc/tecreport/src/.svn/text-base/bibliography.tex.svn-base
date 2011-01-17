@@ -1,0 +1,10 @@
+\begin{thebibliography}{99}
+	\bibitem{Ogre07} Steve Streeting et. al., Object-Oriented Graphics Render Engine, Torus Knot Software, 2007\\http://www.ogre3d.org
+	\bibitem{Hee07} Dimitri v. Heesch, Doxygen, 2007\\http://www.stack.nl/\~dimitri/doxygen/
+	\bibitem{Sun04} Sun Microsystems, Java Native Interface, Sun Microsystems, 2004\\http://java.sun.com/j2se/1.5.0/docs/guide/jni
+	\bibitem{Jun06} Gregory Junker, Pro OGRE 3D Programming, Apress, 2006
+	\bibitem{Kay03} Michael Kay, XSLT 2nd Edition - Programmer's Reference, Wiley Publishing, 2003
+	\bibitem{Ogre4J} ogre4j, Java Native Interfaces for OGRE, 2007\\http://ogre4j.sourceforge.net
+	\bibitem{XBiG} XBiG, XSLT Bindings Generator, 2007\\http://xbig.sourceforge.net
+	\bibitem{Wiki} Wikipedia	
+\end{thebibliography}

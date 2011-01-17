@@ -1,0 +1,13 @@
+java.lang.System.out
+costumer.id
+costumer.shopping_list
+supplier.itemsToBeSupplied
+costumer.my_shop
+supplier.supply_address
+shop.items
+shop.storage
+costumer.purchasedItems
+costumer.out
+costumer.lock
+costumer.S
+Signal.i

@@ -1,0 +1,158 @@
+10
+
+dir
+361
+https://ogre4j.svn.sourceforge.net/svnroot/ogre4j/trunk
+https://ogre4j.svn.sourceforge.net/svnroot/ogre4j
+
+
+
+2009-06-05T12:18:04.001318Z
+361
+kex347
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+f7a11f6c-9f15-0410-ac78-9da7919e6c4f
+
+org.ogre4j.eclipse.meshviewer
+dir
+
+org.ogre4j.eclipse.carbon.macosx.x86
+dir
+
+org.ogre4j.examples.awt
+dir
+
+javax.vecmath-feature
+dir
+
+org.ogre4j.eclipse.opcode.test
+dir
+
+org.ogre4j.eclipse.3dlines.win32.win32.x86
+dir
+
+org.ogre4j.eclipse.3dlines-feature
+dir
+
+javax.vecmath.source
+dir
+
+org.ogre4j.eclipse.opcode.win32.win32.x86
+dir
+
+org.ogre4j.demos.swt
+dir
+
+org.ogre4j.eclipse.3dlines.source
+dir
+
+org.ogre4j.eclipse.meshviewer.rcp
+dir
+
+org.ogre4j.eclipse
+dir
+
+org.ogre4j.eclipse.opcode-feature
+dir
+
+doc
+dir
+
+org.ogre4j.examples.swt
+dir
+
+org.ogre4j.eclipse.opcode.source
+dir
+
+org.ogre4j
+dir
+
+htdocs
+dir
+
+org.ogre4j.examples.webstart
+dir
+
+org.ogre4j.eclipse.win32.win32.x86
+dir
+
+org.ogre4j.eclipse.ogreface.examples
+dir
+
+org.ogre4j.eclipse-feature
+dir
+
+README
+file
+
+
+
+
+2010-11-22T14:20:42.788000Z
+c4d9fff7dfb4a4574a44c5bbd68e9d98
+2007-06-22T10:11:29.056581Z
+94
+yavin02
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+762
+
+javax.vecmath
+dir
+
+org.ogre4j.eclipse.win32.win32.x86_64
+dir
+
+org.ogre4j.eclipse.source
+dir
+
+org.ogre4j.eclipse.3dlines
+dir
+
+org.ogre4j.eclipse.updates
+dir
+
+org.ogre4j.eclipse.gtk.linux.x86
+dir
+
+org.ogre4j.eclipse.opcode
+dir
+
+org.ogre4j.eclipse.ogreface
+dir
+
+org.ogre4j.eclipse.ogreface.tests
+dir
+

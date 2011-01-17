@@ -1,0 +1,4 @@
+BugThread.bg
+BuggedProgram.pingPongPlayer
+PingPong.i
+BuggedProgram.bugAppearanceNumber

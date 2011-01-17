@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/examples/queryexecuter
+END
+CSVQueryExecuter.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/examples/queryexecuter/CSVQueryExecuter.java
+END
+CSVFieldsProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/repos/ireport/!svn/ver/1086/trunk/iReport2/src/it/businesslogic/ireport/examples/queryexecuter/CSVFieldsProvider.java
+END
+CSVQueryExecuterFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/examples/queryexecuter/CSVQueryExecuterFactory.java
+END

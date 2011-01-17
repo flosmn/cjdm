@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: 3D Lines Source Plug-in
+Bundle-SymbolicName: org.ogre4j.eclipse.3dlines.source;singleton:=true
+Bundle-Version: 0.3.0
+Bundle-Vendor: ogre4j.org

@@ -1,0 +1,40 @@
+The example which contest can not catch and learning technique can
+
+Goal: direct the execution path (scheduler) to achieve stack overflow
+
+There are 2 types of threads in system
+
+Tread A type:
+loop : i=1..n
+   if on top of  the stack a
+	pop()
+  else
+	push(a)
+end loop
+
+Tread B type:
+loop : i=1..n
+   if on top of  the stack b
+	pop()
+  else
+	push(b)
+end loop
+
+
+stack size is #threads*n- epsilon
+S() function - number of  elements in the stack + bonus on each overflow
+it is interesting to create two play with how many threads of each type exists,
+such as 1,1 or 2,2 or 2,1
+
+SergeyN
+
+
+In this specific test which was supplied to the ConTest
+benchmarks database n=10, stack size is 36 and there are
+2 A threads and 2 B threads.
+Regular java run (under x86_64 GNU/Linux 2.4.21-37.ELsmp)
+would never overflow the stack.
+ConTest may overflow in about 10 runs out of 5000 (~0.2%).
+CMGTT would converge to 100% overflows at the last series (~15th series).
+
+Benny

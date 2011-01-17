@@ -1,0 +1,80 @@
+Concurrency Level is HIGH
+
+ PRODUCED[0] :0
+At time :0
+
+ PRODUCED[1] :0
+At time :0
+
+ PRODUCED[2] :0
+At time :0
+
+ PRODUCED[3] :0
+At time :0
+
+ PRODUCED[4] :0
+At time :0
+
+ PRODUCED[5] :null
+At time :0
+
+ PRODUCED[6] :null
+At time :0
+
+ PRODUCED[7] :null
+At time :0
+
+ Bug Number5
+
+ <ProducerConsumer.java , Client thread prints element CONSUMED before SERVER 
+ thread prints PRODUCED on that element , RaceFound Exception>
+
+ Bug Number5
+
+ <ProducerConsumer.java , Client thread prints element CONSUMED before SERVER 
+ thread prints PRODUCED on that element , RaceFound Exception>
+
+ Bug Number5
+
+ <ProducerConsumer.java , Client thread prints element CONSUMED before SERVER 
+ thread prints PRODUCED on that element , RaceFound Exception>
+
+ Bug Number5
+
+ <ProducerConsumer.java , Client thread prints element CONSUMED before SERVER 
+ thread prints PRODUCED on that element , RaceFound Exception>
+
+ Bug Number5
+
+ <ProducerConsumer.java , Client thread prints element CONSUMED before SERVER 
+ thread prints PRODUCED on that element , RaceFound Exception>
+
+ PRODUCED[8] :null
+At time :10
+
+ PRODUCED[9] :null
+At time :10
+
+ PRODUCED[10] :null
+At time :10
+
+ PRODUCED[11] :null
+At time :10
+
+ PRODUCED[12] :null
+At time :10
+
+ CONSUMED[9] :null
+At time :10
+
+ CONSUMED[10] :null
+At time :10
+
+ CONSUMED[11] :null
+At time :10
+
+ CONSUMED[12] :null
+At time :10
+
+ PRODUCED[13] :null
+At time :0

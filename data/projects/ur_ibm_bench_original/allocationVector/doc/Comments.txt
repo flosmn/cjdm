@@ -1,0 +1,58 @@
+sorry for the delay.
+
+1) there are buggy interleavings missing in the presentation (my notes are 
+marked with "!!!!"):
+
+
+ public void run() {
+    try {
+      // Allocating 'resultBuf.length' blocks.
+      for (int i = 0; i < resultBuf.length; i++) {
+                
+      resultBuf[i] = vector.getFreeBlockIndex();
+
+     !!!!!!!!!!!!!!! mentioned in the presintation!!!!!!!!!!!!!!!!
+
+        if (resultBuf[i] != -1) {
+       
+
+
+ !!!!!!!!!!!!  not mentioned in the presentation!!!!!!!!!!!!!!!!
+    !!!!!!!!!  a block could have been also marked by other thread!!!!!! 
+  !!!!!!!!!!!  after the if statment!!!!!!!!!!!!!!!!!!!    
+   
+
+
+          vector.markAsAllocatedBlock(resultBuf[i]);
+        }
+      }
+
+      // Freeing 'resultBuf.length' blocks.
+      for (int i = 0; i < resultBuf.length; i++) {
+        if (resultBuf[i] != -1) {
+         
+
+
+!!!!!!!!!!!!  not mentioned in the presintation!!!!!!!!!!!!!!!!
+    !!!!!!!!!  a block could have been freed by other thread!!!!!! 
+  !!!!!!!!!!!  after the if statment!!!!!!!!!!!!!!!!!!!    
+  
+
+
+        vector.markAsFreeBlock(resultBuf[i]);
+        }
+      }
+
+
+
+2) no reference and testing of highest ranking variable and the "right" 
+variable. 
+
+3) the graphs titles does not include the heuristic name.
+
+4) should be mentioned that vector.getFreeBlockIndex() return -1 if there 
+is 
+no free block (slide 6).
+
+5) no explanation of the concurrency parameter in the program and wht it 
+causes the bug to appear more.

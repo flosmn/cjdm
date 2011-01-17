@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/weka/!svn/ver/5349/trunk/weka/src/main/java/weka/gui/graphvisualizer/icons
+END
+zoomout.gif
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/graphvisualizer/icons/zoomout.gif
+END
+save.gif
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/graphvisualizer/icons/save.gif
+END
+extra.gif
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/graphvisualizer/icons/extra.gif
+END
+zoomin.gif
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/graphvisualizer/icons/zoomin.gif
+END
+preferences.gif
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/graphvisualizer/icons/preferences.gif
+END

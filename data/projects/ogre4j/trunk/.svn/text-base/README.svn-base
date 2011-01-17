@@ -1,0 +1,37 @@
+htdocs
+  hypertext sources for http://ogre4j.sourceforge.net
+
+This folder contains the following projects:
+
+org.ogre4j
+  OGRE JNI wrapper
+
+org.ogre4j.examples
+  Examples for the usage of ogre4j
+  
+org.ogre4j.eclipse
+  OGRE4Eclipse
+  
+org.ogre4j.eclipse.win32.win32.x86
+  OGRE4Eclipse Win32 Fragment
+
+org.ogre4j.eclipse.gtk.linux.x86
+  OGRE4Eclipse Linux Fragment
+  
+org.ogre4j.eclipse.ogreface
+  OGRE4Eclipse UI-Toolkit
+  
+org.ogre4j.eclipse.ogreface.examples
+  OGRE4Eclipse UI-Toolkit Examples
+  
+org.ogre4j.eclipse.ogreface.tests
+  OGRE4Eclipse UI-Toolkit Tests
+
+org.ogre4j.eclipse.meshviewer
+  OGRE4Eclipse Meshviewer
+
+org.ogre4j.eclipse-feature
+  OGRE4Eclipse Feature
+
+org.ogre4j.eclipse.updates
+  OGRE4Eclipse Update Site

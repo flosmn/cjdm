@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." default="build.proj.files" name="org.ogre4j.eclipse.carbon.macosx.x86">
+    <description>ANT build script to generate the eclipse project 
+    files based on the org.ogre4j project. This makes it easier to
+    manage versioning of this plugin. Just run the default target to
+    generate project files that are in sync with the org.ogre4j project.
+    </description>
+    <property name="org.ogre4j.dir"
+              description="The org.ogre4j project folder."
+              value="../org.ogre4j" />
+
+    <!-- ********************************************************** -->
+    <target name="build.proj.files"
+            depends="copy.ogre4j, build.osgi.manifest">
+        <description>Builds all project files for the Eclipse IDE.</description>
+    </target>
+
+    <!-- ********************************************************** -->
+    <import file="${org.ogre4j.dir}/build.xml" />
+    <target name="copy.ogre4j"> 
+        <description>currently, this does nothing.</description>
+    </target>
+	
+    <!-- ********************************************************** -->
+    <property file="plugin.properties" />
+
+    <target name="build.osgi.manifest">
+        <description>Builds the OSGi bundle manifest.</description>
+        <manifest file="META-INF/MANIFEST.MF">
+            <attribute name="Bundle-ManifestVersion" value="2" />
+            <attribute name="Bundle-Name" value="%fragmentName" />
+            <attribute name="Bundle-SymbolicName" value="org.ogre4j.eclipse.carbon.macosx.x86;singleton:=true" />         
+            <attribute name="Bundle-Version" value="${ogre4j.version}" />
+            <attribute name="Bundle-Vendor" value="ogre4j.org" />
+            <attribute name="Bundle-Localization" value="fragment" />
+        	<attribute name="Fragment-Host" value="org.ogre4j.eclipse;bundle-version=${ogre4j.version}"/>
+            <attribute name="Eclipse-PlatformFilter" value="(&amp; (osgi.ws=carbon) (osgi.os=macosx) (osgi.arch=x86))"/>
+        </manifest>
+    </target>
+
+    <!-- ********************************************************** -->
+    <target name="clean">
+        <delete dir="." includes="*.jar,*.zip,*.dylib" failonerror="false"/>
+        <delete file="META-INF/MANIFEST.MF" failonerror="false"/>
+    </target>
+</project>

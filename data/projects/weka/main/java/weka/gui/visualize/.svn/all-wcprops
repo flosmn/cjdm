@@ -1,0 +1,161 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/weka/!svn/ver/6889/trunk/weka/src/main/java/weka/gui/visualize
+END
+VisualizePanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/weka/!svn/ver/6889/trunk/weka/src/main/java/weka/gui/visualize/VisualizePanel.java
+END
+ClassPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/weka/!svn/ver/5086/trunk/weka/src/main/java/weka/gui/visualize/ClassPanel.java
+END
+InstanceInfoFrame.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/weka/!svn/ver/5014/trunk/weka/src/main/java/weka/gui/visualize/InstanceInfoFrame.java
+END
+VisualizePanelEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/visualize/VisualizePanelEvent.java
+END
+AttributePanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/weka/!svn/ver/5086/trunk/weka/src/main/java/weka/gui/visualize/AttributePanel.java
+END
+JComponentWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/visualize/JComponentWriter.java
+END
+VisualizePanelListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/visualize/VisualizePanelListener.java
+END
+PrintableHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/visualize/PrintableHandler.java
+END
+InstanceInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/weka/!svn/ver/5014/trunk/weka/src/main/java/weka/gui/visualize/InstanceInfo.java
+END
+MatrixPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/weka/!svn/ver/6889/trunk/weka/src/main/java/weka/gui/visualize/MatrixPanel.java
+END
+PostscriptWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/visualize/PostscriptWriter.java
+END
+PrintablePanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/visualize/PrintablePanel.java
+END
+VisualizeUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/visualize/VisualizeUtils.java
+END
+PlotData2D.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/weka/!svn/ver/5741/trunk/weka/src/main/java/weka/gui/visualize/PlotData2D.java
+END
+PNGWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/weka/!svn/ver/5920/trunk/weka/src/main/java/weka/gui/visualize/PNGWriter.java
+END
+AttributePanelListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/visualize/AttributePanelListener.java
+END
+ThresholdVisualizePanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/weka/!svn/ver/5928/trunk/weka/src/main/java/weka/gui/visualize/ThresholdVisualizePanel.java
+END
+JPEGWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/weka/!svn/ver/5920/trunk/weka/src/main/java/weka/gui/visualize/JPEGWriter.java
+END
+Visualize.props
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/weka/!svn/ver/5015/trunk/weka/src/main/java/weka/gui/visualize/Visualize.props
+END
+Plot2DCompanion.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/visualize/Plot2DCompanion.java
+END
+BMPWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/weka/!svn/ver/5920/trunk/weka/src/main/java/weka/gui/visualize/BMPWriter.java
+END
+LegendPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/weka/!svn/ver/4752/trunk/weka/src/main/java/weka/gui/visualize/LegendPanel.java
+END
+PrintableComponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/visualize/PrintableComponent.java
+END
+PostscriptGraphics.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/visualize/PostscriptGraphics.java
+END
+Plot2D.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/weka/!svn/ver/5987/trunk/weka/src/main/java/weka/gui/visualize/Plot2D.java
+END
+AttributePanelEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/visualize/AttributePanelEvent.java
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/weka/!svn/ver/5349/trunk/weka/src/main/java/weka/gui/scripting/images
+END
+groovy_small.png
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/weka/!svn/ver/5142/trunk/weka/src/main/java/weka/gui/scripting/images/groovy_small.png
+END
+groovy_medium.png
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/weka/!svn/ver/5142/trunk/weka/src/main/java/weka/gui/scripting/images/groovy_medium.png
+END
+jython_small.png
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/weka/!svn/ver/5142/trunk/weka/src/main/java/weka/gui/scripting/images/jython_small.png
+END
+jython_medium.png
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/weka/!svn/ver/5142/trunk/weka/src/main/java/weka/gui/scripting/images/jython_medium.png
+END

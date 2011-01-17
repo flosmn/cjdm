@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: OGRE4Eclipse UI-Toolkit Examples
+Bundle-SymbolicName: org.ogre4j.eclipse.ogreface.examples;singleton:=true
+Bundle-Version: 1.4.3
+Bundle-Localization: plugin
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.ogre4j.eclipse.ogreface
+Bundle-ClassPath: .
+Bundle-Vendor: ogre4j.org
+Export-Package: org.ogre4j.eclipse.ogreface.examples,
+ org.ogre4j.eclipse.ogreface.examples.actions,
+ org.ogre4j.eclipse.ogreface.examples.navigators,
+ org.ogre4j.eclipse.ogreface.examples.verysimplescene

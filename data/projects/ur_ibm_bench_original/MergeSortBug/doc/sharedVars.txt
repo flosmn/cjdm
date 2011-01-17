@@ -1,0 +1,6 @@
+mergesortbug.MergeSortBug.maxThreads
+mergesortbug.MergeSortBug.startIndex
+mergesortbug.MergeSortBug.endIndex
+mergesortbug.MergeSortBug.lowestNumThreads
+mergesortbug.MergeSortBug.intArray
+mergesortbug.MergeSortBug.tempArray

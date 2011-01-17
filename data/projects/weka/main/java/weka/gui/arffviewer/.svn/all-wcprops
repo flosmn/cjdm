@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/weka/!svn/ver/6455/trunk/weka/src/main/java/weka/gui/arffviewer
+END
+ArffTable.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/arffviewer/ArffTable.java
+END
+ArffTableModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/weka/!svn/ver/6452/trunk/weka/src/main/java/weka/gui/arffviewer/ArffTableModel.java
+END
+ArffSortedTableModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/weka/!svn/ver/6452/trunk/weka/src/main/java/weka/gui/arffviewer/ArffSortedTableModel.java
+END
+ArffViewerMainPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/arffviewer/ArffViewerMainPanel.java
+END
+ArffViewer.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/weka/!svn/ver/4719/trunk/weka/src/main/java/weka/gui/arffviewer/ArffViewer.java
+END
+ArffPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/weka/!svn/ver/6455/trunk/weka/src/main/java/weka/gui/arffviewer/ArffPanel.java
+END
+ArffTableCellRenderer.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/arffviewer/ArffTableCellRenderer.java
+END

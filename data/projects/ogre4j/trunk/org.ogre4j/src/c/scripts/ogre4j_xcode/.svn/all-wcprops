@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/ogre4j/!svn/ver/357/trunk/org.ogre4j/src/c/scripts/ogre4j_xcode
+END
+ogre4jTarget.xcconfig
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/ogre4j/!svn/ver/315/trunk/org.ogre4j/src/c/scripts/ogre4j_xcode/ogre4jTarget.xcconfig
+END
+ogre4jProj.xcconfig
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ogre4j/!svn/ver/315/trunk/org.ogre4j/src/c/scripts/ogre4j_xcode/ogre4jProj.xcconfig
+END

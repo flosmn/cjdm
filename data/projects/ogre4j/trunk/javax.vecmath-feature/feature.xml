@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="javax.vecmath"
+      label="Java3D Vector Mathematics Feature"
+      version="1.5.1"
+      provider-name="ogre4j.org">
+
+   <copyright url="COPYRIGHT.txt">
+      Copyright (c) 2007 Sun Microsystems, Inc., 4150 Network Circle,
+Santa Clara, California 95054, U.S.A. All rights reserved.
+   </copyright>
+
+   <license url="LICENSE.txt">
+      This software is licensed by Sun:
+i) for research use under terms of the Java Research License
+(JRL) as specified in the LICENSE-JRL.txt file and on the web
+at &quot;http://java3d.dev.java.net/jrl.html&quot;; or
+ii) for commercial use under the terms of the Java Distribution
+License (JDL) as specified in the LICENSE-JDL.txt file and on
+the web at &quot;http://java3d.dev.java.net/jdl-java3d.pdf&quot;.
+   </license>
+
+   <url>
+      <discovery label="The Vecmath API" url="https://vecmath.dev.java.net/"/>
+   </url>
+
+   <plugin
+         id="javax.vecmath"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+</feature>

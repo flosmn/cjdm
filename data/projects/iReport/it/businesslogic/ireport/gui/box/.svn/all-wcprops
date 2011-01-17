@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/repos/ireport/!svn/ver/1174/trunk/iReport2/src/it/businesslogic/ireport/gui/box
+END
+BoxBorderEditorPanel.form
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/repos/ireport/!svn/ver/1172/trunk/iReport2/src/it/businesslogic/ireport/gui/box/BoxBorderEditorPanel.form
+END
+JBoxButton.form
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/repos/ireport/!svn/ver/843/trunk/iReport2/src/it/businesslogic/ireport/gui/box/JBoxButton.form
+END
+JBoxButtonPopup.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/gui/box/JBoxButtonPopup.java
+END
+BoxPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/repos/ireport/!svn/ver/1174/trunk/iReport2/src/it/businesslogic/ireport/gui/box/BoxPanel.java
+END
+BorderSelectionListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/repos/ireport/!svn/ver/1172/trunk/iReport2/src/it/businesslogic/ireport/gui/box/BorderSelectionListener.java
+END
+BoxPanel.form
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/repos/ireport/!svn/ver/1172/trunk/iReport2/src/it/businesslogic/ireport/gui/box/BoxPanel.form
+END
+SampleBoxPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/repos/ireport/!svn/ver/1172/trunk/iReport2/src/it/businesslogic/ireport/gui/box/SampleBoxPanel.java
+END
+LineStyleListCellRenderer.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/repos/ireport/!svn/ver/1172/trunk/iReport2/src/it/businesslogic/ireport/gui/box/LineStyleListCellRenderer.java
+END
+BoxBorderSelectionPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/repos/ireport/!svn/ver/1174/trunk/iReport2/src/it/businesslogic/ireport/gui/box/BoxBorderSelectionPanel.java
+END
+SampleBoxPanel.form
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/repos/ireport/!svn/ver/547/trunk/iReport2/src/it/businesslogic/ireport/gui/box/SampleBoxPanel.form
+END
+BoxBorderEditorPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/repos/ireport/!svn/ver/1174/trunk/iReport2/src/it/businesslogic/ireport/gui/box/BoxBorderEditorPanel.java
+END
+BoxBorderSelectionPanel.form
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/repos/ireport/!svn/ver/1174/trunk/iReport2/src/it/businesslogic/ireport/gui/box/BoxBorderSelectionPanel.form
+END
+JBoxButton.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/gui/box/JBoxButton.java
+END

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/gui/dnd
+END
+TransferableObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/gui/dnd/TransferableObject.java
+END
+ListColumnTransferableHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/gui/dnd/ListColumnTransferableHandler.java
+END
+ColumnTransferableHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/gui/dnd/ColumnTransferableHandler.java
+END
+FieldsContainer.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/repos/ireport/!svn/ver/1116/trunk/iReport2/src/it/businesslogic/ireport/gui/dnd/FieldsContainer.java
+END
+.nbattrs
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/repos/ireport/!svn/ver/1026/trunk/iReport2/src/it/businesslogic/ireport/gui/dnd/.nbattrs
+END
+FieldsContainerTransferHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/repos/ireport/!svn/ver/1116/trunk/iReport2/src/it/businesslogic/ireport/gui/dnd/FieldsContainerTransferHandler.java
+END
+JListTransfertHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/gui/dnd/JListTransfertHandler.java
+END

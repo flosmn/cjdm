@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ogre4j/!svn/ver/168/trunk/org.ogre4j.eclipse.ogreface/src/org/ogre4j/eclipse/ogreface/viewer
+END
+INavigator.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/ogre4j/!svn/ver/168/trunk/org.ogre4j.eclipse.ogreface/src/org/ogre4j/eclipse/ogreface/viewer/INavigator.java
+END
+IOgreNodeProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svnroot/ogre4j/!svn/ver/123/trunk/org.ogre4j.eclipse.ogreface/src/org/ogre4j/eclipse/ogreface/viewer/IOgreNodeProvider.java
+END
+IPicker.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/ogre4j/!svn/ver/168/trunk/org.ogre4j.eclipse.ogreface/src/org/ogre4j/eclipse/ogreface/viewer/IPicker.java
+END
+IOgreLightProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svnroot/ogre4j/!svn/ver/127/trunk/org.ogre4j.eclipse.ogreface/src/org/ogre4j/eclipse/ogreface/viewer/IOgreLightProvider.java
+END
+IOgreCameraProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svnroot/ogre4j/!svn/ver/127/trunk/org.ogre4j.eclipse.ogreface/src/org/ogre4j/eclipse/ogreface/viewer/IOgreCameraProvider.java
+END
+IOgreParticleSystemProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svnroot/ogre4j/!svn/ver/123/trunk/org.ogre4j.eclipse.ogreface/src/org/ogre4j/eclipse/ogreface/viewer/IOgreParticleSystemProvider.java
+END
+IOgreNodeModifier.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svnroot/ogre4j/!svn/ver/123/trunk/org.ogre4j.eclipse.ogreface/src/org/ogre4j/eclipse/ogreface/viewer/IOgreNodeModifier.java
+END
+IOgreContentProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svnroot/ogre4j/!svn/ver/123/trunk/org.ogre4j.eclipse.ogreface/src/org/ogre4j/eclipse/ogreface/viewer/IOgreContentProvider.java
+END
+IOgreEntityProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svnroot/ogre4j/!svn/ver/123/trunk/org.ogre4j.eclipse.ogreface/src/org/ogre4j/eclipse/ogreface/viewer/IOgreEntityProvider.java
+END
+OgreViewer.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/ogre4j/!svn/ver/166/trunk/org.ogre4j.eclipse.ogreface/src/org/ogre4j/eclipse/ogreface/viewer/OgreViewer.java
+END

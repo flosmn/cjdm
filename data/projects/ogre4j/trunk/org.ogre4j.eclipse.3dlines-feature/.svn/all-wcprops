@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/ogre4j/!svn/ver/270/trunk/org.ogre4j.eclipse.3dlines-feature
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/ogre4j/!svn/ver/243/trunk/org.ogre4j.eclipse.3dlines-feature/.project
+END
+build.properties
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/ogre4j/!svn/ver/243/trunk/org.ogre4j.eclipse.3dlines-feature/build.properties
+END
+feature.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/ogre4j/!svn/ver/270/trunk/org.ogre4j.eclipse.3dlines-feature/feature.xml
+END

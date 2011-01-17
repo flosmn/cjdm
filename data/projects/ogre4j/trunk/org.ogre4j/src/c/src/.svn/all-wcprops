@@ -1,0 +1,5255 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/ogre4j/!svn/ver/356/trunk/org.ogre4j/src/c/src
+END
+class_org_ogre4j_ShadowTextureConfigList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ShadowTextureConfigList.cpp
+END
+class_org_ogre4j_SceneNode_00024ObjectIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SceneNode_00024ObjectIterator.cpp
+END
+class_org_ogre4j_TempBlendedBufferInfo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_TempBlendedBufferInfo.cpp
+END
+class_org_ogre4j_ResourceLoadingListener.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ResourceLoadingListener.cpp
+END
+class_org_ogre4j_InstancedGeometry_00024BatchInstance_00024LODIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_InstancedGeometry_00024BatchInstance_00024LODIterator.cpp
+END
+class_org_ogre4j_VisibleObjectsBoundsInfo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_VisibleObjectsBoundsInfo.cpp
+END
+class_org_ogre4j_TextureUnitState_00024EnvMapTypeHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_TextureUnitState_00024EnvMapTypeHelper.cpp
+END
+class_org_ogre4j_ManualCullingModeHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ManualCullingModeHelper.cpp
+END
+class_org_ogre4j_InstancedGeometry_00024BatchInstance.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_InstancedGeometry_00024BatchInstance.cpp
+END
+class_org_ogre4j_ParticleSystemManager_00024ParticleTemplateMap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ParticleSystemManager_00024ParticleTemplateMap.cpp
+END
+class_org_ogre4j_Root_00024MovableObjectFactoryIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Root_00024MovableObjectFactoryIterator.cpp
+END
+class_org_ogre4j_Skeleton_00024BoneList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Skeleton_00024BoneList.cpp
+END
+class_org_ogre4j_RenderQueueInvocationList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_RenderQueueInvocationList.cpp
+END
+class_org_ogre4j_Font_00024GlyphInfo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Font_00024GlyphInfo.cpp
+END
+class_org_ogre4j_AnimationStateMap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_AnimationStateMap.cpp
+END
+class_org_ogre4j_TangentSpaceCalc_00024VertexSplits.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_TangentSpaceCalc_00024VertexSplits.cpp
+END
+class_org_ogre4j_TextureUnitState_00024TextureEffect.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_TextureUnitState_00024TextureEffect.cpp
+END
+class_org_ogre4j_ShadowRenderableFlagsHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ShadowRenderableFlagsHelper.cpp
+END
+class_org_ogre4j_HardwareBuffer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_HardwareBuffer.cpp
+END
+class_org_ogre4j_PixelFormatHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_PixelFormatHelper.cpp
+END
+class_org_ogre4j_SceneManagerEnumerator_00024MetaDataIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SceneManagerEnumerator_00024MetaDataIterator.cpp
+END
+class_org_ogre4j_Pass_00024BuiltinHashFunctionHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Pass_00024BuiltinHashFunctionHelper.cpp
+END
+class_org_ogre4j_MeshSerializerListener.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_MeshSerializerListener.cpp
+END
+class_org_ogre4j_SceneManager_00024lightLess.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SceneManager_00024lightLess.cpp
+END
+class_org_ogre4j_SceneQueryMovableObjectPair.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SceneQueryMovableObjectPair.cpp
+END
+class_org_ogre4j_InstancedGeometry_00024BatchInstanceMap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_InstancedGeometry_00024BatchInstanceMap.cpp
+END
+class_org_ogre4j_ResourceGroupManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/ogre4j/!svn/ver/342/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ResourceGroupManager.cpp
+END
+class_org_ogre4j_SceneNode_00024ConstObjectIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SceneNode_00024ConstObjectIterator.cpp
+END
+class_org_ogre4j_IndexData.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_IndexData.cpp
+END
+class_org_ogre4j_HardwareBuffer_00024UsageHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_HardwareBuffer_00024UsageHelper.cpp
+END
+class_org_ogre4j_PatchMeshPtr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_PatchMeshPtr.cpp
+END
+class_org_ogre4j_VertexData_00024HardwareAnimationData.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_VertexData_00024HardwareAnimationData.cpp
+END
+class_org_ogre4j_WindowEventUtilities.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_WindowEventUtilities.cpp
+END
+jni_unsigned_longlong.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/jni_unsigned_longlong.cpp
+END
+class_org_ogre4j_InvalidStateException.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_InvalidStateException.cpp
+END
+class_org_ogre4j_InstancedGeometry_00024SubMeshGeometryLookup.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_InstancedGeometry_00024SubMeshGeometryLookup.cpp
+END
+class_org_ogre4j_SceneQuery_00024WorldFragmentTypeHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SceneQuery_00024WorldFragmentTypeHelper.cpp
+END
+class_org_ogre4j_EdgeData_00024Edge.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_EdgeData_00024Edge.cpp
+END
+class_org_ogre4j_ConstEnabledAnimationStateIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ConstEnabledAnimationStateIterator.cpp
+END
+class_org_ogre4j_LoggingLevelHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_LoggingLevelHelper.cpp
+END
+class_org_ogre4j_CompositorScriptCompiler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_CompositorScriptCompiler.cpp
+END
+class_org_ogre4j_GpuProgramManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_GpuProgramManager.cpp
+END
+class_org_ogre4j_VertexAnimationTypeHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_VertexAnimationTypeHelper.cpp
+END
+class_org_ogre4j_InstancedGeometry_00024MaterialBucket_00024GeometryBucketList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_InstancedGeometry_00024MaterialBucket_00024GeometryBucketList.cpp
+END
+class_org_ogre4j_DataStreamList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_DataStreamList.cpp
+END
+class_org_std_ios_1base_00024openmodeHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_std_ios_1base_00024openmodeHelper.cpp
+END
+class_org_ogre4j_Log_00024Stream.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Log_00024Stream.cpp
+END
+class_org_ogre4j_OverlayElement.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_OverlayElement.cpp
+END
+class_org_ogre4j_OptimisedUtil.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_OptimisedUtil.cpp
+END
+class_org_ogre4j_BillboardChain_00024Element.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_BillboardChain_00024Element.cpp
+END
+class_org_ogre4j_RaySceneQueryResult.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_RaySceneQueryResult.cpp
+END
+class_org_ogre4j_EdgeData.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_EdgeData.cpp
+END
+class_org_ogre4j_ColourValue.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ColourValue.cpp
+END
+class_org_ogre4j_SceneManager_00024CameraIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SceneManager_00024CameraIterator.cpp
+END
+class_org_ogre4j_Animation_00024VertexTrackIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Animation_00024VertexTrackIterator.cpp
+END
+class_org_ogre4j_ScriptTokenList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ScriptTokenList.cpp
+END
+class_org_ogre4j_emittercommands_CmdMinVelocity.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_emittercommands_CmdMinVelocity.cpp
+END
+class_org_ogre4j_Rectangle.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Rectangle.cpp
+END
+class_org_ogre4j_ImportAbstractNode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ImportAbstractNode.cpp
+END
+class_org_ogre4j_SimpleSpline.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SimpleSpline.cpp
+END
+class_org_ogre4j_RenderTarget_00024FrameStats.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_RenderTarget_00024FrameStats.cpp
+END
+class_org_ogre4j_InstancedGeometry_00024LODBucket.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_InstancedGeometry_00024LODBucket.cpp
+END
+class_org_ogre4j_CompositionTechnique_00024TargetPassIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_CompositionTechnique_00024TargetPassIterator.cpp
+END
+class_org_ogre4j_GpuConstantTypeHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_GpuConstantTypeHelper.cpp
+END
+class_org_ogre4j_TexCoordModifierControllerValue.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_TexCoordModifierControllerValue.cpp
+END
+class_org_ogre4j_FontTypeHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_FontTypeHelper.cpp
+END
+class_org_ogre4j_GeneralAllocPolicy.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_GeneralAllocPolicy.cpp
+END
+class_org_ogre4j_Resource_00024LoadingStateHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Resource_00024LoadingStateHelper.cpp
+END
+class_org_ogre4j_PatchMesh.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_PatchMesh.cpp
+END
+class_org_ogre4j_TextAreaOverlayElement_00024AlignmentHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_TextAreaOverlayElement_00024AlignmentHelper.cpp
+END
+class_org_ogre4j_PropertyAbstractNode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_PropertyAbstractNode.cpp
+END
+class_org_ogre4j_LogMessageLevelHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_LogMessageLevelHelper.cpp
+END
+class_org_ogre4j_GpuConstantDefinition.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_GpuConstantDefinition.cpp
+END
+class_org_ogre4j_UTFString_00024_1base_1iterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_UTFString_00024_1base_1iterator.cpp
+END
+class_org_ogre4j_RenderTarget_00024FrameBufferHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_RenderTarget_00024FrameBufferHelper.cpp
+END
+class_org_ogre4j_TextureFilterOptionsHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_TextureFilterOptionsHelper.cpp
+END
+class_org_ogre4j_FloatRect.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_FloatRect.cpp
+END
+class_org_ogre4j_Root.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/ogre4j/!svn/ver/343/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Root.cpp
+END
+class_org_ogre4j_UnaryOptionList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_UnaryOptionList.cpp
+END
+class_org_ogre4j_GlobalUtility.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/ogre4j/!svn/ver/343/trunk/org.ogre4j/src/c/src/class_org_ogre4j_GlobalUtility.cpp
+END
+class_org_ogre4j_InstancedGeometry_00024SubMeshLodGeometryLinkList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_InstancedGeometry_00024SubMeshLodGeometryLinkList.cpp
+END
+class_org_ogre4j_ParamDictionary.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ParamDictionary.cpp
+END
+class_org_ogre4j_RenderToVertexBufferSharedPtr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_RenderToVertexBufferSharedPtr.cpp
+END
+class_org_ogre4j_StringInterface.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_StringInterface.cpp
+END
+jni_integer_pointer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/jni_integer_pointer.cpp
+END
+class_org_ogre4j_RenderQueueInvocationIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_RenderQueueInvocationIterator.cpp
+END
+class_org_ogre4j_SceneManagerMetaData.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SceneManagerMetaData.cpp
+END
+class_org_ogre4j_overlayelementcommands_CmdHeight.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_overlayelementcommands_CmdHeight.cpp
+END
+class_org_std_istringstream.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_std_istringstream.cpp
+END
+class_org_ogre4j_GpuNamedConstants.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_GpuNamedConstants.cpp
+END
+class_org_ogre4j_Pose_00024VertexOffsetMap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Pose_00024VertexOffsetMap.cpp
+END
+class_org_ogre4j_LightFactory.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_LightFactory.cpp
+END
+jni_string_pointer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/jni_string_pointer.cpp
+END
+class_org_ogre4j_OverlayManager_00024OverlayMap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_OverlayManager_00024OverlayMap.cpp
+END
+class_org_std_ostringstream.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_std_ostringstream.cpp
+END
+class_org_ogre4j_LayerBlendSourceHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_LayerBlendSourceHelper.cpp
+END
+class_org_ogre4j_Entity_00024ChildObjectListIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Entity_00024ChildObjectListIterator.cpp
+END
+class_org_ogre4j_EdgeData_00024EdgeList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_EdgeData_00024EdgeList.cpp
+END
+class_org_ogre4j_Mesh_00024IndexMap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Mesh_00024IndexMap.cpp
+END
+class_org_ogre4j_RibbonTrail.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/ogre4j/!svn/ver/342/trunk/org.ogre4j/src/c/src/class_org_ogre4j_RibbonTrail.cpp
+END
+class_org_ogre4j_StaticGeometry_00024SubMeshLodGeometryLink.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_StaticGeometry_00024SubMeshLodGeometryLink.cpp
+END
+class_org_ogre4j_Root_00024PluginLibList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Root_00024PluginLibList.cpp
+END
+class_org_ogre4j_CompositionTechnique_00024TextureDefinitions.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_CompositionTechnique_00024TextureDefinitions.cpp
+END
+class_org_ogre4j_SceneQueryMovableIntersectionList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SceneQueryMovableIntersectionList.cpp
+END
+class_org_ogre4j_VertexDeclaration_00024VertexElementList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_VertexDeclaration_00024VertexElementList.cpp
+END
+class_org_ogre4j_PassTranslator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_PassTranslator.cpp
+END
+class_org_ogre4j_Exception_00024ExceptionCodesHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Exception_00024ExceptionCodesHelper.cpp
+END
+class_org_ogre4j_FogModeHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_FogModeHelper.cpp
+END
+class_org_ogre4j_ControllerFunctionRealPtr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ControllerFunctionRealPtr.cpp
+END
+class_org_ogre4j_FloatGpuParameterControllerValue.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_FloatGpuParameterControllerValue.cpp
+END
+class_org_ogre4j_ProgressiveMesh_00024LODFaceList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ProgressiveMesh_00024LODFaceList.cpp
+END
+Ogre4JAbstractNativeListener.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/ogre4j/!svn/ver/337/trunk/org.ogre4j/src/c/src/Ogre4JAbstractNativeListener.cpp
+END
+class_org_ogre4j_IOException.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_IOException.cpp
+END
+class_org_ogre4j_SubEntity.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/ogre4j/!svn/ver/342/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SubEntity.cpp
+END
+class_org_ogre4j_GpuNamedConstantsSerializer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_GpuNamedConstantsSerializer.cpp
+END
+class_org_ogre4j_RenderablePass.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_RenderablePass.cpp
+END
+class_org_ogre4j_SceneManagerEnumerator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SceneManagerEnumerator.cpp
+END
+class_org_ogre4j_StaticGeometry_00024RegionMap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_StaticGeometry_00024RegionMap.cpp
+END
+class_org_ogre4j_emittercommands_CmdMaxDuration.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_emittercommands_CmdMaxDuration.cpp
+END
+class_org_ogre4j_Technique_00024GPUDeviceNameRuleList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Technique_00024GPUDeviceNameRuleList.cpp
+END
+jni_void_pointer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/jni_void_pointer.cpp
+END
+class_org_ogre4j_LinkedSkeletonAnimationSource.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_LinkedSkeletonAnimationSource.cpp
+END
+class_org_ogre4j_SortModeHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SortModeHelper.cpp
+END
+class_org_ogre4j_BillboardChain.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/ogre4j/!svn/ver/342/trunk/org.ogre4j/src/c/src/class_org_ogre4j_BillboardChain.cpp
+END
+class_org_ogre4j_ScriptingAllocPolicy.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ScriptingAllocPolicy.cpp
+END
+class_org_ogre4j_LayerBlendOperationExHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_LayerBlendOperationExHelper.cpp
+END
+class_org_ogre4j_TransformKeyFrame.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_TransformKeyFrame.cpp
+END
+class_org_ogre4j_FrameListener.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_FrameListener.cpp
+END
+class_org_ogre4j_WaveformControllerFunction.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_WaveformControllerFunction.cpp
+END
+class_org_ogre4j_ImageCodec_00024ImageData.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ImageCodec_00024ImageData.cpp
+END
+class_org_ogre4j_VertexBufferBinding.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_VertexBufferBinding.cpp
+END
+class_org_ogre4j_ScriptLexer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ScriptLexer.cpp
+END
+class_org_ogre4j_ShadowCameraSetupPtr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ShadowCameraSetupPtr.cpp
+END
+class_org_ogre4j_overlayelementcommands_CmdVerticalAlign.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_overlayelementcommands_CmdVerticalAlign.cpp
+END
+class_org_ogre4j_PixelComponentTypeHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_PixelComponentTypeHelper.cpp
+END
+class_org_ogre4j_MovableObject_00024Listener.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_MovableObject_00024Listener.cpp
+END
+jni_char_pointer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/jni_char_pointer.cpp
+END
+class_org_ogre4j_GpuProgramUsage.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_GpuProgramUsage.cpp
+END
+class_org_ogre4j_GPUVendorHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_GPUVendorHelper.cpp
+END
+class_org_ogre4j_CompositorInstance_00024RenderSystemOpPairs.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_CompositorInstance_00024RenderSystemOpPairs.cpp
+END
+class_org_ogre4j_ControllerManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ControllerManager.cpp
+END
+class_org_ogre4j_RenderSystemCapabilities_00024ShaderProfiles.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_RenderSystemCapabilities_00024ShaderProfiles.cpp
+END
+class_org_ogre4j_overlayelementcommands_CmdMaterial.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_overlayelementcommands_CmdMaterial.cpp
+END
+class_org_ogre4j_ConvexBody.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ConvexBody.cpp
+END
+class_org_ogre4j_Node_00024TransformSpaceHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Node_00024TransformSpaceHelper.cpp
+END
+class_org_ogre4j_TextureUnitState_00024ContentTypeHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_TextureUnitState_00024ContentTypeHelper.cpp
+END
+class_org_ogre4j_SceneQueryResultMovableList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SceneQueryResultMovableList.cpp
+END
+class_org_ogre4j_PlaneBoundedVolume.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_PlaneBoundedVolume.cpp
+END
+class_org_ogre4j_CompositionTechnique_00024TextureDefinition.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_CompositionTechnique_00024TextureDefinition.cpp
+END
+jni_native_long_buffer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/jni_native_long_buffer.cpp
+END
+class_org_ogre4j_TextAreaOverlayElement.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_TextAreaOverlayElement.cpp
+END
+class_org_ogre4j_Codec_00024CodecData.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Codec_00024CodecData.cpp
+END
+class_org_ogre4j_Billboard.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Billboard.cpp
+END
+class_org_ogre4j_ScriptCompiler_00024ErrorList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ScriptCompiler_00024ErrorList.cpp
+END
+class_org_ogre4j_ManualObject_00024ManualObjectSectionShadowRenderable.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ManualObject_00024ManualObjectSectionShadowRenderable.cpp
+END
+class_org_ogre4j_Pass_00024ConstTextureUnitStateIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Pass_00024ConstTextureUnitStateIterator.cpp
+END
+class_org_ogre4j_CompositorChain_00024Instances.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_CompositorChain_00024Instances.cpp
+END
+class_org_ogre4j_AnimationTrack_00024Listener.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_AnimationTrack_00024Listener.cpp
+END
+class_org_ogre4j_TangentSpaceCalc_00024IndexRemap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_TangentSpaceCalc_00024IndexRemap.cpp
+END
+class_org_ogre4j_TextureUnitState_00024EffectMap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_TextureUnitState_00024EffectMap.cpp
+END
+class_org_ogre4j_VariableAccessAbstractNode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_VariableAccessAbstractNode.cpp
+END
+class_org_ogre4j_VertexPoseKeyFrame_00024PoseRef.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_VertexPoseKeyFrame_00024PoseRef.cpp
+END
+class_org_ogre4j_LayerBlendOperationHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_LayerBlendOperationHelper.cpp
+END
+class_org_ogre4j_ShadowTextureList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ShadowTextureList.cpp
+END
+class_org_ogre4j_VertexAnimationTrack.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_VertexAnimationTrack.cpp
+END
+class_org_ogre4j_StaticGeometry_00024SubMeshLodGeometryLinkList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_StaticGeometry_00024SubMeshLodGeometryLinkList.cpp
+END
+class_org_ogre4j_TextureUnitState_00024TextureTransformTypeHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_TextureUnitState_00024TextureTransformTypeHelper.cpp
+END
+class_org_ogre4j_VertexData.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_VertexData.cpp
+END
+class_org_ogre4j_BorderPanelOverlayElement.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_BorderPanelOverlayElement.cpp
+END
+class_org_ogre4j_Entity_00024EntitySet.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Entity_00024EntitySet.cpp
+END
+class_org_ogre4j_RenderToVertexBuffer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_RenderToVertexBuffer.cpp
+END
+class_org_std_ostream.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_std_ostream.cpp
+END
+class_org_ogre4j_DataStreamPtr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_DataStreamPtr.cpp
+END
+class_org_ogre4j_BillboardRotationTypeHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_BillboardRotationTypeHelper.cpp
+END
+class_org_ogre4j_InstancedGeometry_00024QueuedSubMeshOriginList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_InstancedGeometry_00024QueuedSubMeshOriginList.cpp
+END
+class_org_ogre4j_SkeletonSerializer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SkeletonSerializer.cpp
+END
+class_org_ogre4j_PixelUtil.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_PixelUtil.cpp
+END
+class_org_ogre4j_PatchSurface_00024VisibleSideHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_PatchSurface_00024VisibleSideHelper.cpp
+END
+class_org_ogre4j_HighLevelGpuProgramManager_00024FactoryMap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_HighLevelGpuProgramManager_00024FactoryMap.cpp
+END
+class_org_ogre4j_ParticleSystemTranslator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ParticleSystemTranslator.cpp
+END
+class_org_ogre4j_HardwareBufferManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_HardwareBufferManager.cpp
+END
+class_org_ogre4j_ParamDictionaryMap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ParamDictionaryMap.cpp
+END
+class_org_ogre4j_EdgeData_00024EdgeGroup.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_EdgeData_00024EdgeGroup.cpp
+END
+class_org_ogre4j_StaticGeometry_00024LODBucket.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_StaticGeometry_00024LODBucket.cpp
+END
+class_org_ogre4j_TextureUsageHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_TextureUsageHelper.cpp
+END
+class_org_ogre4j_emittercommands_CmdAngle.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_emittercommands_CmdAngle.cpp
+END
+jni_bool_pointer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/jni_bool_pointer.cpp
+END
+class_org_ogre4j_TextureUnitState_00024TextureEffectTypeHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_TextureUnitState_00024TextureEffectTypeHelper.cpp
+END
+class_org_ogre4j_ParticleSystemManager_00024ParticleAffectorFactoryIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ParticleSystemManager_00024ParticleAffectorFactoryIterator.cpp
+END
+class_org_ogre4j_CompositorSerializer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_CompositorSerializer.cpp
+END
+class_org_ogre4j_CompositorInstance_00024RenderSystemOpPair.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_CompositorInstance_00024RenderSystemOpPair.cpp
+END
+class_org_ogre4j_Rectangle2D.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/ogre4j/!svn/ver/342/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Rectangle2D.cpp
+END
+class_org_ogre4j_QueuedRenderableVisitor.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_QueuedRenderableVisitor.cpp
+END
+class_org_ogre4j_BillboardTypeHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_BillboardTypeHelper.cpp
+END
+class_org_ogre4j_ConfigOptionMap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ConfigOptionMap.cpp
+END
+class_org_ogre4j_HardwareIndexBuffer_00024IndexTypeHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_HardwareIndexBuffer_00024IndexTypeHelper.cpp
+END
+class_org_ogre4j_TechniqueTranslator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_TechniqueTranslator.cpp
+END
+class_org_ogre4j_Technique_00024GPUDeviceNameRule.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Technique_00024GPUDeviceNameRule.cpp
+END
+class_org_ogre4j_NedAllocPolicy.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/ogre4j/!svn/ver/356/trunk/org.ogre4j/src/c/src/class_org_ogre4j_NedAllocPolicy.cpp
+END
+class_org_ogre4j_CompositionTargetPass.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_CompositionTargetPass.cpp
+END
+class_org_ogre4j_DriverVersion.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_DriverVersion.cpp
+END
+class_org_ogre4j_GpuProgramParameters_00024AutoConstantTypeHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_GpuProgramParameters_00024AutoConstantTypeHelper.cpp
+END
+class_org_ogre4j_PoseList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_PoseList.cpp
+END
+class_org_ogre4j_emittercommands_CmdMaxRepeatDelay.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_emittercommands_CmdMaxRepeatDelay.cpp
+END
+class_org_ogre4j_MovablePlane.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_MovablePlane.cpp
+END
+class_org_ogre4j_Technique_00024GPUVendorRuleIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Technique_00024GPUVendorRuleIterator.cpp
+END
+class_org_ogre4j_Overlay_00024OverlayContainerList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Overlay_00024OverlayContainerList.cpp
+END
+class_org_ogre4j_Mesh_00024SubMeshNameMap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Mesh_00024SubMeshNameMap.cpp
+END
+class_org_ogre4j_RenderQueueInvocationSequence.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_RenderQueueInvocationSequence.cpp
+END
+class_org_ogre4j_GpuProgramParameters_00024AutoConstantDefinition.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_GpuProgramParameters_00024AutoConstantDefinition.cpp
+END
+class_org_ogre4j_VertexBufferBinding_00024VertexBufferBindingMap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_VertexBufferBinding_00024VertexBufferBindingMap.cpp
+END
+class_org_ogre4j_AnimationAllocPolicy.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_AnimationAllocPolicy.cpp
+END
+class_org_ogre4j_Technique_00024PassIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Technique_00024PassIterator.cpp
+END
+class_org_ogre4j_DynLibManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_DynLibManager.cpp
+END
+class_org_ogre4j_RenderQueueInvocation.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_RenderQueueInvocation.cpp
+END
+class_org_ogre4j_ExternalTextureSourceManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ExternalTextureSourceManager.cpp
+END
+class_org_ogre4j_Timer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/ogre4j/!svn/ver/342/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Timer.cpp
+END
+class_org_ogre4j_ParameterTypeHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ParameterTypeHelper.cpp
+END
+class_org_ogre4j_PSSMShadowCameraSetup.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_PSSMShadowCameraSetup.cpp
+END
+class_org_ogre4j_overlayelementcommands_CmdTop.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_overlayelementcommands_CmdTop.cpp
+END
+class_org_ogre4j_PlaneBoundedVolumeList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_PlaneBoundedVolumeList.cpp
+END
+class_org_ogre4j_MaterialPtr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_MaterialPtr.cpp
+END
+class_org_ogre4j_MaterialManager_00024Listener.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_MaterialManager_00024Listener.cpp
+END
+class_org_ogre4j_GeometryAllocPolicy.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_GeometryAllocPolicy.cpp
+END
+class_org_ogre4j_RenderingAPIException.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_RenderingAPIException.cpp
+END
+class_org_ogre4j_PrefabFactory.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_PrefabFactory.cpp
+END
+class_org_ogre4j_ParticleSystemManager_00024ParticleSystemTemplateIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ParticleSystemManager_00024ParticleSystemTemplateIterator.cpp
+END
+class_org_ogre4j_Mesh_00024LodDistanceList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Mesh_00024LodDistanceList.cpp
+END
+class_org_ogre4j_VertexElement.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_VertexElement.cpp
+END
+class_org_ogre4j_StaticGeometry_00024QueuedSubMesh.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_StaticGeometry_00024QueuedSubMesh.cpp
+END
+class_org_ogre4j_AnimationState_00024BoneBlendMask.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_AnimationState_00024BoneBlendMask.cpp
+END
+class_org_ogre4j_Mesh.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Mesh.cpp
+END
+class_org_ogre4j_BillboardParticleRendererFactory.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_BillboardParticleRendererFactory.cpp
+END
+class_org_ogre4j_Mesh_00024SubMeshList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Mesh_00024SubMeshList.cpp
+END
+class_org_ogre4j_CompositionTargetPass_00024Passes.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_CompositionTargetPass_00024Passes.cpp
+END
+class_org_ogre4j_Skeleton_00024LinkedSkeletonAnimSourceIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Skeleton_00024LinkedSkeletonAnimSourceIterator.cpp
+END
+class_org_ogre4j_InstancedGeometry_00024QueuedSubMesh.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_InstancedGeometry_00024QueuedSubMesh.cpp
+END
+class_org_ogre4j_AnyNumeric.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_AnyNumeric.cpp
+END
+class_org_ogre4j_CompositionTargetPass_00024InputModeHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_CompositionTargetPass_00024InputModeHelper.cpp
+END
+class_org_ogre4j_CompositionTargetPassTranslator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_CompositionTargetPassTranslator.cpp
+END
+class_org_ogre4j_VertexElementSemanticHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_VertexElementSemanticHelper.cpp
+END
+class_org_ogre4j_Serializer_00024EndianHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Serializer_00024EndianHelper.cpp
+END
+class_org_ogre4j_SimpleRenderable.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/ogre4j/!svn/ver/342/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SimpleRenderable.cpp
+END
+class_org_ogre4j_StaticGeometry_00024QueuedGeometry.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_StaticGeometry_00024QueuedGeometry.cpp
+END
+class_org_std_type_1info.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_std_type_1info.cpp
+END
+class_org_ogre4j_AnimationAllocatedObject.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_AnimationAllocatedObject.cpp
+END
+class_org_ogre4j_StaticGeometry_00024MaterialBucket_00024GeometryIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_StaticGeometry_00024MaterialBucket_00024GeometryIterator.cpp
+END
+class_org_ogre4j_InstancedGeometry_00024GeometryBucket.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/ogre4j/!svn/ver/342/trunk/org.ogre4j/src/c/src/class_org_ogre4j_InstancedGeometry_00024GeometryBucket.cpp
+END
+class_org_ogre4j_InstancedGeometry_00024InstancedObject_00024GeometryBucketList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_InstancedGeometry_00024InstancedObject_00024GeometryBucketList.cpp
+END
+class_org_ogre4j_CompositionTechnique_00024TargetPasses.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_CompositionTechnique_00024TargetPasses.cpp
+END
+class_org_ogre4j_NameValuePairList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_NameValuePairList.cpp
+END
+class_org_ogre4j_BillboardChainFactory.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_BillboardChainFactory.cpp
+END
+class_org_ogre4j_InstancedGeometry_00024InstancedObject_00024TransformSpaceHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_InstancedGeometry_00024InstancedObject_00024TransformSpaceHelper.cpp
+END
+class_org_ogre4j_CompositorInstance_00024CompiledState.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_CompositorInstance_00024CompiledState.cpp
+END
+class_org_ogre4j_FrameBufferTypeHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_FrameBufferTypeHelper.cpp
+END
+class_org_ogre4j_ParticleSystemRendererFactory.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ParticleSystemRendererFactory.cpp
+END
+class_org_ogre4j_CompositionTargetPass_00024PassIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_CompositionTargetPass_00024PassIterator.cpp
+END
+class_org_ogre4j_PlaneBoundedVolume_00024PlaneList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_PlaneBoundedVolume_00024PlaneList.cpp
+END
+class_org_ogre4j_MaterialManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_MaterialManager.cpp
+END
+class_org_ogre4j_AtomAbstractNode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_AtomAbstractNode.cpp
+END
+class_org_ogre4j_RenderSystemCapabilities.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_RenderSystemCapabilities.cpp
+END
+class_org_ogre4j_ResourceGroupManager_00024ResourceDeclarationList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ResourceGroupManager_00024ResourceDeclarationList.cpp
+END
+class_org_ogre4j_RenderQueueGroup_00024PriorityMapIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_RenderQueueGroup_00024PriorityMapIterator.cpp
+END
+class_org_ogre4j_SubMesh_00024AliasTextureIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SubMesh_00024AliasTextureIterator.cpp
+END
+class_org_ogre4j_Polygon_00024Edge.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Polygon_00024Edge.cpp
+END
+class_org_ogre4j_MultiRenderTarget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_MultiRenderTarget.cpp
+END
+class_org_ogre4j_ConstAnimationStateIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ConstAnimationStateIterator.cpp
+END
+class_org_ogre4j_FileHandleDataStream.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_FileHandleDataStream.cpp
+END
+class_org_ogre4j_KeyFrame.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_KeyFrame.cpp
+END
+class_org_std_ios_00024fmtflagsHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_std_ios_00024fmtflagsHelper.cpp
+END
+class_org_ogre4j_MovableObjectFactory.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_MovableObjectFactory.cpp
+END
+class_org_ogre4j_ZipArchive.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ZipArchive.cpp
+END
+jni_native_char_buffer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/jni_native_char_buffer.cpp
+END
+class_org_ogre4j_SkeletonInstance.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SkeletonInstance.cpp
+END
+class_org_ogre4j_NodeAnimationTrack.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_NodeAnimationTrack.cpp
+END
+class_org_ogre4j_Font_00024CodePointRange.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Font_00024CodePointRange.cpp
+END
+class_org_ogre4j_UnifiedHighLevelGpuProgram.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_UnifiedHighLevelGpuProgram.cpp
+END
+class_org_ogre4j_Pose_00024ConstVertexOffsetIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Pose_00024ConstVertexOffsetIterator.cpp
+END
+class_org_ogre4j_SceneQuery.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SceneQuery.cpp
+END
+class_org_ogre4j_VertexDeclaration.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_VertexDeclaration.cpp
+END
+class_org_ogre4j_OverlayContainer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_OverlayContainer.cpp
+END
+class_org_ogre4j_StaticGeometry_00024QueuedSubMeshList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_StaticGeometry_00024QueuedSubMeshList.cpp
+END
+class_org_ogre4j_emittercommands_CmdDuration.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_emittercommands_CmdDuration.cpp
+END
+class_org_ogre4j_Renderable_00024RenderSystemData.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Renderable_00024RenderSystemData.cpp
+END
+class_org_ogre4j_SceneManager_00024SkyDomeGenParameters.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SceneManager_00024SkyDomeGenParameters.cpp
+END
+class_org_ogre4j_PixelBox.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_PixelBox.cpp
+END
+class_org_ogre4j_AbstractNodeListPtr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_AbstractNodeListPtr.cpp
+END
+class_org_ogre4j_AnimationStateSet.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_AnimationStateSet.cpp
+END
+class_org_ogre4j_ImageFlagsHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ImageFlagsHelper.cpp
+END
+jni_float_pointer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/jni_float_pointer.cpp
+END
+class_org_ogre4j_CompositionPassTranslator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_CompositionPassTranslator.cpp
+END
+class_org_std_istream.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_std_istream.cpp
+END
+class_org_ogre4j_Font.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Font.cpp
+END
+class_org_ogre4j_ConcreteNode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ConcreteNode.cpp
+END
+class_org_ogre4j_ControllerValueRealPtr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ControllerValueRealPtr.cpp
+END
+class_org_ogre4j_SceneQueryResultWorldFragmentList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SceneQueryResultWorldFragmentList.cpp
+END
+class_org_ogre4j_Pass_00024HashFunc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Pass_00024HashFunc.cpp
+END
+class_org_ogre4j_ManualResourceLoader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ManualResourceLoader.cpp
+END
+class_org_ogre4j_Entity.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Entity.cpp
+END
+class_org_ogre4j_ConstShadowTextureConfigIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ConstShadowTextureConfigIterator.cpp
+END
+class_org_ogre4j_SceneNode_00024ObjectMap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SceneNode_00024ObjectMap.cpp
+END
+class_org_ogre4j_QueuedRenderableCollection.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_QueuedRenderableCollection.cpp
+END
+class_org_ogre4j_AnimationControllerFunction.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_AnimationControllerFunction.cpp
+END
+class_org_ogre4j_VertexElementTypeHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_VertexElementTypeHelper.cpp
+END
+class_org_ogre4j_PlaneList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_PlaneList.cpp
+END
+class_org_ogre4j_SceneCtlAllocPolicy.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SceneCtlAllocPolicy.cpp
+END
+class_org_ogre4j_HardwareIndexBufferSharedPtr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_HardwareIndexBufferSharedPtr.cpp
+END
+class_org_ogre4j_Rect.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Rect.cpp
+END
+class_org_ogre4j_NumericSolver.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_NumericSolver.cpp
+END
+class_org_ogre4j_eTexturePlayModeHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_eTexturePlayModeHelper.cpp
+END
+class_org_ogre4j_ImagePtrList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ImagePtrList.cpp
+END
+class_org_ogre4j_ParticleSystemManager_00024ParticleRendererFactoryIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ParticleSystemManager_00024ParticleRendererFactoryIterator.cpp
+END
+class_org_ogre4j_ScriptCompilerListener.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ScriptCompilerListener.cpp
+END
+class_org_ogre4j_OverlayManager_00024TemplateIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_OverlayManager_00024TemplateIterator.cpp
+END
+class_org_ogre4j_IntersectionSceneQueryResult.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_IntersectionSceneQueryResult.cpp
+END
+class_org_ogre4j_EdgeData_00024Triangle.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_EdgeData_00024Triangle.cpp
+END
+class_org_ogre4j_Technique_00024GPUDeviceNameRuleIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Technique_00024GPUDeviceNameRuleIterator.cpp
+END
+class_org_ogre4j_CompositionPassClearTranslator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_CompositionPassClearTranslator.cpp
+END
+class_org_ogre4j_Compositor_00024Techniques.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Compositor_00024Techniques.cpp
+END
+class_org_ogre4j_InstancedGeometry_00024BatchInstance_00024InstancedObjectIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_InstancedGeometry_00024BatchInstance_00024InstancedObjectIterator.cpp
+END
+class_org_ogre4j_Mesh_00024PoseIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Mesh_00024PoseIterator.cpp
+END
+class_org_ogre4j_VertexPoseKeyFrame_00024ConstPoseRefIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_VertexPoseKeyFrame_00024ConstPoseRefIterator.cpp
+END
+class_org_ogre4j_RenderQueue.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_RenderQueue.cpp
+END
+class_org_ogre4j_overlayelementcommands_CmdHorizontalAlign.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_overlayelementcommands_CmdHorizontalAlign.cpp
+END
+class_org_ogre4j_FileSystemArchive.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_FileSystemArchive.cpp
+END
+class_org_ogre4j_RenderTarget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_RenderTarget.cpp
+END
+class_org_ogre4j_StaticGeometry_00024Region_00024LODIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_StaticGeometry_00024Region_00024LODIterator.cpp
+END
+class_org_ogre4j_SceneManager_00024SkyBoxGenParameters.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SceneManager_00024SkyBoxGenParameters.cpp
+END
+class_org_ogre4j_ResourceBackgroundQueue.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ResourceBackgroundQueue.cpp
+END
+class_org_ogre4j_InstancedGeometry_00024BatchInstance_00024ObjectsMap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_InstancedGeometry_00024BatchInstance_00024ObjectsMap.cpp
+END
+class_org_ogre4j_GuiHorizontalAlignmentHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_GuiHorizontalAlignmentHelper.cpp
+END
+class_org_ogre4j_TangentSpaceCalc_00024IndexRemapList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_TangentSpaceCalc_00024IndexRemapList.cpp
+END
+class_org_ogre4j_VertexPoseKeyFrame_00024PoseRefList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_VertexPoseKeyFrame_00024PoseRefList.cpp
+END
+class_org_ogre4j_ScriptCompiler_00024Error.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ScriptCompiler_00024Error.cpp
+END
+class_org_ogre4j_overlayelementcommands_CmdWidth.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_overlayelementcommands_CmdWidth.cpp
+END
+class_org_ogre4j_RenderQueueGroup.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_RenderQueueGroup.cpp
+END
+class_org_ogre4j_AxisAlignedBox.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_AxisAlignedBox.cpp
+END
+class_org_ogre4j_TextureUnitState.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_TextureUnitState.cpp
+END
+Ogre4JNativeLogListener.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/ogre4j/!svn/ver/330/trunk/org.ogre4j/src/c/src/Ogre4JNativeLogListener.cpp
+END
+class_org_ogre4j_RenderQueue_00024RenderableListener.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_RenderQueue_00024RenderableListener.cpp
+END
+class_org_ogre4j_ConcreteNodeList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ConcreteNodeList.cpp
+END
+class_org_ogre4j_BillboardParticleRenderer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_BillboardParticleRenderer.cpp
+END
+class_org_ogre4j_Polygon_00024VertexList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Polygon_00024VertexList.cpp
+END
+class_org_ogre4j_ParticleEmitterTranslator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ParticleEmitterTranslator.cpp
+END
+class_org_ogre4j_ParameterList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ParameterList.cpp
+END
+class_org_ogre4j_RibbonTrail_00024NodeIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_RibbonTrail_00024NodeIterator.cpp
+END
+class_org_std_filebuf.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_std_filebuf.cpp
+END
+class_org_ogre4j_Image_00024FilterHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Image_00024FilterHelper.cpp
+END
+class_org_ogre4j_BackgroundProcessResult.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_BackgroundProcessResult.cpp
+END
+class_org_ogre4j_DynLib.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_DynLib.cpp
+END
+class_org_ogre4j_Quaternion.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Quaternion.cpp
+END
+class_org_ogre4j_DataStream.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_DataStream.cpp
+END
+class_org_ogre4j_RenderQueueGroup_00024PriorityMap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_RenderQueueGroup_00024PriorityMap.cpp
+END
+class_org_ogre4j_SceneManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SceneManager.cpp
+END
+class_org_ogre4j_Technique_00024GPUVendorRuleList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Technique_00024GPUVendorRuleList.cpp
+END
+class_org_ogre4j_GpuLogicalIndexUseMap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_GpuLogicalIndexUseMap.cpp
+END
+class_org_ogre4j_PlatformInformation.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_PlatformInformation.cpp
+END
+class_org_ogre4j_overlayelementcommands_CmdMetricsMode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_overlayelementcommands_CmdMetricsMode.cpp
+END
+class_org_ogre4j_RenderPriorityGroup.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_RenderPriorityGroup.cpp
+END
+class_org_ogre4j_Polygon_00024EdgeMap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Polygon_00024EdgeMap.cpp
+END
+class_org_ogre4j_Plane.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Plane.cpp
+END
+class_org_ogre4j_HardwareBufferLicensee.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_HardwareBufferLicensee.cpp
+END
+class_org_ogre4j_AnimationTrack.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_AnimationTrack.cpp
+END
+class_org_ogre4j_StringUtil.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_StringUtil.cpp
+END
+class_org_ogre4j_VertexCacheProfiler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_VertexCacheProfiler.cpp
+END
+jni_double_pointer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/jni_double_pointer.cpp
+END
+class_org_ogre4j_Frustum.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/ogre4j/!svn/ver/342/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Frustum.cpp
+END
+class_org_ogre4j_ScriptToken.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ScriptToken.cpp
+END
+class_org_ogre4j_Pose.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Pose.cpp
+END
+class_org_ogre4j_HighLevelGpuProgramManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_HighLevelGpuProgramManager.cpp
+END
+class_org_ogre4j_ShadowVolumeExtrudeProgram_00024ProgramsHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ShadowVolumeExtrudeProgram_00024ProgramsHelper.cpp
+END
+class_org_ogre4j_PixelFormatFlagsHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_PixelFormatFlagsHelper.cpp
+END
+class_org_ogre4j_RenderOperation_00024OperationTypeHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_RenderOperation_00024OperationTypeHelper.cpp
+END
+class_org_ogre4j_Mesh_00024VertexBoneAssignmentList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Mesh_00024VertexBoneAssignmentList.cpp
+END
+class_org_ogre4j_Light_00024LightTypesHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Light_00024LightTypesHelper.cpp
+END
+class_org_ogre4j_GpuProgramPtr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_GpuProgramPtr.cpp
+END
+class_org_ogre4j_InstancedGeometry_00024BatchInstanceIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_InstancedGeometry_00024BatchInstanceIterator.cpp
+END
+class_org_ogre4j_ShadowCaster_00024ShadowRenderableListIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ShadowCaster_00024ShadowRenderableListIterator.cpp
+END
+class_org_ogre4j_Particle_00024ParticleTypeHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Particle_00024ParticleTypeHelper.cpp
+END
+class_org_ogre4j_InstancedGeometry_00024BatchInstance_00024LODBucketList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_InstancedGeometry_00024BatchInstance_00024LODBucketList.cpp
+END
+class_org_ogre4j_overlayelementcommands_CmdVisible.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_overlayelementcommands_CmdVisible.cpp
+END
+class_org_ogre4j_SceneManagerFactory.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SceneManagerFactory.cpp
+END
+class_org_ogre4j_TextAreaOverlayElementFactory.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_TextAreaOverlayElementFactory.cpp
+END
+class_org_ogre4j_FreeImageCodec.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/ogre4j/!svn/ver/342/trunk/org.ogre4j/src/c/src/class_org_ogre4j_FreeImageCodec.cpp
+END
+class_org_ogre4j_Compiler2Pass.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Compiler2Pass.cpp
+END
+class_org_ogre4j_PixelFormatList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_PixelFormatList.cpp
+END
+class_org_ogre4j_Animation_00024NumericTrackIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Animation_00024NumericTrackIterator.cpp
+END
+class_org_ogre4j_Matrix3.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/ogre4j/!svn/ver/342/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Matrix3.cpp
+END
+class_org_ogre4j_ConfigFile_00024SectionIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ConfigFile_00024SectionIterator.cpp
+END
+class_org_ogre4j_SkeletonChunkIDHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SkeletonChunkIDHelper.cpp
+END
+class_org_ogre4j_Animation_00024NodeTrackList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Animation_00024NodeTrackList.cpp
+END
+class_org_ogre4j_ManualObjectFactory.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ManualObjectFactory.cpp
+END
+jni_native_byte_buffer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/jni_native_byte_buffer.cpp
+END
+class_org_ogre4j_Node_00024ChildNodeIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Node_00024ChildNodeIterator.cpp
+END
+class_org_ogre4j_AnimableObject.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_AnimableObject.cpp
+END
+class_org_ogre4j_RibbonTrailFactory.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_RibbonTrailFactory.cpp
+END
+class_org_ogre4j_CompositorInstance_00024QuadMaterialMap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_CompositorInstance_00024QuadMaterialMap.cpp
+END
+class_org_ogre4j_ShadeOptionsHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ShadeOptionsHelper.cpp
+END
+class_org_ogre4j_InstancedGeometry_00024QueuedSubMeshList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_InstancedGeometry_00024QueuedSubMeshList.cpp
+END
+class_org_ogre4j_AnimableValue.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_AnimableValue.cpp
+END
+class_org_ogre4j_SubMesh.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SubMesh.cpp
+END
+class_org_ogre4j_DDSCodec.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/ogre4j/!svn/ver/342/trunk/org.ogre4j/src/c/src/class_org_ogre4j_DDSCodec.cpp
+END
+class_org_ogre4j_Root_00024PluginInstanceList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Root_00024PluginInstanceList.cpp
+END
+class_org_ogre4j_VertexBufferBinding_00024BindingIndexMap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_VertexBufferBinding_00024BindingIndexMap.cpp
+END
+jni_widestring_pointer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/jni_widestring_pointer.cpp
+END
+class_org_ogre4j_GpuConstantDefinitionMap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_GpuConstantDefinitionMap.cpp
+END
+class_org_ogre4j_MemoryDataStream.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_MemoryDataStream.cpp
+END
+class_org_ogre4j_Codec_00024CodecDataPtr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Codec_00024CodecDataPtr.cpp
+END
+class_org_ogre4j_RenderSystemList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_RenderSystemList.cpp
+END
+class_org_ogre4j_AnimationStateControllerValue.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_AnimationStateControllerValue.cpp
+END
+class_org_ogre4j_TangentSpaceCalc_00024Result.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_TangentSpaceCalc_00024Result.cpp
+END
+class_org_ogre4j_RenderTargetMap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_RenderTargetMap.cpp
+END
+class_org_ogre4j_TagPoint.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_TagPoint.cpp
+END
+class_org_ogre4j_EnabledAnimationStateList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_EnabledAnimationStateList.cpp
+END
+class_org_ogre4j_RotationalSpline.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_RotationalSpline.cpp
+END
+class_org_ogre4j_InstancedGeometry_00024InstancedObject.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_InstancedGeometry_00024InstancedObject.cpp
+END
+class_org_ogre4j_CompositionPass.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_CompositionPass.cpp
+END
+class_org_ogre4j_RenderTargetListener.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_RenderTargetListener.cpp
+END
+class_org_ogre4j_ShadowTextureConfig.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ShadowTextureConfig.cpp
+END
+class_org_ogre4j_GpuProgramTranslator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_GpuProgramTranslator.cpp
+END
+class_org_ogre4j_emittercommands_CmdColourRangeStart.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_emittercommands_CmdColourRangeStart.cpp
+END
+class_org_ogre4j_CompositorChain.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_CompositorChain.cpp
+END
+class_org_ogre4j_Renderable.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Renderable.cpp
+END
+class_org_ogre4j_EdgeData_00024TriangleLightFacingList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_EdgeData_00024TriangleLightFacingList.cpp
+END
+class_org_ogre4j_VertexMorphKeyFrame.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_VertexMorphKeyFrame.cpp
+END
+class_org_ogre4j_CompositionPass_00024PassTypeHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_CompositionPass_00024PassTypeHelper.cpp
+END
+class_org_ogre4j_ZipDataStream.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ZipDataStream.cpp
+END
+class_org_ogre4j_ArchiveFactory.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ArchiveFactory.cpp
+END
+class_org_ogre4j_Pose_00024VertexOffsetIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Pose_00024VertexOffsetIterator.cpp
+END
+class_org_ogre4j_VertexBoneAssignment_1s.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_VertexBoneAssignment_1s.cpp
+END
+class_org_ogre4j_SkeletonManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SkeletonManager.cpp
+END
+class_org_ogre4j_LayerBlendModeEx.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_LayerBlendModeEx.cpp
+END
+class_org_ogre4j_Polygon.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Polygon.cpp
+END
+class_org_ogre4j_Pass_00024TextureUnitStateIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Pass_00024TextureUnitStateIterator.cpp
+END
+class_org_ogre4j_MeshManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_MeshManager.cpp
+END
+class_org_ogre4j_ShadowCaster.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ShadowCaster.cpp
+END
+class_org_ogre4j_IlluminationPass.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_IlluminationPass.cpp
+END
+class_org_ogre4j_BillboardChain_00024TexCoordDirectionHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_BillboardChain_00024TexCoordDirectionHelper.cpp
+END
+class_org_ogre4j_StaticGeometry_00024Region.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_StaticGeometry_00024Region.cpp
+END
+class_org_ogre4j_Pass_00024PassSet.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Pass_00024PassSet.cpp
+END
+class_org_ogre4j_AbstractNodePtr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_AbstractNodePtr.cpp
+END
+class_org_ogre4j_ParticleSystemFactory.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ParticleSystemFactory.cpp
+END
+class_org_ogre4j_SceneCtlAllocatedObject.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SceneCtlAllocatedObject.cpp
+END
+class_org_ogre4j_RealRect.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_RealRect.cpp
+END
+class_org_ogre4j_InstancedGeometry_00024MaterialBucket_00024GeometryIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_InstancedGeometry_00024MaterialBucket_00024GeometryIterator.cpp
+END
+class_org_ogre4j_FileStreamDataStream.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_FileStreamDataStream.cpp
+END
+jni_base.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/ogre4j/!svn/ver/351/trunk/org.ogre4j/src/c/src/jni_base.cpp
+END
+class_org_ogre4j_Codec_00024DecodeResult.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Codec_00024DecodeResult.cpp
+END
+class_org_ogre4j_ConfigFile.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ConfigFile.cpp
+END
+class_org_ogre4j_WindowEventUtilities_00024Windows.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_WindowEventUtilities_00024Windows.cpp
+END
+class_org_ogre4j_DataStreamListPtr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_DataStreamListPtr.cpp
+END
+class_org_ogre4j_EdgeListBuilder.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_EdgeListBuilder.cpp
+END
+class_org_ogre4j_GpuProgramParameters_00024ElementTypeHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_GpuProgramParameters_00024ElementTypeHelper.cpp
+END
+class_org_ogre4j_StaticGeometry_00024Region_00024LODBucketList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_StaticGeometry_00024Region_00024LODBucketList.cpp
+END
+class_org_ogre4j_OverlayContainer_00024ChildMap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_OverlayContainer_00024ChildMap.cpp
+END
+class_org_ogre4j_LogManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_LogManager.cpp
+END
+class_org_ogre4j_AnimationState.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_AnimationState.cpp
+END
+class_org_ogre4j_CompositionTechniqueTranslator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_CompositionTechniqueTranslator.cpp
+END
+class_org_ogre4j_SceneManager_00024materialLess.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SceneManager_00024materialLess.cpp
+END
+class_org_ogre4j_InstancedGeometry_00024LODBucket_00024MaterialIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_InstancedGeometry_00024LODBucket_00024MaterialIterator.cpp
+END
+class_org_ogre4j_CompositorPtr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_CompositorPtr.cpp
+END
+class_org_ogre4j_PlatformInformation_00024CpuFeaturesHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_PlatformInformation_00024CpuFeaturesHelper.cpp
+END
+class_org_ogre4j_InstancedGeometry_00024MaterialBucket.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_InstancedGeometry_00024MaterialBucket.cpp
+END
+class_org_ogre4j_NumericAnimationTrack.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_NumericAnimationTrack.cpp
+END
+class_org_ogre4j_LogListener.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_LogListener.cpp
+END
+class_org_ogre4j_ItemIdentityException.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ItemIdentityException.cpp
+END
+class_org_ogre4j_GpuProgramManager_00024SyntaxCodes.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_GpuProgramManager_00024SyntaxCodes.cpp
+END
+class_org_ogre4j__1StringHash.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j__1StringHash.cpp
+END
+class_org_ogre4j_ConfigFile_00024SettingsBySection.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ConfigFile_00024SettingsBySection.cpp
+END
+class_org_ogre4j_FileInfo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_FileInfo.cpp
+END
+class_org_ogre4j_CompositorInstance_00024RenderSystemOperation.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_CompositorInstance_00024RenderSystemOperation.cpp
+END
+class_org_ogre4j_ParameterDef.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ParameterDef.cpp
+END
+class_org_ogre4j_ShadowCaster_00024ShadowRenderableList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ShadowCaster_00024ShadowRenderableList.cpp
+END
+class_org_ogre4j_SubMesh_00024BoneAssignmentIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SubMesh_00024BoneAssignmentIterator.cpp
+END
+class_org_ogre4j_emittercommands_CmdMinRepeatDelay.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_emittercommands_CmdMinRepeatDelay.cpp
+END
+class_org_ogre4j_TextureMipmapHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_TextureMipmapHelper.cpp
+END
+class_org_ogre4j_EdgeData_00024TriangleList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_EdgeData_00024TriangleList.cpp
+END
+class_org_ogre4j_Pass.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Pass.cpp
+END
+class_org_ogre4j_AbstractNodeTypeHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_AbstractNodeTypeHelper.cpp
+END
+class_org_ogre4j_ConstImagePtrList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ConstImagePtrList.cpp
+END
+class_org_ogre4j_ResourceAllocPolicy.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ResourceAllocPolicy.cpp
+END
+class_org_ogre4j_Bone.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Bone.cpp
+END
+class_org_ogre4j_AxisAlignedBox_00024CornerEnumHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_AxisAlignedBox_00024CornerEnumHelper.cpp
+END
+class_org_ogre4j_emittercommands_CmdEmittedEmitter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_emittercommands_CmdEmittedEmitter.cpp
+END
+class_org_ogre4j_UTFString.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/ogre4j/!svn/ver/351/trunk/org.ogre4j/src/c/src/class_org_ogre4j_UTFString.cpp
+END
+class_org_ogre4j_Sphere.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Sphere.cpp
+END
+class_org_ogre4j_CapabilitiesCategoryHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_CapabilitiesCategoryHelper.cpp
+END
+class_org_ogre4j_Skeleton_00024LinkedSkeletonAnimSourceList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Skeleton_00024LinkedSkeletonAnimSourceList.cpp
+END
+class_org_ogre4j_Matrix4.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Matrix4.cpp
+END
+class_org_ogre4j_GpuProgramParameters_00024FloatConstantList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_GpuProgramParameters_00024FloatConstantList.cpp
+END
+class_org_ogre4j_CompositorManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_CompositorManager.cpp
+END
+class_org_ogre4j_GpuProgramParameters_00024AutoConstantList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_GpuProgramParameters_00024AutoConstantList.cpp
+END
+class_org_ogre4j_UTFString_00024invalid_1data.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_UTFString_00024invalid_1data.cpp
+END
+class_org_ogre4j_RaySceneQuery.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_RaySceneQuery.cpp
+END
+class_org_ogre4j_SharedPtrFreeMethodHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SharedPtrFreeMethodHelper.cpp
+END
+class_org_ogre4j_Technique_00024IlluminationPassIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Technique_00024IlluminationPassIterator.cpp
+END
+class_org_ogre4j_Entity_00024VertexDataBindChoiceHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Entity_00024VertexDataBindChoiceHelper.cpp
+END
+class_org_ogre4j_FilterOptionsHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_FilterOptionsHelper.cpp
+END
+class_org_ogre4j_CompositionTechnique_00024TextureDefinitionIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_CompositionTechnique_00024TextureDefinitionIterator.cpp
+END
+class_org_ogre4j_BillboardOriginHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_BillboardOriginHelper.cpp
+END
+class_org_ogre4j_ScriptingAllocatedObject.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ScriptingAllocatedObject.cpp
+END
+class_org_ogre4j_Particle.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Particle.cpp
+END
+class_org_ogre4j_InternalErrorException.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_InternalErrorException.cpp
+END
+class_org_ogre4j_MaterialScriptSectionHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_MaterialScriptSectionHelper.cpp
+END
+class_org_ogre4j_ResourcePtr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/ogre4j/!svn/ver/356/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ResourcePtr.cpp
+END
+class_org_ogre4j_WindowEventListener.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_WindowEventListener.cpp
+END
+class_org_ogre4j_ImageCodec.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/ogre4j/!svn/ver/342/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ImageCodec.cpp
+END
+class_org_ogre4j_GuiMetricsModeHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_GuiMetricsModeHelper.cpp
+END
+class_org_ogre4j_GpuProgramParameters_00024AutoConstantEntry.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_GpuProgramParameters_00024AutoConstantEntry.cpp
+END
+class_org_ogre4j_Mesh_00024SubMeshIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Mesh_00024SubMeshIterator.cpp
+END
+class_org_ogre4j_SceneQueryResult.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SceneQueryResult.cpp
+END
+class_org_ogre4j_Resource.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Resource.cpp
+END
+class_org_ogre4j_ResourceAllocatedObject.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ResourceAllocatedObject.cpp
+END
+class_org_ogre4j_ResourceManager_00024ResourceMapIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ResourceManager_00024ResourceMapIterator.cpp
+END
+class_org_ogre4j_SceneManagerEnumerator_00024Instances.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SceneManagerEnumerator_00024Instances.cpp
+END
+class_org_ogre4j_Mesh_00024BoneAssignmentIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Mesh_00024BoneAssignmentIterator.cpp
+END
+class_org_ogre4j_RenderTargetEvent.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_RenderTargetEvent.cpp
+END
+class_org_ogre4j_ResourceManager_00024ResourceHandleMap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ResourceManager_00024ResourceHandleMap.cpp
+END
+class_org_ogre4j_InstancedGeometry_00024OptimisedSubMeshGeometry.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_InstancedGeometry_00024OptimisedSubMeshGeometry.cpp
+END
+class_org_ogre4j_ConcreteNodeListPtr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ConcreteNodeListPtr.cpp
+END
+class_org_ogre4j_ScriptLoader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ScriptLoader.cpp
+END
+class_org_ogre4j_ParticleEmitter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ParticleEmitter.cpp
+END
+class_org_ogre4j_Material.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Material.cpp
+END
+class_org_ogre4j_Exception.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Exception.cpp
+END
+class_org_ogre4j_BorderRenderable.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_BorderRenderable.cpp
+END
+class_org_ogre4j_emittercommands_CmdMaxVelocity.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_emittercommands_CmdMaxVelocity.cpp
+END
+class_org_ogre4j_MemoryDataStreamPtr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_MemoryDataStreamPtr.cpp
+END
+class_org_ogre4j_Animation_00024NumericTrackList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Animation_00024NumericTrackList.cpp
+END
+class_org_ogre4j_ErrorDialog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/ogre4j/!svn/ver/342/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ErrorDialog.cpp
+END
+class_org_ogre4j_ShadowRenderable.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ShadowRenderable.cpp
+END
+class_org_ogre4j_RenderQueueGroupIDHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_RenderQueueGroupIDHelper.cpp
+END
+class_org_ogre4j_MaterialScriptProgramDefinition.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_MaterialScriptProgramDefinition.cpp
+END
+class_org_ogre4j_Vector2.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Vector2.cpp
+END
+class_org_ogre4j_ProgressiveMesh.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ProgressiveMesh.cpp
+END
+class_org_ogre4j_Node.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Node.cpp
+END
+class_org_ogre4j_ConfigFile_00024SettingsIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ConfigFile_00024SettingsIterator.cpp
+END
+class_org_ogre4j_GpuLogicalBufferStruct.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_GpuLogicalBufferStruct.cpp
+END
+class_org_ogre4j_RenderSystemCapabilitiesSerializer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_RenderSystemCapabilitiesSerializer.cpp
+END
+class_org_std_streambuf.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_std_streambuf.cpp
+END
+jni_native_short_buffer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/jni_native_short_buffer.cpp
+END
+class_org_ogre4j_CapabilitiesHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_CapabilitiesHelper.cpp
+END
+class_org_ogre4j_StringVector.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_StringVector.cpp
+END
+jni_long_pointer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/jni_long_pointer.cpp
+END
+class_org_ogre4j_InstancedGeometry_00024QueuedGeometryList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_InstancedGeometry_00024QueuedGeometryList.cpp
+END
+class_org_ogre4j_EdgeData_00024TriangleFaceNormalList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_EdgeData_00024TriangleFaceNormalList.cpp
+END
+class_org_ogre4j_VertexData_00024HardwareAnimationDataList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_VertexData_00024HardwareAnimationDataList.cpp
+END
+class_org_ogre4j_SceneManagerEnumerator_00024SceneManagerIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SceneManagerEnumerator_00024SceneManagerIterator.cpp
+END
+class_org_ogre4j_ParticleAffectorFactory.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ParticleAffectorFactory.cpp
+END
+class_org_ogre4j_emittercommands_CmdMinTTL.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_emittercommands_CmdMinTTL.cpp
+END
+jni_native_object_pointer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/jni_native_object_pointer.cpp
+END
+class_org_ogre4j_Animation_00024NodeTrackIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Animation_00024NodeTrackIterator.cpp
+END
+class_org_ogre4j_PanelOverlayElement.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_PanelOverlayElement.cpp
+END
+class_org_ogre4j_InstancedGeometry_00024RenderOperationVector.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_InstancedGeometry_00024RenderOperationVector.cpp
+END
+class_org_ogre4j_LayerBlendTypeHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_LayerBlendTypeHelper.cpp
+END
+class_org_ogre4j_InstancedGeometry.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_InstancedGeometry.cpp
+END
+class_org_ogre4j_RenderTarget_00024StatFlagsHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_RenderTarget_00024StatFlagsHelper.cpp
+END
+class_org_ogre4j_UserDefinedObject.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_UserDefinedObject.cpp
+END
+class_org_ogre4j_GpuProgramTypeHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_GpuProgramTypeHelper.cpp
+END
+class_org_ogre4j_TexturePtr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_TexturePtr.cpp
+END
+class_org_ogre4j_ResourceBackgroundQueue_00024Listener.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ResourceBackgroundQueue_00024Listener.cpp
+END
+class_org_ogre4j_BillboardChain_00024ElementList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_BillboardChain_00024ElementList.cpp
+END
+class_org_ogre4j_emittercommands_CmdMinDuration.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_emittercommands_CmdMinDuration.cpp
+END
+class_org_ogre4j_Math.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Math.cpp
+END
+class_org_ogre4j_SceneQueryListener.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SceneQueryListener.cpp
+END
+class_org_ogre4j_GpuProgramParameters_00024ACDataTypeHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_GpuProgramParameters_00024ACDataTypeHelper.cpp
+END
+class_org_ogre4j_Plugin.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Plugin.cpp
+END
+class_org_ogre4j_emittercommands_CmdEmissionRate.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_emittercommands_CmdEmissionRate.cpp
+END
+class_org_std_ios_1base.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_std_ios_1base.cpp
+END
+class_org_ogre4j_LiSPSMShadowCameraSetup.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_LiSPSMShadowCameraSetup.cpp
+END
+class_org_ogre4j_PatchSurface.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_PatchSurface.cpp
+END
+class_org_ogre4j_ResourceGroupListener.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ResourceGroupListener.cpp
+END
+class_org_ogre4j_ParticleSystemManager_00024ParticleAffectorFactoryMap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ParticleSystemManager_00024ParticleAffectorFactoryMap.cpp
+END
+class_org_ogre4j_RenderSystem_00024Listener.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_RenderSystem_00024Listener.cpp
+END
+class_org_ogre4j_VertexCacheProfiler_00024CacheTypeHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_VertexCacheProfiler_00024CacheTypeHelper.cpp
+END
+class_org_ogre4j_emittercommands_CmdDirection.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_emittercommands_CmdDirection.cpp
+END
+class_org_ogre4j_TextureUnitState_00024TextureAddressingModeHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_TextureUnitState_00024TextureAddressingModeHelper.cpp
+END
+class_org_ogre4j_ParticleVisualData.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ParticleVisualData.cpp
+END
+class_org_ogre4j_Log.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Log.cpp
+END
+class_org_ogre4j_Resource_00024Listener.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Resource_00024Listener.cpp
+END
+class_org_ogre4j_CompositorInstance.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_CompositorInstance.cpp
+END
+jni_native_int_buffer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/jni_native_int_buffer.cpp
+END
+class_org_ogre4j_SceneManager_00024MovableObjectIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SceneManager_00024MovableObjectIterator.cpp
+END
+class_org_ogre4j_PatchSurface_00024PatchSurfaceTypeHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_PatchSurface_00024PatchSurfaceTypeHelper.cpp
+END
+class_org_ogre4j_SceneQueryMovableObjectWorldFragmentPair.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SceneQueryMovableObjectWorldFragmentPair.cpp
+END
+class_org_ogre4j_WaveformTypeHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_WaveformTypeHelper.cpp
+END
+class_org_ogre4j_InvalidParametersException.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_InvalidParametersException.cpp
+END
+class_org_ogre4j_AnimableValue_00024ValueTypeHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_AnimableValue_00024ValueTypeHelper.cpp
+END
+class_org_ogre4j_SphereSceneQuery.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SphereSceneQuery.cpp
+END
+class_org_ogre4j_ParticleSystemManager_00024ParticleSystemRendererFactoryMap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ParticleSystemManager_00024ParticleSystemRendererFactoryMap.cpp
+END
+class_org_ogre4j_Profile.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Profile.cpp
+END
+class_org_ogre4j_RenderTexture.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_RenderTexture.cpp
+END
+class_org_ogre4j_ScaleControllerFunction.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ScaleControllerFunction.cpp
+END
+class_org_std_stringbuf.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_std_stringbuf.cpp
+END
+Ogre4JPrecompiledHeaders.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/Ogre4JPrecompiledHeaders.cpp
+END
+class_org_ogre4j_AutoParamDataSource.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_AutoParamDataSource.cpp
+END
+class_org_ogre4j_RenderQueue_00024QueueGroupIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_RenderQueue_00024QueueGroupIterator.cpp
+END
+class_org_ogre4j_HardwareBufferManager_00024BufferLicenseTypeHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_HardwareBufferManager_00024BufferLicenseTypeHelper.cpp
+END
+class_org_ogre4j_MaterialTranslator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_MaterialTranslator.cpp
+END
+Ogre4JNativeRenderTargetListener.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ogre4j/!svn/ver/334/trunk/org.ogre4j/src/c/src/Ogre4JNativeRenderTargetListener.cpp
+END
+class_org_ogre4j_Renderable_00024Visitor.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Renderable_00024Visitor.cpp
+END
+class_org_ogre4j_SkeletonPtr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SkeletonPtr.cpp
+END
+class_org_ogre4j_FileNotFoundException.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_FileNotFoundException.cpp
+END
+class_org_ogre4j_ParticleIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ParticleIterator.cpp
+END
+class_org_ogre4j_Codec.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Codec.cpp
+END
+class_org_ogre4j_SubMesh_00024IndexMap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SubMesh_00024IndexMap.cpp
+END
+class_org_ogre4j_MeshPtr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_MeshPtr.cpp
+END
+class_org_ogre4j_StaticFaceGroup.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_StaticFaceGroup.cpp
+END
+class_org_ogre4j_ParticleEmitterFactory.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ParticleEmitterFactory.cpp
+END
+class_org_ogre4j_CompositionPassStencilTranslator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_CompositionPassStencilTranslator.cpp
+END
+class_org_ogre4j_SceneManager_00024IlluminationRenderStageHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SceneManager_00024IlluminationRenderStageHelper.cpp
+END
+class_org_ogre4j_Any.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Any.cpp
+END
+class_org_ogre4j_ScriptTokenPtr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ScriptTokenPtr.cpp
+END
+class_org_ogre4j_AlignedMemory.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_AlignedMemory.cpp
+END
+class_org_ogre4j_FontPtr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_FontPtr.cpp
+END
+class_org_ogre4j_RenderTarget_00024Impl.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ogre4j/!svn/ver/342/trunk/org.ogre4j/src/c/src/class_org_ogre4j_RenderTarget_00024Impl.cpp
+END
+class_org_ogre4j_ParticleSystemRenderer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ParticleSystemRenderer.cpp
+END
+class_org_ogre4j_HardwareBuffer_00024LockOptionsHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_HardwareBuffer_00024LockOptionsHelper.cpp
+END
+class_org_ogre4j_StaticGeometry_00024GeometryBucket.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_StaticGeometry_00024GeometryBucket.cpp
+END
+class_org_ogre4j_TextureTypeHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_TextureTypeHelper.cpp
+END
+class_org_ogre4j_Material_00024TechniqueIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Material_00024TechniqueIterator.cpp
+END
+class_org_ogre4j_StaticGeometry.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_StaticGeometry.cpp
+END
+class_org_ogre4j_EntityFactory.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_EntityFactory.cpp
+END
+class_org_ogre4j_GpuProgramParameters.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_GpuProgramParameters.cpp
+END
+class_org_ogre4j_RenderWindow.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_RenderWindow.cpp
+END
+class_org_ogre4j_StaticGeometry_00024OptimisedSubMeshGeometry.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_StaticGeometry_00024OptimisedSubMeshGeometry.cpp
+END
+class_org_ogre4j_ConcreteNodeTypeHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ConcreteNodeTypeHelper.cpp
+END
+class_org_ogre4j_TexCoordCalcMethodHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_TexCoordCalcMethodHelper.cpp
+END
+class_org_ogre4j_SceneManagerEnumerator_00024MetaDataList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SceneManagerEnumerator_00024MetaDataList.cpp
+END
+class_org_ogre4j_RenderSysAllocatedObject.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_RenderSysAllocatedObject.cpp
+END
+class_org_ogre4j_emittercommands_CmdName.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_emittercommands_CmdName.cpp
+END
+class_org_ogre4j_ResourceManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ResourceManager.cpp
+END
+class_org_ogre4j_ProgressiveMesh_00024PMFaceVertex.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ProgressiveMesh_00024PMFaceVertex.cpp
+END
+class_org_ogre4j_ConfigFile_00024SettingsMultiMap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ConfigFile_00024SettingsMultiMap.cpp
+END
+class_org_ogre4j_ExternalTextureSource.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ExternalTextureSource.cpp
+END
+class_org_ogre4j_Vector3.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Vector3.cpp
+END
+class_org_ogre4j_PlaneBoundedVolumeListSceneQuery.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_PlaneBoundedVolumeListSceneQuery.cpp
+END
+class_org_ogre4j_Entity_00024ChildObjectList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Entity_00024ChildObjectList.cpp
+END
+class_org_std_ios.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_std_ios.cpp
+END
+class_org_ogre4j_AnimableValuePtr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_AnimableValuePtr.cpp
+END
+class_org_ogre4j_Degree.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Degree.cpp
+END
+class_org_ogre4j_CompareFunctionHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_CompareFunctionHelper.cpp
+END
+class_org_ogre4j_emittercommands_CmdVelocity.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_emittercommands_CmdVelocity.cpp
+END
+class_org_ogre4j_HighLevelGpuProgramPtr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_HighLevelGpuProgramPtr.cpp
+END
+class_org_ogre4j_Animation_00024TrackHandleList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Animation_00024TrackHandleList.cpp
+END
+class_org_ogre4j_FontManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_FontManager.cpp
+END
+class_org_ogre4j_SceneBlendFactorHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SceneBlendFactorHelper.cpp
+END
+class_org_ogre4j_NedAllocImpl.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/ogre4j/!svn/ver/356/trunk/org.ogre4j/src/c/src/class_org_ogre4j_NedAllocImpl.cpp
+END
+class_org_ogre4j_LightList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_LightList.cpp
+END
+class_org_ogre4j_GpuProgramParameters_00024AutoConstantIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_GpuProgramParameters_00024AutoConstantIterator.cpp
+END
+class_org_ogre4j_IntersectionSceneQuery.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_IntersectionSceneQuery.cpp
+END
+class_org_std_ifstream.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_std_ifstream.cpp
+END
+class_org_ogre4j_OverlayManager_00024OverlayMapIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_OverlayManager_00024OverlayMapIterator.cpp
+END
+class_org_ogre4j_ArchiveManager_00024ArchiveMapIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ArchiveManager_00024ArchiveMapIterator.cpp
+END
+class_org_ogre4j_TextureFrameControllerValue.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_TextureFrameControllerValue.cpp
+END
+class_org_ogre4j_ProjectionTypeHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ProjectionTypeHelper.cpp
+END
+class_org_ogre4j_PassthroughControllerFunction.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_PassthroughControllerFunction.cpp
+END
+class_org_ogre4j_ScriptParser.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ScriptParser.cpp
+END
+class_org_ogre4j_Profiler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Profiler.cpp
+END
+class_org_ogre4j_Image.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Image.cpp
+END
+class_org_ogre4j_OverlayElementFactory.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_OverlayElementFactory.cpp
+END
+class_org_ogre4j_SceneObjAllocPolicy.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SceneObjAllocPolicy.cpp
+END
+class_org_ogre4j_TextureUnitState_00024BindingTypeHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_TextureUnitState_00024BindingTypeHelper.cpp
+END
+class_org_ogre4j_CompositorChain_00024InstanceIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_CompositorChain_00024InstanceIterator.cpp
+END
+class_org_ogre4j_GeometryAllocatedObject.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_GeometryAllocatedObject.cpp
+END
+class_org_ogre4j_ProgressiveMesh_00024VertexReductionQuotaHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ProgressiveMesh_00024VertexReductionQuotaHelper.cpp
+END
+class_org_ogre4j_StaticGeometry_00024MaterialBucket_00024GeometryBucketList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_StaticGeometry_00024MaterialBucket_00024GeometryBucketList.cpp
+END
+class_org_ogre4j_Animation_00024RotationInterpolationModeHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Animation_00024RotationInterpolationModeHelper.cpp
+END
+class_org_ogre4j_TextureUnitState_00024UVWAddressingMode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_TextureUnitState_00024UVWAddressingMode.cpp
+END
+class_org_ogre4j_ManualObject.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ManualObject.cpp
+END
+class_org_ogre4j_ScriptTranslator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/ogre4j/!svn/ver/342/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ScriptTranslator.cpp
+END
+class_org_ogre4j_overlayelementcommands_CmdCaption.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_overlayelementcommands_CmdCaption.cpp
+END
+class_org_ogre4j_StringVectorPtr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_StringVectorPtr.cpp
+END
+class_org_ogre4j_Animation_00024InterpolationModeHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Animation_00024InterpolationModeHelper.cpp
+END
+class_org_ogre4j_GpuProgram.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_GpuProgram.cpp
+END
+class_org_ogre4j_GpuProgramParametersSharedPtr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_GpuProgramParametersSharedPtr.cpp
+END
+class_org_ogre4j_StaticGeometry_00024SubMeshGeometryLookup.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_StaticGeometry_00024SubMeshGeometryLookup.cpp
+END
+class_org_ogre4j_UnimplementedException.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_UnimplementedException.cpp
+END
+class_org_ogre4j_ParticleAffectorTranslator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ParticleAffectorTranslator.cpp
+END
+class_org_ogre4j_SceneManager_00024AnimationIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SceneManager_00024AnimationIterator.cpp
+END
+class_org_ogre4j_PSSMShadowCameraSetup_00024SplitPointList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_PSSMShadowCameraSetup_00024SplitPointList.cpp
+END
+class_org_ogre4j_HardwarePixelBuffer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_HardwarePixelBuffer.cpp
+END
+class_org_ogre4j_InstancedGeometry_00024QueuedGeometry.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_InstancedGeometry_00024QueuedGeometry.cpp
+END
+class_org_ogre4j_RibbonTrail_00024NodeList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_RibbonTrail_00024NodeList.cpp
+END
+class_org_ogre4j_emittercommands_CmdRepeatDelay.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_emittercommands_CmdRepeatDelay.cpp
+END
+class_org_ogre4j_Texture.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Texture.cpp
+END
+class_org_ogre4j_ShadowTextureManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ShadowTextureManager.cpp
+END
+class_org_ogre4j_CullingModeHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_CullingModeHelper.cpp
+END
+class_org_ogre4j_PanelOverlayElementFactory.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_PanelOverlayElementFactory.cpp
+END
+class_org_ogre4j_PSSMShadowCameraSetup_00024OptimalAdjustFactorList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_PSSMShadowCameraSetup_00024OptimalAdjustFactorList.cpp
+END
+class_org_ogre4j_SceneBlendTypeHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SceneBlendTypeHelper.cpp
+END
+class_org_ogre4j_Light.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Light.cpp
+END
+class_org_ogre4j_emittercommands_CmdMaxTTL.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_emittercommands_CmdMaxTTL.cpp
+END
+class_org_ogre4j_BinaryOptionList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_BinaryOptionList.cpp
+END
+class_org_ogre4j_AbstractNode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_AbstractNode.cpp
+END
+class_org_ogre4j_RenderSysAllocPolicy.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_RenderSysAllocPolicy.cpp
+END
+class_org_GlobalUtility.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/ogre4j/!svn/ver/342/trunk/org.ogre4j/src/c/src/class_org_GlobalUtility.cpp
+END
+class_org_ogre4j_VertexPoseKeyFrame_00024PoseRefIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_VertexPoseKeyFrame_00024PoseRefIterator.cpp
+END
+class_org_ogre4j_OverlayManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_OverlayManager.cpp
+END
+class_org_ogre4j_ArchiveManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ArchiveManager.cpp
+END
+class_org_ogre4j_GpuProgramParameters_00024IntConstantList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_GpuProgramParameters_00024IntConstantList.cpp
+END
+class_org_ogre4j_Node_00024Listener.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Node_00024Listener.cpp
+END
+class_org_std_ofstream.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_std_ofstream.cpp
+END
+class_org_ogre4j_AliasTextureNamePairList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_AliasTextureNamePairList.cpp
+END
+class_org_ogre4j_UTFString_00024utf32string.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_UTFString_00024utf32string.cpp
+END
+class_org_ogre4j_NumericKeyFrame.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_NumericKeyFrame.cpp
+END
+class_org_ogre4j_TimeIndex.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_TimeIndex.cpp
+END
+class_org_ogre4j_RenderTargetViewportEvent.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_RenderTargetViewportEvent.cpp
+END
+class_org_ogre4j_OverlayContainer_00024ChildContainerIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_OverlayContainer_00024ChildContainerIterator.cpp
+END
+class_org_ogre4j_GpuLogicalIndexUse.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_GpuLogicalIndexUse.cpp
+END
+class_org_ogre4j_PolygonModeHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_PolygonModeHelper.cpp
+END
+class_org_ogre4j_Technique_00024GPUVendorRule.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Technique_00024GPUVendorRule.cpp
+END
+class_org_ogre4j_Radian.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Radian.cpp
+END
+class_org_ogre4j_QueuedRenderableCollection_00024OrganisationModeHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_QueuedRenderableCollection_00024OrganisationModeHelper.cpp
+END
+class_org_ogre4j_BuiltinScriptTranslatorManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_BuiltinScriptTranslatorManager.cpp
+END
+class_org_ogre4j_HardwareOcclusionQuery.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_HardwareOcclusionQuery.cpp
+END
+class_org_ogre4j_ParticleSystemManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ParticleSystemManager.cpp
+END
+class_org_ogre4j_emittercommands_CmdPosition.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_emittercommands_CmdPosition.cpp
+END
+class_org_ogre4j_MemoryCategoryHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_MemoryCategoryHelper.cpp
+END
+class_org_ogre4j_Bitwise.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Bitwise.cpp
+END
+class_org_ogre4j_emittercommands_CmdColourRangeEnd.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_emittercommands_CmdColourRangeEnd.cpp
+END
+class_org_ogre4j_Material_00024LodDistanceIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Material_00024LodDistanceIterator.cpp
+END
+class_org_ogre4j_Log_00024Stream_00024Flush.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Log_00024Stream_00024Flush.cpp
+END
+class_org_ogre4j__1ConfigOption.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j__1ConfigOption.cpp
+END
+class_org_ogre4j_Viewport.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Viewport.cpp
+END
+class_org_ogre4j_IntersectionSceneQueryListener.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_IntersectionSceneQueryListener.cpp
+END
+class_org_ogre4j_Vector4.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Vector4.cpp
+END
+class_org_ogre4j_Skeleton_00024BoneHandleMap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Skeleton_00024BoneHandleMap.cpp
+END
+class_org_ogre4j_Camera.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/ogre4j/!svn/ver/342/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Camera.cpp
+END
+class_org_ogre4j_Mesh_00024ConstPoseIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Mesh_00024ConstPoseIterator.cpp
+END
+class_org_ogre4j_RenderQueue_00024RenderQueueGroupMap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_RenderQueue_00024RenderQueueGroupMap.cpp
+END
+jni_short_pointer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/jni_short_pointer.cpp
+END
+class_org_ogre4j_Ray.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Ray.cpp
+END
+class_org_ogre4j_Compositor.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Compositor.cpp
+END
+jni_native_float_buffer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/jni_native_float_buffer.cpp
+END
+class_org_ogre4j_ScriptCompiler_00024IdMap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ScriptCompiler_00024IdMap.cpp
+END
+class_org_ogre4j_StaticGeometry_00024RegionIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_StaticGeometry_00024RegionIterator.cpp
+END
+class_org_ogre4j_HighLevelGpuProgram.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_HighLevelGpuProgram.cpp
+END
+class_org_ogre4j_MovableObject.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_MovableObject.cpp
+END
+class_org_ogre4j_GeneralAllocatedObject.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_GeneralAllocatedObject.cpp
+END
+Ogre4JJNIFunctions.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/ogre4j/!svn/ver/330/trunk/org.ogre4j/src/c/src/Ogre4JJNIFunctions.cpp
+END
+class_org_ogre4j_AxisAlignedBox_00024ExtentHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_AxisAlignedBox_00024ExtentHelper.cpp
+END
+class_org_ogre4j_RaySceneQueryResultEntry.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_RaySceneQueryResultEntry.cpp
+END
+class_org_ogre4j_EdgeData_00024EdgeGroupList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_EdgeData_00024EdgeGroupList.cpp
+END
+class_org_ogre4j_Animation_00024VertexTrackList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Animation_00024VertexTrackList.cpp
+END
+class_org_ogre4j_RenderSystem.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_RenderSystem.cpp
+END
+class_org_ogre4j_SceneManager_00024SpecialCaseRenderQueueModeHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SceneManager_00024SpecialCaseRenderQueueModeHelper.cpp
+END
+class_org_ogre4j_FrustumPlaneHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_FrustumPlaneHelper.cpp
+END
+class_org_ogre4j_StaticGeometry_00024LODBucket_00024MaterialBucketMap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_StaticGeometry_00024LODBucket_00024MaterialBucketMap.cpp
+END
+class_org_ogre4j_InstancedGeometry_00024OptimisedSubMeshGeometryList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_InstancedGeometry_00024OptimisedSubMeshGeometryList.cpp
+END
+class_org_ogre4j_Angle.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Angle.cpp
+END
+class_org_ogre4j_RegionSceneQuery.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_RegionSceneQuery.cpp
+END
+class_org_ogre4j_OverlayContainer_00024ChildIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_OverlayContainer_00024ChildIterator.cpp
+END
+class_org_ogre4j_FilterTypeHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_FilterTypeHelper.cpp
+END
+class_org_ogre4j_Material_00024LodDistanceList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Material_00024LodDistanceList.cpp
+END
+class_org_ogre4j_AnimationStateIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_AnimationStateIterator.cpp
+END
+class_org_ogre4j_RuntimeAssertionException.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_RuntimeAssertionException.cpp
+END
+class_org_ogre4j_ScriptCompilerManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ScriptCompilerManager.cpp
+END
+class_org_ogre4j_FrameEvent.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_FrameEvent.cpp
+END
+class_org_ogre4j_ConcreteNodePtr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ConcreteNodePtr.cpp
+END
+class_org_ogre4j_TangentSpaceCalc_00024VertexSplit.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_TangentSpaceCalc_00024VertexSplit.cpp
+END
+class_org_ogre4j_SceneTypeHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SceneTypeHelper.cpp
+END
+class_org_ogre4j_ResourceGroupManager_00024ResourceManagerIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ResourceGroupManager_00024ResourceManagerIterator.cpp
+END
+class_org_ogre4j_emittercommands_CmdTTL.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_emittercommands_CmdTTL.cpp
+END
+class_org_ogre4j_VertexAnimationTrack_00024TargetModeHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_VertexAnimationTrack_00024TargetModeHelper.cpp
+END
+class_org_ogre4j_SceneQuery_00024WorldFragment.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SceneQuery_00024WorldFragment.cpp
+END
+class_org_ogre4j_RaySceneQueryListener.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_RaySceneQueryListener.cpp
+END
+class_org_ogre4j_Overlay_00024Overlay2DElementsIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Overlay_00024Overlay2DElementsIterator.cpp
+END
+class_org_ogre4j_StaticGeometry_00024OptimisedSubMeshGeometryList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_StaticGeometry_00024OptimisedSubMeshGeometryList.cpp
+END
+class_org_ogre4j_UTFString_00024dstring.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_UTFString_00024dstring.cpp
+END
+class_org_ogre4j_WireBoundingBox.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ogre4j/!svn/ver/342/trunk/org.ogre4j/src/c/src/class_org_ogre4j_WireBoundingBox.cpp
+END
+class_org_ogre4j_BillboardSet.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/ogre4j/!svn/ver/342/trunk/org.ogre4j/src/c/src/class_org_ogre4j_BillboardSet.cpp
+END
+class_org_ogre4j_SceneQueryMovableWorldFragmentIntersectionList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SceneQueryMovableWorldFragmentIntersectionList.cpp
+END
+class_org_ogre4j_OverlayManager_00024ElementMap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_OverlayManager_00024ElementMap.cpp
+END
+class_org_ogre4j_GuiVerticalAlignmentHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_GuiVerticalAlignmentHelper.cpp
+END
+class_org_ogre4j_ShadowCameraSetup.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ShadowCameraSetup.cpp
+END
+class_org_ogre4j_SceneManager_00024Listener.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SceneManager_00024Listener.cpp
+END
+class_org_ogre4j_PlaneOptimalShadowCameraSetup.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_PlaneOptimalShadowCameraSetup.cpp
+END
+class_org_ogre4j_Math_00024AngleUnitHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Math_00024AngleUnitHelper.cpp
+END
+class_org_ogre4j_Technique.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Technique.cpp
+END
+class_org_ogre4j_IlluminationPassList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_IlluminationPassList.cpp
+END
+class_org_ogre4j_MaterialSerializer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_MaterialSerializer.cpp
+END
+class_org_ogre4j_Box.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Box.cpp
+END
+class_org_ogre4j_SceneObjAllocatedObject.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SceneObjAllocatedObject.cpp
+END
+class_org_ogre4j_InstancedGeometry_00024SubMeshLodGeometryLink.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_InstancedGeometry_00024SubMeshLodGeometryLink.cpp
+END
+class_org_ogre4j_TextureManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_TextureManager.cpp
+END
+class_org_ogre4j_TextureSourceTranslator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_TextureSourceTranslator.cpp
+END
+class_org_ogre4j_ParamCommandMap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ParamCommandMap.cpp
+END
+class_org_ogre4j_BorderPanelOverlayElementFactory.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_BorderPanelOverlayElementFactory.cpp
+END
+class_org_ogre4j_MeshChunkIDHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_MeshChunkIDHelper.cpp
+END
+class_org_ogre4j_emittercommands_CmdColour.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_emittercommands_CmdColour.cpp
+END
+class_org_ogre4j_ManualObject_00024ManualObjectSection.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ManualObject_00024ManualObjectSection.cpp
+END
+class_org_ogre4j_SceneNode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/ogre4j/!svn/ver/343/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SceneNode.cpp
+END
+class_org_ogre4j_StaticGeometry_00024LODBucket_00024MaterialIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_StaticGeometry_00024LODBucket_00024MaterialIterator.cpp
+END
+class_org_ogre4j_Node_00024ConstChildNodeIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Node_00024ConstChildNodeIterator.cpp
+END
+class_org_ogre4j_AxisAlignedBoxSceneQuery.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_AxisAlignedBoxSceneQuery.cpp
+END
+class_org_ogre4j_HardwarePixelBufferSharedPtr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_HardwarePixelBufferSharedPtr.cpp
+END
+class_org_ogre4j_StaticGeometry_00024QueuedGeometryList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_StaticGeometry_00024QueuedGeometryList.cpp
+END
+class_org_ogre4j_FrameTimeControllerValue.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_FrameTimeControllerValue.cpp
+END
+class_org_ogre4j_TextureUnitTranslator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_TextureUnitTranslator.cpp
+END
+class_org_ogre4j_overlayelementcommands_CmdLeft.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_overlayelementcommands_CmdLeft.cpp
+END
+class_org_ogre4j_FileInfoListPtr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_FileInfoListPtr.cpp
+END
+class_org_ogre4j_ResourceManager_00024ResourceMap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ResourceManager_00024ResourceMap.cpp
+END
+class_org_ogre4j_WindowEventUtilities_00024WindowEventListeners.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_WindowEventUtilities_00024WindowEventListeners.cpp
+END
+class_org_ogre4j_CompositionPass_00024InputTex.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_CompositionPass_00024InputTex.cpp
+END
+class_org_ogre4j_Node_00024ChildNodeMap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Node_00024ChildNodeMap.cpp
+END
+class_org_ogre4j_HardwareVertexBuffer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_HardwareVertexBuffer.cpp
+END
+class_org_ogre4j_ResourceGroupManager_00024ResourceManagerMap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ResourceGroupManager_00024ResourceManagerMap.cpp
+END
+class_org_ogre4j_TextureUnitState_00024TextureCubeFaceHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_TextureUnitState_00024TextureCubeFaceHelper.cpp
+END
+class_org_ogre4j_MeshSerializer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_MeshSerializer.cpp
+END
+class_org_ogre4j_FileInfoList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_FileInfoList.cpp
+END
+class_org_ogre4j_RenderSystemCapabilitiesManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_RenderSystemCapabilitiesManager.cpp
+END
+class_org_ogre4j_BufferUsageList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_BufferUsageList.cpp
+END
+class_org_ogre4j_RenderQueueListener.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_RenderQueueListener.cpp
+END
+class_org_ogre4j_RenderSystem_00024RenderTargetIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_RenderSystem_00024RenderTargetIterator.cpp
+END
+class_org_ogre4j_ParticleSystemManager_00024ParticleEmitterFactoryMap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ParticleSystemManager_00024ParticleEmitterFactoryMap.cpp
+END
+class_org_ogre4j_SkeletonAnimationBlendModeHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SkeletonAnimationBlendModeHelper.cpp
+END
+class_org_ogre4j_ObjectAbstractNode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ObjectAbstractNode.cpp
+END
+class_org_ogre4j_MultiRenderTarget_00024BoundSufaceList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_MultiRenderTarget_00024BoundSufaceList.cpp
+END
+class_org_ogre4j_HardwareVertexBufferSharedPtr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_HardwareVertexBufferSharedPtr.cpp
+END
+class_org_ogre4j_ResourceGroupManager_00024ResourceDeclaration.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ResourceGroupManager_00024ResourceDeclaration.cpp
+END
+class_org_ogre4j_StaticGeometry_00024MaterialBucket.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_StaticGeometry_00024MaterialBucket.cpp
+END
+class_org_ogre4j_ShadowVolumeExtrudeProgram.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ShadowVolumeExtrudeProgram.cpp
+END
+class_org_ogre4j_ParticleSystem.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ParticleSystem.cpp
+END
+class_org_ogre4j_CompositorTranslator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_CompositorTranslator.cpp
+END
+class_org_ogre4j_CompositionTechnique.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_CompositionTechnique.cpp
+END
+class_org_ogre4j_ConvexBody_00024PolygonList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ConvexBody_00024PolygonList.cpp
+END
+class_org_ogre4j_Font_00024CodePointRangeList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Font_00024CodePointRangeList.cpp
+END
+class_org_ogre4j_ScriptTranslatorManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ScriptTranslatorManager.cpp
+END
+class_org_ogre4j_ManualObject_00024SectionList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ManualObject_00024SectionList.cpp
+END
+class_org_ogre4j_TrackVertexColourEnumHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_TrackVertexColourEnumHelper.cpp
+END
+class_org_ogre4j_FaceGroupTypeHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_FaceGroupTypeHelper.cpp
+END
+class_org_ogre4j_OverlayContainer_00024ChildContainerMap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_OverlayContainer_00024ChildContainerMap.cpp
+END
+class_org_ogre4j_Overlay.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Overlay.cpp
+END
+class_org_ogre4j_Archive.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Archive.cpp
+END
+class_org_ogre4j_StencilOperationHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_StencilOperationHelper.cpp
+END
+class_org_ogre4j_SubMesh_00024VertexBoneAssignmentList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SubMesh_00024VertexBoneAssignmentList.cpp
+END
+class_org_ogre4j_Skeleton.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Skeleton.cpp
+END
+class_org_ogre4j_ViewPoint.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ViewPoint.cpp
+END
+class_org_ogre4j_Skeleton_00024BoneIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Skeleton_00024BoneIterator.cpp
+END
+class_org_ogre4j_MaterialScriptContext.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_MaterialScriptContext.cpp
+END
+class_org_ogre4j_IlluminationStageHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_IlluminationStageHelper.cpp
+END
+class_org_ogre4j_FocusedShadowCameraSetup.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_FocusedShadowCameraSetup.cpp
+END
+class_org_ogre4j_GpuConstantDefinitionIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_GpuConstantDefinitionIterator.cpp
+END
+class_org_ogre4j_VertexPoseKeyFrame.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_VertexPoseKeyFrame.cpp
+END
+class_org_ogre4j_Plane_00024SideHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Plane_00024SideHelper.cpp
+END
+class_org_ogre4j_Technique_00024IncludeOrExcludeHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Technique_00024IncludeOrExcludeHelper.cpp
+END
+class_org_ogre4j_ShadowTechniqueHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ShadowTechniqueHelper.cpp
+END
+jni_byte_pointer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/jni_byte_pointer.cpp
+END
+class_org_ogre4j_BillboardSetFactory.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_BillboardSetFactory.cpp
+END
+jni_enum_pointer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/jni_enum_pointer.cpp
+END
+class_org_ogre4j_ParamCommand.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ParamCommand.cpp
+END
+class_org_ogre4j_SceneManager_00024PrefabTypeHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SceneManager_00024PrefabTypeHelper.cpp
+END
+class_org_ogre4j_ScriptCompiler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/ogre4j/!svn/ver/342/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ScriptCompiler.cpp
+END
+class_org_ogre4j_TangentSpaceCalc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_TangentSpaceCalc.cpp
+END
+class_org_ogre4j_RenderOperation.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_RenderOperation.cpp
+END
+class_org_ogre4j_CompositorInstance_00024TargetOperation.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_CompositorInstance_00024TargetOperation.cpp
+END
+class_org_ogre4j_SceneManager_00024SkyPlaneGenParameters.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_SceneManager_00024SkyPlaneGenParameters.cpp
+END
+class_org_ogre4j_Compositor_00024TechniqueIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Compositor_00024TechniqueIterator.cpp
+END
+jni_native_double_buffer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/jni_native_double_buffer.cpp
+END
+class_org_ogre4j_AbstractNodeList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_AbstractNodeList.cpp
+END
+class_org_ogre4j_InstancedGeometry_00024LODBucket_00024MaterialBucketMap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_InstancedGeometry_00024LODBucket_00024MaterialBucketMap.cpp
+END
+class_org_ogre4j_ParticleSystemManager_00024ParticleEmitterFactoryIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ParticleSystemManager_00024ParticleEmitterFactoryIterator.cpp
+END
+class_org_ogre4j_ResourceManager_00024ResourceCreateOrRetrieveResult.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ResourceManager_00024ResourceCreateOrRetrieveResult.cpp
+END
+class_org_ogre4j_Serializer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Serializer.cpp
+END
+class_org_ogre4j_Codec_00024CodecIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Codec_00024CodecIterator.cpp
+END
+class_org_ogre4j_ParticleAffector.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ParticleAffector.cpp
+END
+class_org_ogre4j_CompositorInstance_00024Listener.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_CompositorInstance_00024Listener.cpp
+END
+class_org_ogre4j_Animation.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_Animation.cpp
+END
+class_org_ogre4j_HardwareIndexBuffer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_HardwareIndexBuffer.cpp
+END
+class_org_ogre4j_MeshLodUsage.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_MeshLodUsage.cpp
+END
+class_org_ogre4j_ScriptCompiler_00024ErrorPtr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ScriptCompiler_00024ErrorPtr.cpp
+END
+class_org_ogre4j_ConfigDialog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/ogre4j/!svn/ver/342/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ConfigDialog.cpp
+END
+class_org_ogre4j_ClipResultHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ClipResultHelper.cpp
+END
+class_org_ogre4j_RenderTargetPriorityMap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_RenderTargetPriorityMap.cpp
+END
+class_org_ogre4j_ScriptTokenListPtr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/c/src/class_org_ogre4j_ScriptTokenListPtr.cpp
+END

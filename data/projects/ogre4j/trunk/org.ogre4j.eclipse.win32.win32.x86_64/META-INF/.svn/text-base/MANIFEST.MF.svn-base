@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %fragmentName
+Bundle-SymbolicName: org.ogre4j.eclipse.win32.win32.x86_64;singleton:=true
+Bundle-Version: 1.6.0
+Fragment-Host: org.ogre4j.eclipse
+Bundle-Vendor: Ogrinux
+Eclipse-PlatformFilter: (& (osgi.ws=win32) (osgi.os=win32) (osgi.arch=x86_64))

@@ -1,0 +1,14 @@
+The program’s output file may contain one of the tuples:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+< ThreadTest, 0, none>
+No bug was encountered and program exited without any errors.
+
+
+< ThreadTest, <number> , BLOCKING_CRITICAL_SECTION>
+<number> (positive integer) of thread didn’t exit the critical section correctly causing a blocking critical section error.
+
+
+<ThreadTest, DEADLOCK, BLOCKING_CRITICAL_SECTION>
+maxthreads of threads didn’t exit the critical section correctly causing a deadlock.

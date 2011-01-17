@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/ogre4j/!svn/ver/345/trunk/org.ogre4j.demos.swt/src/org/ogre4j/demos/swt/fresnel
+END
+FresnelFrameListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/ogre4j/!svn/ver/345/trunk/org.ogre4j.demos.swt/src/org/ogre4j/demos/swt/fresnel/FresnelFrameListener.java
+END
+ReflectionTextureListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/ogre4j/!svn/ver/345/trunk/org.ogre4j.demos.swt/src/org/ogre4j/demos/swt/fresnel/ReflectionTextureListener.java
+END
+FresnelApplication.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/ogre4j/!svn/ver/345/trunk/org.ogre4j.demos.swt/src/org/ogre4j/demos/swt/fresnel/FresnelApplication.java
+END
+RefractionTextureListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/ogre4j/!svn/ver/345/trunk/org.ogre4j.demos.swt/src/org/ogre4j/demos/swt/fresnel/RefractionTextureListener.java
+END

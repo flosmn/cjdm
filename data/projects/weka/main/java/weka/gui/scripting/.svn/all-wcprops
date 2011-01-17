@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/weka/!svn/ver/5928/trunk/weka/src/main/java/weka/gui/scripting
+END
+Groovy.props
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/weka/!svn/ver/5293/trunk/weka/src/main/java/weka/gui/scripting/Groovy.props
+END
+SyntaxDocument.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/weka/!svn/ver/5293/trunk/weka/src/main/java/weka/gui/scripting/SyntaxDocument.java
+END
+JythonScript.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/weka/!svn/ver/5142/trunk/weka/src/main/java/weka/gui/scripting/JythonScript.java
+END
+ScriptingPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/weka/!svn/ver/5142/trunk/weka/src/main/java/weka/gui/scripting/ScriptingPanel.java
+END
+Jython.props
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/weka/!svn/ver/5293/trunk/weka/src/main/java/weka/gui/scripting/Jython.props
+END
+Script.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/weka/!svn/ver/5142/trunk/weka/src/main/java/weka/gui/scripting/Script.java
+END
+FileScriptingPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/weka/!svn/ver/5144/trunk/weka/src/main/java/weka/gui/scripting/FileScriptingPanel.java
+END
+GroovyScript.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/weka/!svn/ver/5142/trunk/weka/src/main/java/weka/gui/scripting/GroovyScript.java
+END
+GroovyPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/weka/!svn/ver/5837/trunk/weka/src/main/java/weka/gui/scripting/GroovyPanel.java
+END
+ScriptUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/weka/!svn/ver/5928/trunk/weka/src/main/java/weka/gui/scripting/ScriptUtils.java
+END
+JythonPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/weka/!svn/ver/5837/trunk/weka/src/main/java/weka/gui/scripting/JythonPanel.java
+END

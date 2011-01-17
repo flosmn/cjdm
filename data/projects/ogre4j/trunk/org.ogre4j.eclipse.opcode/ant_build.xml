@@ -1,0 +1,5 @@
+<project name="org.ogre4j.eclipse.opcode" default="jni_headers">
+	<target name="jni_headers">
+		<javah classpath="bin/java" class="org.ogre4j.eclipse.opcode.Opcode" outputfile="src/c/include/JNIOpcode.h"></javah>
+	</target>
+</project>

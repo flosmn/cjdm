@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." default="build.proj.files" name="org.ogre4j.eclipse">
+	<description>ANT build script to generate the eclipse project 
+	files based on the org.ogre4j project. This makes it easier to
+	manage versioning of this plugin. Just run the default target to
+	generate project files that are in sync with the org.ogre4j project.
+	</description>
+	<property name="org.ogre4j.dir"
+	          description="The org.ogre4j project folder."
+	          value="../org.ogre4j" />
+
+	<!-- ********************************************************** -->
+	<target name="build.proj.files"
+	        depends="copy.ogre4j, build.osgi.manifest, build.jdt.classpath, build.pde.build_properties">
+		<description>Builds all project files for the Eclipse IDE.</description>
+	</target>
+
+	<!-- ********************************************************** -->
+	<import file="${org.ogre4j.dir}/build.xml" />
+	<target name="copy.ogre4j">	
+		<description>Runs the build script of org.ogre4j and copies the
+			jar and src.zip into the root folder of this plugin.</description>
+		<ant antfile="${org.ogre4j.dir}/build.xml"
+		     dir="${org.ogre4j.dir}"
+		     target="ogre4j.build.jar" />
+		<copy file="${org.ogre4j.dir}/${ogre4j.dist.jar}" todir="." />
+	</target>
+
+	<!-- ********************************************************** -->
+	<property file="plugin.properties" />
+
+	<target name="build.osgi.manifest">
+		<description>Builds the OSGi bundle manifest.</description>
+		<manifest file="META-INF/MANIFEST.MF">
+			<attribute name="Bundle-ManifestVersion" value="2" />
+			<attribute name="Bundle-Name" value="${pluginname}" />
+			<attribute name="Bundle-SymbolicName" value="org.ogre4j.eclipse;singleton:=true" />			
+			<attribute name="Bundle-Version" value="${ogre4j.version}" />
+			<attribute name="Bundle-Vendor" value="ogre4j.org" />
+			<attribute name="Bundle-Localization" value="plugin" />
+			<attribute name="Export-Package" value="${ogre4j.export-package}, org.ogre4j.eclipse" />
+			<attribute name="Bundle-ClassPath" value="${ogre4j.jar}, org.ogre4j.eclipse.jar" />
+			<attribute name="Bundle-Activator" value="org.ogre4j.eclipse.OgrePlugin"/>			
+			<attribute name="Require-Bundle" value="org.eclipse.core.runtime,org.eclipse.swt,org.eclipse.jface,org.eclipse.ui;visibility:=reexport"/>			
+			<attribute name="Eclipse-LazyStart" value="true"/>
+		</manifest>
+	</target>
+
+	<!-- ********************************************************** -->
+	<target name="build.jdt.classpath">
+		<description>Builds the JDT .classpath.</description>
+		<echo file=".classpath">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;classpath&gt;
+    &lt;classpathentry kind="src" path="src" /&gt;
+    &lt;classpathentry kind="output" path="bin"/&gt;
+	&lt;classpathentry exported="true" kind="lib" path="${ogre4j.jar}" /&gt;
+	&lt;classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER" /&gt;
+	&lt;classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins" /&gt;
+&lt;/classpath&gt;
+		</echo>
+	</target>
+
+	<!-- ********************************************************** -->
+	<target name="build.pde.build_properties">
+		<description>Builds the Eclipse PDE build.properties.</description>
+		<propertyfile file="build.properties">
+			<entry key="bin.includes"
+			       value="META-INF/, plugin.properties, ${ogre4j.jar}, org.ogre4j.eclipse.jar, plugin.xml" />
+			<entry key="source.org.ogre4j.eclipse.jar" value="src/"/>
+			<entry key="output.." value="bin/"/>
+		</propertyfile>
+	</target>
+
+	<!-- ********************************************************** -->
+	<target name="clean">
+		<delete dir="." includes="*.jar,*.zip,.classpath,build.properties" failonerror="false"/>
+		<delete file="META-INF/MANIFEST.MF" failonerror="false"/>
+	</target>
+</project>

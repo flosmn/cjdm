@@ -1,0 +1,311 @@
+Concurrency Level is HIGH
+
+ Bug Number1
+
+ <ProducerConsumer.java , Client thread prints element CONSUMED before SERVER 
+ thread prints PRODUCED on that element , RaceFound Exception>
+
+ Bug Number2
+
+ <ProducerConsumer.java , Client thread prints element CONSUMED before SERVER 
+ thread prints PRODUCED on that element , RaceFound Exception>
+
+ PRODUCED[0] :30
+At time :30
+
+ PRODUCED[1] :40
+At time :40
+
+ PRODUCED[2] :40
+At time :40
+
+ PRODUCED[3] :40
+At time :40
+
+ PRODUCED[4] :40
+At time :40
+
+ PRODUCED[5] :40
+At time :40
+
+ PRODUCED[6] :40
+At time :40
+
+ PRODUCED[7] :50
+At time :50
+
+ PRODUCED[8] :50
+At time :50
+
+ PRODUCED[9] :50
+At time :50
+
+ PRODUCED[10] :50
+At time :50
+
+ PRODUCED[11] :50
+At time :50
+
+ PRODUCED[12] :50
+At time :50
+
+ PRODUCED[13] :60
+At time :60
+
+ PRODUCED[14] :60
+At time :60
+
+ PRODUCED[15] :60
+At time :60
+
+ PRODUCED[16] :60
+At time :60
+
+ PRODUCED[17] :60
+At time :60
+
+ PRODUCED[18] :60
+At time :60
+
+ PRODUCED[19] :60
+At time :60
+
+ PRODUCED[20] :60
+At time :60
+
+ PRODUCED[21] :60
+At time :70
+
+ PRODUCED[22] :70
+At time :70
+
+ PRODUCED[23] :70
+At time :70
+
+ PRODUCED[24] :70
+At time :70
+
+ PRODUCED[25] :70
+At time :70
+
+ PRODUCED[26] :70
+At time :70
+
+ PRODUCED[27] :70
+At time :70
+
+ PRODUCED[28] :80
+At time :80
+
+ PRODUCED[29] :80
+At time :80
+
+ Bug Number3
+ <ProducerConsumer.java , counter > 30 so Exception is thrown , Orphaned_Bug>
+
+ Bug Number4
+
+ <ProducerConsumer.java , Client thread prints element CONSUMED before SERVER 
+ thread prints PRODUCED on that element , RaceFound Exception>
+
+ CONSUMED[3] :40
+At time :90
+
+ CONSUMED[4] :40
+At time :90
+
+ CONSUMED[5] :40
+At time :90
+
+ Bug Number5
+
+ <ProducerConsumer.java , Client thread prints element CONSUMED before SERVER 
+ thread prints PRODUCED on that element , RaceFound Exception>
+
+ Bug Number6
+
+ <ProducerConsumer.java , Client thread prints element CONSUMED before SERVER 
+ thread prints PRODUCED on that element , RaceFound Exception>
+
+ Bug Number7
+
+ <ProducerConsumer.java , Client thread prints element CONSUMED before SERVER 
+ thread prints PRODUCED on that element , RaceFound Exception>
+
+ Bug Number8
+ <ProducerConsumer.java , counter > 30 so Exception is thrown , Orphaned_Bug>
+
+ Bug Number9
+ <ProducerConsumer.java , counter > 30 so Exception is thrown , Orphaned_Bug>
+
+ Bug Number10
+ <ProducerConsumer.java , counter > 30 so Exception is thrown , Orphaned_Bug>
+
+ Bug Number11
+ <ProducerConsumer.java , counter > 30 so Exception is thrown , Orphaned_Bug>
+
+ Bug Number12
+
+ <ProducerConsumer.java , Client thread prints element CONSUMED before SERVER 
+ thread prints PRODUCED on that element , RaceFound Exception>
+
+ Bug Number13
+
+ <ProducerConsumer.java , Client thread prints element CONSUMED before SERVER 
+ thread prints PRODUCED on that element , RaceFound Exception>
+
+ Bug Number14
+
+ <ProducerConsumer.java , Client thread prints element CONSUMED before SERVER 
+ thread prints PRODUCED on that element , RaceFound Exception>
+
+ Bug Number15
+
+ <ProducerConsumer.java , Client thread prints element CONSUMED before SERVER 
+ thread prints PRODUCED on that element , RaceFound Exception>
+
+ Bug Number16
+
+ <ProducerConsumer.java , Client thread prints element CONSUMED before SERVER 
+ thread prints PRODUCED on that element , RaceFound Exception>
+
+ Bug Number17
+
+ <ProducerConsumer.java , Client thread prints element CONSUMED before SERVER 
+ thread prints PRODUCED on that element , RaceFound Exception>
+
+ Bug Number18
+
+ <ProducerConsumer.java , Client thread prints element CONSUMED before SERVER 
+ thread prints PRODUCED on that element , RaceFound Exception>
+
+ Bug Number19
+
+ <ProducerConsumer.java , Client thread prints element CONSUMED before SERVER 
+ thread prints PRODUCED on that element , RaceFound Exception>
+
+ Bug Number20
+
+ <ProducerConsumer.java , Client thread prints element CONSUMED before SERVER 
+ thread prints PRODUCED on that element , RaceFound Exception>
+
+ Bug Number22
+
+ Bug Number23
+
+ Bug Number24
+ <ProducerConsumer.java , counter > 30 so Exception is thrown , Orphaned_Bug>
+ <ProducerConsumer.java , counter > 30 so Exception is thrown , Orphaned_Bug>
+ <ProducerConsumer.java , counter > 30 so Exception is thrown , Orphaned_Bug>
+
+ Bug Number24
+
+ <ProducerConsumer.java , Client thread prints element CONSUMED before SERVER 
+ thread prints PRODUCED on that element , RaceFound Exception>
+
+ Bug Number25
+
+ <ProducerConsumer.java , Client thread prints element CONSUMED before SERVER 
+ thread prints PRODUCED on that element , RaceFound Exception>
+
+ Bug Number26
+
+ <ProducerConsumer.java , Client thread prints element CONSUMED before SERVER 
+ thread prints PRODUCED on that element , RaceFound Exception>
+
+ Bug Number27
+
+ <ProducerConsumer.java , Client thread prints element CONSUMED before SERVER 
+ thread prints PRODUCED on that element , RaceFound Exception>
+
+ Bug Number28
+
+ <ProducerConsumer.java , Client thread prints element CONSUMED before SERVER 
+ thread prints PRODUCED on that element , RaceFound Exception>
+
+ Bug Number29
+
+ <ProducerConsumer.java , Client thread prints element CONSUMED before SERVER 
+ thread prints PRODUCED on that element , RaceFound Exception>
+
+ Bug Number30
+
+ <ProducerConsumer.java , Client thread prints element CONSUMED before SERVER 
+ thread prints PRODUCED on that element , RaceFound Exception>
+
+ Bug Number31
+
+ <ProducerConsumer.java , Client thread prints element CONSUMED before SERVER 
+ thread prints PRODUCED on that element , RaceFound Exception>
+
+ Bug Number32
+
+ <ProducerConsumer.java , Client thread prints element CONSUMED before SERVER 
+ thread prints PRODUCED on that element , RaceFound Exception>
+
+ Bug Number33
+
+ <ProducerConsumer.java , Client thread prints element CONSUMED before SERVER 
+ thread prints PRODUCED on that element , RaceFound Exception>
+
+ Bug Number34
+
+ <ProducerConsumer.java , Client thread prints element CONSUMED before SERVER 
+ thread prints PRODUCED on that element , RaceFound Exception>
+
+ Bug Number35
+
+ <ProducerConsumer.java , Client thread prints element CONSUMED before SERVER 
+ thread prints PRODUCED on that element , RaceFound Exception>
+
+ Bug Number36
+
+ <ProducerConsumer.java , Client thread prints element CONSUMED before SERVER 
+ thread prints PRODUCED on that element , RaceFound Exception>
+
+ Bug Number37
+
+ <ProducerConsumer.java , Client thread prints element CONSUMED before SERVER 
+ thread prints PRODUCED on that element , RaceFound Exception>
+
+ Bug Number38
+
+ <ProducerConsumer.java , Client thread prints element CONSUMED before SERVER 
+ thread prints PRODUCED on that element , RaceFound Exception>
+
+ Bug Number39
+
+ <ProducerConsumer.java , Client thread prints element CONSUMED before SERVER 
+ thread prints PRODUCED on that element , RaceFound Exception>
+
+ Bug Number40
+
+ <ProducerConsumer.java , Client thread prints element CONSUMED before SERVER 
+ thread prints PRODUCED on that element , RaceFound Exception>
+
+ Bug Number41
+ <ProducerConsumer.java , counter > 30 so Exception is thrown , Orphaned_Bug>
+
+ Bug Number42
+ <ProducerConsumer.java , counter > 30 so Exception is thrown , Orphaned_Bug>
+
+ Bug Number43
+ <ProducerConsumer.java , counter > 30 so Exception is thrown , Orphaned_Bug>
+
+ Bug Number44
+ <ProducerConsumer.java , counter > 30 so Exception is thrown , Orphaned_Bug>
+
+ Bug Number45
+ <ProducerConsumer.java , counter > 30 so Exception is thrown , Orphaned_Bug>
+
+ Bug Number46
+ <ProducerConsumer.java , counter > 30 so Exception is thrown , Orphaned_Bug>
+
+ Bug Number47
+ <ProducerConsumer.java , counter > 30 so Exception is thrown , Orphaned_Bug>
+
+ Bug Number48
+ <ProducerConsumer.java , counter > 30 so Exception is thrown , Orphaned_Bug>
+
+ Bug Number49
+ <ProducerConsumer.java , counter > 30 so Exception is thrown , Orphaned_Bug>

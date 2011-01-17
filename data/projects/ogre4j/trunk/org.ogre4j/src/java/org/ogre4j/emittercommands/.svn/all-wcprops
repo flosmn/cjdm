@@ -1,0 +1,257 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/ogre4j/emittercommands
+END
+ICmdEmissionRate.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/ogre4j/emittercommands/ICmdEmissionRate.java
+END
+ICmdMinVelocity.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/ogre4j/emittercommands/ICmdMinVelocity.java
+END
+ICmdColour.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/ogre4j/emittercommands/ICmdColour.java
+END
+ICmdMaxVelocity.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/ogre4j/emittercommands/ICmdMaxVelocity.java
+END
+ICmdPosition.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/ogre4j/emittercommands/ICmdPosition.java
+END
+CmdName.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/ogre4j/emittercommands/CmdName.java
+END
+ICmdMinTTL.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/ogre4j/emittercommands/ICmdMinTTL.java
+END
+ICmdMaxTTL.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/ogre4j/emittercommands/ICmdMaxTTL.java
+END
+CmdAngle.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/ogre4j/emittercommands/CmdAngle.java
+END
+ICmdDirection.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/ogre4j/emittercommands/ICmdDirection.java
+END
+ICmdName.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/ogre4j/emittercommands/ICmdName.java
+END
+CmdVelocity.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/ogre4j/emittercommands/CmdVelocity.java
+END
+CmdRepeatDelay.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/ogre4j/emittercommands/CmdRepeatDelay.java
+END
+CmdMinVelocity.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/ogre4j/emittercommands/CmdMinVelocity.java
+END
+ICmdMinDuration.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/ogre4j/emittercommands/ICmdMinDuration.java
+END
+CmdMinRepeatDelay.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/ogre4j/emittercommands/CmdMinRepeatDelay.java
+END
+ICmdMaxDuration.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/ogre4j/emittercommands/ICmdMaxDuration.java
+END
+CmdMaxVelocity.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/ogre4j/emittercommands/CmdMaxVelocity.java
+END
+CmdMaxRepeatDelay.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/ogre4j/emittercommands/CmdMaxRepeatDelay.java
+END
+CmdColourRangeEnd.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/ogre4j/emittercommands/CmdColourRangeEnd.java
+END
+ICmdVelocity.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/ogre4j/emittercommands/ICmdVelocity.java
+END
+ICmdMinRepeatDelay.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/ogre4j/emittercommands/ICmdMinRepeatDelay.java
+END
+ICmdTTL.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/ogre4j/emittercommands/ICmdTTL.java
+END
+ICmdMaxRepeatDelay.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/ogre4j/emittercommands/ICmdMaxRepeatDelay.java
+END
+ICmdColourRangeEnd.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/ogre4j/emittercommands/ICmdColourRangeEnd.java
+END
+CmdDirection.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/ogre4j/emittercommands/CmdDirection.java
+END
+CmdDuration.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/ogre4j/emittercommands/CmdDuration.java
+END
+CmdEmittedEmitter.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/ogre4j/emittercommands/CmdEmittedEmitter.java
+END
+CmdMinDuration.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/ogre4j/emittercommands/CmdMinDuration.java
+END
+CmdMaxDuration.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/ogre4j/emittercommands/CmdMaxDuration.java
+END
+ICmdEmittedEmitter.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/ogre4j/emittercommands/ICmdEmittedEmitter.java
+END
+ICmdDuration.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/ogre4j/emittercommands/ICmdDuration.java
+END
+CmdColourRangeStart.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/ogre4j/emittercommands/CmdColourRangeStart.java
+END
+ICmdAngle.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/ogre4j/emittercommands/ICmdAngle.java
+END
+CmdEmissionRate.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/ogre4j/emittercommands/CmdEmissionRate.java
+END
+CmdTTL.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/ogre4j/emittercommands/CmdTTL.java
+END
+CmdColour.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/ogre4j/emittercommands/CmdColour.java
+END
+CmdPosition.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/ogre4j/emittercommands/CmdPosition.java
+END
+ICmdColourRangeStart.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/ogre4j/emittercommands/ICmdColourRangeStart.java
+END
+CmdMinTTL.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/ogre4j/emittercommands/CmdMinTTL.java
+END
+ICmdRepeatDelay.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/ogre4j/emittercommands/ICmdRepeatDelay.java
+END
+CmdMaxTTL.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/ogre4j/emittercommands/CmdMaxTTL.java
+END

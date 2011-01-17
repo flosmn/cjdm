@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="org.ogre4j.eclipse.meshviewer.rcp.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="Perspective"
+            class="org.ogre4j.eclipse.meshviewer.rcp.Perspective"
+            id="org.ogre4j.eclipse.meshviewer.rcp.perspective">
+      </perspective>
+   </extension>
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="org.ogre4j.eclipse.meshviewer.rcp.application"
+            name="MeshViewer">
+         <property
+               name="appName"
+               value="MeshViewer">
+         </property>
+      </product>
+   </extension>
+
+</plugin>

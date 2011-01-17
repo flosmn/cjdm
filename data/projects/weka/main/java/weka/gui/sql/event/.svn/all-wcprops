@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/weka/!svn/ver/5349/trunk/weka/src/main/java/weka/gui/sql/event
+END
+QueryExecuteEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/sql/event/QueryExecuteEvent.java
+END
+ConnectionEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/sql/event/ConnectionEvent.java
+END
+ResultChangedListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/sql/event/ResultChangedListener.java
+END
+HistoryChangedEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/sql/event/HistoryChangedEvent.java
+END
+HistoryChangedListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/sql/event/HistoryChangedListener.java
+END
+ResultChangedEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/sql/event/ResultChangedEvent.java
+END
+ConnectionListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/sql/event/ConnectionListener.java
+END
+QueryExecuteListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/sql/event/QueryExecuteListener.java
+END

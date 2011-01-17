@@ -1,0 +1,7 @@
+java.lang.System.out
+ThreadTest$workerThread.id
+ThreadTest$workerThread.this$0
+ThreadTest.deadThreads
+ThreadTest$Counter.count
+ThreadTest.numWorkers
+ThreadTest.factor

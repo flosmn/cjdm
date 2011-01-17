@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.7.0
+Created-By: 1.5.0_12-b04 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+Bundle-Name: ogre4j Eclipse Plug-in
+Bundle-SymbolicName: org.ogre4j.eclipse;singleton:=true
+Bundle-Version: 1.6.2
+Bundle-Vendor: ogre4j.org
+Bundle-Localization: plugin
+Export-Package: org.xbig.base, org.ogre4j, org.ogre4j.nativelisteners,
+  org.ogre4j.exceptions, org.ogre4j.emittercommands, org.ogre4j.overla
+ yelementcommands, org.std, org.stdext, org.ogre4j.eclipse
+Bundle-ClassPath: org.ogre4j_1.6.2.jar, org.ogre4j.eclipse.jar
+Bundle-Activator: org.ogre4j.eclipse.OgrePlugin
+Require-Bundle: org.eclipse.core.runtime,org.eclipse.swt,org.eclipse.j
+ face,org.eclipse.ui;visibility:=reexport
+Eclipse-LazyStart: true
+

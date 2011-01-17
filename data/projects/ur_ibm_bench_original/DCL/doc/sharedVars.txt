@@ -1,0 +1,7 @@
+TicketsOrderSim.seats_num
+TicketsOrderSim.seats
+TicketsOrderSim$Seat.ticket
+TicketsOrderSim$TravelAgent.name
+TicketsOrderSim$Ticket.flight
+TicketsOrderSim$Ticket.airline
+TicketsOrderSim$Ticket.status

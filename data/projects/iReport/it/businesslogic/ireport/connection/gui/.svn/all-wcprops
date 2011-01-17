@@ -1,0 +1,197 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/repos/ireport/!svn/ver/1200/trunk/iReport2/src/it/businesslogic/ireport/connection/gui
+END
+BasicIReportConnectionEditor.form
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/repos/ireport/!svn/ver/1152/trunk/iReport2/src/it/businesslogic/ireport/connection/gui/BasicIReportConnectionEditor.form
+END
+QueryExecuterConnectionEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/repos/ireport/!svn/ver/1078/trunk/iReport2/src/it/businesslogic/ireport/connection/gui/QueryExecuterConnectionEditor.java
+END
+JRSpringLoadedHibernateConnectionEditor.form
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/repos/ireport/!svn/ver/1078/trunk/iReport2/src/it/businesslogic/ireport/connection/gui/JRSpringLoadedHibernateConnectionEditor.form
+END
+XMLADataSourceConnectionEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/repos/ireport/!svn/ver/1078/trunk/iReport2/src/it/businesslogic/ireport/connection/gui/XMLADataSourceConnectionEditor.java
+END
+EJBQLConnectionEditor.form
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/repos/ireport/!svn/ver/1078/trunk/iReport2/src/it/businesslogic/ireport/connection/gui/EJBQLConnectionEditor.form
+END
+JRDataSourceProviderConnectionEditor.form
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/repos/ireport/!svn/ver/1078/trunk/iReport2/src/it/businesslogic/ireport/connection/gui/JRDataSourceProviderConnectionEditor.form
+END
+JREmptyDataSourceConnectionEditor.form
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/repos/ireport/!svn/ver/1078/trunk/iReport2/src/it/businesslogic/ireport/connection/gui/JREmptyDataSourceConnectionEditor.form
+END
+ConnectionDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/repos/ireport/!svn/ver/1078/trunk/iReport2/src/it/businesslogic/ireport/connection/gui/ConnectionDialog.java
+END
+QueryExecuterConnectionEditor.form
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/repos/ireport/!svn/ver/1078/trunk/iReport2/src/it/businesslogic/ireport/connection/gui/QueryExecuterConnectionEditor.form
+END
+JRHibernateConnectionEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/repos/ireport/!svn/ver/1078/trunk/iReport2/src/it/businesslogic/ireport/connection/gui/JRHibernateConnectionEditor.java
+END
+XMLADataSourceConnectionEditor.form
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/repos/ireport/!svn/ver/1078/trunk/iReport2/src/it/businesslogic/ireport/connection/gui/XMLADataSourceConnectionEditor.form
+END
+JDBCConnectionEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/repos/ireport/!svn/ver/1191/trunk/iReport2/src/it/businesslogic/ireport/connection/gui/JDBCConnectionEditor.java
+END
+CSVDataSourceConnectionEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/repos/ireport/!svn/ver/1200/trunk/iReport2/src/it/businesslogic/ireport/connection/gui/CSVDataSourceConnectionEditor.java
+END
+MondrianConnectionEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/repos/ireport/!svn/ver/1078/trunk/iReport2/src/it/businesslogic/ireport/connection/gui/MondrianConnectionEditor.java
+END
+JRXMLDataSourceConnectionEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/repos/ireport/!svn/ver/1078/trunk/iReport2/src/it/businesslogic/ireport/connection/gui/JRXMLDataSourceConnectionEditor.java
+END
+ConnectionDialog.form
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/repos/ireport/!svn/ver/1078/trunk/iReport2/src/it/businesslogic/ireport/connection/gui/ConnectionDialog.form
+END
+JRHibernateConnectionEditor.form
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/repos/ireport/!svn/ver/1078/trunk/iReport2/src/it/businesslogic/ireport/connection/gui/JRHibernateConnectionEditor.form
+END
+JRCustomDataSourceConnectionEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/repos/ireport/!svn/ver/1078/trunk/iReport2/src/it/businesslogic/ireport/connection/gui/JRCustomDataSourceConnectionEditor.java
+END
+JavaBeanDataSourceConnectionEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/repos/ireport/!svn/ver/1078/trunk/iReport2/src/it/businesslogic/ireport/connection/gui/JavaBeanDataSourceConnectionEditor.java
+END
+JDBCConnectionEditor.form
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/repos/ireport/!svn/ver/1154/trunk/iReport2/src/it/businesslogic/ireport/connection/gui/JDBCConnectionEditor.form
+END
+JREmptyDataSourceConnectionEditor_1.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/repos/ireport/!svn/ver/1078/trunk/iReport2/src/it/businesslogic/ireport/connection/gui/JREmptyDataSourceConnectionEditor_1.java
+END
+BasicIReportConnectionEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/repos/ireport/!svn/ver/1152/trunk/iReport2/src/it/businesslogic/ireport/connection/gui/BasicIReportConnectionEditor.java
+END
+CSVDataSourceConnectionEditor.form
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/repos/ireport/!svn/ver/1200/trunk/iReport2/src/it/businesslogic/ireport/connection/gui/CSVDataSourceConnectionEditor.form
+END
+MondrianConnectionEditor.form
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/repos/ireport/!svn/ver/1078/trunk/iReport2/src/it/businesslogic/ireport/connection/gui/MondrianConnectionEditor.form
+END
+JRXMLDataSourceConnectionEditor.form
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/repos/ireport/!svn/ver/1078/trunk/iReport2/src/it/businesslogic/ireport/connection/gui/JRXMLDataSourceConnectionEditor.form
+END
+JRSpringLoadedHibernateConnectionEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/repos/ireport/!svn/ver/1078/trunk/iReport2/src/it/businesslogic/ireport/connection/gui/JRSpringLoadedHibernateConnectionEditor.java
+END
+EJBQLConnectionEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/repos/ireport/!svn/ver/1078/trunk/iReport2/src/it/businesslogic/ireport/connection/gui/EJBQLConnectionEditor.java
+END
+JRDataSourceProviderConnectionEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/repos/ireport/!svn/ver/1078/trunk/iReport2/src/it/businesslogic/ireport/connection/gui/JRDataSourceProviderConnectionEditor.java
+END
+JRCustomDataSourceConnectionEditor.form
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/repos/ireport/!svn/ver/1078/trunk/iReport2/src/it/businesslogic/ireport/connection/gui/JRCustomDataSourceConnectionEditor.form
+END
+JavaBeanDataSourceConnectionEditor.form
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/repos/ireport/!svn/ver/1078/trunk/iReport2/src/it/businesslogic/ireport/connection/gui/JavaBeanDataSourceConnectionEditor.form
+END
+JREmptyDataSourceConnectionEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/repos/ireport/!svn/ver/1078/trunk/iReport2/src/it/businesslogic/ireport/connection/gui/JREmptyDataSourceConnectionEditor.java
+END
+JREmptyDataSourceConnectionEditor_1.form
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/repos/ireport/!svn/ver/1078/trunk/iReport2/src/it/businesslogic/ireport/connection/gui/JREmptyDataSourceConnectionEditor_1.form
+END

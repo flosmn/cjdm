@@ -1,0 +1,10 @@
+K 10
+svn:ignore
+V 10
+.metadata
+
+K 13
+svn:mergeinfo
+V 10
+/trunk:297
+END

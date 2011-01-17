@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/gui/docking
+END
+DockingContainer.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/gui/docking/DockingContainer.java
+END
+DockingContainer.form
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/repos/ireport/!svn/ver/776/trunk/iReport2/src/it/businesslogic/ireport/gui/docking/DockingContainer.form
+END
+VTextIcon.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/gui/docking/VTextIcon.java
+END
+ExtendedTabbedPane.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/gui/docking/ExtendedTabbedPane.java
+END
+GenericDragTargetListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/gui/docking/GenericDragTargetListener.java
+END
+JDraggableTabbedPane.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/gui/docking/JDraggableTabbedPane.java
+END
+PanelTransferable.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/gui/docking/PanelTransferable.java
+END
+PanelView.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/gui/docking/PanelView.java
+END

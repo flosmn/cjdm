@@ -1,0 +1,12 @@
+org.directwebremoting
+org.directwebremoting.datasync
+org.directwebremoting.event
+org.directwebremoting.extend
+org.directwebremoting.io
+org.directwebremoting.json
+org.directwebremoting.json.parse
+org.directwebremoting.json.parse.impl
+org.directwebremoting.json.serialize
+org.directwebremoting.json.types
+org.directwebremoting.ui
+org.directwebremoting.util

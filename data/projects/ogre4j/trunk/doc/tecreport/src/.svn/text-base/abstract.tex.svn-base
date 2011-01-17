@@ -1,0 +1,15 @@
+\section{Abstract}
+\label{sec:Abstract}
+This document is a technical report about the ogre4j project hosted at 
+Sourceforge.net. It covers the questions why this project exits, how it works, 
+which alternatives are available in the open source universe and what are the 
+future plans for it.
+
+If you have any questions about this document or want to give us some feedback 
+about it and the project itself, please send an email to the authors
+\begin{itemize}
+\item christoph.nenning@netallied.de
+\item kai.klesatschke@netallied.de
+\end{itemize}
+or visit the web site http://ogre4j.sourceforge.net and make use of the forums 
+or trackers.

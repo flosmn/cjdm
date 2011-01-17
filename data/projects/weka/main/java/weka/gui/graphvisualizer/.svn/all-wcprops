@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/weka/!svn/ver/5349/trunk/weka/src/main/java/weka/gui/graphvisualizer
+END
+GraphNode.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/weka/!svn/ver/4995/trunk/weka/src/main/java/weka/gui/graphvisualizer/GraphNode.java
+END
+BIFParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/graphvisualizer/BIFParser.java
+END
+GraphVisualizer.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/weka/!svn/ver/4723/trunk/weka/src/main/java/weka/gui/graphvisualizer/GraphVisualizer.java
+END
+LayoutEngine.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/graphvisualizer/LayoutEngine.java
+END
+HierarchicalBCEngine.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/graphvisualizer/HierarchicalBCEngine.java
+END
+GraphEdge.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/weka/!svn/ver/4995/trunk/weka/src/main/java/weka/gui/graphvisualizer/GraphEdge.java
+END
+LayoutCompleteEventListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/graphvisualizer/LayoutCompleteEventListener.java
+END
+BIFFormatException.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/graphvisualizer/BIFFormatException.java
+END
+DotParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/graphvisualizer/DotParser.java
+END
+LayoutCompleteEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/graphvisualizer/LayoutCompleteEvent.java
+END
+GraphConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/graphvisualizer/GraphConstants.java
+END

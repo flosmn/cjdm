@@ -1,0 +1,8 @@
+Control.outputFile
+Control.sleep_time
+java.lang.System.out
+HttpClient.clientName
+HttpClient.actualUsers
+Counter.number
+HttpClient.suspendedClients
+Control.active

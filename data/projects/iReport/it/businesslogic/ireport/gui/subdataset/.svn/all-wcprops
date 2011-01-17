@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/gui/subdataset
+END
+GroupsDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/gui/subdataset/GroupsDialog.java
+END
+SubDatasetDialog.form
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/repos/ireport/!svn/ver/967/trunk/iReport2/src/it/businesslogic/ireport/gui/subdataset/SubDatasetDialog.form
+END
+SubDatasetsDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/gui/subdataset/SubDatasetsDialog.java
+END
+FilterExpressionDialog.form
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/repos/ireport/!svn/ver/877/trunk/iReport2/src/it/businesslogic/ireport/gui/subdataset/FilterExpressionDialog.form
+END
+SortFieldDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/gui/subdataset/SortFieldDialog.java
+END
+GroupDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/gui/subdataset/GroupDialog.java
+END
+SubDatasetDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/gui/subdataset/SubDatasetDialog.java
+END
+SortFieldsDialog.form
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/repos/ireport/!svn/ver/949/trunk/iReport2/src/it/businesslogic/ireport/gui/subdataset/SortFieldsDialog.form
+END
+GroupsDialog.form
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/repos/ireport/!svn/ver/795/trunk/iReport2/src/it/businesslogic/ireport/gui/subdataset/GroupsDialog.form
+END
+SortFieldCellRenderer.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/repos/ireport/!svn/ver/1086/trunk/iReport2/src/it/businesslogic/ireport/gui/subdataset/SortFieldCellRenderer.java
+END
+SubDatasetsDialog.form
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/repos/ireport/!svn/ver/795/trunk/iReport2/src/it/businesslogic/ireport/gui/subdataset/SubDatasetsDialog.form
+END
+FilterExpressionDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/gui/subdataset/FilterExpressionDialog.java
+END
+SortFieldDialog.form
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/repos/ireport/!svn/ver/949/trunk/iReport2/src/it/businesslogic/ireport/gui/subdataset/SortFieldDialog.form
+END
+SortFieldsDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/gui/subdataset/SortFieldsDialog.java
+END
+GroupDialog.form
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/repos/ireport/!svn/ver/795/trunk/iReport2/src/it/businesslogic/ireport/gui/subdataset/GroupDialog.form
+END

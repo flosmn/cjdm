@@ -1,0 +1,37 @@
+
+************************
+*COMMAND LINE STRUCTURE*
+************************
+<fileName, Concurrency, printOut, itemProduce, bufferCap, ProdPrior, ConsPrior, NumOfProd>
+
+fileName     -  output file name,
+Concurrency  -  concurrency <little, average, lot, manual>
+printOut     -  console printout <true, false>
+itemProduce  -  number of item each Producer produces <1..1000>
+bufferCap    -  the capacity of the buffer <1..1000>
+ProdPrior    -  the priority of the producers from 1 to 3 (1=MIN) (2=NORM) (3=MAX)
+ConsPrior    -  the priority of the consumers from 1 to 3 (1=MIN) (2=NORM) (3=MAX)
+NumOfProd    -  number of producers <2..1000> (only if Concurrency=4)
+
+
+
+********************************************
+*       Program configure Constants        *
+* (All the constants which can be changed) *
+********************************************
+
+Buffer.java
+    CAPACITY=4;        // the number of the buffer cells
+    consoleOut=true;   // turn off/on the console printouts
+
+BufferNotify.java
+    littleP=2;         // the number of Producers at little concurrency level
+    littleC=1;         // the number of Consumers at little concurrency level
+       *** number of Producers is always double the number of Consumers because
+       *** one Producer produces half of the amount which one Consumer consumes
+    ITEMS_PRODUCED     // the number of item each Producer produce till he dies
+
+    *** notice that in the PCThreads constructor I set priorities for the
+    *** threads : MAX_PRIORITY to Producers and MIN_PRIORITY to Consumers
+    *** in order to force the buffer to be filled up as soon as possible
+    *** the priorities level are also modifiable.

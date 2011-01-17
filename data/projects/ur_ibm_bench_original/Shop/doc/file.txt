@@ -1,0 +1,1 @@
+< shop,    costumer  6: 10   costumer  5: 10   costumer  4: 10   costumer  3: 10   costumer  2: 10   costumer  1: 10, no bug >

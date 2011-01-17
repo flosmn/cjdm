@@ -1,0 +1,79 @@
+Results & Bug Dictionary
+
+1.Definitions
+
+
+	(m,n,l,x,y,z>-1) and (x<10 or y<10 or z<10 or m<10 or n<10 or l<10)
+
+	i,j,k,r,q>=-1
+
+
+2.Notes and explanations
+
+  a.	*little concurrency:
+		x+y<20 
+	*average concurrency
+		x+y+z<30
+	*lot concurrency
+		x+y+z+m+n+l<60
+  
+  b. the order of the costumers in the bug program output file may be diffrent - the relevent info. is the
+	number appearing after each costumer.
+
+
+
+3.Dictionary
+
+
+
+concurrency level=little					Bug Pattern
+*****************************************************************************************
+
+<costumer 1:10 costumer2:10>					None						
+	
+<costumer 1:-1 costumer2:i>					denail ( init sleep) + weak reality (lock unlock lock)
+<costumer 1:i costumer 2: -1>					denail ( init sleep) + weak reality (lock unlock lock)	
+
+<costumer 1:x costumer2:y>					denail ( init sleep)
+
+
+
+concurrency level=average					Bug Pattern
+*****************************************************************************************
+
+<costumer 1:10 costumer2:10 costumer3:10>			None
+		
+	
+
+<costumer 1:-1 costumer2:i costumer3:j>				denail ( init sleep) + weak reality (lock unlock lock)
+<costumer 1:i costumer2:j costumer3:-1>				denail ( init sleep) + weak reality (lock unlock lock)
+<costumer 1:i costumer2:-1 costumer3:j>				denail ( init sleep) + weak reality (lock unlock lock)
+		
+
+<costumer 1:x costumer2:y costumer3:z>				denail ( init sleep)	
+
+
+
+concurrency level=lot						Bug Pattern
+****************************************************************************************
+
+<costumer 1:10 costumer2:10 costumer3:10 costumer 4:10 costumer5:10 costumer6:10>			
+								None
+	
+
+<costumer 1:-1 costumer2:i costumer3:j costumer 4:k costumer5:r costumer6:q>
+								denail ( init sleep) + weak reality (lock unlock lock)
+<costumer 1:i costumer2:-1 costumer3:j costumer 4:k costumer5:r costumer6:q>
+								denail ( init sleep) + weak reality (lock unlock lock)
+<costumer 1:i costumer2:j costumer3:-1 costumer 4:k costumer5:r costumer6:q>
+								denail ( init sleep) + weak reality (lock unlock lock)
+<costumer 1:i costumer2:j costumer3:k costumer 4:-1 costumer5:r costumer6:q>
+								denail ( init sleep) + weak reality (lock unlock lock)
+<costumer 1:i costumer2:j costumer3:k costumer 4:r costumer5:-1 costumer6:q>
+								denail ( init sleep) + weak reality (lock unlock lock)
+<costumer 1:i costumer2:j costumer3:k costumer 4:r costumer5:q costumer6:-1>
+								denail ( init sleep) + weak reality (lock unlock lock)
+
+
+<costumer 1:m costumer2:n costumer3:l costumer 4:x costumer5:y costumer6:z>
+								denail ( init sleep)	

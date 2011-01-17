@@ -1,0 +1,4 @@
+Bug Probability Is lot
+
+when a bug occurs the program will exit & not stuck the program
+< GarageManager, (10, 4, 11, 4, 4), No-Bug>

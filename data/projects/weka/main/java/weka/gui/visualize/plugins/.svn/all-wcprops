@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/weka/!svn/ver/6499/trunk/weka/src/main/java/weka/gui/visualize/plugins
+END
+ErrorVisualizePlugin.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/weka/!svn/ver/5012/trunk/weka/src/main/java/weka/gui/visualize/plugins/ErrorVisualizePlugin.java
+END
+AssociationRuleVisualizePlugin.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/weka/!svn/ver/6499/trunk/weka/src/main/java/weka/gui/visualize/plugins/AssociationRuleVisualizePlugin.java
+END
+TreeVisualizePlugin.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/weka/!svn/ver/4996/trunk/weka/src/main/java/weka/gui/visualize/plugins/TreeVisualizePlugin.java
+END
+GraphVisualizePlugin.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/weka/!svn/ver/4996/trunk/weka/src/main/java/weka/gui/visualize/plugins/GraphVisualizePlugin.java
+END
+VisualizePlugin.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/visualize/plugins/VisualizePlugin.java
+END

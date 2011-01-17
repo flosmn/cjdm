@@ -1,0 +1,80 @@
+-------------------------------------
+Bounded Buffer Multithreaded Program:
+-------------------------------------
+
+written by:
+	Tomer Sharon    Id: 038555819
+	Ofir Germansky  Id: 031594427
+
+
+The program:
+------------
+   This program manages a single cell bounded buffer.
+The number of the threads is set according to the measure of concurrency.
+where there are X producers who produce Y/2 items and X/2 consumers who consume
+Y items. the priority is in favor of the producers.
+The program takes as the first input, the name of the program.
+the second input is optional and it is the concurrency <little,average,lot>
+there are number of other optional inputs  (see: remarks.txt for more details)
+   Each one of the X producers produce 10 items into the buffer. Each one of
+the the X/2 consumers consume 20 items. either the producers and the consumers
+use 'for' loop for that operation. All the threads are executed concurrently.
+	Before each thread starts its execution, it checks that the buffer is either
+empty (ready for the producer) or full (ready for the consumer).
+if that condition is not satisfied the thread enters the 'wait()' method.
+Then the thread waits for the notify() method, from the two other threads,
+in order to resume execution.
+Note: all the thread's classes are protected with Synchronization statment.
+
+Program Instructions:
+---------------------
+The program classes :
+  - BufferNotify.class : The main class
+  - Buffer.class : The buffer class
+The parameters :
+  - args[0] : the file name of the output file
+  - args[1] : the level of concurrency (1-low, 2-medium, 3-high)
+
+
+The BUG:
+--------
+We used the 'notify()' method instead of the 'notifyAll()' method.
+the difference between the two methods is:
+the first, wake up only one waiting thread (the OS selects which to wake up) and
+the last, wakes up all the waiting threads.
+Thus, for some interleaved execution the bug can appear, depends on the
+priorities of the threads. The bug happends when there are two waiting threads.
+The third wakes up one of the waiting threads and go to to sleep. But the thread
+which has just been woken up is not ready for execution, because the buffer is
+either full and then the producer waits for it to be empty, or it's empty and
+the consumer waits for it to be filled. Either way the program gets into a
+deadlock.
+The bug occurs at lines: 47,63 (notify() method). while practically the bugs
+halts the program at lines: 42,58 (wait() method).
+The only bug pattern in this program is: notify instead of nofity all.
+The variables involved are the instances of the threads.
+
+Bug Dictionary:
+
+<BoundedBuffer,Threads in infinite loop: 1 out of: 3, notify instead notifyAll>
+results(or):
+	- Producer A is stuck in a deadlock
+	- Producer B is stuck in a deadlock
+	- consumer is stuck in a deadlock
+
+<BoundedBuffer,Threads in infinite loop: 2 out of: 3, notify instead notifyAll>
+results(or):
+	- Producer A and Producer B are stuck in a deadlock
+	- Producer A and consumer are stuck in a deadlock
+	- Producer B and Consumer are stuck in a deadlock
+
+
+<BoundedBuffer,Threads in infinite loop: 3 out of: 3, notify instead notifyAll>
+results(or):
+	- All the thread are stuck in a deadlock
+
+
+P.S:
+----
+the program was taken based on the code in the article: "Systematic Testing of
+Multithreads Java Programs", by derek L. Bruening. May 1999. pages: 103-105.

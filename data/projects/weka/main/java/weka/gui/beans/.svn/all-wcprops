@@ -1,0 +1,815 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/weka/!svn/ver/6889/trunk/weka/src/main/java/weka/gui/beans
+END
+BatchClassifierListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/BatchClassifierListener.java
+END
+BatchClustererEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/BatchClustererEvent.java
+END
+DataVisualizer.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/weka/!svn/ver/5284/trunk/weka/src/main/java/weka/gui/beans/DataVisualizer.java
+END
+LogPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/weka/!svn/ver/5563/trunk/weka/src/main/java/weka/gui/beans/LogPanel.java
+END
+ScatterPlotMatrix.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/ScatterPlotMatrix.java
+END
+TextViewerBeanInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/TextViewerBeanInfo.java
+END
+AbstractDataSinkBeanInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/AbstractDataSinkBeanInfo.java
+END
+AbstractTrainingSetProducer.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/AbstractTrainingSetProducer.java
+END
+ClustererCustomizer.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/weka/!svn/ver/5340/trunk/weka/src/main/java/weka/gui/beans/ClustererCustomizer.java
+END
+ModelPerformanceChartBeanInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/ModelPerformanceChartBeanInfo.java
+END
+PredictionAppenderBeanInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/PredictionAppenderBeanInfo.java
+END
+SaverBeanInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/SaverBeanInfo.java
+END
+TestSetMakerBeanInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/TestSetMakerBeanInfo.java
+END
+TrainingSetEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/weka/!svn/ver/4761/trunk/weka/src/main/java/weka/gui/beans/TrainingSetEvent.java
+END
+AbstractTrainAndTestSetProducer.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/AbstractTrainAndTestSetProducer.java
+END
+LoaderBeanInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/LoaderBeanInfo.java
+END
+BeanVisual.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/BeanVisual.java
+END
+TextEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/TextEvent.java
+END
+KnowledgeFlow.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/weka/!svn/ver/4717/trunk/weka/src/main/java/weka/gui/beans/KnowledgeFlow.java
+END
+Associator.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/weka/!svn/ver/6536/trunk/weka/src/main/java/weka/gui/beans/Associator.java
+END
+DataVisualizerBeanInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/DataVisualizerBeanInfo.java
+END
+CostBenefitAnalysis.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/weka/!svn/ver/6137/trunk/weka/src/main/java/weka/gui/beans/CostBenefitAnalysis.java
+END
+PredictionAppenderCustomizer.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/PredictionAppenderCustomizer.java
+END
+ClassAssignerCustomizer.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/weka/!svn/ver/6889/trunk/weka/src/main/java/weka/gui/beans/ClassAssignerCustomizer.java
+END
+BatchClassifierEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/weka/!svn/ver/5928/trunk/weka/src/main/java/weka/gui/beans/BatchClassifierEvent.java
+END
+ScatterPlotMatrixBeanInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/ScatterPlotMatrixBeanInfo.java
+END
+VisualizableErrorEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/VisualizableErrorEvent.java
+END
+Startable.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/weka/!svn/ver/5928/trunk/weka/src/main/java/weka/gui/beans/Startable.java
+END
+ClassValuePickerCustomizer.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/ClassValuePickerCustomizer.java
+END
+AbstractTrainingSetProducerBeanInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/AbstractTrainingSetProducerBeanInfo.java
+END
+DataFormatListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/DataFormatListener.java
+END
+CustomizerCloseRequester.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/CustomizerCloseRequester.java
+END
+Visible.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/Visible.java
+END
+AbstractTrainAndTestSetProducerBeanInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/AbstractTrainAndTestSetProducerBeanInfo.java
+END
+BeanConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/weka/!svn/ver/5611/trunk/weka/src/main/java/weka/gui/beans/BeanConnection.java
+END
+BatchAssociationRulesEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/weka/!svn/ver/6511/trunk/weka/src/main/java/weka/gui/beans/BatchAssociationRulesEvent.java
+END
+AssociatorBeanInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/weka/!svn/ver/6512/trunk/weka/src/main/java/weka/gui/beans/AssociatorBeanInfo.java
+END
+StripChart.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/weka/!svn/ver/4806/trunk/weka/src/main/java/weka/gui/beans/StripChart.java
+END
+TrainTestSplitMaker.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/weka/!svn/ver/4813/trunk/weka/src/main/java/weka/gui/beans/TrainTestSplitMaker.java
+END
+CostBenefitAnalysisBeanInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/weka/!svn/ver/6880/trunk/weka/src/main/java/weka/gui/beans/CostBenefitAnalysisBeanInfo.java
+END
+DataSetEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/DataSetEvent.java
+END
+SerializedModelSaverCustomizer.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/weka/!svn/ver/5563/trunk/weka/src/main/java/weka/gui/beans/SerializedModelSaverCustomizer.java
+END
+ChartEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/ChartEvent.java
+END
+BeanCommon.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/weka/!svn/ver/5820/trunk/weka/src/main/java/weka/gui/beans/BeanCommon.java
+END
+InstanceStreamToBatchMaker.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/weka/!svn/ver/5563/trunk/weka/src/main/java/weka/gui/beans/InstanceStreamToBatchMaker.java
+END
+AssociatorCustomizer.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/weka/!svn/ver/5340/trunk/weka/src/main/java/weka/gui/beans/AssociatorCustomizer.java
+END
+IncrementalClassifierListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/IncrementalClassifierListener.java
+END
+AbstractEvaluator.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/AbstractEvaluator.java
+END
+Beans.props
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/weka/!svn/ver/5762/trunk/weka/src/main/java/weka/gui/beans/Beans.props
+END
+TestSetEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/weka/!svn/ver/4761/trunk/weka/src/main/java/weka/gui/beans/TestSetEvent.java
+END
+InstanceListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/InstanceListener.java
+END
+FilterCustomizer.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/weka/!svn/ver/5340/trunk/weka/src/main/java/weka/gui/beans/FilterCustomizer.java
+END
+AbstractDataSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/AbstractDataSource.java
+END
+StructureProducer.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/weka/!svn/ver/6527/trunk/weka/src/main/java/weka/gui/beans/StructureProducer.java
+END
+ThresholdDataEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/weka/!svn/ver/5750/trunk/weka/src/main/java/weka/gui/beans/ThresholdDataEvent.java
+END
+ConfigurationEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/weka/!svn/ver/5563/trunk/weka/src/main/java/weka/gui/beans/ConfigurationEvent.java
+END
+StripChartBeanInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/StripChartBeanInfo.java
+END
+TrainTestSplitMakerBeanInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/TrainTestSplitMakerBeanInfo.java
+END
+LoaderCustomizer.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/weka/!svn/ver/5406/trunk/weka/src/main/java/weka/gui/beans/LoaderCustomizer.java
+END
+GraphViewer.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/GraphViewer.java
+END
+EventConstraints.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/EventConstraints.java
+END
+InstanceStreamToBatchMakerBeanInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/weka/!svn/ver/5563/trunk/weka/src/main/java/weka/gui/beans/InstanceStreamToBatchMakerBeanInfo.java
+END
+StripChartCustomizer.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/StripChartCustomizer.java
+END
+ClassAssigner.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/weka/!svn/ver/5667/trunk/weka/src/main/java/weka/gui/beans/ClassAssigner.java
+END
+UserRequestAcceptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/UserRequestAcceptor.java
+END
+WekaWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/WekaWrapper.java
+END
+AttributeSummarizer.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/AttributeSummarizer.java
+END
+CrossValidationFoldMaker.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/weka/!svn/ver/6003/trunk/weka/src/main/java/weka/gui/beans/CrossValidationFoldMaker.java
+END
+ThresholdDataListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/ThresholdDataListener.java
+END
+ClustererPerformanceEvaluator.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/weka/!svn/ver/4813/trunk/weka/src/main/java/weka/gui/beans/ClustererPerformanceEvaluator.java
+END
+InstanceEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/InstanceEvent.java
+END
+AbstractDataSourceBeanInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/AbstractDataSourceBeanInfo.java
+END
+IncrementalClassifierEvaluatorCustomizer.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/weka/!svn/ver/5563/trunk/weka/src/main/java/weka/gui/beans/IncrementalClassifierEvaluatorCustomizer.java
+END
+TestSetProducer.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/TestSetProducer.java
+END
+GraphListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/GraphListener.java
+END
+ClassifierPerformanceEvaluator.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/weka/!svn/ver/6804/trunk/weka/src/main/java/weka/gui/beans/ClassifierPerformanceEvaluator.java
+END
+ConnectionNotificationConsumer.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/ConnectionNotificationConsumer.java
+END
+GraphViewerBeanInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/GraphViewerBeanInfo.java
+END
+DataSourceListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/DataSourceListener.java
+END
+KnowledgeFlowApp.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/weka/!svn/ver/6859/trunk/weka/src/main/java/weka/gui/beans/KnowledgeFlowApp.java
+END
+ClassAssignerBeanInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/ClassAssignerBeanInfo.java
+END
+StartUpListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/StartUpListener.java
+END
+ClassifierCustomizer.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/weka/!svn/ver/6804/trunk/weka/src/main/java/weka/gui/beans/ClassifierCustomizer.java
+END
+SerializedModelSaver.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/weka/!svn/ver/6804/trunk/weka/src/main/java/weka/gui/beans/SerializedModelSaver.java
+END
+AttributeSummarizerBeanInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/AttributeSummarizerBeanInfo.java
+END
+CrossValidationFoldMakerBeanInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/weka/!svn/ver/5017/trunk/weka/src/main/java/weka/gui/beans/CrossValidationFoldMakerBeanInfo.java
+END
+Clusterer.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/weka/!svn/ver/5247/trunk/weka/src/main/java/weka/gui/beans/Clusterer.java
+END
+ClustererPerformanceEvaluatorBeanInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/ClustererPerformanceEvaluatorBeanInfo.java
+END
+TestSetListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/TestSetListener.java
+END
+Classifier.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/weka/!svn/ver/6804/trunk/weka/src/main/java/weka/gui/beans/Classifier.java
+END
+ClassifierPerformanceEvaluatorBeanInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/ClassifierPerformanceEvaluatorBeanInfo.java
+END
+TrainingSetMaker.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/weka/!svn/ver/4999/trunk/weka/src/main/java/weka/gui/beans/TrainingSetMaker.java
+END
+CustomizerClosingListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/CustomizerClosingListener.java
+END
+CrossValidationFoldMakerCustomizer.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/CrossValidationFoldMakerCustomizer.java
+END
+Filter.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/weka/!svn/ver/6458/trunk/weka/src/main/java/weka/gui/beans/Filter.java
+END
+VisualizableErrorListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/VisualizableErrorListener.java
+END
+SerializedModelSaverBeanInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/weka/!svn/ver/5563/trunk/weka/src/main/java/weka/gui/beans/SerializedModelSaverBeanInfo.java
+END
+GraphEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/GraphEvent.java
+END
+ConfigurationProducer.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/weka/!svn/ver/5563/trunk/weka/src/main/java/weka/gui/beans/ConfigurationProducer.java
+END
+ClassValuePicker.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/weka/!svn/ver/5731/trunk/weka/src/main/java/weka/gui/beans/ClassValuePicker.java
+END
+ClustererBeanInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/weka/!svn/ver/5247/trunk/weka/src/main/java/weka/gui/beans/ClustererBeanInfo.java
+END
+BatchAssociationRulesListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/weka/!svn/ver/6511/trunk/weka/src/main/java/weka/gui/beans/BatchAssociationRulesListener.java
+END
+FileEnvironmentField.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/weka/!svn/ver/6813/trunk/weka/src/main/java/weka/gui/beans/FileEnvironmentField.java
+END
+TextListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/TextListener.java
+END
+AbstractTestSetProducer.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/AbstractTestSetProducer.java
+END
+ClassifierBeanInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/weka/!svn/ver/5247/trunk/weka/src/main/java/weka/gui/beans/ClassifierBeanInfo.java
+END
+IncrementalClassifierEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/weka/!svn/ver/5928/trunk/weka/src/main/java/weka/gui/beans/IncrementalClassifierEvent.java
+END
+TrainingSetProducer.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/TrainingSetProducer.java
+END
+TrainingSetMakerBeanInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/TrainingSetMakerBeanInfo.java
+END
+FilterBeanInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/weka/!svn/ver/5247/trunk/weka/src/main/java/weka/gui/beans/FilterBeanInfo.java
+END
+README_KnowledgeFlow
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/README_KnowledgeFlow
+END
+IncrementalClassifierEvaluator.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/weka/!svn/ver/5928/trunk/weka/src/main/java/weka/gui/beans/IncrementalClassifierEvaluator.java
+END
+ConfigurationListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/weka/!svn/ver/5563/trunk/weka/src/main/java/weka/gui/beans/ConfigurationListener.java
+END
+EnvironmentField.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/weka/!svn/ver/6804/trunk/weka/src/main/java/weka/gui/beans/EnvironmentField.java
+END
+ClassValuePickerBeanInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/ClassValuePickerBeanInfo.java
+END
+DataSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/DataSource.java
+END
+BeanInstance.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/weka/!svn/ver/4829/trunk/weka/src/main/java/weka/gui/beans/BeanInstance.java
+END
+SaverCustomizer.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/weka/!svn/ver/6391/trunk/weka/src/main/java/weka/gui/beans/SaverCustomizer.java
+END
+BatchClustererListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/BatchClustererListener.java
+END
+TextViewer.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/weka/!svn/ver/4806/trunk/weka/src/main/java/weka/gui/beans/TextViewer.java
+END
+AbstractDataSink.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/weka/!svn/ver/5753/trunk/weka/src/main/java/weka/gui/beans/AbstractDataSink.java
+END
+AbstractTestSetProducerBeanInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/AbstractTestSetProducerBeanInfo.java
+END
+FlowRunner.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/weka/!svn/ver/5928/trunk/weka/src/main/java/weka/gui/beans/FlowRunner.java
+END
+DataSink.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/DataSink.java
+END
+TrainingSetListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/TrainingSetListener.java
+END
+ModelPerformanceChart.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/weka/!svn/ver/4762/trunk/weka/src/main/java/weka/gui/beans/ModelPerformanceChart.java
+END
+LogWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/LogWriter.java
+END
+PredictionAppender.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/weka/!svn/ver/6804/trunk/weka/src/main/java/weka/gui/beans/PredictionAppender.java
+END
+Saver.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/weka/!svn/ver/6390/trunk/weka/src/main/java/weka/gui/beans/Saver.java
+END
+MetaBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/weka/!svn/ver/6014/trunk/weka/src/main/java/weka/gui/beans/MetaBean.java
+END
+TestSetMaker.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/weka/!svn/ver/5097/trunk/weka/src/main/java/weka/gui/beans/TestSetMaker.java
+END
+Loader.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/weka/!svn/ver/5396/trunk/weka/src/main/java/weka/gui/beans/Loader.java
+END
+TrainTestSplitMakerCustomizer.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/TrainTestSplitMakerCustomizer.java
+END
+IncrementalClassifierEvaluatorBeanInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/IncrementalClassifierEvaluatorBeanInfo.java
+END
+ChartListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/beans/ChartListener.java
+END

@@ -1,0 +1,167 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/ogre4j/!svn/ver/343/trunk/org.ogre4j/src/java/org/xbig/base
+END
+LongPointer.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/xbig/base/LongPointer.java
+END
+NativeLongBuffer.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/xbig/base/NativeLongBuffer.java
+END
+NativeShortBuffer.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/xbig/base/NativeShortBuffer.java
+END
+ShortPointer.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/xbig/base/ShortPointer.java
+END
+WithoutNativeObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/java/org/xbig/base/WithoutNativeObject.java
+END
+VoidPointer.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/xbig/base/VoidPointer.java
+END
+NativeByteBuffer.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/xbig/base/NativeByteBuffer.java
+END
+BytePointer.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/xbig/base/BytePointer.java
+END
+ULongLong.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/java/org/xbig/base/ULongLong.java
+END
+InstancePointer.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/java/org/xbig/base/InstancePointer.java
+END
+EnumPointer.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/java/org/xbig/base/EnumPointer.java
+END
+NativeFloatBuffer.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/xbig/base/NativeFloatBuffer.java
+END
+FloatPointer.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/xbig/base/FloatPointer.java
+END
+StringPointer.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/xbig/base/StringPointer.java
+END
+NativeDoubleBuffer.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/xbig/base/NativeDoubleBuffer.java
+END
+DoublePointer.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/xbig/base/DoublePointer.java
+END
+NativeObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/ogre4j/!svn/ver/343/trunk/org.ogre4j/src/java/org/xbig/base/NativeObject.java
+END
+NativeCharBuffer.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/xbig/base/NativeCharBuffer.java
+END
+CharPointer.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/xbig/base/CharPointer.java
+END
+NativeObjectPointer.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/java/org/xbig/base/NativeObjectPointer.java
+END
+BooleanPointer.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/xbig/base/BooleanPointer.java
+END
+WideStringPointer.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/xbig/base/WideStringPointer.java
+END
+INativeEnum.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/java/org/xbig/base/INativeEnum.java
+END
+INativeObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/java/org/xbig/base/INativeObject.java
+END
+NumberPointer.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/ogre4j/!svn/ver/307/trunk/org.ogre4j/src/java/org/xbig/base/NumberPointer.java
+END
+NativeIntBuffer.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/xbig/base/NativeIntBuffer.java
+END
+IntegerPointer.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/ogre4j/!svn/ver/340/trunk/org.ogre4j/src/java/org/xbig/base/IntegerPointer.java
+END

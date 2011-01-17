@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/ogre4j/!svn/ver/152/trunk/org.ogre4j.eclipse.gtk.linux.x86
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/ogre4j/!svn/ver/87/trunk/org.ogre4j.eclipse.gtk.linux.x86/.project
+END
+build.properties
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/ogre4j/!svn/ver/87/trunk/org.ogre4j.eclipse.gtk.linux.x86/build.properties
+END
+fragment.properties
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/ogre4j/!svn/ver/152/trunk/org.ogre4j.eclipse.gtk.linux.x86/fragment.properties
+END

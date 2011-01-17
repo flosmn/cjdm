@@ -1,0 +1,12 @@
+pluginname=ogre4j Eclipse Plug-in
+libs=cg,\
+OgreMain,\
+RenderSystem_GL,\
+RenderSystem_Direct3D9,\
+Plugin_ParticleFX,\
+Plugin_OctreeSceneManager,\
+Plugin_CgProgramManager,\
+Plugin_BSPSceneManager,\
+Plugin_PCZSceneManager,\
+Plugin_OctreeZone,\
+ogre4j

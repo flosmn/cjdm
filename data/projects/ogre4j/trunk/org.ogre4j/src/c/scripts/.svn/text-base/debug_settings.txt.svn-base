@@ -1,0 +1,3 @@
+Command: $(JAVA_HOME)\bin\java
+Command Arguments: -cp ..\org.ogre4j.examples.swt\bin;..\org.ogre4j\dist\org.ogre4j_1.6.0.jar;..\org.ogre4j.examples.swt\lib\swt.jar org.ogre4j.examples.swt.HelloWorld
+Working Directory: ..\..\..\..\runtime

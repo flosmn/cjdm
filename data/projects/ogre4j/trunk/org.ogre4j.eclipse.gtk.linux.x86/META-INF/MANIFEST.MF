@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %fragmentName
+Bundle-SymbolicName: org.ogre4j.eclipse.gtk.linux.x86
+Bundle-Version: 1.4.3
+Bundle-Vendor: ogre4j.org
+Fragment-Host: org.ogre4j.eclipse;bundle-version="1.4.3"
+Bundle-Localization: fragment
+Eclipse-PlatformFilter: (& (osgi.ws=gtk) (osgi.os=linux) (osgi.arch=x86))

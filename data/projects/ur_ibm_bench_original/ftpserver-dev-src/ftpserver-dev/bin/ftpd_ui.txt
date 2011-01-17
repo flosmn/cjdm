@@ -1,0 +1,5 @@
+FILE DELETED
+------------
+
+Antigen for Exchange removed ftpserver_dev_src.zip__ftpd_ui.bat since it
+was found to match the FILE FILTER= unnamed: *.bat file filter.

@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/weka/!svn/ver/6429/trunk/weka/src/main/java/weka/gui/sql
+END
+SqlViewer.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/weka/!svn/ver/4724/trunk/weka/src/main/java/weka/gui/sql/SqlViewer.java
+END
+ResultSetTableModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/sql/ResultSetTableModel.java
+END
+ResultSetTableCellRenderer.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/sql/ResultSetTableCellRenderer.java
+END
+QueryPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/sql/QueryPanel.java
+END
+InfoPanelCellRenderer.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/sql/InfoPanelCellRenderer.java
+END
+ResultSetTable.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/sql/ResultSetTable.java
+END
+SqlViewerDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/weka/!svn/ver/5279/trunk/weka/src/main/java/weka/gui/sql/SqlViewerDialog.java
+END
+ResultPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/sql/ResultPanel.java
+END
+ConnectionPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/sql/ConnectionPanel.java
+END
+InfoPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/sql/InfoPanel.java
+END
+DbUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/sql/DbUtils.java
+END
+ResultSetHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/weka/!svn/ver/6429/trunk/weka/src/main/java/weka/gui/sql/ResultSetHelper.java
+END

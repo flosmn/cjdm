@@ -1,0 +1,15 @@
+GarageManager$GarageWorker.isManager
+GarageManager$GarageWorker.this$0
+GarageManager.status
+GarageManager$GarageStatus.managerArrived
+java.lang.System.out
+GarageManager.printedCard
+GarageManager$GarageWorker.taskNumber
+GarageManager$GarageWorker.workerName
+GarageManager$GarageStatus.workersInTask
+GarageManager$GarageWorker.taskTime
+GarageManager$GarageWorker.working
+GarageManager$GarageStatus.workersTaskLength
+GarageManager$GarageWorker.workerNum
+GarageManager.outputFile
+GarageManager.bugAccured

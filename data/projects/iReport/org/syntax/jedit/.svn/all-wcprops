@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/org/syntax/jedit
+END
+TextAreaPainter.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/org/syntax/jedit/TextAreaPainter.java
+END
+TextUtilities.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/org/syntax/jedit/TextUtilities.java
+END
+DefaultInputHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/org/syntax/jedit/DefaultInputHandler.java
+END
+KeywordMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/org/syntax/jedit/KeywordMap.java
+END
+SyntaxUtilities.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/org/syntax/jedit/SyntaxUtilities.java
+END
+IReportKeywordLookup.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/org/syntax/jedit/IReportKeywordLookup.java
+END
+SyntaxDocument.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/org/syntax/jedit/SyntaxDocument.java
+END
+TextAreaDefaults.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/org/syntax/jedit/TextAreaDefaults.java
+END
+SyntaxStyle.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/org/syntax/jedit/SyntaxStyle.java
+END
+InputHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/org/syntax/jedit/InputHandler.java
+END
+JEditTextArea.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/org/syntax/jedit/JEditTextArea.java
+END
+KeywordLookupIF.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/org/syntax/jedit/KeywordLookupIF.java
+END

@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML><!--JBuilder QuickDoc-->
+<HEAD>
+<TITLE>Class Bug.AllocationVector</TITLE><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+</HEAD>
+<BODY>
+
+<H2>
+<FONT SIZE="-1">Bug</FONT>
+<BR>Class AllocationVector</H2>
+<DL>
+<DT>public class <B>AllocationVector</B>
+</DL>
+<DL><DD>class AllocationVector: Used to manage allocation and freeing of blocks.<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF"><TD COLSPAN=1><FONT SIZE="+2">
+<B>Field Detail</B>
+</FONT></TD></TR></TABLE>
+
+<H3>vector</H3>
+<PRE>
+private char[] <B>vector</B></PRE>
+<DL><DD>Character vector which holds information about allocated and free blocks, in the following way: if vector[i] == 'F' -> i-th block is free. if vector[i] == 'A' -> i-th block is allocated.<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF"><TD COLSPAN=1><FONT SIZE="+2">
+<B>Constructor Detail</B>
+</FONT></TD></TR></TABLE>
+
+<H3>AllocationVector</H3>
+<PRE>
+public <B>AllocationVector</B>(int&nbsp;size)</PRE>
+<DL><DD>Constructor: Constructs AllocationVector for 'size' blocks, when all blocks are free.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>size</CODE> - Size of AllocationVector.</DD>
+</DL>
+<HR>
+
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF"><TD COLSPAN=1><FONT SIZE="+2">
+<B>Method Detail</B>
+</FONT></TD></TR></TABLE>
+
+<H3>getFreeBlockIndex</H3>
+<PRE>
+public synchronized int <B>getFreeBlockIndex</B>()</PRE>
+<DL><DD>Returns index of free block, if such exists. If no free block, then -1 is returned.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Returns:</B><DD>Index of free block if such exists, else -1.</DD>
+</DL>
+<HR>
+
+<H3>markAsAllocatedBlock</H3>
+<PRE>
+public synchronized void <B>markAsAllocatedBlock</B>(int&nbsp;i)</PRE>
+<DL><DD>Marks i-th block as allocated.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>i</CODE> - Index of block to allocate.</DD>
+</DL>
+<HR>
+
+<H3>markAsFreeBlock</H3>
+<PRE>
+public synchronized void <B>markAsFreeBlock</B>(int&nbsp;i)</PRE>
+<DL><DD>Marks i-th block as free.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>i</CODE> - Index of block to free.</DD>
+</DL>
+<HR>
+
+</BODY>
+</HTML>

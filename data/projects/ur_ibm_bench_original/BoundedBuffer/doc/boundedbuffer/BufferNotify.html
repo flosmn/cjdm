@@ -1,0 +1,210 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML><!--JBuilder QuickDoc-->
+<HEAD>
+<TITLE>Class boundedbuffer.BufferNotify</TITLE><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+</HEAD>
+<BODY>
+
+<H2>
+<FONT SIZE="-1">boundedbuffer</FONT>
+<BR>Class BufferNotify</H2>
+<DL>
+<DT>public class <B>BufferNotify</B>
+</DL>
+<DL><DD><p><h1><u>Bounded Buffer </p> <p>this program run a lot of exciting bugs </p> <p>Copyright: Copyright (c) 2003</p> <p>Company: Haifa University</p><DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Version:</B><DD>1.0</DD>
+<DT><B>Author:</B><DD>Tomer Sharon, Id: 038555819 Ofir Germansky, Id: 031594427</DD>
+</DL>
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF"><TD COLSPAN=1><FONT SIZE="+2">
+<B>Field Detail</B>
+</FONT></TD></TR></TABLE>
+
+<H3>timeOutSec</H3>
+<PRE>
+static final int <B>timeOutSec</B></PRE>
+<DL><DD>time out in seconds<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<H3>ITEMS_PRODUCED</H3>
+<PRE>
+static int <B>ITEMS_PRODUCED</B></PRE>
+<DL><DD>item produced by each Producer thread<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<H3>finish</H3>
+<PRE>
+private static int <B>finish</B></PRE>
+<DL><DD>each thread that finish raise the finish counter<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<H3>littleP</H3>
+<PRE>
+static int <B>littleP</B></PRE>
+<DL><DD>number of producer in a little concurrency run<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<H3>littleC</H3>
+<PRE>
+static int <B>littleC</B></PRE>
+<DL><DD>number of consumers in a little concurrency run<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<H3>averageP</H3>
+<PRE>
+static int <B>averageP</B></PRE>
+<DL><DD>number of producer in an average concurrency run<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<H3>averageC</H3>
+<PRE>
+static int <B>averageC</B></PRE>
+<DL><DD>number of consumers in an average concurrency run<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<H3>lotP</H3>
+<PRE>
+static int <B>lotP</B></PRE>
+<DL><DD>number of producer in a lot concurrency run<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<H3>lotC</H3>
+<PRE>
+static int <B>lotC</B></PRE>
+<DL><DD>number of consumers in a lot concurrency run<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<H3>defaultP</H3>
+<PRE>
+static final int <B>defaultP</B></PRE>
+<DL><DD>number of producer in a default run<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<H3>defaultC</H3>
+<PRE>
+static final int <B>defaultC</B></PRE>
+<DL><DD>number of consumers in a default run<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<H3>defaultCon</H3>
+<PRE>
+static final int <B>defaultCon</B></PRE>
+<DL><DD>the default concurrency (1=little, 2=average, 3=lot)<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<H3>tuple</H3>
+<PRE>
+static java.lang.String <B>tuple</B></PRE>
+<DL><DD>the output message String<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<H3>b</H3>
+<PRE>
+static boundedbuffer.Buffer <B>b</B></PRE>
+<DL><DD>creates new shared buffer<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF"><TD COLSPAN=1><FONT SIZE="+2">
+<B>Method Detail</B>
+</FONT></TD></TR></TABLE>
+
+<H3>main</H3>
+<PRE>
+public static void <B>main</B>(java.lang.String[]&nbsp;args)</PRE>
+<DL><DD>creats the Producer and Consumers threads, gives them their priorities based on the args[1] input paramater. start each thread and update the output file<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>args</CODE> - args[0] = the name of the output file <br> args[1] = level of bugs appereance (1-low, 2-medium, 3-high 4-manual) args[2] = (Optional) set whether to print every step of the program (true) or just the result (false) args[3] = (Optional) set the number of items each Producer produces args[4] = (Optional) set the capacity of the buffer args[5] = (Optional) if manual in used set the number of Producers</DD>
+</DL>
+<HR>
+
+<H3>setProducersNum</H3>
+<PRE>
+static int <B>setProducersNum</B>(java.lang.String&nbsp;producersNum)</PRE>
+<DL><DD>set the number of Producers (and Consumers = producers/2) override the default values<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>producersNum</CODE> - the number of producers</DD>
+<DT><B>Returns:</B><DD>value between 1 and 3 represents the default overided value</DD>
+</DL>
+<HR>
+
+<H3>setItemProduce</H3>
+<PRE>
+static void <B>setItemProduce</B>(java.lang.String&nbsp;itemsNum)</PRE>
+<DL><DD>set the number of items each Producer produces according to the input<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>itemsNum</CODE> - the number of items each Producer produce</DD>
+</DL>
+<HR>
+
+<H3>setCon</H3>
+<PRE>
+static int <B>setCon</B>(java.lang.String&nbsp;input)</PRE>
+<DL><DD>return the integer number of cuncurrency from the input<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>input</CODE> - gets the input concurrency level from the command line</DD>
+<DT><B>Returns:</B><DD>the value represent the concurrency from 1 to 3)</DD>
+</DL>
+<HR>
+
+<H3>WaitForBug</H3>
+<PRE>
+static boolean <B>WaitForBug</B>(int&nbsp;numOfThreads)</PRE>
+<DL><DD>wait for the completion of the program according to how many items each thread produces<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>numOfThreads</CODE> - overall number of threads</DD>
+<DT><B>Returns:</B><DD>true - if bug happend then we need to explicitly end the program false - no bug had happend the program will implicitly ends</DD>
+</DL>
+<HR>
+
+<H3>printConMessage</H3>
+<PRE>
+static void <B>printConMessage</B>(int&nbsp;concurrency)</PRE>
+<DL><DD>print the preview message indicates the level of concurrency<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>concurrency</CODE> - the level of concurrency represent as String</DD>
+</DL>
+<HR>
+
+<H3>Output</H3>
+<PRE>
+static void <B>Output</B>(java.lang.String&nbsp;filename,
+                   java.lang.String&nbsp;message)</PRE>
+<DL><DD>create the output file and write the message to it<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>filename</CODE> - the name of the output file</DD>
+<DD><CODE>message</CODE> - the message output to the file</DD>
+</DL>
+<HR>
+
+</BODY>
+</HTML>

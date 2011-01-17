@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/weka/!svn/ver/5349/trunk/weka/src/main/java/weka/gui/treevisualizer
+END
+TreeBuild.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/treevisualizer/TreeBuild.java
+END
+Colors.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/treevisualizer/Colors.java
+END
+Edge.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/treevisualizer/Edge.java
+END
+TreeVisualizer.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/weka/!svn/ver/4960/trunk/weka/src/main/java/weka/gui/treevisualizer/TreeVisualizer.java
+END
+NamedColor.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/treevisualizer/NamedColor.java
+END
+PlaceNode2.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/treevisualizer/PlaceNode2.java
+END
+PlaceNode1.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/treevisualizer/PlaceNode1.java
+END
+TreeDisplayListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/treevisualizer/TreeDisplayListener.java
+END
+TreeDisplayEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/treevisualizer/TreeDisplayEvent.java
+END
+NodePlace.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/treevisualizer/NodePlace.java
+END
+TreeVisualizer.props
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/weka/!svn/ver/4960/trunk/weka/src/main/java/weka/gui/treevisualizer/TreeVisualizer.props
+END
+Node.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/weka/!svn/ver/4698/trunk/weka/src/main/java/weka/gui/treevisualizer/Node.java
+END

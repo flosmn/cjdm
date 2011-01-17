@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." default="ogre4j.build" name="ogre4j"
+	xmlns:cpptasks="antlib:org.sf.net.antcontrib.cpptasks">
+	<description>ANT build file to automate the build of the 
+		distribution files for ogre4j. This script will be 
+		used by other projects to build the jar and srs.zip
+		to copy them into their dependencies.
+	</description>
+	<property name="ogre4j.version"
+	          description="The version of ogre4j."
+	          value="1.6.2" />
+	<property name="ogre4j.export-package"
+	          description="The packages that should be exported by the eclipse plugin."
+	          value="org.xbig.base, org.ogre4j, org.ogre4j.nativelisteners, org.ogre4j.exceptions, org.ogre4j.emittercommands, org.ogre4j.overlayelementcommands, org.std, org.stdext" />
+	<property name="javadoc.maxmemory"
+              description="Maximum amount of memory to be used during javadoc generation."
+              value="1G" />
+	<property name="cpp.debug"
+		      description="Compile C++ code with debug information."
+              value="false" />
+
+	<!-- ***********************************************************
+				DO NOT EDIT BEYOND THIS COMMENT
+		 ***********************************************************-->
+	<condition property="cpp.platform" value="win32">
+		<os family="windows"/>
+	</condition>
+	<condition property="cpp.platform" value="linux">
+			<os name="linux"/>
+	</condition>
+	<condition property="cpp.platform" value="mac">
+			<os family="mac"/>
+	</condition>
+	<condition property="cpp.platform" value="unix">
+			<os family="unix"/>
+	</condition>
+	<condition property="cpp.compiler" value="msvc" else="g++">
+		<os family="windows"/>
+	</condition>
+	<!-- ***********************************************************-->
+	<property name="ogre4j.src" value="src" />
+	<property name="ogre4j.src.java" value="${ogre4j.src}/java" />
+	<property name="ogre4j.src.c" value="${ogre4j.src}/c" />
+	<!-- ***********************************************************-->
+	<property name="ogre4j.bin" value="bin" />
+	<property name="ogre4j.bin.java" value="${ogre4j.bin}/java" />
+	<property name="ogre4j.bin.c" value="${ogre4j.bin}/c" />
+	<property name="ogre4j.bin.c.release.lib" value="${ogre4j.bin.c}/release/lib/ogre4j"/>
+	<!-- ***********************************************************-->
+	<property name="ogre4j.dist" value="dist" />
+	<property name="ogre4j.jar" value="org.ogre4j_${ogre4j.version}.jar" />
+	<property name="ogre4j.dist.jar" value="${ogre4j.dist}/${ogre4j.jar}" />
+	<property name="ogre4j.srczip"
+	          value="org.ogre4j_${ogre4j.version}-src.zip" />
+	<property name="ogre4j.dist.src" value="${ogre4j.dist}/${ogre4j.srczip}" />
+	<property name="ogre4j.dist.full"
+	          value="${ogre4j.dist}/org.ogre4j_${ogre4j.version}.zip" />
+	<!-- ***********************************************************-->
+	<property name="ogre4j.doc" value="doc" />
+
+	<!-- ***********************************************************-->
+	<target name="ogre4j.build" depends="ogre4j.build.jar">
+	</target>
+	<!-- ***********************************************************-->
+	<property environment="env"/>
+	<property name="ant.jar" value="ant_lib"/>
+	<property name="cpp.tasks" value="cpptasks-1.0.0.b4.jar"/>
+	<property name="ant-contrib.tasks" value="ant-contrib-1.0b3.jar"/>
+	<typedef classpath="${ant.jar}/${cpp.tasks}"
+			resource="cpptasks.types" />
+	<taskdef classpath="${ant.jar}/${cpp.tasks}"
+			resource="cpptasks.tasks" />
+	<taskdef classpath="${ant.jar}/${ant-contrib.tasks}"
+			resource="net/sf/antcontrib/antlib.xml"/>
+
+	<target name="ogre4j.build.c" depends="ogre4j.mkdir">
+		<if>
+			<equals arg1="${cpp.debug}" arg2="true" />
+			<then>
+				<cc subsystem="console" objdir="${ogre4j.bin.c}/debug/obj" debug="true"
+					outtype="shared" name="${cpp.compiler}" exceptions="true"
+					rtti="true" optimize="speed" outfile="${ogre4j.bin.c}/debug/lib/ogre4j"
+					failonerror="true">
+
+					<includepath path="${ogre4j.src.c}/include" />
+					<includepath path="${env.OGRE_HOME}/include" />
+					<includepath path="${env.JAVA_HOME}/include" />
+					<includepath path="${env.JAVA_HOME}/include/${cpp.platform}" />
+
+					<libset libs="OgreMain_d" dir="${env.OGRE_HOME}/lib" />
+					<libset libs="OIS_d" dir="${env.OGRE_HOME}/lib" />
+
+					<precompile prototype="${ogre4j.src.c}/src/Ogre4JPrecompiledHeaders.cpp">
+						<except dir="${ogre4j.src.c}/src" includes="jni_*"/>
+					</precompile>
+
+					<fileset dir="${ogre4j.src.c}/src"/>
+				</cc>
+			</then>
+			<else>
+				<cc subsystem="console" objdir="${ogre4j.bin.c}/release/obj" debug="false"
+					outtype="shared" name="${cpp.compiler}" exceptions="true"
+					rtti="true" optimize="speed" outfile="${ogre4j.bin.c.release.lib}"
+					failonerror="true">
+
+					<includepath path="${ogre4j.src.c}/include" />
+					<includepath path="${env.OGRE_HOME}/include" />
+					<includepath path="${env.JAVA_HOME}/include" />
+					<includepath path="${env.JAVA_HOME}/include/${cpp.platform}" />
+
+					<libset libs="OgreMain" dir="${env.OGRE_HOME}/lib" />
+					<libset libs="OIS" dir="${env.OGRE_HOME}/lib" />
+
+					<precompile prototype="${ogre4j.src.c}/src/Ogre4JPrecompiledHeaders.cpp">
+						<except dir="${ogre4j.src.c}/src" includes="jni_*"/>
+					</precompile>
+
+					<fileset dir="${ogre4j.src.c}/src"/>
+				</cc>
+			</else>
+		</if>
+	</target>
+	<!-- ***********************************************************-->
+	<target name="ogre4j.build.java" depends="ogre4j.mkdir">
+		<javac srcdir="${ogre4j.src.java}" destdir="${ogre4j.bin.java}" />
+	</target>
+	<!-- ***********************************************************-->
+	<target name="ogre4j.build.jar" depends="ogre4j.build.java">
+		<jar basedir="${ogre4j.bin.java}" destfile="${ogre4j.dist.jar}" />
+	</target>
+	<!-- ***********************************************************-->
+	<target name="ogre4j.build.srczip">
+		<zip destfile="${ogre4j.dist.src}">
+            <zipfileset dir="."
+                prefix="org.ogre4j_${ogre4j.version}"
+                excludes="bin/, dist/, doc/, **/.svn/, **/*.ncb, **/*.sln, **/*.suo, **/*.user, **/*.pbxuser, **/*.mode1v3"
+                includes=".project, .classpath, .externalToolBuilders, **" />
+        </zip>
+	</target>
+	<!-- ***********************************************************-->
+	<target name="ogre4j.build.dist">
+		<zip basedir="${basedir}"
+		     destfile="${ogre4j.dist.full}"
+		     excludes="*.jar,*.zip" />
+		<if>
+			<equals arg1="${cpp.platform}" arg2="win32" />
+			<then>
+				<copyfile src="${ogre4j.bin.c}/release/lib/ogre4j.dll" dest="${ogre4j.dist}"/>
+			</then>
+			<else>
+				<copyfile src="${ogre4j.bin.c}/release/lib/libogre4j.so" dest="${ogre4j.dist}"/>
+			</else>
+		</if>
+	</target>
+	<!-- ***********************************************************-->
+	<target name="ogre4j.build.doc">
+		<javadoc packagenames="${ogre4j.export-package}"
+		         sourcepath="${ogre4j.src.java}"
+		         defaultexcludes="yes"
+		         destdir="${ogre4j.doc}"
+		         author="true"
+		         version="true"
+		         use="true"
+		         windowtitle="ogre4j ${ogre4j.version}"
+        		 maxmemory="${javadoc.maxmemory}">
+			<doctitle>ogre4j ${ogre4j.version}</doctitle>
+			<bottom>Copyright &#169; 2007 netAllied GmbH. All Rights Reserved.</bottom>
+			<tag name="todo" scope="all" description="To do:" />
+		</javadoc>
+	</target>
+	<!-- ***********************************************************-->
+	<target name="ogre4j.clean">
+		<delete dir="${ogre4j.bin}" />
+		<delete dir="${ogre4j.dist}" />
+		<delete dir="${ogre4j.doc}" />
+	</target>
+	<!-- ***********************************************************-->
+	<target name="ogre4j.mkdir">
+		<mkdir dir="${ogre4j.bin.java}" />
+		<mkdir dir="${ogre4j.bin.c}" />
+		<mkdir dir="${ogre4j.bin.c}/debug/obj" />
+		<mkdir dir="${ogre4j.bin.c}/release/obj" />
+		<mkdir dir="${ogre4j.bin.c}/debug/lib" />
+		<mkdir dir="${ogre4j.bin.c}/release/lib" />
+		<mkdir dir="${ogre4j.doc}" />
+		<mkdir dir="${ogre4j.dist}" />
+	</target>
+</project>

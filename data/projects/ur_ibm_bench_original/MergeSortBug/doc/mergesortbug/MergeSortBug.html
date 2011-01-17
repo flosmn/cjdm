@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML><!--JBuilder QuickDoc-->
+<HEAD>
+<TITLE>Class mergesortbug.MergeSortBug</TITLE><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+</HEAD>
+<BODY>
+
+<H2>
+<FONT SIZE="-1">mergesortbug</FONT>
+<BR>Class MergeSortBug</H2>
+<DL>
+<DT>public class <B>MergeSortBug</B><DT>extends Thread
+</DL>
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF"><TD COLSPAN=1><FONT SIZE="+2">
+<B>Field Detail</B>
+</FONT></TD></TR></TABLE>
+
+<H3>intArray</H3>
+<PRE>
+private static int[] <B>intArray</B></PRE>
+<DL><DD>The Integers array to sort<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<H3>tempArray</H3>
+<PRE>
+private static int[] <B>tempArray</B></PRE>
+<DL><DD>A temporary array to use while merging. This array will serve all threads. That way we save unneeded allocations.<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<H3>maxThreads</H3>
+<PRE>
+private static int <B>maxThreads</B></PRE>
+<DL><DD>Holds the number of threads that can run at that moment. This member is updated each time a thread dies and starts.<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<H3>startIndex</H3>
+<PRE>
+private int <B>startIndex</B></PRE>
+<DL><DD>These two variables hold the indexes in the array the current thread should sort;<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF"><TD COLSPAN=1><FONT SIZE="+2">
+<B>Method Detail</B>
+</FONT></TD></TR></TABLE>
+
+<H3>sortArray</H3>
+<PRE>
+public static void <B>sortArray</B>(int&nbsp;sIndex,
+                             int&nbsp;eIndex)</PRE>
+<DL><DD>Sorts the section in the array between two sections The method uses the current instance's indexes and calls a static MergeSections method<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+</BODY>
+</HTML>

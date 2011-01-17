@@ -1,0 +1,167 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/repos/ireport/!svn/ver/1200/trunk/iReport2/src/it/businesslogic/ireport/connection
+END
+JRXMLDataSourceFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/connection/JRXMLDataSourceFactory.java
+END
+JRCustomDataSourceConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/connection/JRCustomDataSourceConnection.java
+END
+JRCSVDataSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/connection/JRCSVDataSource.java
+END
+JavaBeanDataSourceConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/connection/JavaBeanDataSourceConnection.java
+END
+PasswordDialog.form
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/repos/ireport/!svn/ver/962/trunk/iReport2/src/it/businesslogic/ireport/connection/PasswordDialog.form
+END
+JRXMLDataSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/connection/JRXMLDataSource.java
+END
+SampleBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/connection/SampleBean.java
+END
+JRSpringLoadedHibernateConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/connection/JRSpringLoadedHibernateConnection.java
+END
+JRHibernateConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/connection/JRHibernateConnection.java
+END
+EJBQLConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/connection/EJBQLConnection.java
+END
+SampleJRDataSourceFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/connection/SampleJRDataSourceFactory.java
+END
+JRDataSourceProviderConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/connection/JRDataSourceProviderConnection.java
+END
+JRCSVDataSourceConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/connection/JRCSVDataSourceConnection.java
+END
+JDBCConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/connection/JDBCConnection.java
+END
+PasswordDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/connection/PasswordDialog.java
+END
+JREmptyDatasourceConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/connection/JREmptyDatasourceConnection.java
+END
+DriverPool.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/connection/DriverPool.java
+END
+JRCustomConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/connection/JRCustomConnection.java
+END
+JRXMLDataSourceConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/connection/JRXMLDataSourceConnection.java
+END
+MondrianConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/connection/MondrianConnection.java
+END
+JRXMLADataSourceConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/repos/ireport/!svn/ver/1078/trunk/iReport2/src/it/businesslogic/ireport/connection/JRXMLADataSourceConnection.java
+END
+JRCsvDataSourceInspector.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/connection/JRCsvDataSourceInspector.java
+END
+FieldNode.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/connection/FieldNode.java
+END
+NullConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/connection/NullConnection.java
+END
+QueryExecuterConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/connection/QueryExecuterConnection.java
+END
+JRExtendedBeanDataSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/connection/JRExtendedBeanDataSource.java
+END
+CSVDatasourceTestFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/repos/ireport/!svn/ver/1167/trunk/iReport2/src/it/businesslogic/ireport/connection/CSVDatasourceTestFactory.java
+END
