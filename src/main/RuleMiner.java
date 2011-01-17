@@ -164,7 +164,7 @@ public class RuleMiner {
 		
 		Collection<Bonus> bonusSet = miningData.buildBonusSet();
 		
-		List<Rule> rules = Miner.getRules(fileName, apriori, bonusSet, debug);
+		List<Rule> rules = Miner.getRules(fileName, apriori, bonusSet, debug, true);
 		
 		return Rule.getBestRules(rules, miningData.getNumRules());
 	}

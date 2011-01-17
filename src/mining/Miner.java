@@ -126,8 +126,8 @@ public class Miner {
 	 * @return List of {@link Rule}
 	 * @throws Exception
 	 */
-	public static List<Rule> getRules(String fileName, Apriori apriori, Collection<Bonus> bonusSet, boolean debug) throws Exception {
-		Instances instances = loadNominalInstances(fileName);
+	public static List<Rule> getRules(String fileName, Apriori apriori, Collection<Bonus> bonusSet, boolean debug, boolean noPath) throws Exception {
+		Instances instances = loadNominalInstances(fileName, noPath);
 		
 		if (debug) {
 			System.out.println("building associatons for " + fileName);
@@ -139,7 +139,7 @@ public class Miner {
 	}
 	
 	public static List<Rule> getRules(String fileName, Apriori apriori, Collection<Bonus> bonusSet) throws Exception {
-		return getRules(fileName, apriori, bonusSet, true);
+		return getRules(fileName, apriori, bonusSet, true, false);
 	}
 	
 	/**
@@ -180,8 +180,9 @@ public class Miner {
 	 * @param fileName name of the *.arff file
 	 * @return Instances converted to nominal
 	 */
-	private static Instances loadNominalInstances(String fileName) throws Exception {
-		DataSource source = new DataSource(PathAndFileNames.WEKA_DATA_PATH + fileName);		
+	private static Instances loadNominalInstances(String fileName, boolean noPath) throws Exception {
+		String path = noPath ? fileName : PathAndFileNames.WEKA_DATA_PATH + fileName;
+		DataSource source = new DataSource(path);		
 		Instances data = source.getDataSet();
 		data = convertToNominal(data, new NumericToNominal());
 		data = convertToNominal(data, new StringToNominal());
