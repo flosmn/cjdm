@@ -91,6 +91,8 @@ public class RuleMiner {
 
 		if (noCjdmPassed){	
 			printNoCjdmPassed();
+		} else {
+			System.out.println("Done!");
 		}
     }
 	
@@ -105,7 +107,7 @@ public class RuleMiner {
 		Logger logger = new Logger();
 		logger.log(dataString);
 		logger.writeToFile("", fileName);
-		System.out.println("done, rules exported to "+fileName);
+		System.out.println("rules exported to " + fileName);
 	}
 	
 	/**
