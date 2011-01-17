@@ -72,16 +72,16 @@ public class RuleMiner {
 					System.out.println("-----" + fileName + "-----");
 		        	System.out.println(ruleMiningData);
 		        }
-		        
+		        /*
 		        //do export
 		        if (exportData != null) {
 		        	export(exportData, arffName, debug);
 		        }
-		        /*
+		        */
 		        //do mining
 		        if (miningData != null) {
 		        	mine(miningData, arffName, debug);
-		        }*/
+		        }
 			}
 		}
 
@@ -127,7 +127,7 @@ public class RuleMiner {
 			combinedAttributes = Attribute.combine(combinedAttributes, attribute);
 		}
 		
-		Exporter.export(scope, ExportType.ARFF, fileName, database, combinedAttributes, maxRows, filter);
+		Exporter.export(scope, ExportType.ARFF, fileName, database, combinedAttributes, maxRows, filter, debug);
 		
 		database.shutdown();
 	}
@@ -167,9 +167,12 @@ class RuleMiningData {
     private MiningData mining;
     private boolean debug = false;
     
-    public ExportData getExport() { return export; }
-	public MiningData getMining() { return mining; }
     public boolean getDebug() { return debug; }
+    public ExportData getExport() { return export; }
+	public MiningData getMining() {
+		mining.setDebug(debug);
+		return mining;
+	}
 
     public void setExport(ExportData export) { this.export = export; }
     public void setMining(MiningData mining) { this.mining = mining; }
@@ -298,6 +301,7 @@ class MiningData {
 	private AprioriData aprioriData = new AprioriData();
 	private List<BonusData> bonusSet;
 	private int numRules;
+	private boolean debug;
 	
 	/**
 	 * creates new apriori and sets values
@@ -315,10 +319,14 @@ class MiningData {
 				"-M",Double.toString(aprioriData.lowerBoundMinSupport),
 				"-S",Double.toString(aprioriData.significanceLevel),
 				"-I",Boolean.toString(aprioriData.outputItemSets),
-				"-V",Boolean.toString(aprioriData.reportProgress),
 				"-R",Boolean.toString(aprioriData.removeMissingColumns),
 				};
 		apriori.setOptions(options);
+		
+		if (debug) {
+			apriori.setVerbose(true);
+		}
+		
 		return apriori;
 	}
 	
@@ -334,10 +342,12 @@ class MiningData {
 	public AprioriData getApriori() { return aprioriData; }
 	public List<BonusData> getBonusSet() { return bonusSet; }
 	public int getNumRules() { return numRules; }
+	public boolean getDebug() { return debug; }
 	
 	public void setApriori(AprioriData apriori) { this.aprioriData = apriori; }
 	public void setBonusSet(List<BonusData> bonusSet) { this.bonusSet = bonusSet; }
 	public void setNumRules(int numRules) { this.numRules = numRules; }
+	public void setDebug(boolean debug) { this.debug = debug; }
 	
 	public String toString() {
 		return String.format("numRules:%d, bonusSet:(%s), apriori:(%s)", numRules, bonusSet, aprioriData);
