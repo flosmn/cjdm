@@ -9,7 +9,10 @@ Require-Bundle: org.eclipse.ui,
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Bundle-Vendor: Team9
-Bundle-ClassPath: lib/antlr-3.2.jar,
+Bundle-ClassPath: 
+ lib/antlr-3.2.jar,
+ lib/gson-1.6.jar,
  lib/hsqldb.jar,
  lib/JRI.jar,
- .
+ lib/weka.jar, .
+Bundle-NativeCode: lib/jri.dll; osname=win32; processor=x86_64

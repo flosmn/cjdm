@@ -29,13 +29,28 @@ public class ExportButtonSelectionListener implements SelectionListener {
 
 	@Override
 	public void widgetSelected(SelectionEvent e) {
-		System.out.println("Export");
-		String databaseSourceDirPath = "C:/root/database/" + "cjdm";
-		String csvTargetDirPath = "C:/root/csv/";
-		String classCsvName = "classbla.csv";
-		String methodCsvName = "methodbla.csv";
-		int filterLevelClass = 0;
-		int filterLevelMethod = 0;
+		String databaseSourceDirPath = databaseSourceDir.getText() + "/cjdm";
+		String csvTargetDirPath = csvTargetDir.getText() + "/";
+		String classCsvName = className.getText();
+		String methodCsvName = methodName.getText();
+		int filterLevelClass = Integer.parseInt(this.filterLevelClass.getText());
+		int filterLevelMethod = Integer.parseInt(this.filterLevelMethod.getText());
+		
+		if(!classCsvName.endsWith(".csv")) {
+			classCsvName += ".csv";
+		}
+		
+		if(!methodCsvName.endsWith(".csv")) {
+			methodCsvName += ".csv";
+		}
+		
+		if(filterLevelClass < 0){
+			filterLevelClass = 0;
+		}
+		
+		if(filterLevelMethod < 0){
+			filterLevelMethod = 0;
+		}
 		
 		PathAndFileNames.setDataBasePath(databaseSourceDirPath);
 		PathAndFileNames.setCsvDataPath(csvTargetDirPath);

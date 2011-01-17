@@ -26,7 +26,9 @@ public class RBridge {
 	    x = re.eval("hclust(d, method=\"ward\")", false);
 	    re.assign("fit", x);
 	    
-	    re.eval("pdf(file=\"javaprojectsources/r/project.pdf\", height=25, width=75)", false);
+	    re.eval("pdf(file=\"javaprojectsources/r/project.pdf\", " +
+	    		"height=25, width=75)", 
+	    		false);
 	    re.eval("plot(fit)", false);
 	    re.eval("dev.off()", false);
 	    
