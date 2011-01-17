@@ -126,15 +126,22 @@ public class Miner {
 	 * @return List of {@link Rule}
 	 * @throws Exception
 	 */
-	public static List<Rule> getRules(String fileName, Apriori apriori, Collection<Bonus> bonusSet) throws Exception {
+	public static List<Rule> getRules(String fileName, Apriori apriori, Collection<Bonus> bonusSet, boolean debug) throws Exception {
 		Instances instances = loadNominalInstances(fileName);
 		
-		System.out.println("building associatons for " + fileName);
+		if (debug) {
+			System.out.println("building associatons for " + fileName);
+		}
+		
 		apriori.buildAssociations(instances);
 		
-		return RuleRater.sortRules(apriori, bonusSet);
+		return RuleRater.sortRules(apriori, bonusSet, debug);
 	}
-
+	
+	public static List<Rule> getRules(String fileName, Apriori apriori, Collection<Bonus> bonusSet) throws Exception {
+		return getRules(fileName, apriori, bonusSet, true);
+	}
+	
 	/**
 	 * creates an {@link Apriori} with parameterized features
 	 * @param lowerBoundMinSupport

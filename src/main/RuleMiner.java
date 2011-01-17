@@ -14,6 +14,7 @@ import mining.ItemBonus;
 import mining.Miner;
 import mining.PatternBonus;
 import mining.Rule;
+import utils.Logger;
 import utils.PathAndFileNames;
 import weka.associations.Apriori;
 import attributes.Attribute;
@@ -28,7 +29,6 @@ import export.ExportFilter;
 import export.Exporter;
 import export.Exporter.ExportType;
 import export.ParallelFilter;
-import utils.Logger;
 
 /**
  * This is the main class for using cjdm. Cjdm is typically used by 
@@ -153,7 +153,7 @@ public class RuleMiner {
 		
 		Collection<Bonus> bonusSet = miningData.buildBonusSet();
 		
-		List<Rule> rules = Miner.getRules(fileName, apriori, bonusSet);
+		List<Rule> rules = Miner.getRules(fileName, apriori, bonusSet, debug);
 		
 		return Rule.getBestRules(rules, miningData.getNumRules());
 	}

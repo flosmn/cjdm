@@ -46,7 +46,7 @@ public class Exporter implements ResultSetReceiver {
 		exporter.export(database, attributes, maxRowCount);
 	}
 	public static void export(Scope scope, ExportType exportType, String fileName, Database database, String attributes, int maxRowCount, ExportFilter exportFilter) {
-		export(scope, exportType, fileName, database, attributes, maxRowCount, exportFilter, false);
+		export(scope, exportType, fileName, database, attributes, maxRowCount, exportFilter, true);
 	}
 	
 	public static void export(Scope scope, ExportType exportType, String fileName, Database database, String attributes, int maxRowCount) {

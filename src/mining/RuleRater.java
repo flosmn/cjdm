@@ -23,10 +23,13 @@ public class RuleRater {
 	 * @param bonusSet
 	 * @return a list of the rules created
 	 */
-	public static List<Rule> sortRules(Apriori apriori, Collection<Bonus> bonusSet) {
+	public static List<Rule> sortRules(Apriori apriori, Collection<Bonus> bonusSet, boolean debug) {
 		List<Rule> rules = extractRules(apriori);
 		
-		System.out.println("rating rules");
+		if (debug) {
+			System.out.println("rating rules");
+		}
+		
 		for (Rule rule : rules) {
 			rule.resetRating();
 			rule.addRating(bonusSet);
@@ -35,6 +38,10 @@ public class RuleRater {
 		Collections.sort(rules);
 		
 		return rules;
+	}
+	
+	public static List<Rule> sortRules(Apriori apriori, Collection<Bonus> bonusSet) {
+		return sortRules(apriori, bonusSet, true);
 	}
 
 	/**
