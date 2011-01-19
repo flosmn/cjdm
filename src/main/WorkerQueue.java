@@ -8,7 +8,7 @@ import java.util.List;
 
 import org.antlr.runtime.tree.CommonTree;
 
-import utils.DirtyLittleHelper;
+import utils.Utils;
 import workers.Worker;
 import database.Database;
 import database.Record;
@@ -65,7 +65,7 @@ public class WorkerQueue {
 	}
 
 	private void traverse(TreePackage treePackage) {
-		List<CommonTree> children = DirtyLittleHelper.castList(CommonTree.class, treePackage.getTree().getChildren());
+		List<CommonTree> children = Utils.castList(CommonTree.class, treePackage.getTree().getChildren());
 		
 		for (CommonTree child : children) {
 			if (child.getText().equals("class") && child.getChildCount() > 0) {

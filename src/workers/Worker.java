@@ -6,7 +6,7 @@ import main.TreePackage;
 
 import org.antlr.runtime.tree.CommonTree;
 
-import utils.DirtyLittleHelper;
+import utils.Utils;
 import attributes.Attribute;
 import database.Aggregator;
 import database.Scope;
@@ -55,7 +55,7 @@ public abstract class Worker {
 			return null;
 		}
 		
-		List<CommonTree> children = DirtyLittleHelper.castList(CommonTree.class, parent.getChildren());
+		List<CommonTree> children = Utils.castList(CommonTree.class, parent.getChildren());
 		
 		for (CommonTree child : children) {
 			if (child.getText().matches(name)) {

@@ -7,7 +7,7 @@ import org.antlr.runtime.tree.CommonTree;
 
 import database.Scope;
 
-import utils.DirtyLittleHelper;
+import utils.Utils;
 
 /**
  * This class implements a data structure to store a CommonTree and more additional 
@@ -103,7 +103,7 @@ public class TreePackage extends CommonTree implements Comparable<TreePackage> {
 		
 		System.out.println(string + tree.getText());
 
-		List<CommonTree> children = DirtyLittleHelper.castList(CommonTree.class, tree.getChildren());
+		List<CommonTree> children = Utils.castList(CommonTree.class, tree.getChildren());
 		for(CommonTree child : children) {
 			printTree(child, string + "  ");
 		}

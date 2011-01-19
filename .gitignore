@@ -6,6 +6,7 @@ src/grammar/*.java
 
 src/grammar/*.tokens
 
-javaprojectsources/*
+data/*
+database/*
 
 *.DS_Store

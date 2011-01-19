@@ -21,10 +21,10 @@ public class PathAndFileNames {
 		if(basePath.length()>0){
 			basePath += "/";
 		}
-		PROJECT_SOURCES_PATH = basePath + "javaprojectsources/TestData";
-		WEKA_DATA_PATH = basePath + "javaprojectsources/arff/";
-		R_DATA_PATH = basePath + "javaprojectsources/r/";
-		CSV_DATA_PATH = basePath + "javaprojectsources/csv/";
+		PROJECT_SOURCES_PATH = basePath + "data/TestData";
+		WEKA_DATA_PATH = basePath + "data/arff/";
+		R_DATA_PATH = basePath + "data/r/";
+		CSV_DATA_PATH = basePath + "data/csv/";
 		DATA_BASE_PATH = basePath + "database/cjdm";
 		CLASS_CSV_NAME = "class.csv";
 		METHOD_CSV_NAME = "method.csv";
