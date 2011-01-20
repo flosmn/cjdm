@@ -138,15 +138,15 @@ public class Attribute {
 	/** number of {@code Thread.run()} calls */
 	public static final Attribute RUN_CALLS = new Attribute(Scope.METHOD, "RUN_CALLS", true);
 	
-	/** number of ({@code ReentrantLock | ReadLock | WriteLock | Lock}) objects in method*/
+	/** number of ({@link java.util.concurrent.locks.ReentrantLock | ReadLock | WriteLock | Lock}) objects in method*/
 	public static final Attribute LOCK_OBJECTS = new Attribute(Scope.METHOD, "LOCK_OBJECTS", true);
-	/** number of {@code CountDownLatch} objects in method */	
+	/** number of {@link java.util.concurrent.locks CountDownLatch} objects in method */	
 	public static final Attribute COUNT_DOWN_OBJECTS = new Attribute(Scope.METHOD, "COUNTDOWNLATCH_OBJECTS", true);
-	/** number of {@code Condition} objects in method */		
+	/** number of {@link java.util.concurrent.locks.Condition} objects in method */		
 	public static final Attribute CONDITION_OBJECTS = new Attribute(Scope.METHOD, "CONDITION_OBJECTS", true);
-	/** number of {@code Semaphore} objects in method */		
+	/** number of {@link java.util.concurrent.locks.Semaphore} objects in method */		
 	public static final Attribute SEMAPHORE_OBJECTS = new Attribute(Scope.METHOD, "SEMAPHORE_OBJECTS", true);
-	/** number of {@code CyclicBarrier} objects in method */		
+	/** number of {@link java.util.concurrent.locks.CyclicBarrier} objects in method */
 	public static final Attribute CYCLICBARRIER_OBJECTS = new Attribute(Scope.METHOD, "CYCLICBARRIER_OBJECTS", true);
 	
 	/** nestedness of {@code lock} */			
