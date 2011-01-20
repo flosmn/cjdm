@@ -198,7 +198,9 @@ class RuleMiningData {
     public void setMining(MiningData mining) { this.mining = mining; }
 
     public String toString() {
-        return String.format("debug:%b\nexport:%s\nmining:%s", debug, export, mining);
+        return String.format("debug:%b" +
+        		"\nexport:%s" +
+        		"\nmining:%s", debug, export, mining);
     }
 }
 
@@ -262,7 +264,10 @@ class ExportData {
 	public void setFilter(FilterData filter) { this.filter = filter; }
 	
 	public String toString() {
-		return String.format("scope:%s, maxRows:%d, attributes:%s, filter:(%s)", scope, maxRows, attributes, filter);
+		return String.format("\tscope:%s," +
+				"\n\tmaxRows:%d," +
+				"\n\tattributes:%s," +
+				"\n\tfilter:(%s)", scope, maxRows, attributes, filter);
 	}
 }
 
@@ -288,9 +293,10 @@ class FilterData {
 	
 	public String toString() {
 		if (type.equals("attributeFilter")) {
-			return String.format("type:%s, summarized:%b, conditions:%s", type, summarized, conditions);
+			return String.format("\n\t\ttype:%s," +
+					"\n\t\tsummarized:%b, \n\t\tconditions:%s", type, summarized, conditions);
 		} else {
-			return String.format("type:%s, summarized:%b, minParallel:%d", type, summarized, minParallel);
+			return String.format("\n\t\ttype:%s, \n\t\tsummarized:%b, minParallel:%d", type, summarized, minParallel);
 		}
 	}
 }
@@ -313,7 +319,7 @@ class ConditionData {
 	public void setMaxValue(int maxValue) { this.maxValue = maxValue; }
 	
 	public String toString() {
-		return String.format("(attribute:%s, minValue:%d, maxValue:%d)", attribute, minValue, maxValue);
+		return String.format("(attribute:%s, \n\t\t\tminValue:%d, \n\t\t\tmaxValue:%d)", attribute, minValue, maxValue);
 	}
 }
 
@@ -370,7 +376,7 @@ class MiningData {
 	public void setDebug(boolean debug) { this.debug = debug; }
 	
 	public String toString() {
-		return String.format("numRules:%d, bonusSet:(%s), apriori:(%s)", numRules, bonusSet, aprioriData);
+		return String.format("\tnumRules:%d, \n\tbonusSet:(%s), \n\tapriori:(%s)", numRules, bonusSet, aprioriData);
 	}
 }
 
@@ -410,6 +416,21 @@ class AprioriData {
 	
 	// If set then columns that contain all missing values are removed from the data. 
 	boolean removeMissingColumns = false;
+	
+	public String toString(){
+		return "\tminRules : "+minRules+
+		"\n\t\tmetricType : "+metricType+
+		"\n\t\tminMetricScore : "+minMetricScore+
+		"\n\t\tdeltaMinSupport : "+deltaMinSupport+
+		"\n\t\tupperBoundMinSupport : "+upperBoundMinSupport+
+		"\n\t\tlowerBoundMinSupport : "+lowerBoundMinSupport+
+		"\n\t\tdeltaMinSupport : "+deltaMinSupport+
+		"\n\t\tsignificanceLevel : "+significanceLevel+
+		"\n\t\toutputItemSets : "+outputItemSets+
+		"\n\t\treportProgress : "+reportProgress+
+		"\n\t\treportProgress : "+reportProgress+
+		"\n\t\tremoveMissingColumns : "+removeMissingColumns;
+	}
 }
 
 class BonusData {
@@ -463,9 +484,9 @@ class BonusData {
 	
 	public String toString() {
 		if (type.equals("itemBonus")) {
-			return String.format("(type:%s, bonus:%d, attribute:%s, value:%s)", type, bonus, attribute, value);
+			return String.format("(\ttype:%s, \n\tbonus:%d, \n\tattribute:%s, \n\tvalue:%s)", type, bonus, attribute, value);
 		} else {
-			return String.format("(type:%s, bonus:%d, conditions:%s, consequences:%s)", type, bonus, conditions, consequences);
+			return String.format("(\ttype:%s, \n\tbonus:%d, \n\tconditions:%s, \n\tconsequences:%s)", type, bonus, conditions, consequences);
 		}
 	}
 }
