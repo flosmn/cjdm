@@ -1,15 +1,27 @@
+/**
+Ê* @author Christian Wellenbrock
+ * @author Florian Simon
+Ê* @author JŸrgen Walter
+ * @author Stefan Kober
+Ê* Teams 09, 10
+Ê*
+Ê* This code has been developed during the winter term 2010-2011 at the
+Ê* Karlsruhe Institute of Technology (KIT), Germany.
+Ê* It is part of a project assignment in the course
+Ê* "Multicore Programming in Practice: Tools, Models, and Languages".
+Ê* Project director/instructor:
+Ê* Dr. Victor Pankratius (pankratius@ipd.uka.de)
+**/
 package workers;
 
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.List;
 
-
 import org.antlr.runtime.tree.CommonTree;
 import org.antlr.runtime.tree.Tree;
 
 import parsing.TreePackage;
-
 import utils.Utils;
 import attributes.MethodAttribute;
 import database.Aggregator;
