@@ -61,9 +61,6 @@ public class RuleMiner {
 				//read settings
 				jsonString = readFileAsString(fileName);
 				
-		        //create setting object
-		        //RuleMiningData data = new Gson().fromJson(jsonString, RuleMiningData.class);
-
 		        //extract arff file name
 		        String arffFileName = fileName.split(".cjdm")[0] + ".arff";
 		        String rulesFileName = fileName.split(".cjdm")[0] + ".rules";
@@ -79,18 +76,17 @@ public class RuleMiner {
 					System.out.println("-----" + fileName + "-----");
 		        	System.out.println(ruleMiningData);
 		        }
-	
+		        
 		        //do export
 		        if (exportData != null) {
 		        	export(exportData, arffFileName, debug);
 		        }
-
+		        
 		        //do mining
 		        if (miningData != null) {
 		        	String rulesString = mine(miningData, arffFileName, debug);
 		        	writeToFile(rulesString, rulesFileName);
 		        }
-
 			}
 		}
 
