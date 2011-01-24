@@ -35,7 +35,6 @@ import export.ParallelFilter;
  * calling {@link #main(String[])} with file names of JSON config files.
  * 
  * Then export, mining and filtering are done according to configs
- * 
  */
 public class RuleMiner {
 	
@@ -206,7 +205,7 @@ class RuleMiningData {
 
 class ExportData {
     private String scope = "project";
-	private int maxRows;
+	private int maxRows = Integer.MAX_VALUE;
 	private List<String> attributes;
 	private FilterData filter = null;	// optional
 	
@@ -276,10 +275,10 @@ class FilterData {
 	private boolean summarized;
 	
 	// type attributeFilter
-	private List<ConditionData> conditions;
+	private List<ConditionData> conditions = new ArrayList<ConditionData>();
 	
 	// type parallelFilter
-	private int minParallel;
+	private int minParallel = 1;
 	
 	public String getType() { return type; }
 	public boolean getSummarized() { return summarized; }
@@ -303,7 +302,7 @@ class FilterData {
 
 class ConditionData {
 	private String attribute;
-	private int minValue;
+	private int minValue = 1;
 	private int maxValue = Integer.MAX_VALUE;
 	
 	public AttributeCondition build() {
@@ -325,7 +324,7 @@ class ConditionData {
 
 class MiningData {
 	private AprioriData aprioriData = new AprioriData();
-	private List<BonusData> bonusSet;
+	private List<BonusData> bonusSet = new ArrayList<BonusData>();
 	private int numRules;
 	private boolean debug;
 	

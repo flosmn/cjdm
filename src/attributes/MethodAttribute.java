@@ -21,7 +21,7 @@ public class MethodAttribute {
 	public static final Attribute METHOD_CALLS = Attribute.METHOD_CALLS;
 	public static final Attribute SYNCHRONIZED_BLOCKS = Attribute.SYNCHRONIZED_BLOCKS;
 	public static final Attribute LOCK_CALLS = Attribute.LOCK_CALLS;
-	public static final Attribute UNLOCK_CALLS= Attribute.UNLOCK_CALLS;
+	public static final Attribute UNLOCK_CALLS = Attribute.UNLOCK_CALLS;
 	public static final Attribute WAIT_CALLS = Attribute.WAIT_CALLS;
 	public static final Attribute NOTIFY_CALLS = Attribute.NOTIFY_CALLS;
 	public static final Attribute NOTIFYALL_CALLS = Attribute.NOTIFYALL_CALLS;

@@ -97,7 +97,7 @@ public class TreePackageGenerator {
 			} 
 		} 
 		
-		if(tokenizer.hasMoreElements()) { 
+		if(tokenizer.hasMoreElements()) {
 			name = tokenizer.nextToken(); 
 		} 
 		
