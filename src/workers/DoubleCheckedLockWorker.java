@@ -4,10 +4,11 @@ import java.util.Collection;
 import java.util.HashSet;
 import java.util.List;
 
-import main.TreePackage;
 
 import org.antlr.runtime.tree.CommonTree;
 import org.antlr.runtime.tree.Tree;
+
+import parsing.TreePackage;
 
 import utils.Utils;
 import attributes.MethodAttribute;

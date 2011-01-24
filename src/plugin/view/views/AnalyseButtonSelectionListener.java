@@ -1,10 +1,11 @@
 package plugin.view.views;
 
-import main.ProjectParser;
 
 import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.events.SelectionListener;
 import org.eclipse.swt.widgets.Text;
+
+import parsing.ProjectParser;
 
 import utils.PathAndFileNames;
 
