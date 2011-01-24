@@ -69,7 +69,13 @@ public class Attribute {
 	 * @return {@code Attribute}
 	 */
 	public static Attribute getAttribute(String name) {
-		return attributes.get(name);
+		Attribute attribute = attributes.get(name);
+		
+		if (attribute == null) {
+			System.err.println("attribute not found: " + name);
+		}
+		
+		return attribute;
 	}
 
 	/**
