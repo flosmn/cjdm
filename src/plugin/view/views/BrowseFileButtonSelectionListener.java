@@ -1,4 +1,4 @@
-package eclipseplugin.clustering.view.views;
+package plugin.view.views;
 
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionEvent;
@@ -13,7 +13,7 @@ public class BrowseFileButtonSelectionListener implements SelectionListener {
 	public BrowseFileButtonSelectionListener(Text textField) {
 		this.textField = textField;
 	}
-
+	
 	@Override
 	public void widgetSelected(SelectionEvent e) {
 		FileDialog fd = new FileDialog(this.textField.getShell(), SWT.OPEN);
@@ -21,7 +21,10 @@ public class BrowseFileButtonSelectionListener implements SelectionListener {
         String[] filterExt = { "*.csv" };
         fd.setFilterExtensions(filterExt);
         String selected = fd.open();
-        this.textField.setText(selected);
+       
+        if(selected != null){
+        	this.textField.setText(selected);
+        }
 	}
 
 	@Override

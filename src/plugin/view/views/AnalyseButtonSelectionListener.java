@@ -1,4 +1,4 @@
-package eclipseplugin.clustering.view.views;
+package plugin.view.views;
 
 import main.ProjectParser;
 

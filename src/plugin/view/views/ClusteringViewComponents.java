@@ -1,4 +1,4 @@
-package eclipseplugin.clustering.view.views;
+package plugin.view.views;
 
 
 import org.eclipse.swt.SWT;
@@ -7,6 +7,7 @@ import org.eclipse.swt.graphics.Font;
 import org.eclipse.swt.graphics.FontData;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.widgets.Button;
+import org.eclipse.swt.widgets.Combo;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Text;
@@ -18,8 +19,8 @@ public class ClusteringViewComponents {
 	public static final String ANALYSE_BUTTON_LABEL = "Analyse";
 	public static final String BROWSE_BUTTON_LABEL = "Browse";
 	public static final String CLASS_NAME_LABEL = "Enter name of the csv dataset containing the class information.";
-	public static final String CLUSTERING_BUTTON_LABEL = "Perform Clustering";
-	public static final String CSV_SOURCE_DIR_LABEL = "Select a csv dataset for Clustering.";
+	public static final String CLUSTERING_BUTTON_LABEL = "Cluster";
+	public static final String CSV_SOURCE_DIR_LABEL = "Select a csv dataset for clustering.";
 	public static final String CSV_TARGET_DIR_LABEL = "Select directory in which to save the csv datasets.";
 	private static final String PDF_TARGET_DIR_LABEL = "Select directory in which to save the pdf file containing the clustering result.";;
 	public static final String DATABASE_SOURCE_DIR_LABEL = "Select the directory of a database to export to csv datasets.";
@@ -27,7 +28,7 @@ public class ClusteringViewComponents {
 	public static final String DIR_LABEL = "Directory:";
 	public static final String EXPORT_BUTTON_LABEL = "Export";
 	public static final String FILTER_LEVEL_CLASS_LABEL = "Set a filter level for the class datavectors. The number indicates how much elements of a datavector have to be non-zero to be included in the dataset. So the higher the number the smaller will the dataset be.";
-	public static final String FILTER_LEVEL_LABEL = "Enter filter Level:";
+	public static final String FILTER_LEVEL_LABEL = "Enter filter level:";
 	public static final String FILTER_LEVEL_METHOD_LABEL = "Set a filter level for the method datavectors.";
 	
 	public static final String HEADING = "Clustering";
@@ -38,6 +39,15 @@ public class ClusteringViewComponents {
 	private static final String PDF_NAME_LABEL = "Enter name of the pdf file containing the clustering result.";
 	public static final String NAME_LABEL = "Name:";
 	public static final String ROOT_DIR_LABEL = "Select root directory of Java files to analyse.";
+	public static final String OPEN_PDF_LABEL = "Open pdf after creation?";
+
+	private static final String CHOOSE_METHOD_LABEL = "Select clustering method";
+	private static final String CHOOSE_METRIC_LABEL = "Select metric";
+	private static final String[] METHODS = {"ward", "complete"};
+	private static final String[] METRICS = {"euclidean", "manhattan", "maximum", "canberra"};
+
+
+	private static Combo methodCombo;
 
 
 	
@@ -57,7 +67,7 @@ public class ClusteringViewComponents {
 		Button button = new Button(parent, SWT.PUSH);
 		button.setText(BROWSE_BUTTON_LABEL);
 		button.addSelectionListener(new BrowseFileButtonSelectionListener(textField));
-		gridData = new GridData(GridData.BEGINNING, GridData.CENTER, false, false);
+		gridData = new GridData(GridData.FILL, GridData.CENTER, false, false);
 		button.setLayoutData(gridData);
 		return button;
 	}
@@ -66,7 +76,7 @@ public class ClusteringViewComponents {
 		Button button = new Button(parent, SWT.PUSH);
 		button.setText(BROWSE_BUTTON_LABEL);
 		button.addSelectionListener(new BrowseDirectoryButtonSelectionListener(textField));
-		gridData = new GridData(GridData.BEGINNING, GridData.CENTER, false, false);
+		gridData = new GridData(GridData.FILL, GridData.CENTER, false, false);
 		button.setLayoutData(gridData);
 		return button;
 	}
@@ -84,13 +94,25 @@ public class ClusteringViewComponents {
 	}
 	
 	public static Button getButtonPerformClustering(Composite parent,
-			int numColumns, Text csvSource, Text pdfTargetDir, Text pdfName) {
+			int numColumns, Text csvSource, Text pdfTargetDir, Text pdfName, OpenPdfAfterCreation openPdf, Combo methodCombo, Combo metricCombo) {
+		ClusteringViewComponents.methodCombo = methodCombo;
 		Button button = new Button(parent, SWT.PUSH);
 		button.setText(CLUSTERING_BUTTON_LABEL);
-		button.addSelectionListener(new ClusteringButtonSelectionListener(csvSource, pdfTargetDir, pdfName));
+		button.addSelectionListener(new ClusteringButtonSelectionListener(csvSource, pdfTargetDir, pdfName, openPdf, methodCombo, metricCombo));
 		gridData = new GridData(GridData.BEGINNING, GridData.CENTER, false, false);
-		gridData.horizontalSpan = numColumns;
 		gridData.verticalSpan = 10;
+		button.setLayoutData(gridData);
+		return button;
+	}
+	
+	public static Button getButtonOpenPdf(Composite parent,
+			int numColumns, OpenPdfAfterCreation openPdf) {
+		Button button = new Button(parent, SWT.CHECK);
+		button.setText(OPEN_PDF_LABEL);
+		button.addSelectionListener(new OpenPdfButtonSelectionListener(openPdf));
+		gridData = new GridData(GridData.END, GridData.CENTER, false, false);
+		gridData.verticalSpan = 10;
+		gridData.horizontalSpan = 2;
 		button.setLayoutData(gridData);
 		return button;
 	}
@@ -239,5 +261,43 @@ public class ClusteringViewComponents {
 	public static Label getRootDirLabel(Composite parent, int numColumns) {
 		Label label = getLabelFillHoleWidth(parent, ROOT_DIR_LABEL, numColumns);
 		return label;		
+	}
+
+	public static Label getMethodLabel(Composite comp, int numColumns) {
+		Label label = new Label(comp, SWT.BOLD);
+		label.setText(CHOOSE_METHOD_LABEL);
+		gridData = new GridData(GridData.BEGINNING, GridData.CENTER, false, false);
+		gridData.horizontalSpan = numColumns - 1;
+		label.setLayoutData(gridData);
+		return label;
+	}
+	
+	public static Label getMetricLabel(Composite comp, int numColumns) {
+		Label label = new Label(comp, SWT.BOLD);
+		label.setText(CHOOSE_METRIC_LABEL);
+		gridData = new GridData(GridData.BEGINNING, GridData.CENTER, false, false);
+		gridData.horizontalSpan = numColumns - 1;
+		label.setLayoutData(gridData);
+		return label;
+	}
+
+	public static Combo getMethodCombo(Composite comp, int numColumns) {
+		Combo combo = new Combo(comp, SWT.DROP_DOWN | SWT.READ_ONLY);
+	    combo.setItems(METHODS);
+	    combo.setText(METHODS[0]);
+	    gridData = new GridData(GridData.FILL, GridData.CENTER, false, false);
+	    gridData.verticalIndent = 10;
+		combo.setLayoutData(gridData);
+		return combo;
+	}
+
+	public static Combo getMetricCombo(Composite comp, int numColumns) {
+		Combo combo = new Combo(comp, SWT.DROP_DOWN | SWT.READ_ONLY);
+	    combo.setItems(METRICS);
+	    combo.setText(METRICS[0]);
+	    gridData = new GridData(GridData.FILL, GridData.CENTER, false, false);
+	    gridData.verticalIndent = 10;
+		combo.setLayoutData(gridData);
+		return combo;
 	}
 }

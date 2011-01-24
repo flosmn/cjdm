@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?eclipse version="3.4"?>
 <plugin>
-
    <extension
          point="org.eclipse.ui.views">
       <category
@@ -12,7 +11,7 @@
             name="Clustering View"
             icon="icons/sample.gif"
             category="eclipseplugin.view"
-            class="eclipseplugin.clustering.view.views.ClusteringView"
+            class="plugin.view.views.ClusteringView"
             id="eclipseplugin.view.views.ClusteringView">
       </view>
    </extension>
@@ -34,5 +33,4 @@
             file="contexts.xml">
       </contexts>
    </extension>
-
 </plugin>

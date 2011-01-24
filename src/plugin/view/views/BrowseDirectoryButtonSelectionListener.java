@@ -1,4 +1,4 @@
-package eclipseplugin.clustering.view.views;
+package plugin.view.views;
 
 
 import org.eclipse.swt.events.SelectionEvent;
@@ -18,7 +18,10 @@ public class BrowseDirectoryButtonSelectionListener implements
 	public void widgetSelected(SelectionEvent e) {
 		 DirectoryDialog dlg = new DirectoryDialog(this.textField.getShell());
 		 String selectedDirectory = dlg.open();
-		 this.textField.setText(selectedDirectory);   
+		 
+		 if(selectedDirectory != null){
+			 this.textField.setText(selectedDirectory);
+		 }
 	}
 
 	@Override

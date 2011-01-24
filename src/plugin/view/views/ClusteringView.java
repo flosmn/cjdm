@@ -1,9 +1,10 @@
-package eclipseplugin.clustering.view.views;
+package plugin.view.views;
 
 
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.custom.ScrolledComposite;
 import org.eclipse.swt.layout.GridLayout;
+import org.eclipse.swt.widgets.Combo;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Text;
 import org.eclipse.ui.part.ViewPart;
@@ -34,6 +35,7 @@ public class ClusteringView extends ViewPart {
 	 */
 	public static final String ID = "eclipseplugin.view.views.MainView";
 	int numColumns = 3;
+	private OpenPdfAfterCreation openPdf;
 
 	@Override
 	public void createPartControl(Composite parent) {
@@ -42,13 +44,15 @@ public class ClusteringView extends ViewPart {
 	    Composite componentParent = getComponents(sc);
 	    sc.setContent(componentParent);
 
-	    sc.setMinSize(600, 1000);
+	    sc.setMinSize(600, 1100);
 
 	    sc.setExpandHorizontal(true);
 	    sc.setExpandVertical(true);
 	}
 
 	private Composite getComponents(Composite parent) {
+		openPdf = new OpenPdfAfterCreation();
+		
 		Composite comp = new Composite(parent, SWT.NONE);
 		GridLayout gridLayout = new GridLayout();
 		gridLayout.numColumns = numColumns;
@@ -83,7 +87,14 @@ public class ClusteringView extends ViewPart {
 		ClusteringViewComponents.getNameLabel(comp);
 		Text pdfName = ClusteringViewComponents.getNameTextField(comp, numColumns);
 		
-		ClusteringViewComponents.getButtonPerformClustering(comp, numColumns, csvSource, pdfTargetDir, pdfName);
+		ClusteringViewComponents.getMethodLabel(comp, numColumns);
+		Combo methodCombo = ClusteringViewComponents.getMethodCombo(comp, numColumns);
+		
+		ClusteringViewComponents.getMetricLabel(comp, numColumns);
+		Combo metricCombo = ClusteringViewComponents.getMetricCombo(comp, numColumns);
+		
+		ClusteringViewComponents.getButtonPerformClustering(comp, numColumns, csvSource, pdfTargetDir, pdfName, openPdf, methodCombo, metricCombo);
+		ClusteringViewComponents.getButtonOpenPdf(comp, numColumns, openPdf);
 	}
 
 	private void addExportPhaseComponents(Composite comp) {

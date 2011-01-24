@@ -1,4 +1,4 @@
-package eclipseplugin.clustering.view;
+package plugin.view;
 
 import org.eclipse.jface.resource.ImageDescriptor;
 import org.eclipse.ui.plugin.AbstractUIPlugin;
