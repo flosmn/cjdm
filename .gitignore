@@ -4,6 +4,8 @@ src/main/Ignored.java
 
 src/grammar/*.java
 
+*.svn
+
 src/grammar/*.tokens
 
 data/*

@@ -2,9 +2,10 @@ package workers;
 
 import java.util.List;
 
-import main.TreePackage;
 
 import org.antlr.runtime.tree.CommonTree;
+
+import parsing.TreePackage;
 
 import utils.Utils;
 import attributes.Attribute;

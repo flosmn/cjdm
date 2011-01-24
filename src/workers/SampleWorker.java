@@ -1,6 +1,6 @@
 package workers;
 
-import main.TreePackage;
+import parsing.TreePackage;
 import database.Aggregator;
 
 /**

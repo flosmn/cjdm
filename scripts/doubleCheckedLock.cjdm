@@ -1,0 +1,37 @@
+{
+	'export' : {
+		'scope' : 'method',
+		'attributes' : [
+			'NESTEDNESS_LOCKS',
+			'NESTEDNESS_SYNCHRONIZED',
+			'NESTEDNESS_CONDITIONALS',
+			'NESTEDNESS_LOOPS',
+			'WHILE_WAIT',
+			'CONDITIONAL_WAIT',
+			'DOUBLE_CHECKED_LOCK'
+		],
+		'filter' : {
+			'type' : 'attributeFilter',
+			'summarized' : 'true',
+			'conditions' : [ {
+					'attribute' : 'DOUBLE_CHECKED_LOCK'
+				}
+			]
+		}
+	},
+	'mining': {
+		'bonusSet' : [ {
+				'type' : 'itemBonus',
+				'attribute' : '.*',
+				'value' : '[^0]',
+				'bonus' : 2
+			},  {
+				'type' : 'itemBonus',
+				'attribute' : '.*',
+				'value' : '0',
+				'bonus' : -1
+			}
+		],
+		'numRules' : 1000	
+	}
+}

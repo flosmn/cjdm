@@ -1,0 +1,36 @@
+{
+	'export' : {
+		'scope' : 'class',
+		'attributes' : [
+			'LOCK_CALLS',
+			'UNLOCK_CALLS',
+			'WAIT_CALLS',
+			'NOTIFY_CALLS',
+			'NOTIFYALL_CALLS',
+			'SLEEP_CALLS',
+			'YIELD_CALLS',
+			'JOIN_CALLS',
+			'START_CALLS',
+			'RUN_CALLS'
+		],
+		'filter' : {
+			'type' : 'parallelFilter',
+			'summarized' : 'true'
+		}
+	},
+	'mining': {
+		'bonusSet' : [ {
+				'type' : 'itemBonus',
+				'attribute' : '.*',
+				'value' : '[^0]',
+				'bonus' : 2
+			},  {
+				'type' : 'itemBonus',
+				'attribute' : '.*',
+				'value' : '0',
+				'bonus' : -1
+			}
+		],
+		'numRules' : 1000	
+	}
+}

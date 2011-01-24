@@ -4,13 +4,8 @@
 	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry exported="true" kind="lib" path="lib/antlr-3.2.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/gson-1.6.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/hsqldb.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/JRI.jar">
-		<attributes>
-			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="cjdm/lib"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="lib/weka.jar" sourcepath="E:/Documents and Settings/Administrator.STEFANLAP/My Documents/workspace/WEKATest/weka-src.jar"/>
+	<classpathentry kind="lib" path="lib/weka.jar"/>
+	<classpathentry kind="lib" path="lib/gson-1.6.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
