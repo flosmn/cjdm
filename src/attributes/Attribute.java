@@ -162,7 +162,7 @@ public class Attribute {
 	 *   }
 	 * }
 	 * has nestedness of 2
-	 *  */			
+	 **/			
 	public static final Attribute NESTEDNESS_CONDITIONALS = new Attribute(Scope.METHOD, "NESTEDNESS_CONDITIONALS", false);
 	/** nestedness of {@code for| while | do while} */			
 	public static final Attribute NESTEDNESS_LOOPS = new Attribute(Scope.METHOD, "NESTEDNESS_LOOPS", false);
