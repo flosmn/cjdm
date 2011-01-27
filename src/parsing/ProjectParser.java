@@ -32,11 +32,26 @@ import database.Database;
  * ANTclassOrInterfaceDeclarationLR builds from java.g
  */
 public class ProjectParser {
+	
+	/**
+	 * calls {@link #parseProjects(String)} with projectSourcesPath as param
+	 * @param args projectSourcesPath
+	 */
 	public static void main(String[] args) {
-		new ProjectParser().parseProjects();
+		String projectSourcesPath = args[0];
+		new ProjectParser().parseProjects(projectSourcesPath);
 	}
-
-	public void parseProjects() {
+	
+	/**
+	 * parses all files in projects/ or in a passed projects path
+	 * and writes into a database
+	 * @param projectSourcesPath path to the projects to be parsed 
+	 */
+	public void parseProjects(String projectSourcesPath) {
+		if(projectSourcesPath == null){
+				projectSourcesPath = PathAndFileNames.PROJECT_SOURCES_PATH;
+		}
+		
 		Database database = new Database(PathAndFileNames.DATA_BASE_PATH);
 		
 		WorkerQueue workerQueue = new WorkerQueue(database);
@@ -117,7 +132,7 @@ public class ProjectParser {
 
 		workerQueue.createTables();
 		
-		Collection<TreePackage> projectPackages = (new TreePackageGenerator()).generateProjectPackages();
+		Collection<TreePackage> projectPackages = (new TreePackageGenerator()).generateProjectPackages(projectSourcesPath);
 		Collections.sort((List<TreePackage>) projectPackages);
 		for(TreePackage projectPackage: projectPackages) {
 			workerQueue.doWork(projectPackage);

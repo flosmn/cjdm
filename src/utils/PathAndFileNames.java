@@ -35,7 +35,7 @@ public class PathAndFileNames {
 		if(basePath.length()>0){
 			basePath += "/";
 		}
-		PROJECT_SOURCES_PATH = basePath + "data/TestData";
+		PROJECT_SOURCES_PATH = basePath + "projects";
 		WEKA_DATA_PATH = basePath + "data/arff/";
 		R_DATA_PATH = basePath + "data/r/";
 		CSV_DATA_PATH = basePath + "data/csv/";
