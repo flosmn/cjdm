@@ -20,6 +20,10 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * This special ExportFilter can be used to only export result records which meat special attribute conditions.
+ * Additionally the values can be summarized in buckets like "5..20".
+ */
 public class AttributeFilter extends ExportFilter {
 	List<AttributeCondition> conditions;
 	boolean summarized;

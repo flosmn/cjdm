@@ -23,6 +23,9 @@ import utils.Utils;
 import attributes.Attribute;
 import database.Aggregator;
 
+/**
+ * This special worker counts the subtrees which match a pattern given by node names as regular expressions.
+ */
 public class Counter extends Worker {
 	private int counter;
 	private String[] nodeNames;

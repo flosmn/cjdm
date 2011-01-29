@@ -16,6 +16,9 @@ package database;
 
 import java.util.LinkedList;
 
+/**
+ * This class manages a table of the database.
+ */
 public class Relation {
 	private Database database;
 	private Scope scope;

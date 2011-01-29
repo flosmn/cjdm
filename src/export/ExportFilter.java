@@ -17,6 +17,9 @@ package export;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+/**
+ * This is the default export filter which simply writes the current result record to a human readable string.
+ */
 public class ExportFilter {
 	public String filter(ResultSet resultSet) throws SQLException {
 		StringBuffer stringBuffer = new StringBuffer();

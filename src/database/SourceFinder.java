@@ -21,7 +21,7 @@ public class SourceFinder {
 	public static void main(String[] args) {
 		Database database = new Database(PathAndFileNames.DATA_BASE_PATH);
 		
-		find(database, Scope.CLASS, Attribute.NOTIFY_CALLS.getName() + " > 5");
+		find(database, Scope.CLASS, Attribute.ATOMICINTEGER_OBJECT_FIELDS.getName() + " > 0");
 		
 		database.shutdown();
 	}

@@ -16,6 +16,9 @@ package database;
 
 import java.sql.ResultSet;
 
+/**
+ * To receive a result set for a query from the database, you need to implement this interface.  
+ */
 public interface ResultSetReceiver {
 	public void receive(ResultSet resultSet);
 }

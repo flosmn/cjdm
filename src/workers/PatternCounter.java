@@ -23,6 +23,9 @@ import utils.Utils;
 import attributes.Attribute;
 import database.Aggregator;
 
+/**
+ * This special worker counts special patterns (like the while-wait pattern)
+ */
 public class PatternCounter extends Worker {
 	private int counter;
 	private String[] nodeNames;

@@ -20,6 +20,9 @@ import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.Statement;
 
+/**
+ * This class can open the database and execute updates and queries.
+ */
 public class Database {
 
     Connection connection;

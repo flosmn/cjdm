@@ -20,6 +20,10 @@ import java.sql.SQLException;
 
 import attributes.Attribute;
 
+/**
+ * This special ExportFilter can be used, to only export result records that contain a minimum number of parallel attributes,
+ * whose values aren't zero. Additionally the values can be summarized in buckets like "5..20".
+ */
 public class ParallelFilter extends ExportFilter {
 	int minParallel;
 	boolean summarized;

@@ -16,10 +16,14 @@ package export;
 
 import attributes.Attribute;
 
+/**
+ * This class is used in combination with the AttributeFilter. It manages a condition consisting attribute name
+ * and optional minimal and maximal values.
+ */
 public class AttributeCondition {
 	Attribute attribute;
-	int minValue;
-	int maxValue;
+	int minValue = 1;
+	int maxValue = Integer.MAX_VALUE;
 	
 	public AttributeCondition(Attribute attribute, int minValue, int maxValue) {
 		this.attribute = attribute;

@@ -14,6 +14,9 @@
 **/
 package database;
 
+/**
+ * This class manages the aggregation of values between different scopes.
+ */
 public class Aggregator {
 	private String name;
 	

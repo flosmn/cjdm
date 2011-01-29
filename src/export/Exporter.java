@@ -27,6 +27,9 @@ import database.Database;
 import database.ResultSetReceiver;
 import database.Scope;
 
+/**
+ * This class can be used to export results from a database query to csv or arff files.
+ */
 public class Exporter implements ResultSetReceiver {
 	public static void main (String[] args) {
 	}

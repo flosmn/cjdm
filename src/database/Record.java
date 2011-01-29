@@ -17,6 +17,9 @@ package database;
 import java.util.HashMap;
 import java.util.LinkedList;
 
+/**
+ * This class stores all values from the workers to insert one row into the database.
+ */
 public class Record {
 	private HashMap<String, Integer> map = new HashMap<String, Integer>();
 	private LinkedList<String> attributes = new LinkedList<String>();

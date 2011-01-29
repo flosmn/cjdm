@@ -26,6 +26,9 @@ import utils.Utils;
 import attributes.MethodAttribute;
 import database.Aggregator;
 
+/**
+ * This special worker counts how deep locks are nested within its subtree.
+ */
 public class CountNestednessOfLocks extends Worker{
 	private int maxNestedness;
 	private int nestedness;

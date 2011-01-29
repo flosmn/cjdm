@@ -23,6 +23,9 @@ import utils.Utils;
 import attributes.Attribute;
 import database.Aggregator;
 
+/**
+ * This special worker recursively counts the nestedness of the given pattern. (like nestedness of loops)
+ */
 public class RecursiveNestednessCounter extends Worker{
 	private int maxNestedness;
 	private String[] children;

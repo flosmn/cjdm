@@ -17,6 +17,9 @@ package database;
 import java.util.ArrayList;
 import java.util.Collection;
 
+/**
+ * This handles the different scopes on with the workers can work.
+ */
 public class Scope {
 	private String scope;
 	private Scope parent;
