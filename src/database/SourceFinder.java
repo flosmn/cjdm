@@ -17,6 +17,9 @@ package database;
 import utils.PathAndFileNames;
 import attributes.Attribute;
 
+/**
+ * This convenience class can be used to find records in the database that match certain criteria.
+ */
 public class SourceFinder {
 	public static void main(String[] args) {
 		Database database = new Database(PathAndFileNames.DATA_BASE_PATH);
