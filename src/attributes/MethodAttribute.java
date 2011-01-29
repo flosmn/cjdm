@@ -20,6 +20,7 @@ import database.Scope;
  * This class stores all method {@code Scope} attribute names that can be used for mining.
  */
 public class MethodAttribute {
+	/** unique identifier used by R - Team09*/
 	public static final Attribute COMBINED_METHOD_NAME = new Attribute(Scope.METHOD,
 			"CONCAT(PROJECT_NAME,'->',CLASS_NAME,'->',METHOD_NAME," +
 			"'(',CAST(RAND()*1000000 AS INT),')') AS NAME", false);

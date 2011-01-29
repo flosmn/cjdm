@@ -118,9 +118,9 @@ public class TreePackageGenerator {
 		return name; 
 	}
 
-	public Collection<TreePackage> generateProjectPackages() {
+	public Collection<TreePackage> generateProjectPackages(String projectSourcesPath) {
 		Collection<TreePackage> projectPackages = new LinkedList<TreePackage>();
-		File[] projects = (new File(PathAndFileNames.PROJECT_SOURCES_PATH)).listFiles();
+		File[] projects = (new File(projectSourcesPath)).listFiles();
 		
 		for(File file : projects){
 			if(!(file.getName().equals("data"))){
